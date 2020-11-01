@@ -1,0 +1,16 @@
+/* Variables */
+:root {
+    --brand-primary: #e31b23;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: var(--brand-primary);
+    border-color: var(--brand-primary);
+}
