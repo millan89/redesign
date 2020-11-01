@@ -16,26 +16,56 @@
 <body>
     <!-- NAVIGATION -->
     <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#"><img width="140"
+                    src="https://s3-us-west-2.amazonaws.com/ogledalofirme-images/4588227d-2abb-486b-8f09-dcb9bdae25de-cropped-poster.jpeg"
+                    alt=""></a>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Igre
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Rezultati</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">Uplatna mesta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vesti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Rezultati</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            O nama
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
                 </ul>
-                <a href="#" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</a>
+                <a href="#" class="btn btn-outline-dark mr-sm-2 my-sm-0" type="submit">PRIJAVI SE</a>
+                <a href="#" class="btn btn-primary my-sm-0" type="submit">REGISTRUJ SE</a>
             </div>
         </nav>
     </header>
@@ -44,17 +74,20 @@
     <!-- HERO SLIDER -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active hero-1">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm hero-text text-center">
-                            <p class="hero-text__small">loto sedmica</p>
-                            <p class="hero-text__number">1.500.000 <sup class="hero-text__number-sym">€</sup></p>
-                            <p class="hero-text__big">Osvoji glavnu premiju</p>
-                            <a class="btn btn-primary" href="#">IGRAJ ONLINE</a>
+                        <div class="col-sm-7">
+                            <div class="hero-text text-center">
+                                <p class="hero-text__small">loto sedmica</p>
+                                <p class="hero-text__number">1.500.000 <sup class="hero-text__number-sym">€</sup></p>
+                                <p class="hero-text__big">Osvoji glavnu premiju</p>
+                                <a class="btn btn-primary" href="#">IGRAJ ONLINE</a>
+                            </div>
                         </div>
-                        <div class="col-sm">
-                            One of three columns
+                        <div class="col-sm-5">
+                            <img src="https://pngriver.com/wp-content/uploads/2018/04/Download-Model-PNG-Picture.png"
+                                alt="">
                         </div>
                     </div>
                 </div>
