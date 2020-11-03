@@ -268,11 +268,7 @@ style.css
 /* HEADER */
 header {
     height: 70px;
-<<<<<<< HEAD
     z-index: 2;
-=======
-    z-index: 3;
->>>>>>> 2a6fe9cf647a31d3285fefae6670f4ba0d6df0cc
     position: relative;
 }
 
