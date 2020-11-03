@@ -1,23 +1,66 @@
-/* Variables */
-:root {
-    --brand-primary: #e31b23;
-    
+/* 
+
+Drzavna lutrija srbije
+style.css
+
+*/
+
+
+* {
+    font-family: 'Sora', sans-serif;
 }
 
-/* Buttons */
+/* VARIABLES */
+:root {
+    --brand-white: #FFF;
+    --brand-red: #F01B2B;   
+    --brand-dark-blue-1: #0048D0;   
+    --brand-dark-blue-2: #005DFF;   
+    --brand-light-blue-1: #67BEC9;   
+    --brand-light-blue-2: #05CFD5;   
+    --brand-pink: #FFB9C8;   
+    --brand-yellow: #FAD62A;   
+    --brand-dark-gray: #152238;   
+    --brand-light-gray: #EEF2FB;   
+    --brand-purple: #A73BEC;   
+    --brand-green: #00CF4C;
+    
+    --font-barlow: "Barlow Condensed";
+}
+
+
+
+
+
+/* BUTTONS */
+.btn {
+    padding: 0.45rem 0.95rem;
+}
 .btn-primary {
-    background-color: var(--brand-primary);
-    border-color: var(--brand-primary);
+    background-color: var(--brand-red);
+    border-color: var(--brand-red);
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: var(--brand-primary);
-    border-color: var(--brand-primary);
+    background-color: var(--brand-red);
+    border-color: var(--brand-red);
+}
+
+.btn-outline-primary {
+    color: var(--brand-white);
+    border-color: var(--brand-white);
+    border-width: 2px;
+}
+
+.btn-outline-primary:hover {
+    color: var(--brand-dark-gray);
+    border-color: var(--brand-white);
+    background-color: var(--brand-white);
 }
 
 
-/* Long shadow */
+/* LONG SHADOW */
 .ls {
     text-shadow: 0px 0px 0 #000,
         1px 1px 0 #000,
@@ -229,6 +272,10 @@ header {
     position: relative;
 }
 
+header .btn {
+    min-width: 150px;
+}
+
 
 /* HERO */
 .carousel {
@@ -240,7 +287,7 @@ header {
 }
 
 .hero-1 {
-    background: lightgreen;
+    background: var(--brand-pink);
 }
 
 .hero-text {
@@ -248,13 +295,32 @@ header {
 }
 
 .hero-text__small {
-    font-size: 48px;
+    font-size: 62px;
+    font-weight: 700;
+    margin-bottom: -10px;
+    line-height: 1;
 }
 
 .hero-text__number {
-    font-size: 72px;
+    font-size: 150px;
+    font-family: var(--font-barlow);
+    line-height: 1;
+    color: var(--brand-white);
+}
+
+.hero-text__number-sym {
+    font-size: 110px;
+    font-family: var(--font-barlow);
 }
 
 .hero-text__big {
-    font-size: 36px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1;
+    color: var(--brand-white);
+}
+
+.hero-media > img {
+    max-width: 800px;
 }
