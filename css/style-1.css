@@ -14,6 +14,7 @@ p {
 .main-banner .main-banner__text__num {
 	font-size: 52px;
 	font-weight: 800;
+	line-height: 1;
 }
 
 .main-banner .main-banner__text sup {
@@ -105,5 +106,5 @@ p {
     .main-banner .main-banner__text__num {
 		font-size: 38px;
 	}
-	/* end#MAIN BANNER */
+	/* end#MAIN BANNER */ 
 }
