@@ -287,35 +287,40 @@ header .btn {
 
 
 /* HERO */
-.carousel {
+.hero {
     margin-top: -70px;
 }
 
-.carousel-item {
+.hero__item {
     padding-top: 70px;
+    overflow: hidden;
 }
 
 .hero-wrap {
     align-items: flex-end;
 }
 
-.hero-1 {
+.hero__item--1 {
     background: var(--brand-pink);
 }
 
+.hero__item--2 {
+    background: var(--brand-light-blue-1);
+}
+
 .hero-text {
-    padding: 35% 0 25%;
+    padding: 10vw 0;
 }
 
 .hero-text__small {
-    font-size: 62px;
+    font-size: 4vw;
     font-weight: 700;
     margin-bottom: -10px;
     line-height: 1;
 }
 
 .hero-text__number {
-    font-size: 150px;
+    font-size: 10vw;
     font-family: var(--font-barlow);
     line-height: 1;
     color: var(--brand-white);
@@ -335,8 +340,28 @@ header .btn {
 }
 
 .hero-media > img {
-    max-width: 750px;
+    max-width: 45vw;
+    transform: translateX(-150px);
 }
+
+
+/* SLICK */
+.slick-next,
+.slick-prev {
+    border: 0 none;
+    background: none;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    z-index: 9;
+    outline: none;
+}
+
+.slick-prev {
+    left: 2%;
+    right: auto;
+}
+
 
 
 /* Large devices (desktops, less than 1200px) */
@@ -362,6 +387,10 @@ header .btn {
         background-color: var(--brand-white);
     }
 
+    .hero-text {
+        padding: 20% 0 10%;
+    }
+
     .hero-text__small {
         font-size: 32px;
         margin-bottom: 0px;
@@ -378,11 +407,13 @@ header .btn {
         font-size: 60px;
     }
 
-    .carousel-control-prev,
-    .carousel-control-next {
-        display: none;
+    .hero-media > img {
+        max-width: 450px;
+        transform: translateX(0);
+        display: block;
+        margin: auto;
     }
-    
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
