@@ -1,0 +1,109 @@
+p {
+    margin-bottom: .5rem;
+}
+
+/* #MAIN BANNER */
+.main-banner {
+    padding: 20px 0 50px;
+}
+
+.main-banner--bingo {
+    background: linear-gradient(-215deg, var(--brand-purple), var(--brand-purple) 65%, #822eb7 65%, #822eb7 100%);
+}
+
+.main-banner .main-banner__text__num {
+	font-size: 52px;
+	font-weight: 800;
+}
+
+.main-banner .main-banner__text sup {
+	font-size: 70%;
+    top: -0.35em;
+}
+
+.main-banner #countdown {
+	display: flex;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	color: #fff;
+	transform: translateY(-50%);
+}
+
+.main-banner #countdown div:not(:last-child) {
+	margin-right: 20px;
+}
+
+.main-banner #countdown div {
+	display: block;
+	text-align: center;
+    width: 55px;
+    font-size: 22px;
+    line-height: 1rem;
+    font-weight: 700;
+    background-color: var(--brand-dark-gray);
+    padding: 10px;
+    border-radius: 5px;
+    height: 55px;
+}
+
+.main-banner #countdown div span {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.main-banner #countdown span.double-dot {
+    font-size: 22px;
+	font-weight: 700;
+	transform: translate(-10px, 8px);
+}
+/* end#MAIN BANNER */
+
+.bingo-ticket {
+	height: 600px;
+	background: white;
+	margin-top: -35px;
+	border-radius: 15px;
+	box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+	/* #MAIN BANNER */
+    .main-banner #countdown div:not(:last-child) {
+		margin-right: 14px;
+	}
+
+	.main-banner #countdown div {
+		width: 50px;
+		font-size: 20px;
+		font-weight: 700;
+		padding: 8px;
+		height: 50px;
+	}
+
+	.main-banner #countdown span.double-dot {
+		font-size: 20px;
+		transform: translate(-7px, 8px);
+	}
+	/* end#MAIN BANNER */
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	/* #MAIN BANNER */
+    .main-banner .main-banner__text__num {
+		font-size: 38px;
+	}
+	/* end#MAIN BANNER */
+}
