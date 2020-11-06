@@ -1,9 +1,11 @@
 $(document).ready(function(){
 
     // Initialize hero carousel
-    $('.hero').slick();
+    $('.hero').slick({
+        dots: true
+    });
 
-})
+});
 
 // COUNTDOWN
 // Set the date we're counting down to
