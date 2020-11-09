@@ -24,13 +24,16 @@ style.css
     --brand-dark-blue-2: #005DFF;   
     --brand-light-blue-1: #67BEC9;   
     --brand-light-blue-2: #05CFD5;   
+    --brand-light-blue-3: #99BEFF;
     --brand-pink: #FFB9C8;   
-    --brand-yellow: #FAD62A;   
+    --brand-yellow: #FAD62A; 
+    --brand-yellow-2: #FAE420;
     --brand-dark-gray: #152238;   
     --brand-dark-gray-2: #666666;   
     --brand-light-gray: #EEF2FB;   
     --brand-purple: #A73BEC;  
     --brand-green: #00CF4C;
+    --brand-green-2: #66E294;
     
     --font-barlow: "Barlow Condensed";
     --font-fa: "Font Awesome 5 Free";
@@ -42,6 +45,10 @@ style.css
 
 p {
     font-weight: 300;
+}
+
+p strong {
+    font-weight: 600;
 }
 
 .h1,
@@ -56,6 +63,13 @@ h1 {
 /* BUTTONS */
 .btn {
     padding: 0.45rem 1.75rem;
+    border-width: 2px;
+}
+
+.btn.focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
 }
 
 .btn--padd-xs {
@@ -64,6 +78,7 @@ h1 {
 
 .btn--cern {
     letter-spacing: 3px;
+    text-indent: 4px;
 }
 
 .btn-primary {
@@ -85,7 +100,6 @@ h1 {
 .btn-outline-primary {
     color: var(--brand-white);
     border-color: var(--brand-white);
-    border-width: 2px;
 }
 
 .btn-outline-primary:hover {
@@ -97,34 +111,27 @@ h1 {
 .btn-outline-primary:not(:disabled):not(.disabled):active {
     background-color: transparent;
     border-color: var(--brand-white);
-    border-width: 2px;
 }
 
-.btn-dark {
+.btn-secondary,
+.btn-darkk.active {
     color: var(--brand-white);
     border-color: var(--brand-dark-gray);
     background-color: var(--brand-dark-gray);
-    border-width: 2px;
 }
 
-.btn-dark:hover {
+.btn-secondary:hover,
+.btn-darkk.active:hover {
     color: var(--brand-white);
     border-color: var(--brand-dark-gray-2);
     background-color: var(--brand-dark-gray-2);
 }
 
-.btn-dark:not(:disabled):not(.disabled):active {
+.btn-secondary:not(:disabled):not(.disabled):active,
+.btn-darkk.active:not(:disabled):not(.disabled):active {
     color: var(--brand-white);
     border-color: var(--brand-dark-gray);
     background-color: var(--brand-dark-gray);
-    border-width: 2px;
-}
-
-.btn-dark--inactive {
-    color: var(--brand-dark-gray-2);
-    border-color: var(--brand-white);
-    background-color: var(--brand-white);
-    border-width: 2px;
 }
 
 
@@ -568,13 +575,7 @@ header .btn {
 
 .dropdown-menu {
     border: 0 none;
-    border-radius: 0;.nav-link {
-    display: block;
-    padding: .5rem 1rem;
-        padding-right: 1rem;
-        padding-left: 1rem;
-    font-weight: 500;
-}
+    border-radius: 0;
 }
 
 .dropdown-item {
@@ -673,6 +674,7 @@ header .btn {
     right: 2%;
     z-index: 9;
     outline: none;
+    padding: 2%;
 }
 
 .slick-prev {
@@ -694,7 +696,7 @@ header .btn {
 
 .slick-dots {
     position: absolute;
-    bottom: 25px;
+    bottom: 75px;
 }
 
 .slick-dots li button {
@@ -725,6 +727,7 @@ header .btn {
     position: relative;
     margin-top: -80px;
     padding: 50px 60px;
+    min-height: 690px;
 }
 
 .home-results__hd {
@@ -739,36 +742,55 @@ header .btn {
 
 .home-results__hd span {
     font-weight: 700;
+    line-height: 1;
 }
 
 .home-results__btns {
     min-width: 102px;
 }
 
-.hero-balls__logo {
-    width: 80px;
-    fill: var(--brand-dark-gray);
+.home-results .list-group {
+    display: block;
 }
 
-.hero-balls-wrap {
-    display: flex;
-    justify-content: space-between;
+.hero-balls__logo {
+    height: 20px;
+    fill: var(--brand-dark-gray-2);
+    margin: 18px 0 15px;
+}
+
+.hero-balls__logo--loto-plus {
+    height: 23px;
 }
 
 .hero-balls-wrap.hero-balls-wrap--yellow .hero-balls-wrap__items {
-    background-color: var(--brand-yellow);
+    background-color: var(--brand-yellow-2);
+}
+
+.hero-balls-wrap.hero-balls-wrap--blue .hero-balls-wrap__items {
+    background-color: var(--brand-light-blue-3);
+}
+
+.hero-balls-wrap.hero-balls-wrap--green .hero-balls-wrap__items {
+    background-color: var(--brand-green-2);
 }
 
 .hero-balls-wrap__items {
-    padding: 10px;
+    padding: 8px;
     border-radius: 50%;
-    width: 46px;
-    height: 46px;
+    width: 42px;
+    height: 42px;
     text-align: center;
     font-weight: 600;
     font-size: 18px;
+    display: inline-block;
+    margin-right: 3.3333%;
+    margin-bottom: 10px;
 }
 
+.hero-balls-wrap__items:last-child {
+    margin-right: 0;
+}
 
 
 

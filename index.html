@@ -135,17 +135,17 @@
                                         class="" /><span>Proveri svoje rezultate<span
                                                 class="color-yellow">.</span></span></p>
                             </div>
-                            <div class="col-4 text-right">
-                                <button
-                                    class="home-results__btns btn btn-dark btn--padd-xs btn--cern"><strong>LOTO</strong></button>
-                                <button
-                                    class="home-results__btns btn btn-dark btn-dark--inactive btn--padd-xs
-                                    btn--cern"><strong>BINGO</strong></button>
+                            <div class="col-4 text-right list-group" id="list-tab" role="tablist">
+                                <button class="home-results__btns btn btn-darkk btn--padd-xs btn--cern active" id="loto-tab" data-toggle="list"
+                                    href="#loto" role="tab" aria-controls="home"><strong>LOTO</strong></button>
+                                <button class="home-results__btns btn btn-darkk btn--padd-xs btn--cern" id="bingo-tab"
+                                    data-toggle="list" href="#bingo" role="tab"
+                                    aria-controls="profile"><strong>BINGO</strong></button>  
                             </div>
                         </div>
 
                         <div class="row mt-4 justify-content-between">
-                            <div class="col-4">
+                            <div class="col-4 d-none d-sm-none d-md-block">
                                 <form>
                                     <div class="form-group">
                                         <label for="exampleFormControlSelect1">Igre za pretragu:</label>
@@ -181,23 +181,320 @@
                                             <option>2023</option>
                                         </select>
                                     </div>
+                                    <button class="btn btn-secondary btn-block mt-5"><strong>PRETRAGA</strong></button>
                                 </form>
                             </div>
                             <div class="col-7">
-                                <p>Izveštaj za 57. kolo - datum izvlačenja 17.7.2020</p>
-                                <div class="hero-balls">
-                                    <img src="images/loto-logo.svg" alt="" class="hero-balls__logo">
-                                    <div class="hero-balls-wrap hero-balls-wrap--yellow">
-                                        <div class="hero-balls-wrap__items">4</div>
-                                        <div class="hero-balls-wrap__items">14</div>
-                                        <div class="hero-balls-wrap__items">23</div>
-                                        <div class="hero-balls-wrap__items">0</div>
-                                        <div class="hero-balls-wrap__items">31</div>
-                                        <div class="hero-balls-wrap__items">7</div>
-                                        <div class="hero-balls-wrap__items">12</div>
-                                    </div>
 
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active"
+                                        id="loto" role="tabpanel" aria-labelledby="loto-tab">
+                                        <p>Izveštaj za 57. kolo - datum izvlačenja 17.7.2020</p>
+                                        <div class="hero-balls">
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 130 28.4" enable-background="new 0 0 130 28.4"
+                                                xml:space="preserve" class="hero-balls__logo">
+                                                <path d="M111.7,28.4c12.3,0,18.3-4.5,18.3-14.2S124,0,111.7,0S93.5,4.5,93.5,14.2c0,7.9,4,12.4,12.2,13.8l0.5-0.2v-1.3l0.8,1
+                    l1.2-0.4l-0.7,1l0,0C108.7,28.3,110.2,28.4,111.7,28.4 M107.6,16.7c-0.1-0.6-0.2-1.2-0.2-1.9c0-3.7,1.4-5.6,4.3-5.6
+                    c2.9,0,4.3,1.9,4.3,5.6c0,3.2-1.3,5.2-3.5,5.5l3.4,2.5h-4.5l-1.4,4.3l-1.4-4.3h-4.5l3.6-2.6l-1.4-4.3L107.6,16.7z M126.4,10.1
+                    l0.7,1l1.1-0.4l-0.7,1l0.7,1l-1.1-0.4l-0.7,1v-1.2l-1.1-0.4l1.1-0.4V10.1z M118,15.1l0.4,1.1h1.1l-0.9,0.7l0.3,1.1l-0.9-0.7
+                    l-0.9,0.7l0.4-1.1l-0.9-0.7h1.1L118,15.1z M119.9,2.3l1.3,4.1h4.3L122,8.9l1.3,4.1l-3.5-2.5l-3.5,2.5l1.3-4.1l-3.5-2.5h4.3
+                    L119.9,2.3z M102.5,17.2l0.4,1.1h1.1l-0.9,0.7l0.4,1.1l-0.9-0.7l-0.9,0.7l0.4-1.1l-0.9-0.7h1.1L102.5,17.2z M103.3,8.6l1.5,2.1
+                    l2.4-0.8l-1.5,2l1.5,2.1l-2.4-0.8l-1.5,2v-2.5l-2.4-0.8l2.4-0.8V8.6z M122.9,14.8l0.1,1.1l1.1,0.3l-1.1,0.4l0.1,1.1l-0.7-0.9
+                    l-1.1,0.4l0.6-1l-0.7-0.9l1.1,0.3L122.9,14.8z M108.8,4l0.1,1.1l1.1,0.3l-1.1,0.4l0.1,1.1L108.3,6l-1.1,0.4l0.6-1l-0.7-0.9
+                    l1.1,0.3L108.8,4z M1.1,27.6H3l-0.7-0.9l2.8,0.9h1.8l2.3-3.1v3.1h14.6c0.8,0,1.4-0.6,1.4-1.4v-6.8c0-0.8-0.6-1.4-1.4-1.4h-8.6l0,0
+                    c-0.7,0-1.3-0.6-1.3-1.3l0,0v-4.8l-2.1,1l0.3,2.6l-1.8-1.9l-2.6,0.9L9,12.2l-1.7-1.9l2.6,0.5l1.3-2.3l0.3,2.6l2.3,0.5V2.2
+                    c0-0.8-0.6-1.4-1.4-1.4h-11C0.6,0.8,0,1.4,0,2.2v9.2l0,0l1-0.6l-0.4,1.1l0.9,0.7H0.3L0,13.5v3.6L1.1,17L0,18v8.5
+                    C0.1,27,0.6,27.5,1.1,27.6 M12.6,18.5l1.5,1.9l2.3-0.8l-1.4,2l1.5,1.9l-2.3-0.7l-1.4,2l-0.1-2.4l-2.3-0.7l2.3-0.8L12.6,18.5z
+                    M3.6,20.9l0.6,1l1.2-0.2l-0.8,0.9l0.6,1l-1.1-0.5L3.3,24l0.1-1.2l-1.1-0.5l1.2-0.2L3.6,20.9z M5.9,15.4v1.2L7,17l-1.1,0.3v1.2
+                    l-0.7-1l-1.1,0.3l0.7-0.9l-0.7-1l1.1,0.4L5.9,15.4z M20.1,20.3v1.2l1.1,0.4l-1.1,0.4v1.2l-0.7-1l-1.1,0.3l0.7-0.9l-0.7-1l1.1,0.4
+                    L20.1,20.3z M62.4,10L62.4,10c0,0.9,0.6,1.5,1.4,1.5h2.6l-1.1-2L62.4,10z M62.4,4.2v4.3l1.5-1.6L62.4,4.2z M84.2,19.2v-0.8
+                    l-0.3,0.3L84.2,19.2z M71.9,27.6h4.3l-1-1.5l-2.4,0.7l1.5-2l-1.4-2.1l2.4,0.8l1.5-2V24l2.4,0.8l-2.4,0.7v1.9h6.3
+                    c0.8,0,1.4-0.6,1.4-1.4v-6.6L83.7,19l-0.8,0.8l0.2-1.1l-1-0.5l1.1-0.2l0.2-1.1l0.5,1l0.6-0.1v-5.1c0-0.1,0-0.1,0-0.2l-0.9-0.4
+                    l-3.2,3.3l0.6-4.6l-4.1-2L81.4,8L82,3.4l2.2,4.1l4.5-0.8L85.5,10l0.7,1.3h4.9c0.8,0,1.4-0.6,1.4-1.4V2.2c0-0.8-0.6-1.4-1.4-1.4
+                    H72.3l-0.4,1.1l-0.4-1.1h-7.7c-0.7,0-1.3,0.6-1.4,1.3v1.1l3.4,1.6l3.1-3.4L68.3,6l4.2,2L68,8.9l-0.3,2.6H69c0.8,0,1.4,0.6,1.4,1.4
+                    v13.3C70.5,26.9,71.1,27.6,71.9,27.6 M76.2,2.2l0.5,1L77.8,3L77,3.8l0.5,1l-1-0.5l-0.8,0.8L75.9,4l-1-0.5L76,3.3L76.2,2.2z
+                    M73.8,10.2l0.5,1l1.1-0.2l-0.8,0.8l0.5,1l-1-0.5l-0.8,0.8l0.2-1.1l-1-0.5l1.1-0.2L73.8,10.2z M76.5,15.5l0.3,1.1l1.1,0.1l-1,0.6
+                    l0.3,1.1l-0.9-0.7l-1,0.6l0.4-1l-0.9-0.7l1.1,0.1L76.5,15.5z M43.6,28.4c12.3,0,18.3-4.5,18.3-14.2S55.9,0,43.6,0
+                    C31.3,0,25.4,4.5,25.4,14.2c0,7.9,4,12.4,12.2,13.8l0.5-0.2v-1.3l0.8,1l1.2-0.4l-0.7,1l0,0C40.6,28.3,42.1,28.4,43.6,28.4
+                    M39.5,16.7c-0.1-0.6-0.2-1.2-0.2-1.9c0-3.7,1.4-5.6,4.3-5.6s4.3,1.9,4.3,5.6c0,3.2-1.3,5.2-3.5,5.5l3.4,2.5h-4.5l-1.4,4.3
+                    l-1.4-4.3H36l3.6-2.6l-1.3-4.3L39.5,16.7z M58.3,10.1l0.7,1l1.1-0.4l-0.7,1l0.7,1L59,12.3l-0.7,1v-1.2l-1.1-0.4l1.1-0.4V10.1z
+                    M49.9,15.1l0.4,1.1h1.1l-0.9,0.7l0.4,1.1L50,17.3L49.1,18l0.4-1.1l-0.9-0.7h1.1L49.9,15.1z M51.8,2.3l1.3,4.1h4.3l-3.5,2.5
+                    l1.3,4.1l-3.5-2.5l-3.4,2.4l1.3-4.1l-3.5-2.5h4.3L51.8,2.3z M34.4,17.2l0.4,1.1h1.1L35,19l0.4,1.1l-0.9-0.7l-0.9,0.7L34,19
+                    l-0.9-0.7h1.1L34.4,17.2z M35.2,8.6l1.5,2.1l2.4-0.8l-1.5,2l1.5,2.1l-2.4-0.8l-1.5,2v-2.5l-2.4-0.8l2.4-0.8V8.6z M54.8,14.8
+                    l0.1,1.1l1.1,0.3l-1.1,0.4l0.1,1.1l-0.7-0.9l-1.1,0.4l0.6-1l-0.7-0.9l1.1,0.3L54.8,14.8z M40.7,4l0.1,1.1l1.1,0.3l-1.1,0.4
+                    l0.1,1.1L40.2,6l-1.1,0.5l0.6-1L39,4.6l1.1,0.3L40.7,4z" />
+                                            </svg>
+                                            <div class="hero-balls-wrap hero-balls-wrap--yellow">
+                                                <div class="hero-balls-wrap__items">4</div>
+                                                <div class="hero-balls-wrap__items">14</div>
+                                                <div class="hero-balls-wrap__items">23</div>
+                                                <div class="hero-balls-wrap__items">0</div>
+                                                <div class="hero-balls-wrap__items">31</div>
+                                                <div class="hero-balls-wrap__items">7</div>
+                                                <div class="hero-balls-wrap__items">12</div>
+                                            </div>
+
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 174 32.1" enable-background="new 0 0 174 32.1"
+                                                xml:space="preserve" class="hero-balls__logo hero-balls__logo--loto-plus">
+                                                <path d="M41.1,5.5l0.1,1.2L42.3,7l-1.1,0.4l0.1,1.2l-0.7-0.9l-1.1,0.4l0.6-1l-0.7-0.9l1.1,0.3L41.1,5.5z M55,16.7l0.1,1.2l1.1,0.3
+            l-1.1,0.4l0.1,1.2l-0.7-0.9l-1,0.4l0.6-1l-0.8-1l1.1,0.3L55,16.7z M35.6,10.3l1.4,2.1l2.4-0.8l-1.5,2.1l1.4,2.1L36.9,15l-1.5,2.1
+            v-2.6L33,13.7l2.4-0.8L35.6,10.3z M34.9,19.2l0.3,1.1h1.1L35.4,21l0.4,1.1l-0.9-0.7L34,22.1l0.4-1.1l-1-0.7h1.1L34.9,19.2z
+                M52,3.8L53.3,8h4.2l-3.4,2.6l1.3,4.2L52,12.2l-3.4,2.6l1.3-4.2L46.5,8h4.2L52,3.8z M50.2,17l0.4,1.1h1l-0.9,0.7l0.4,1.1l-0.9-0.7
+            l-0.9,0.7l0.3-1.1l-0.9-0.7h1.1L50.2,17z M58.4,11.8l0.7,1l1.1-0.4l-0.7,1l0.7,1L59.1,14l-0.7,1v-1.2l-1.1-0.4l1.1-0.4V11.8z
+                M39.8,18.7c-0.1-0.6-0.2-1.3-0.2-2c0-3.8,1.4-5.7,4.3-5.7c2.8,0,4.3,1.9,4.3,5.7c0,3.3-1.3,5.3-3.4,5.7l3.4,2.6h-4.5l-1.4,4.4
+            L40.9,25h-4.5l3.6-2.7l-1.4-4.4L39.8,18.7z M43.9,30.7c12.2,0,18-4.7,18-14.6c0-10-5.9-14.6-18-14.6c-12.2,0-18,4.6-18,14.6
+            c0,8.2,3.9,12.8,12,14.2l0.5-0.2v-1.3l0.7,1l1.2-0.4l-0.7,1.1l0,0C41,30.6,42.4,30.7,43.9,30.7 M76.5,17.4l0.3,1.1l1.1,0.1l-1,0.6
+            l0.3,1.1l-0.8-0.8l-1,0.6l0.4-1.1L75,18.2l1.1,0.1L76.5,17.4z M73.7,12l0.5,1l1.1-0.2l-0.8,0.8l0.5,1l-1-0.5l-0.8,0.8l0.2-1.2
+            l-1-0.5l1.1-0.2L73.7,12z M76.2,3.8l0.5,1l1.1-0.2L77,5.4l0.5,1l-1-0.5l-0.8,0.8l0.1-1.1l-1-0.5l1.1-0.2L76.2,3.8z M71.8,29.8H76
+            l-1-1.5l-2.4,0.8l1.5-2.1l-1.4-2.1l2.4,0.9l1.5-2.1l-0.1,2.6l2.4,0.9l-2.4,0.7v2h6.2c0.8,0,1.4-0.6,1.4-1.4v-6.8l-0.7-0.4
+            l-0.8,0.8l0.2-1.2l-1-0.5l1.1-0.2l0.2-1.2l0.5,1l0.6-0.1v-5.3c0-0.1,0-0.1,0-0.2L83.3,14l-3.2,3.4l0.6-4.7l-4.1-2.1l4.5-0.8
+            l0.6-4.7l2.1,4.2l4.5-0.8l-3.2,3.4l0.7,1.3h4.8c0.8,0,1.4-0.6,1.4-1.4v-8c0-0.8-0.6-1.4-1.4-1.4H72.2l-0.3,1.2l-0.4-1.3h-7.7
+            c-0.7,0-1.3,0.6-1.4,1.3v1.1l3.4,1.7l3.1-3.5l-0.6,4.7l4.1,2l-4.5,0.9l-0.1,2.8h1.3c0.8,0,1.4,0.6,1.4,1.4v13.7
+            C70.5,29.2,71.1,29.8,71.8,29.8 M84.1,21.2v-0.8l-0.3,0.3L84.1,21.2z M62.5,5.8v4.5L64,8.6L62.5,5.8z M62.5,11.7v0.1
+            c0,0.8,0.6,1.4,1.4,1.4h2.6l-1.1-2.1L62.5,11.7z M20.7,22.4v1.2l1.1,0.4l-1.1,0.3v1.2l-0.7-1l-1.1,0.4l0.7-1l-0.7-1l1.1,0.4
+            L20.7,22.4z M6.7,17.4v1.2L7.8,19l-1.2,0.3v1.2l-0.7-1l-1.1,0.4l0.7-1l-0.7-1l1.1,0.4L6.7,17.4z M4.4,23L5,24.1l1.1-0.2l-0.8,0.9
+            l0.6,1.1l-1.1-0.6L4,26.2L4.1,25L3,24.5l1.1-0.2L4.4,23z M13.3,20.5l1.4,2l2.3-0.8l-1.4,2l1.4,2L14.7,25l-1.4,2l-0.1-2.5l-2.3-0.7
+            l2.3-0.8L13.3,20.5z M1.9,29.8h1.9l-0.7-1l2.7,1h1.7l2.3-3.1v3.1h14.4c0.8,0,1.4-0.6,1.4-1.4v-7c0-0.8-0.6-1.4-1.4-1.4h-8.5l0,0
+            c-0.7,0-1.3-0.6-1.3-1.4l0,0v-5l-2.1,1l0.3,2.7l-1.7-2l-2.4,1.1l1.3-2.3l-1.7-2l2.5,0.5l1.3-2.3l0.3,2.7l2.3,0.5V3.8
+            c0-0.8-0.6-1.4-1.4-1.4H2.2C1.4,2.4,0.8,3,0.8,3.8v9.5l0,0l1-0.7l-0.4,1.1l0.9,0.8l-1.2-0.1l-0.3,0.9V19l1.1-0.1l-1.1,1v8.8
+            C0.9,29.3,1.4,29.8,1.9,29.8 M108.4,5.5l0.1,1.2l1.1,0.3l-1.1,0.4l0.1,1.2l-0.7-0.9l-1.1,0.4l0.6-1l-0.8-0.9l1.1,0.3L108.4,5.5z
+                M122.3,16.7l0.1,1.2l1.1,0.3l-1.1,0.4l0.1,1.2l-0.7-0.9l-1.1,0.4l0.6-1l-0.7-1l1.1,0.3L122.3,16.7z M102.9,10.3l1.4,2.1l2.4-0.8
+            l-1.5,2.1l1.4,2.1l-2.4-0.8l-1.5,2.1v-2.6l-2.4-0.8l2.4-0.8L102.9,10.3z M102.1,19.2l0.3,1.1h1.1l-0.9,0.7l0.3,1.1l-0.9-0.7
+            l-0.9,0.7l0.4-1.1l-0.9-0.7h1.1L102.1,19.2z M119.3,3.8l1.3,4.2h4.2l-3.4,2.6l1.3,4.2l-3.4-2.6l-3.4,2.6l1.3-4.2L113.8,8h4.2
+            L119.3,3.8z M117.4,17l0.4,1.1h1.1l-0.9,0.7l0.4,1.1l-0.9-0.7l-0.9,0.7l0.3-1.1l-0.9-0.7h1.1L117.4,17z M125.7,11.8l0.7,1l1.1-0.4
+            l-0.7,1l0.7,1l-1.1-0.4l-0.7,1v-1.2l-1.1-0.4l1.1-0.4V11.8z M107.1,18.7c-0.1-0.6-0.2-1.3-0.2-2c0-3.8,1.4-5.7,4.3-5.7
+            c2.8,0,4.3,1.9,4.3,5.7c0,3.3-1.3,5.3-3.4,5.7l3.4,2.6h-4.4l-1.4,4.4l-1.4-4.4h-4.5l3.6-2.7l-1.4-4.4L107.1,18.7z M111.2,30.7
+            c12.2,0,18.1-4.7,18.1-14.6c0-10-5.9-14.6-18.1-14.6c-12.2,0-18,4.6-18,14.6c0,8.2,3.9,12.8,12,14.2l0.5-0.2v-1.3l0.7,1l1.2-0.4
+            l-0.7,1.1l0,0C108.2,30.6,109.7,30.7,111.2,30.7" />
+                                                <path d="M170.2,10.7h-3.9L169,12L170.2,10.7z M162.2,18.1l-2.7-0.5l-0.4-2.8l-1.3,2.5l-2.7-0.5l1.9,2l-1.3,2.5l2.4-1.3l1.9,2
+            l-0.4-2.8L162.2,18.1z M155.7,28.4l1.1-0.6l-1.2-0.2l-0.2-1.2l-0.6,1.1l-1.2-0.2l0.8,0.9l-0.5,1.1l1.1-0.6l0.8,0.9L155.7,28.4z
+                M157.7,3l0.6,0.7l-0.4,0.9l0.8-0.4l0.6,0.7L159.2,4l0.8-0.4l-0.8-0.3l-0.1-1l-0.5,0.9L157.7,3z M172.9,15.3v3.9c0,1.1-0.9,2-2,2
+            h-8.6v8.9c0,1.1-0.9,2-2,2h-6.2c-1.1,0-2-0.9-2-2v-8.8h-8.6c-1.1,0-2-0.9-2-2v-1.2l0.8,0.8l-0.2-1.2l1.1-0.6l-1.2-0.2l-0.2-1.2
+            l-0.3,0.6v-3.4c0-1.1,0.9-2,2-2h7.3l0.3,0.1l-0.2,1.4l0.9-1L153,12l-0.6-1.2l0.9-1l-1.2,0.2V2c0-1.1,0.9-2,2-2h6.2
+            c1.1,0,2,0.9,2,2v8.9h3.2l1.7,3.2l-2.8,3l3.9-0.8l1.9,3.7l0.5-4.1L172.9,15.3z M171.5,10.8c0.8,0.3,1.4,1,1.4,1.9v1.2l-1.7-0.8
+            L171.5,10.8z" />
+                                            </svg>
+
+                                            <div class="hero-balls-wrap hero-balls-wrap--blue">
+                                                <div class="hero-balls-wrap__items">4</div>
+                                                <div class="hero-balls-wrap__items">3</div>
+                                                <div class="hero-balls-wrap__items">23</div>
+                                                <div class="hero-balls-wrap__items">30</div>
+                                                <div class="hero-balls-wrap__items">17</div>
+                                                <div class="hero-balls-wrap__items">7</div>
+                                                <div class="hero-balls-wrap__items">1</div>
+                                            </div>
+
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                            <?xml version="1.0" encoding="utf-8"?>
+                                            <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 216.6 25.8" enable-background="new 0 0 216.6 25.8"
+                                                xml:space="preserve" class="hero-balls__logo">
+
+                                                <path d="M51.5,0c-11.4,0-17,4.2-17,13.2c0,7.4,3.7,11.5,11.3,12.8l0.5-0.2v-1.2l0.7,0.9l1.1-0.4l-0.7,1l0,0c1.3,0.1,2.6,0.2,4,0.2
+                c11.5,0,17-4.2,17-13.2C68.5,4.2,63,0,51.5,0 M48.3,4.6l0.6-0.9L49,4.8l1,0.3l-1,0.4l0.1,1.1l-0.7-0.8l-1,0.4L48,5.3l-0.7-0.8
+                L48.3,4.6z M43.7,10.3V8l1.4,1.9l2.2-0.7l-1.4,1.9l1.4,1.9l-2.2-0.8l-1.4,1.9v-2.3L41.5,11L43.7,10.3z M43.9,18.7L43,18l-0.9,0.6
+                l0.3-1L41.6,17h1.1l0.3-1l0.3,1h1.1l-0.9,0.6L43.9,18.7z M55.5,21.2h-4.2l-1.3,4l-1.3-4h-4.2l3.4-2.5l-1.3-4l1.1,0.8
+                c-0.1-0.5-0.2-1.1-0.2-1.8c0-3.4,1.3-5.2,4-5.2c2.7,0,4,1.7,4,5.2c0,3-1.2,4.8-3.2,5.2L55.5,21.2z M58.3,16.7L57.4,16l-0.8,0.7
+                l0.3-1L56,15h1.1l0.3-1l0.3,1h1.1l-0.9,0.6L58.3,16.7z M55.9,12l1.2-3.8l-3.2-2.3h4l1.2-3.8l1.2,3.8h4l-3.2,2.3l1.2,3.8l-3.2-2.3
+                L55.9,12z M62.1,16.5l-0.7-0.8l-1,0.4l0.6-0.9l-0.7-0.8l1,0.3l0.6-0.9l0.1,1.1l1,0.3l-1,0.4L62.1,16.5z M66.9,9.9l-0.7,0.9
+                l0.6,0.9l-1.1-0.4L65,12.2v-1.1l-1.1-0.4l1.1-0.3V9.3l0.6,0.9L66.9,9.9z M30.8,0.8H20.6c-0.7,0-1.3,0.6-1.3,1.3v8.8l2.1-0.5
+                L21.7,8l1.2,2.1l2.4-0.5l-1.6,1.8l1.2,2.1l-2.2-1l-1.6,1.8l0.3-2.4l-2-0.9v2.2c0,2.8-0.6,4.6-1.9,5.3l1.6,0.6l1.4-1.8v2.3l2.1,0.7
+                L20.4,21v2.3l-1.3-1.9l-2.2,0.7l1.4-1.8l-1.1-1.5C16.8,19,16.3,19,15.7,19c-2.5,0-3.8-0.5-3.8-4.4l0,0c0-0.6-0.5-1.2-1.2-1.2H1.2
+                c-0.6,0-1.2,0.5-1.2,1.2l0,0c0,11.5,12.8,11.9,15.1,11.9c2.6-0.1,6.6-0.5,8.5-1V23l1.5,2c1.6-0.7,2.9-1.5,3.9-2.6l-0.6-0.7l-1,0.5
+                l0.5-1l-0.7-0.8l1.1,0.2l0.5-1l0.1,1.1l1.1,0.2l-1,0.5l0.1,0.9c1.4-1.5,2.3-3.4,2.7-5.7L31.1,16l0.8,0.1c0.1-0.8,0.2-1.7,0.2-2.7
+                l0.1-0.7l-0.3-0.8L30.8,12l0.8-0.7l-0.4-1l0.9,0.6l0,0V2.1C32.1,1.4,31.5,0.8,30.8,0.8 M8.5,20.4l-0.6,0.9v-1.1l-1-0.3l1-0.4v-1.1
+                l0.7,0.9l1-0.3L9,19.9l0.7,0.9L8.5,20.4z M27,16.4l-0.6,0.9v-1.1l-1-0.3l1-0.4v-1.1l0.7,0.9l1-0.3l-0.6,0.9l0.7,0.9L27,16.4z
+                    M103.7,23l-11.3-8.1l-0.7,2.2l-1.2-3.6h-0.1h-3.8l1.9-1.4l0,0l1.2-0.9l-1.1-3.6l3.1,2.2l10.1-7.3c1.1-0.7,0.4-1.7-0.3-1.7h-8.2
+                c-0.6,0-1.2,0.1-2,0.7L83.7,7V2c0-0.6-0.5-1.2-1.2-1.2h-6.8l-0.9,0.5l0.3,1.1l-0.9-0.7l-0.9,0.6l0.4-1l-0.6-0.5H72
+                c-0.6,0-1.2,0.5-1.2,1.2v19.3l0.6-0.4l-0.5-1.5l1.3,0.9l1.3-0.9L73,20.9l1.3,1h-1.6l-0.5,1.5l-0.5-1.5h-0.9v2.8
+                c0,0.6,0.5,1.2,1.2,1.2h10.6c0.6,0,1.2-0.5,1.2-1.2v-3.2l0,0l-3.2,0.7l2-2.5L80.9,17l3,1.2l2-2.5l-0.2,3.2l3,1.2l-2.6,0.7l5.8,4.2
+                c0.7,0.5,1.3,0.8,1.9,0.8h9.2C104.3,25.7,105.4,24.3,103.7,23 M73.2,11.2l-0.1,1.1l-0.5-0.9l-1,0.3l0.7-0.8l-0.7-1l1,0.4l0.7-0.8
+                l-0.1,1.1l1,0.4L73.2,11.2z M80.1,9l-0.5,1.5L79.1,9h-1.6l1.3-1l-0.5-1.5l1.3,0.9l1.3-0.9L80.5,8l1.3,1H80.1z M137.9,18.7
+                L137.9,18.7L137.9,18.7L137.9,18.7z M172.3,23l-8.7-6.3c5-0.3,8.7-3.9,8.7-7.8c0-6.4-5.9-8.1-10.5-8.1h-12.2l0,0h-10.5
+                c-0.6,0-1.2,0.5-1.2,1.2v15.4l0.5,0.1l0.9-2l0.5,2.2l2.2,0.2l-1.9,1.1l0.5,2l-1.7-1.5l-1,0.6v4.3c0,0.6,0.5,1.2,1.2,1.2h10.5
+                c0.6,0,1.2-0.5,1.2-1.2v-6.7l9.8,7.1c0.7,0.5,1.3,0.8,1.9,0.8h9.2C172.8,25.7,174,24.3,172.3,23 M165.3,3.9l1,0.4l0.7-0.8
+                l-0.1,1.1l1,0.4l-1,0.3l-0.1,1.1l-0.6-0.9l-1,0.3l0.7-0.8L165.3,3.9z M142.3,7.1l0.9-2l-1.7-1.5l2.2,0.2l0.9-2l0.5,2.2l2.2,0.2
+                l-1.9,1.1l0.5,2.2L144.2,6L142.3,7.1z M146,22.7l-0.1,1.1l-0.6-0.9l-1,0.3l0.7-0.8l-0.6-0.9l1,0.4l0.7-0.8l-0.1,1.1l1,0.4
+                L146,22.7z M161,15.3l-3.9-2.8l-3.9,2.9l1.1-3.4c-0.2,0-0.3,0-0.5,0h-3.2V8h0.1l0,0h0.1c0.7,0,1.6,0,2.5,0c0.3,0,0.5,0,0.7,0h1.4
+                l1.4-4.6l1.5,4.6h4.8l-3.9,2.9L161,15.3z M166.2,24.4l-1.1-0.5l-0.8,0.9l0.1-1.2l-1.1-0.5l1.2-0.3l0.1-1.2l0.6,1l1.2-0.3l-0.8,0.9
+                L166.2,24.4z M133,0.8h-14.5h-10.4H108c-0.6,0-1.2,0.5-1.2,1.2v2.2l0.8,1.3l1.6-0.4l-1,1.2l0.9,1.4l-1.5-0.6l-0.7,0.8v16.7
+                c0,0.6,0.5,1.2,1.2,1.2h10.5c0.1,0,0.1,0,0.2,0h14.3c0.7,0,1.2-0.5,1.2-1.2v-5.5c0-0.7-0.5-1.2-1.2-1.2h-13.5v-3h6.9
+                c0.7,0,1.2-0.5,1.2-1.2v-2c0-0.7-0.5-1.2-1.2-1.2h-6.9l0,0l-0.5-0.8l-0.9,0.3l0.5-0.8l-0.5-0.8l0.9,0.3l0.5-0.7l0,0H133
+                c0.7,0,1.2-0.5,1.2-1.2V2C134.2,1.3,133.7,0.8,133,0.8 M129.5,21.9l0.1-1.6l0.9,1.4l1.6-0.4l-1,1.2l0.9,1.4l-1.5-0.6l-1,1.2
+                l0.1-1.6l-1.5-0.6L129.5,21.9z M114.6,4.2l0.9,0.3l0.6-0.7v0.9L117,5l-0.9,0.3v0.9l-0.5-0.8l-0.9,0.3l0.5-0.8L114.6,4.2z
+                    M118.4,19.7l-3.1,0.8l-0.2,3.2l-1.7-2.7l-3.1,0.8l2-2.5l-1.7-2.7l3,1.2l2-2.5l-0.2,3.2L118.4,19.7z M127.5,5l-1.1-0.5l-0.8,0.9
+                l0.1-1.2l-1.1-0.4l1.2-0.3l0.1-1.2l0.6,1l1.1-0.3l-0.8,0.9L127.5,5z" />
+                                                <path d="M212.5,9.5c-2,0-3.6,1.6-3.6,3.6c0,0.3,0.1,0.7,0.1,1l-6,2.3l-2.8-8.5c1.1-0.6,1.9-1.8,1.9-3.2c0-2-1.6-3.6-3.6-3.6
+                s-3.6,1.6-3.6,3.6c0,1.4,0.8,2.6,2,3.2l-2.6,7.1l2.3,0.9l-2.6,0.7l-0.1,2.7l-1.4-2.2l-2.6,0.7l1.6-1.9l-3.3-1
+                c0-0.2,0.1-0.4,0.1-0.6c0-2-1.6-3.6-3.6-3.6s-3.6,1.6-3.6,3.6s1.6,3.6,3.6,3.6c0.5,0,1-0.1,1.4-0.3l4.3,7.3
+                c0.3,0.4,0.7,0.7,1.2,0.7h4.3l-2.8-1.3l4.7-0.9l0.6-4.7l2.3,4.1l4.6-0.9l-3.2,3.4l0.1,0.2h3.8c0.5,0,1-0.3,1.3-0.8l4.3-8.2
+                c0.4,0.2,0.9,0.3,1.4,0.3c2,0,3.6-1.6,3.6-3.6C216.2,11.1,214.5,9.5,212.5,9.5 M186.2,13.8l-0.1,1.1l-0.6-0.9l-1,0.3l0.7-0.8
+                l-0.6-0.9l1,0.4l0.7-0.8l-0.1,1.1l1,0.4L186.2,13.8z M200,5.5l-0.6-0.9l-1,0.3l0.7-0.8l-0.6-0.9l1,0.4l0.7-0.8l-0.1,1.1l1,0.4
+                l-1,0.3L200,5.5z M206.6,18.3l-0.1,1.3l-0.7-1.1l-1.3,0.3l0.8-1l-0.7-1.1l1.2,0.5l0.8-1l-0.1,1.3l1.2,0.5L206.6,18.3z M214.8,13.1
+                l-0.1,1.1l-0.6-0.9l-1,0.3l0.7-0.8l-0.6-0.9l1,0.4l0.7-0.8l-0.1,1.1l1,0.4L214.8,13.1z" />
+                                            </svg>
+
+
+                                            <div class="hero-balls-wrap hero-balls-wrap--green">
+                                                <div class="hero-balls-wrap__items">4</div>
+                                                <div class="hero-balls-wrap__items">3</div>
+                                                <div class="hero-balls-wrap__items">23</div>
+                                                <div class="hero-balls-wrap__items">30</div>
+                                                <div class="hero-balls-wrap__items">17</div>
+                                                <div class="hero-balls-wrap__items">7</div>
+                                            </div>
+
+                                            <p class="mt-4">Očekivana premija u narednom kolu: <strong>1.500.000€</strong><br>
+                                            Naredno kolo: 21.7.2020. u 20:00h, TV Prva</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="bingo"
+                                        role="tabpanel" aria-labelledby="bingo-tab">
+                                        <p>Izveštaj za 33. kolo - datum izvlačenja 17.7.2020.</p>
+                                        <div class="DIV_Bingo_Center">
+                                            <table class="Table01">
+                                                <tbody>
+                                                    <tr class="Table01a">
+                                                        <td rowspan="3" class="verticalTableText01">
+                                                            <div class="verticalTableText01a">kombinacija 1</div>
+                                                        </td>
+                                                        <td class="Table01b">5</td>
+                                                        <td class="Table01b">16</td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table01b">40</td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table01b">64</td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table01b">86</td>
+                                                    </tr>
+                                                    <tr class="Table01a">
+                                                        <td class="Table01b">8</td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table01b">21</td>
+                                                        <td class="Table01b">38</td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table01b">50</td>
+                                                        <td class="Table01b">66</td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table_Dot01"></td>
+                                                    </tr>
+                                                    <tr class="Table01a">
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table01b">19</td>
+                                                        <td class="Table01b">27</td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table01b">58</td>
+                                                        <td class="Table_Dot01"></td>
+                                                        <td class="Table01b">71</td>
+                                                        <td class="Table01b">89</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="DIV_Bingo_Center">
+                                            <table class="Table02">
+                                                <tbody>
+                                                    <tr class="Table02a">
+                                                        <td rowspan="3" class="verticalTableText02">
+                                                            <div class="verticalTableText01a">kombinacija 2</div>
+                                                        </td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table02b">10</td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table02b">34</td>
+                                                        <td class="Table02b">41</td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table02b">63</td>
+                                                        <td class="Table02b">74</td>
+                                                        <td class="Table_Dot02"></td>
+                                                    </tr>
+                                                    <tr class="Table02a">
+                                                        <td class="Table02b">9</td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table02b">36</td>
+                                                        <td class="Table02b">46</td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table02b">69</td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table02b">85</td>
+                                                    </tr>
+                                                    <tr class="Table02a">
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table02b">17</td>
+                                                        <td class="Table02b">25</td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table02b">57</td>
+                                                        <td class="Table_Dot02"></td>
+                                                        <td class="Table02b">77</td>
+                                                        <td class="Table02b">90</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="DIV_Bingo_Center">
+                                            <table class="Table03">
+                                                <tbody>
+                                                    <tr class="Table03a">
+                                                        <td rowspan="3" class="verticalTableText03">
+                                                            <div class="verticalTableText01a">kombinacija 3</div>
+                                                        </td>
+                                                        <td class="Table03b">4</td>
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table03b">22</td>
+                                                        <td class="Table03b">31</td>
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table03b">54</td>
+                                                        <td class="Table03b">67</td>
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table_Dot03"></td>
+                                                    </tr>
+                                                    <tr class="Table03a">
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table03b">12</td>
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table03b">32</td>
+                                                        <td class="Table03b">42</td>
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table03b">72</td>
+                                                        <td class="Table03b">80</td>
+                                                    </tr>
+                                                    <tr class="Table03a">
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table03b">28</td>
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table03b">47</td>
+                                                        <td class="Table03b">59</td>
+                                                        <td class="Table_Dot03"></td>
+                                                        <td class="Table03b">79</td>
+                                                        <td class="Table03b">83</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <p>Ocekivana premija u narednom kolu: <strong>1.500.000€</strong><br>
+                                            Naredno kolo: 21.07.2020. u 20:00h, TV Happy</p>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
