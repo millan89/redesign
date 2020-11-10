@@ -294,12 +294,6 @@ p {
 	margin-bottom: 30px;
 }
 
-.ticket_next-prev {
-	position: absolute;
-	right: 30px;
-	top: 30px;
-}
-
 .float_left-bingo {
 	display: flex;
 }
@@ -320,7 +314,7 @@ p {
 	border-radius: 4px;
 	color: #fff;
 	font-weight: 600;
-	margin-right: 30px;
+	margin-right: 20px;
 }
 
 #checkboxes,
@@ -390,6 +384,7 @@ input[type='radio'] {
 	-webkit-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
 	z-index: 3;
+	margin-bottom: 0;
 }
 /* SWITCH STATE (on)
 ===================================================== */
@@ -399,6 +394,18 @@ input[type='radio'] {
 	border-color: #00cf4c;
 	-webkit-transform: translate3d(26px, 0, 0);
 	transform: translate3d(26px, 0, 0);
+}
+
+#rb_bingo .checkbox input[type="checkbox"]:checked + label, 
+#rb_bingo .radiobutton input[type="radio"]:checked + label {
+	background: var(--brand-purple);
+	border-color: var(--brand-purple);
+}
+
+#rb_bingoPlus .checkbox input[type="checkbox"]:checked + label, 
+#rb_bingoPlus .radiobutton input[type="radio"]:checked + label {
+	background: var(--brand-light-blue-2);
+	border-color: var(--brand-light-blue-2);
 }
 /* STYLE: SLIDER (modified styles)
 ===================================================== */
@@ -430,6 +437,7 @@ input[type='radio'] {
 .radiobutton[data-style='rounded'],
 .radiobutton[data-style='rounded'] label {
   border-radius: 30px;
+  margin-right: 20px;
 }
 /* STYLE: SQUARE (modified styles)
 ===================================================== */
@@ -480,7 +488,47 @@ input[type='radio'] {
   display: none;
 }
 
+.ticket_next-prev {
+	position: absolute;
+	right: 30px;
+	top: 22px;
+}
 
+.Button_Small.outline_none {
+	outline: none;
+	background: transparent;
+	border: 0;
+	font-weight: 500;
+}
+
+.Button_Small.outline_none i {
+	color: var(--brand-purple);
+	font-size: 40px;
+	margin-left: 8px;
+	position: relative;
+	top: 8px;
+}
+
+.Form_Txt_Left01b {
+	float: left;
+	font-weight: 600;
+	margin-right: 10px;
+}
+
+#total_price {
+	font-weight: 600;
+}
+
+#btn-bingo-play {
+	text-transform: uppercase;
+	float: right;
+	border-radius: 4px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	width: 160px;
+	padding: 4px;
+	font-size: 18px;
+}
 
 
 /* Large devices (desktops, less than 1200px) */
