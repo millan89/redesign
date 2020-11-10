@@ -78,7 +78,6 @@ h1 {
 
 .btn--cern {
     letter-spacing: 3px;
-    text-indent: 4px;
 }
 
 .btn-primary {
@@ -121,6 +120,7 @@ h1 {
 }
 
 .btn-secondary:hover,
+.btn-darkk:hover,
 .btn-darkk.active:hover {
     color: var(--brand-white);
     border-color: var(--brand-dark-gray-2);
@@ -549,6 +549,149 @@ select {
     399px 399px 0 transparent;
 }
 
+.ls-l {
+    text-shadow: 0px 0px 0 var(--brand-dark-gray),
+    -1px 1px 0 var(--brand-dark-gray),
+    -2px 2px 0 var(--brand-dark-gray),
+    -3px 3px 0 var(--brand-dark-gray),
+    -4px 4px 0 var(--brand-dark-gray),
+    -5px 5px 0 var(--brand-dark-gray),
+    -6px 6px 0 var(--brand-dark-gray),
+    -7px 7px 0 var(--brand-dark-gray),
+    -8px 8px 0 var(--brand-dark-gray),
+    -9px 9px 0 var(--brand-dark-gray),
+    -10px 10px 0 var(--brand-dark-gray),
+    -11px 11px 0 var(--brand-dark-gray),
+    -12px 12px 0 var(--brand-dark-gray),
+    -13px 13px 0 var(--brand-dark-gray),
+    -14px 14px 0 var(--brand-dark-gray),
+    -15px 15px 0 var(--brand-dark-gray),
+    -16px 16px 0 var(--brand-dark-gray),
+    -17px 17px 0 var(--brand-dark-gray),
+    -18px 18px 0 var(--brand-dark-gray),
+    -19px 19px 0 var(--brand-dark-gray),
+    -20px 20px 0 var(--brand-dark-gray),
+    -21px 21px 0 var(--brand-dark-gray),
+    -22px 22px 0 var(--brand-dark-gray),
+    -23px 23px 0 var(--brand-dark-gray),
+    -24px 24px 0 var(--brand-dark-gray),
+    -25px 25px 0 var(--brand-dark-gray),
+    -26px 26px 0 var(--brand-dark-gray),
+    -27px 27px 0 var(--brand-dark-gray),
+    -28px 28px 0 var(--brand-dark-gray),
+    -29px 29px 0 var(--brand-dark-gray),
+    -30px 30px 0 var(--brand-dark-gray),
+    -31px 31px 0 var(--brand-dark-gray),
+    -32px 32px 0 var(--brand-dark-gray),
+    -33px 33px 0 var(--brand-dark-gray),
+    -34px 34px 0 var(--brand-dark-gray),
+    -35px 35px 0 var(--brand-dark-gray),
+    -36px 36px 0 var(--brand-dark-gray),
+    -37px 37px 0 var(--brand-dark-gray),
+    -38px 38px 0 var(--brand-dark-gray),
+    -39px 39px 0 var(--brand-dark-gray),
+    -40px 40px 0 var(--brand-dark-gray),
+    -41px 41px 0 var(--brand-dark-gray),
+    -42px 42px 0 var(--brand-dark-gray),
+    -43px 43px 0 var(--brand-dark-gray),
+    -44px 44px 0 var(--brand-dark-gray),
+    -45px 45px 0 var(--brand-dark-gray),
+    -46px 46px 0 var(--brand-dark-gray),
+    -47px 47px 0 var(--brand-dark-gray),
+    -48px 48px 0 var(--brand-dark-gray),
+    -49px 49px 0 var(--brand-dark-gray),
+    -50px 50px 0 var(--brand-dark-gray),
+    -51px 51px 0 var(--brand-dark-gray),
+    -52px 52px 0 var(--brand-dark-gray),
+    -53px 53px 0 var(--brand-dark-gray),
+    -54px 54px 0 var(--brand-dark-gray),
+    -55px 55px 0 var(--brand-dark-gray),
+    -56px 56px 0 var(--brand-dark-gray),
+    -57px 57px 0 var(--brand-dark-gray),
+    -58px 58px 0 var(--brand-dark-gray),
+    -59px 59px 0 var(--brand-dark-gray),
+    -60px 60px 0 var(--brand-dark-gray),
+    -61px 61px 0 var(--brand-dark-gray),
+    -62px 62px 0 var(--brand-dark-gray),
+    -63px 63px 0 var(--brand-dark-gray),
+    -64px 64px 0 var(--brand-dark-gray),
+    -65px 65px 0 var(--brand-dark-gray),
+    -66px 66px 0 var(--brand-dark-gray),
+    -67px 67px 0 var(--brand-dark-gray),
+    -68px 68px 0 var(--brand-dark-gray),
+    -69px 69px 0 var(--brand-dark-gray),
+    -70px 70px 0 var(--brand-dark-gray),
+    -71px 71px 0 var(--brand-dark-gray),
+    -72px 72px 0 var(--brand-dark-gray),
+    -73px 73px 0 var(--brand-dark-gray),
+    -74px 74px 0 var(--brand-dark-gray),
+    -75px 75px 0 var(--brand-dark-gray),
+    -76px 76px 0 var(--brand-dark-gray),
+    -77px 77px 0 var(--brand-dark-gray),
+    -78px 78px 0 var(--brand-dark-gray),
+    -79px 79px 0 var(--brand-dark-gray),
+    -80px 80px 0 var(--brand-dark-gray),
+    -81px 81px 0 var(--brand-dark-gray),
+    -82px 82px 0 var(--brand-dark-gray),
+    -83px 83px 0 var(--brand-dark-gray),
+    -84px 84px 0 var(--brand-dark-gray),
+    -85px 85px 0 var(--brand-dark-gray),
+    -86px 86px 0 var(--brand-dark-gray),
+    -87px 87px 0 var(--brand-dark-gray),
+    -88px 88px 0 var(--brand-dark-gray),
+    -89px 89px 0 var(--brand-dark-gray),
+    -90px 90px 0 var(--brand-dark-gray),
+    -91px 91px 0 var(--brand-dark-gray),
+    -92px 92px 0 var(--brand-dark-gray),
+    -93px 93px 0 var(--brand-dark-gray),
+    -94px 94px 0 var(--brand-dark-gray),
+    -95px 95px 0 var(--brand-dark-gray),
+    -96px 96px 0 var(--brand-dark-gray),
+    -97px 97px 0 var(--brand-dark-gray),
+    -98px 98px 0 var(--brand-dark-gray),
+    -99px 99px 0 var(--brand-dark-gray),
+    -100px 100px 0 var(--brand-dark-gray),
+    -101px 101px 0 var(--brand-dark-gray),
+    -102px 102px 0 var(--brand-dark-gray),
+    -103px 103px 0 var(--brand-dark-gray),
+    -104px 104px 0 var(--brand-dark-gray),
+    -105px 105px 0 var(--brand-dark-gray),
+    -106px 106px 0 var(--brand-dark-gray),
+    -107px 107px 0 var(--brand-dark-gray),
+    -108px 108px 0 var(--brand-dark-gray),
+    -109px 109px 0 var(--brand-dark-gray),
+    -110px 110px 0 var(--brand-dark-gray),
+    -111px 111px 0 var(--brand-dark-gray),
+    -112px 112px 0 var(--brand-dark-gray),
+    -113px 113px 0 var(--brand-dark-gray),
+    -114px 114px 0 var(--brand-dark-gray),
+    -115px 115px 0 var(--brand-dark-gray),
+    -116px 116px 0 var(--brand-dark-gray),
+    -117px 117px 0 var(--brand-dark-gray),
+    -118px 118px 0 var(--brand-dark-gray),
+    -119px 119px 0 var(--brand-dark-gray),
+    -120px 120px 0 var(--brand-dark-gray),
+    -121px 121px 0 var(--brand-dark-gray),
+    -122px 122px 0 var(--brand-dark-gray),
+    -123px 123px 0 var(--brand-dark-gray),
+    -124px 124px 0 var(--brand-dark-gray),
+    -125px 125px 0 var(--brand-dark-gray),
+    -126px 126px 0 var(--brand-dark-gray),
+    -127px 127px 0 var(--brand-dark-gray),
+    -128px 128px 0 var(--brand-dark-gray),
+    -129px 129px 0 var(--brand-dark-gray),
+    -130px 130px 0 var(--brand-dark-gray),
+    -131px 131px 0 var(--brand-dark-gray),
+    -132px 132px 0 var(--brand-dark-gray),
+    -133px 133px 0 var(--brand-dark-gray),
+    -134px 134px 0 var(--brand-dark-gray),
+    -135px 135px 0 var(--brand-dark-gray),
+    -136px 136px 0 var(--brand-dark-gray),
+    -137px 137px 0 var(--brand-dark-gray),
+    -138px 138px 0 var(--brand-dark-gray),
+    140px 140px 0 transparent
+}
+
 
 /* HEADER */
 header {
@@ -559,6 +702,10 @@ header {
 
 header .btn {
     min-width: 150px;
+}
+
+.navbar-collapse .btn {
+    display: block;
 }
 
 .navbar-light .navbar-toggler {
@@ -646,7 +793,7 @@ header .btn {
 }
 
 .hero-text__number-sym {
-    font-size: 110px;
+    font-size: 7.5vw;
     font-family: var(--font-barlow);
 }
 
@@ -672,9 +819,11 @@ header .btn {
     position: absolute;
     top: 50%;
     right: 2%;
-    z-index: 9;
+    z-index: 1;
     outline: none;
     padding: 2%;
+    height: 40px;
+    width: 40px;
 }
 
 .slick-prev {
@@ -686,12 +835,14 @@ header .btn {
     font-family: var(--font-fa);
     content: "\f138";
     font-weight: 600;
+    opacity: 0.45;
 }
 
 .slick-prev:before {
     font-family: var(--font-fa);
     content: "\f137";
     font-weight: 600;
+    opacity: 0.45;
 }
 
 .slick-dots {
@@ -753,6 +904,10 @@ header .btn {
     display: block;
 }
 
+.home-results__btns {
+    padding-left: 15px;
+}
+
 .hero-balls__logo {
     height: 20px;
     fill: var(--brand-dark-gray-2);
@@ -793,6 +948,103 @@ header .btn {
 }
 
 
+/* GAMES CAROUSEL */
+.games-item {
+    padding: 38px 34px;
+    border-radius: 10px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 412px;
+}
+
+.games-item__logo {
+    height: 30px;
+}
+
+.games-item__logo--loto-plus {
+    height: 33px;
+}
+
+.games-item__logo path {
+    fill: var(--brand-white);
+}
+
+.games-item__text-small {
+    color: var(--brand-white);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    margin-top: 18px;
+    z-index: 1;
+    position: relative;
+}
+
+.games-item__text-big {
+    color: var(--brand-white);
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 1.1;
+    margin-top: 48px;
+    margin-bottom: 32px;
+    z-index: 1;
+    position: relative;
+}
+
+.games-item .btn {
+    z-index: 1;
+    position: relative;
+}
+
+.games-item__graphic {
+    position: absolute;
+    top: 20px;
+    right: -80px;
+    height: 290px;
+}
+
+.games-item__skewed-shape {
+    position: absolute;
+    background-color: #ba1521;
+    width: 250px;
+    height: 540px;
+    top: 0;
+    right: -72px;
+    transform: rotate(38deg);
+    z-index: 0;
+}
+
+.games-item--loto {
+    background: var(--brand-red);
+}
+
+.games-item--loto-plus {
+    background: var(--brand-dark-blue-1);
+}
+
+.games-item--loto-plus .games-item__text-small {
+    font-size: 26px;
+}
+
+.games-item--loto-plus .games-item__text-big {
+    font-size: 80px;
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 30px;
+    font-family: var(--font-barlow);
+}
+
+.games-item--loto-plus .games-item__text-big sup {
+    position: relative;
+    z-index: -1;
+    font-family: var(--font-barlow);
+}
+
+.games-item--loto-plus .games-item__skewed-shape {
+    background-color: #003290;
+}
+
+
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -801,15 +1053,20 @@ header .btn {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+
+    .navbar {
+        flex-direction: row-reverse;
+        padding: 0;
+    }
     
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-    .navbar {
-        flex-direction: row-reverse;
-        padding: 0;
+    .h1,
+    h1 {
+        font-size: 2.4rem;
     }
 
     .navbar-collapse {
@@ -849,9 +1106,35 @@ header .btn {
         margin: auto;
     }
 
+    .home-results {
+        padding: 40px 15px;
+    }
+
+    .home-results__hd img {
+        margin-right: 20px;
+    }
+
+    .home-results__hd {
+        margin-bottom: 30px;
+    }
+
+    .hero-balls-wrap__items {
+        padding: 6px;
+        width: 38px;
+        height: 38px;
+        margin-right: 1.333%;
+    }
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+    .hero-balls-wrap__items {
+        padding: 6px;
+        width: 38px;
+        height: 38px;
+        margin-right: 1.333%;
+    }
     
 }
