@@ -14,6 +14,8 @@ $(document).ready(function(){
         centerMode: true,
         centerPadding: '60px',
         slidesToShow: 4,
+        prevArrow: $('#prevv'),
+        nextArrow: $('#nextt'),
         responsive: [
             {
             breakpoint: 768,
