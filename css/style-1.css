@@ -665,10 +665,25 @@ input[type='radio'] {
 }
 
 
+/* CLOVER >> */
+.clover {
+	padding: 140px 0 160px;
+	background-image: url(../images/bingo/clover-star-18.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 30px 0 20px;
+}
 
+.clover h2 {
+	font-weight: 800;
+	font-size: 40px;
+}
 
-
-
+.clover p {
+	font-weight: 600;
+	letter-spacing: 4px;
+}
+/* << CLOVER */
 
 
 
@@ -734,9 +749,15 @@ input[type='radio'] {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-	/* #MAIN BANNER */
+	/* MAIN BANNER >> */
     .main-banner .main-banner__text__num {
 		font-size: 38px;
 	}
-	/* end#MAIN BANNER */ 
+	/* << MAIN BANNER */
+
+	/* CLOVER >> */
+	.clover h2 {
+		font-size: 32px;
+	}
+	/* << CLOVER */
 }
