@@ -1,8 +1,13 @@
+:root {
+	--brand-light-pink: #f6ebfd;   
+	--brand-orange: #ff9000;
+}
+
 p {
     margin-bottom: .5rem;
 }
 
-/* #MAIN BANNER */
+/* MAIN BANNER >> */
 .main-banner {
     padding: 20px 0 50px;
 }
@@ -58,8 +63,9 @@ p {
 	font-weight: 700;
 	transform: translate(-10px, 8px);
 }
-/* end#MAIN BANNER */
+/* << MAIN BANNER */
 
+/* BINGO TICKET >> */
 .bingo-ticket {
 	background: white;
 	margin-top: -35px;
@@ -196,7 +202,6 @@ p {
 }
 
 .DIV_Bingo04 {
-	margin-right: 10px;
 	float: right;
 	display: flex;
 	flex-direction: column;
@@ -317,14 +322,23 @@ p {
 	margin-right: 20px;
 }
 
+.DIV_BingoPlus_Center {
+	display: flex;
+	justify-content: center;
+}
+
+.DIV_Bingo_Center-table {
+	display: flex;
+	justify-content: center;
+}
+
 #checkboxes,
 #radiobuttons {
   width: 30%;
   height: 300px;
   float: left;
 }
-/* BASIC SWITCH STYLES (more control gained from modifiers)
-===================================================== */
+
 input[type='checkbox'],
 input[type='radio'] {
   display: none;
@@ -346,8 +360,7 @@ input[type='radio'] {
 	background: var(--brand-dark-gray);
 	z-index: 1;
 }
-/* BASIC LABEL STYLES (more control from modifiers)
-===================================================== */
+
 .checkbox::before, .radiobutton::before, .checkbox::after, .radiobutton::after {
 	display: block;
 	position: absolute;
@@ -369,8 +382,7 @@ input[type='radio'] {
   right: 1px;
   color: #fff;
 }
-/* SWITCH STATE (off)
-===================================================== */
+
 .checkbox label, .radiobutton label {
 	position: absolute;
 	display: block;
@@ -386,8 +398,7 @@ input[type='radio'] {
 	z-index: 3;
 	margin-bottom: 0;
 }
-/* SWITCH STATE (on)
-===================================================== */
+
 .checkbox input[type="checkbox"]:checked + label, 
 .radiobutton input[type="radio"]:checked + label {
 	background: #00CF4C;
@@ -407,8 +418,7 @@ input[type='radio'] {
 	background: var(--brand-light-blue-2);
 	border-color: var(--brand-light-blue-2);
 }
-/* STYLE: SLIDER (modified styles)
-===================================================== */
+
 .checkbox[data-style='slider'],
 .radiobutton[data-style='slider'] {
   height: 10px;
@@ -430,8 +440,7 @@ input[type='radio'] {
   -webkit-transform: translate3d(42px, 0, 0);
           transform: translate3d(42px, 0, 0);
 }
-/* STYLE: ROUNDED (modified styles)
-===================================================== */
+
 .checkbox[data-style='rounded'],
 .checkbox[data-style='rounded'] label,
 .radiobutton[data-style='rounded'],
@@ -439,16 +448,14 @@ input[type='radio'] {
   border-radius: 30px;
   margin-right: 20px;
 }
-/* STYLE: SQUARE (modified styles)
-===================================================== */
+
 .checkbox[data-style='square'],
 .checkbox[data-style='square'] label,
 .radiobutton[data-style='square'] label,
 .radiobutton[data-style='square'] {
   border-radius: 3px;
 }
-/* LABEL STYLE: on-off (modified styles)
-===================================================== */
+
 .checkbox[data-label='on-off']:before,
 .radiobutton[data-label='on-off']:before {
   content: 'on';
@@ -457,8 +464,7 @@ input[type='radio'] {
 .radiobutton[data-label='on-off']:after {
   content: 'off';
 }
-/* LABEL STYLE: yes-no (modified styles)
-===================================================== */
+
 .checkbox[data-label='yes-no']:before,
 .radiobutton[data-label='yes-no']:before {
   content: 'DA';
@@ -467,8 +473,7 @@ input[type='radio'] {
 .radiobutton[data-label='yes-no']:after {
   content: 'NE';
 }
-/* LABEL STYLE: none (modified styles)
-===================================================== */
+
 .checkbox[data-style='slider']:before,
 .checkbox[data-style='slider']:before,
 .checkbox[data-label='none']:before,
@@ -530,10 +535,184 @@ input[type='radio'] {
 	font-size: 18px;
 }
 
+.total-price {
+	margin-top: 15px;
+	font-size: 19px;
+}
+/* << BINGO TICKET */
+
+/* DRAW BANNER >> */
+.draw-banner .db-purple-bg {
+	background-color: var(--brand-purple);
+	color: #fff;
+	position: relative;
+	padding: 30px 0;
+	border-radius: 12px;
+	margin-top: 220px;
+}
+
+.draw-banner-srecko img {
+	position: absolute;
+	width: 200px;
+	top: -122px;
+	left: 130px;
+}
+
+.draw-banner-tv img:first-child {
+	width: 180px;
+	margin-left: -50px;
+}
+
+.draw-banner-tv img:last-child {
+	position: absolute;
+	width: 200px;
+	top: -130px;
+	right: -30px;
+}
+
+.draw-banner-text p {
+	margin-bottom: 0;
+	text-align: center;
+	font-weight: 600;
+	font-size: 20px;
+}
+/* << DRAW BANNER */
+
+/* HOW TO PLAY >> */
+.how-to-play__headline {
+	margin-top: 120px;
+	margin-bottom: 80px;
+}
+
+.how-to-play__headline .star {
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+}
+
+.how-to-play__headline h1 {
+	text-align: center;
+	font-weight: 700;
+	margin: 30px 0 50px;
+}
+
+.how-to-play__headline h1 span {
+	color: var(--brand-purple);
+}
+
+.how-to-play__headline .girl {
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
+}
+
+.how-to-play__grid {
+	background-color: var(--brand-light-pink);
+	background: linear-gradient(180deg, var(--brand-white), var(--brand-white) 150px,var(--brand-light-pink) 150px, var(--brand-light-pink) 100%);
+}
+
+.how-to-play__grid .grid-item {
+	margin-bottom: 50px;
+}
+
+.grid-item__header {
+	height: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px 15px 0 0;
+}
+
+.grid-item__header-purple {
+	background-color: var(--brand-purple);
+	background: linear-gradient(-215deg, var(--brand-purple), var(--brand-purple) 57%, #822eb7 57%, #822eb7 100%);
+}
+
+.grid-item__header-orange {
+	background-color: var(--brand-orange);
+	background: linear-gradient(-215deg, var(--brand-orange), var(--brand-orange) 57%, #e66200 57%, #e66200 100%);
+}
+
+.grid-item__header-blue {
+	background-color: var(--brand-light-blue-2);
+	background: linear-gradient(-215deg, var(--brand-light-blue-2), var(--brand-light-blue-2) 57%, #0fb4c9 57%, #0fb4c9 100%);
+}
+
+.grid-item__header-green {
+	background-color: var(--brand-green);
+	background: linear-gradient(-215deg, var(--brand-green), var(--brand-green) 57%,#05b153 57%, #05b153 100%);
+}
+
+.grid-item__header span {
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 1;
+}
+
+.grid-item__header .grid-item-img01 {
+	max-height: 80px;
+}
+
+.grid-item__header .grid-item-img02 {
+	max-height: 96px;
+	transform: translate(8px, -5px);
+}
+
+.grid-item__header .grid-item-img03 {
+	max-height: 100px;
+}
+
+.grid-item__body {
+	background-color: var(--brand-white);
+	border-radius: 0 0 15px 15px;
+	padding: 50px 30px 30px;
+}
+
+.grid-item__body h3 {
+	font-weight: 800;
+	font-size: 32px;
+	margin-bottom: 25px;
+}
+
+button.regulations {
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 12px;
+	line-height: 1;
+	border-radius: 4px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	width: 240px;
+	margin-bottom: 100px;
+	margin-top: 60px;
+}
+/* << HOW TO PLAY */
+
+/* CLOVER >> */
+.clover {
+	padding: 140px 0 160px;
+	background-image: url(../images/bingo/clover-star-18.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 30px 0 20px;
+}
+
+.clover h2 {
+	font-weight: 800;
+	font-size: 40px;
+}
+
+.clover p {
+	font-weight: 600;
+	letter-spacing: 4px;
+}
+/* << CLOVER */
+
+
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-	/* #MAIN BANNER */
+	/* MAIN BANNER >> */
     .main-banner #countdown div:not(:last-child) {
 		margin-right: 14px;
 	}
@@ -550,24 +729,97 @@ input[type='radio'] {
 		font-size: 20px;
 		transform: translate(-7px, 8px);
 	}
-	/* end#MAIN BANNER */
+	/* << MAIN BANNER */
+
+	/* DRAW BANNER >> */
+	.draw-banner-srecko img {
+		left: 80px;
+	}
+
+	.draw-banner-tv img:first-child {
+		width: 170px;
+		margin-left: -10px;
+	}
+	/* << DRAW BANNER */
 }
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
-    
+	.float_left-bingo {
+		justify-content: center;
+	}
+
+	/* DRAW BANNER >> */
+	.draw-banner-srecko img {
+		position: relative;
+		width: 190px;
+		top: -105px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.draw-banner-text {
+		padding: 0 15px;
+		position: relative;
+		top: -60px;
+	}
+
+	.draw-banner-tv img:first-child {
+		width: 200px;
+		display: block;
+		margin: 0 auto 0;
+	}
+	/* << DRAW BANNER */
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-	/* #MAIN BANNER */
+	/* MAIN BANNER >> */
     .main-banner .main-banner__text__num {
 		font-size: 38px;
 	}
-	/* end#MAIN BANNER */ 
+	/* << MAIN BANNER */
+
+	.bingo-ticket {
+		padding: 30px 15px;
+	}
+
+	.ticket_next-prev {
+		right: 7px;
+		top: 7px;
+	}
+
+	.Button_Small.outline_none i {
+		font-size: 46px;
+		top: 7px;
+	}
+
+	.Table01, .Table02, .Table03 {
+		margin-left: 30px;
+	}
+
+	.verticalTableText01a {
+		left: -72px;
+	}
+
+	/* CLOVER >> */
+	.clover h2 {
+		font-size: 32px;
+	}
+	/* << CLOVER */
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+	/* HOW TO PLAY >> */
+	.grid-item__body {
+		min-height: 300px;
+	}
+	/* << HOW TO PLAY */
 }
