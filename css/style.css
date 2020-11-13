@@ -36,6 +36,7 @@ style.css
     --brand-green-2: #66E294;
     
     --font-barlow: "Barlow Condensed";
+    --font-unna: "Unna";
     --font-fa: "Font Awesome 5 Free";
 }
 
@@ -43,17 +44,33 @@ style.css
     color: var(--brand-yellow);
 }
 
+.color-blue {
+    color: var(--brand-dark-blue-1);
+}
+
 p {
     font-weight: 300;
 }
 
 p strong {
-    font-weight: 600;
+    font-weight: 700;
+}
+
+p.lg {
+    font-size: 1.4rem;
 }
 
 .h1,
 h1 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
+}
+
+.h1-lg {
+    font-size: 3.6rem;
+} 
+
+img {
+    max-width: 100%;
 }
 
 
@@ -64,6 +81,10 @@ h1 {
 .btn {
     padding: 0.45rem 1.75rem;
     border-width: 2px;
+}
+
+.btn.lg {
+    font-size: 1.2rem;
 }
 
 .btn.focus,
@@ -1156,7 +1177,7 @@ header .btn {
 .games-item--esrecke .games-item__text-big span {
     display: block;
     font-family: var(--font-barlow);
-    font-size: 54px;
+    font-size: 48px;
 }
 
 .games-item--esrecke .games-item__graphic {
@@ -1167,11 +1188,119 @@ header .btn {
 }
 
 .games-btns button {
-    position: relative;
+    position: static;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    margin-left: 8px;
+    transform: none;
 }
 
 .games-btns button:before {
     color: var(--brand-dark-gray);
+}
+
+
+/* BRZO LAKO */
+.brzo-lako {
+    margin: 80px 0 90px;
+    background-color: #eef2fb;
+    position: relative;
+}
+
+.brzo-lako:before {
+    position: absolute;
+    content: "";
+    width: 830px;
+    height: 100%;
+    background: url(../images/plave-tackice.svg) no-repeat left center / cover;
+    right: 74%;
+    top: 0;
+}
+
+.brzo-lako__text {
+    padding: 100px 60px 60px;
+}
+
+.brzo-lako__media {
+    padding: 70px 0;
+}
+
+.brzo-lako__media img {
+    box-shadow: 0px 20px 20px 14px rgba(0, 0, 0, .1);
+    border-radius: 22px;
+}
+
+
+/* WINNERS */
+.winners__img img {
+    width: 260px;
+    display: block;
+    margin: auto;
+}
+
+.winners-text {
+    box-shadow: 0 0 20px 14px rgba(0, 0, 0, .05);
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.winners-text:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: -20px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-right: 20px solid var(--brand-white);
+    border-bottom: 20px solid transparent;
+}
+
+.winners-text--right-img:after {
+    left: auto;
+    right: -20px;
+    transform: rotate(180deg);
+}
+
+.winners-media img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+}
+
+.winners-text__quote {
+    font-family: var(--font-unna);
+    color: #8d8d8d;
+    font-size: 2.4rem;
+    line-height: 1.2;
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.winners-text__quote:after {
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    width: 70px;
+    height: 1px;
+    content: "";
+    background-color: var(--brand-dark-gray);
+    left: 0;
+    right: 0;
+}
+
+.winners-text__name strong {
+    display: block;
+}
+
+.winners-text__price {
+    font-size: 2rem;
+    color: var(--brand-red);
+    font-weight: 700;
 }
 
 
@@ -1189,6 +1318,26 @@ header .btn {
         flex-direction: row-reverse;
         padding: 0;
     }
+
+    .brzo-lako:before {
+        content: none;
+    }
+
+    .brzo-lako__text {
+        padding: 0px 0px 60px;
+    }
+
+    .winners-text {
+        margin-top: 20px;
+    }
+
+    .winners-text:after {
+        content: none;
+    }
+
+    .winners--right-img .row {
+        flex-direction: column-reverse;
+    }
     
 }
 
@@ -1198,6 +1347,10 @@ header .btn {
     .h1,
     h1 {
         font-size: 2.4rem;
+    }
+
+    .text-right-mob {
+        text-align: left !important;
     }
 
     .navbar-collapse {
@@ -1254,6 +1407,15 @@ header .btn {
         width: 38px;
         height: 38px;
         margin-right: 1.333%;
+    }
+
+    .games-item--loto-plus .games-item__text-big {
+        font-size: 74px;
+    }
+
+    .games-item__text-big--bingo>span:first-child {
+        font-size: 154px;
+        margin-top: 16px;
     }
 
 }
