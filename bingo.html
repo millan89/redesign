@@ -39,10 +39,11 @@
     </section>
     <!-- << MAIN BANNER -->
 
+    <!-- BINGO TICKET >> -->
     <section id="play-bingo" class="play-bingo">
         <div class="container">
             <div class="row">
-                <div class="col-lg-10 offset-lg-1">
+                <div class="col-lg-10 offset-lg-1 col-md-10 offset-md-1">
                     <div class="bingo-ticket">
                         <div class="ticket_next-prev">
                             <button class="Button_Small outline_none" id="bingo-button-prev" disabled="" style="display: none;"><div class="d-none d-sm-inline">Prethodni</div><i class="fas fa-arrow-circle-left"></i></button>
@@ -53,7 +54,7 @@
                                 <div class="bingo-logo">
                                     <img src="images/bingo/bingo_logo.svg" alt="">
                                 </div>
-                                <div class="DIV_Bingo_Center">
+                                <div class="DIV_Bingo_Center DIV_Bingo_Center-table">
                                     <table class="Table01">
                                         <tbody>
                                             <tr class="Table01a">
@@ -95,7 +96,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="DIV_Bingo_Center">
+                                <div class="DIV_Bingo_Center DIV_Bingo_Center-table">
                                     <table class="Table02">
                                         <tbody>
                                             <tr class="Table02a">
@@ -137,7 +138,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="DIV_Bingo_Center">
+                                <div class="DIV_Bingo_Center DIV_Bingo_Center-table">
                                     <table class="Table03">
                                         <tbody>
                                             <tr class="Table03a">
@@ -199,12 +200,12 @@
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="bingo-plus-logo">
+                                <div class="bingo-plus-logo mt-5 mt-lg-0">
                                     <img src="images/bingo/bingo-plus_logo.svg" alt="">
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="DIV_Bingo_Center_Left">
+                                        <div class="DIV_BingoPlus_Center">
                                             <table class="Table04">
                                                 <thead>
                                                     <tr class="Table04bingo">
@@ -256,7 +257,7 @@
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="DIV_Bingo_Center_Right">
+                                        <div class="DIV_BingoPlus_Center mt-4 mt-sm-0">
                                             <table class="Table04">
                                                 <thead>
                                                     <tr class="Table04bingo">
@@ -324,8 +325,8 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="DIV_Bingo">
-                                    <div class="row align-items-center">
-                                        <div class="col-md-5">
+                                    <div class="row align-items-end">
+                                        <div class="col-lg-6">
                                             <div class="float_left-bingo mb-2">
                                                 <div class="Form_Txt_Left01">
                                                     <span class="bingo">Bingo</span> 
@@ -350,19 +351,17 @@
                                                 </div>
                                                 <div id="bingo_plus_price" type="text" class="Form_Txt_Right01">40,00 din.</div>
                                             </div>
+                                            <div class="total-price d-flex d-lg-block justify-content-center">
+                                                <div class="Form_Txt_Left01b">
+                                                    Ukupno:
+                                                </div>
+                                                <div class="float_right">
+                                                    <div id="total_price" class="Form_Txt_Right01a">100,00 din.</div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-md-4">
-                                            <div class="Form_Txt_Left01b">
-                                                Ukupno:
-                                            </div>
-                                            <div class="float_right">
-                                                <div id="total_price" class="Form_Txt_Right01a">100,00 din.</div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <div class="col_img_center">
-                                                <button class="Button_Big btn-dark" id="btn-bingo-play" data-target="#bingo-ticket-overview">Igraj</button>
-                                            </div>
+                                        <div class="col-lg-6 d-flex d-lg-block justify-content-center mt-4 mt-lg-0">
+                                            <button class="Button_Big btn-dark" id="btn-bingo-play" data-target="#bingo-ticket-overview">Igraj</button>
                                         </div>
                                     </div>
                                 </div>
@@ -374,7 +373,9 @@
             </div>
         </div>
     </section>
+    <!-- << BINGO TICKET -->
 
+    <!-- DRAW BANNER >> -->
     <section class="draw-banner">
         <div class="container">
             <div class="row">
@@ -403,7 +404,9 @@
             </div>
         </div>
     </section>
+    <!-- << DRAW BANNER -->
 
+    <!-- HOW TO PLAY >> -->
     <section class="how-to-play how-to-play--bingo">
         <div class="how-to-play__headline">
             <div class="container">
@@ -418,7 +421,7 @@
         </div>
         <div class="how-to-play__grid">
             <div class="container">
-                <div class="row d-flex row-eq-height">
+                <div class="row">
                     <div class="col-sm-6 col-lg-4">
                         <div class="grid-item">
                             <div class="grid-item__header grid-item__header-purple text-center text-uppercase text-white">
@@ -472,7 +475,7 @@
                     <div class="col-sm-6 col-lg-4">
                         <div class="grid-item">
                             <div class="grid-item__header grid-item__header-blue text-center text-uppercase text-white">
-                                <span>B34</span>
+                                <img class="grid-item-img01" src="images/bingo/plus-img.svg" alt="">
                             </div>
                             <div class="grid-item__body">
                                 <h3>Šta je BingoPlus?</h3>
@@ -488,7 +491,7 @@
                     <div class="col-sm-6 col-lg-4">
                         <div class="grid-item">
                             <div class="grid-item__header grid-item__header-purple text-center text-uppercase text-white">
-                                <span>B34</span>
+                                <img class="grid-item-img02" src="images/bingo/centar-img.svg" alt="">
                             </div>
                             <div class="grid-item__body">
                                 <h3>Šta je Centar?</h3>
@@ -504,7 +507,7 @@
                     <div class="col-sm-6 col-lg-4">
                         <div class="grid-item">
                             <div class="grid-item__header grid-item__header-green text-center text-uppercase text-white">
-                                <span>B34</span>
+                                <img class="grid-item-img03" src="images/bingo/kockica-img.svg" alt="">
                             </div>
                             <div class="grid-item__body">
                                 <h3>Šta je Kockica?</h3>
@@ -518,9 +521,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <button class="btn-dark regulations" id="" data-target="">Bingo pravila</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!-- << HOW TO PLAY -->
 
     <!-- CLOVER >> -->
     <section class="clover">
@@ -534,6 +543,8 @@
        </div>
     </section>
     <!-- << CLOVER -->
+
+    <div class="falseFooter" style="height: 320px;background-color: #152238;"></div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
