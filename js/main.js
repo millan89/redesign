@@ -18,6 +18,24 @@ $(document).ready(function(){
         nextArrow: $('#nextt'),
         responsive: [
             {
+            breakpoint: 1920,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 5
+            }
+            },
+            {
+            breakpoint: 1600,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 4
+            }
+            },
+            {
             breakpoint: 1224,
             settings: {
                 arrows: false,

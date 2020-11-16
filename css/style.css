@@ -936,7 +936,7 @@ header .btn {
     padding-left: 15px;
 }
 
-.home-results p {
+.home-results .tab-pane p {
     font-size: 1rem;
 }
 
