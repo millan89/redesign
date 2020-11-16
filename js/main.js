@@ -1,15 +1,15 @@
 $(document).ready(function(){
 
-
-    // SLICK
+    // Slick hero
     if ($('.hero').length) {
-
-        // Hero carousel
         $('.hero').slick({
             dots: true
         });
+    };
 
-        // Game carousel     
+    // Game carousel 
+    if ($('.games').length) {
+            
         $('.games').slick({
         centerMode: true,
         centerPadding: '60px',
@@ -67,45 +67,45 @@ $(document).ready(function(){
 
     }
 
-
-    // Srecke carousel     
-    $('.srecke').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 4,
-        prevArrow: $('#prevv'),
-        nextArrow: $('#nextt'),
-        responsive: [
-            {
-            breakpoint: 1224,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-            }
-            },
-            {
-            breakpoint: 1060,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 2
-            }
-            },
-            {
-            breakpoint: 700,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '30px',
-                slidesToShow: 1
-            }
-            }
-        ]
+    // Srecke carousel  
+    if ($('.srecke').length) { 
+        $('.srecke').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 4,
+            prevArrow: $('#prevv'),
+            nextArrow: $('#nextt'),
+            responsive: [
+                {
+                breakpoint: 1224,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 1060,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+                },
+                {
+                breakpoint: 700,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '30px',
+                    slidesToShow: 1
+                }
+                }
+            ]
         });
-
+    }
 
 
     // COUNTDOWN
