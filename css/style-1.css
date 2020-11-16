@@ -722,7 +722,63 @@ button.regulations {
 }
 /* << CLOVER */
 
+.esgg-hero--es {
+	background-color: var(--brand-light-blue-2);
+}
 
+.esgg-hero .es-logo {
+	width: 180px;
+	position: absolute;
+	left: 15px;
+	top: -210px;
+}
+
+.esgg-hero__bg {
+	background-image: url(../images/e-srecke/e-srecke-devojka_bg.png);
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: inherit;
+	padding: 260px 0 220px;
+}
+
+.esgg-hero .es-text h1 {
+	font-weight: 700;
+}
+
+.esgg-hero .es-text span {
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 18px;
+}
+
+
+.srecke-item {
+	padding: 15px;
+	box-shadow: 0 0 10px rgba(0,0,0,.3);
+	border-radius: 6px;
+	margin: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.srecke-item__img {
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.srecke-item__text-big {
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.srecke-item__price,
+.srecke-item__max {
+	font-size: 15px;
+}
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -790,7 +846,18 @@ button.regulations {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+	.esgg-hero__bg {
+		padding: 220px 0 180px;
+	}
 
+	.esgg-hero .es-logo {
+		width: 150px;
+		top: -190px;
+	}
+
+	.esgg-hero .es-text span {
+		font-size: 16px;
+	}
 
 }
 
@@ -842,4 +909,8 @@ button.regulations {
 		min-height: 300px;
 	}
 	/* << HOW TO PLAY */
+
+	.esgg-hero .es-text {
+		margin-left: 200px;
+	}
 }

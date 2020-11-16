@@ -50,6 +50,46 @@ $(document).ready(function(){
     }
 
 
+    // Srecke carousel     
+    $('.srecke').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 4,
+        prevArrow: $('#prevv'),
+        nextArrow: $('#nextt'),
+        responsive: [
+            {
+            breakpoint: 1224,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 1060,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+            }
+            },
+            {
+            breakpoint: 700,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '30px',
+                slidesToShow: 1
+            }
+            }
+        ]
+        });
+
+
+
     // COUNTDOWN
     // Set the date we're counting down to
     var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
