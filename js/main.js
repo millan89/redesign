@@ -18,7 +18,7 @@ $(document).ready(function(){
         nextArrow: $('#nextt'),
         responsive: [
             {
-            breakpoint: 1920,
+            breakpoint: 1921,
             settings: {
                 arrows: false,
                 centerMode: true,
@@ -27,7 +27,7 @@ $(document).ready(function(){
             }
             },
             {
-            breakpoint: 1600,
+            breakpoint: 1601,
             settings: {
                 arrows: false,
                 centerMode: true,
@@ -36,7 +36,7 @@ $(document).ready(function(){
             }
             },
             {
-            breakpoint: 1224,
+            breakpoint: 1337,
             settings: {
                 arrows: false,
                 centerMode: true,

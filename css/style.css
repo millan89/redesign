@@ -726,6 +726,7 @@ header {
     height: 70px;
     z-index: 2;
     position: relative;
+    margin-bottom: 10px;
 }
 
 header .btn {
@@ -760,7 +761,7 @@ header .btn {
 
 /* HERO */
 .hero {
-    margin-top: -70px;
+    margin-top: -80px;
 }
 
 .hero__item {
