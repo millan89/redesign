@@ -766,7 +766,7 @@ button.regulations {
 	margin: 20px;
 	position: relative;
 	overflow: hidden;
-	max-width: 210px;
+	/* max-width: 210px; */
 }
 
 .srecke-item__img {
@@ -985,7 +985,7 @@ button.regulations {
 	}
 
 	.loto-banner__text h2 {
-		font-size: 39px;
+		font-size: 2.2rem;
 	}
 
 	.loto-banner__logo {
