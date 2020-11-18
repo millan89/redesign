@@ -926,6 +926,11 @@ button.regulations {
 	font-weight: 700;
 }
 
+.srecke--greb .srecke-item__price, 
+.srecke--greb .srecke-item__max {
+	font-size: 16px;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	/* MAIN BANNER >> */
