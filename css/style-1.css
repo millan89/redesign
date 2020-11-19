@@ -909,21 +909,49 @@ button.regulations {
 	background: url(../images/e-srecke/plavo-zuta-zvezdica.svg) no-repeat;
 }
 
-.esgg-hero--greb {
-	background-color: #ffc8e0;
-}
-
 .esgg-hero--greb .esgg-hero__bg {
-	background-image: url(../images/e-srecke/greb-man_bg.png);
+	background-image: url(../images/e-srecke/greb-man_bg.jpg);
 	background-repeat: no-repeat;
 	background-position-x: center;
 	background-position-y: center;
-	background-size: inherit;
-	padding: 260px 0 220px;
+	background-size: cover;
+	padding: 220px 0 180px;
+}
+
+.esgg-hero--greb .gg-logo {
+	width: 160px;
+	position: absolute;
+	left: 15px;
+	top: -170px;
 }
 
 .esgg-hero .gg-text h1 {
 	font-weight: 700;
+}
+
+.esgg-hero .gg-text p {
+	font-weight: 500;
+}
+
+.esgg-hero .gg-text a {
+	color: var(--brand-red);
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.2rem;
+}
+
+.esgg-hero .gg-text a:hover {
+	color: var(--brand-dark-gray);
+	transition: all ease-in 250ms;
+}
+
+.esgg-hero .gg-text a:hover > i {
+	transform: translateX(7px);
+	transition: all ease-in 250ms;
+}
+
+.esgg-hero .gg-text a i {
+	font-size: 14px;
 }
 
 .srecke--greb .srecke-item__price, 
@@ -1053,6 +1081,15 @@ button.regulations {
 	.loto-banner__logo {
 		width: 130px;
 		margin: 0 auto 30px;
+	}
+
+	.esgg-hero--greb .esgg-hero__bg {
+		padding: 180px 0 140px;
+	}
+
+	.esgg-hero--greb .gg-logo {
+		width: 140px;
+		top: -130px;
 	}
 
 }
