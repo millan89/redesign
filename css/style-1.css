@@ -959,6 +959,51 @@ button.regulations {
 	font-size: 16px;
 }
 
+.prize-winners {
+	margin-top: 100px;
+}
+
+.prize-winners__winner {
+	border-radius: 50%;
+	max-width: 300px;
+	display: block;
+	margin: 40px auto 20px;
+	width: 100%;
+}
+
+.prize-winners .name {
+	display: block;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.prize-winners .prize {
+	display: block;
+	font-size: 20px;
+}
+
+.prize-winners h1 {
+	font-weight: 700;
+	margin-bottom: 50px;
+}
+
+.prize-winners h1 span {
+	color: var(--brand-yellow);
+}
+
+.prize-winners button {
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 12px;
+	line-height: 1;
+	border-radius: 4px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	width: 240px;
+	margin: 80px auto 0;
+	display: block;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	/* MAIN BANNER >> */
