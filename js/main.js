@@ -9,7 +9,6 @@ $(document).ready(function(){
 
     // Game carousel 
     if ($('.games').length) {
-            
         $('.games').slick({
         centerMode: true,
         centerPadding: '60px',
@@ -18,7 +17,7 @@ $(document).ready(function(){
         nextArrow: $('#nextt'),
         responsive: [
             {
-            breakpoint: 1921,
+            breakpoint: 2601,
             settings: {
                 arrows: false,
                 centerMode: true,

@@ -18,6 +18,7 @@ style.css
 /* VARIABLES */
 :root {
     --brand-white: #FFF;
+    --brand-black: #000;
     --brand-red: #F01B2B;   
     --brand-red-2: #B01521;
     --brand-dark-blue-1: #0048D0;   
@@ -87,6 +88,9 @@ img {
 .btn {
     padding: 0.45rem 1.75rem;
     border-width: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 .btn.btn-lgg {
@@ -749,6 +753,10 @@ header .btn {
     font-weight: 500;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: var(--brand-black);
+}
+
 .dropdown-menu {
     border: 0 none;
     border-radius: 0;
@@ -989,7 +997,7 @@ header .btn {
     position: relative;
     overflow: hidden;
     min-height: 420px;
-    width: 326px;
+    max-width: 326px;
 }
 
 .games-item__logo {
@@ -1526,6 +1534,7 @@ header .btn {
 
     .h1-lg {
         font-size: 2.6rem;
+        line-height: 1.2;
     }
     
     .charity-media img {
@@ -1544,6 +1553,10 @@ header .btn {
         padding: 0;
     }
 
+    .hero .slick-arrow {
+        display: none !important;
+    }
+
     .brzo-lako:before,
     .brzo-lako:after {
         content: none;
@@ -1558,7 +1571,11 @@ header .btn {
     }
 
     .winners-text:after {
-        content: none;
+        top: 6px;
+        left: auto;
+        right: auto;
+        transform: rotate(90deg);
+        transform-origin: 100% 0px;
     }
 
     .winners--right-img .row {
@@ -1584,10 +1601,10 @@ header .btn {
     }
 
     .charity-text::after {
-        left: 75%;
-        width: 70px;
-        height: 70px;
-        transform: translateY(40px);
+        left: 70%;
+        width: 90px;
+        height: 90px;
+        transform: translateY(60px);
     }
 
     .greb {
