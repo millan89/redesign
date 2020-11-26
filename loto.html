@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- We will revisit font in the end -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-1.css">
+
+    <title>Državna lutrija Srbije</title>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img width="140" src="images\DLS logo.svg">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Igre
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Loto</a>
+                                <a class="dropdown-item" href="#">Bingo</a>
+                                <a class="dropdown-item" href="#">Greb greb</a>
+                                <a class="dropdown-item" href="#">e-Srećke</a>
+                                <a class="dropdown-item" href="#">Srećkovo takmičenje</a>
+                                <a class="dropdown-item" href="#">Pravila igara</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">Rezultati</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">Uplatna mesta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">Vesti</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                O nama
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-dark mr-sm-2 my-sm-0" type="submit">PRIJAVI SE</a>
+                    <a href="#" class="btn btn-primary my-sm-0" type="submit"><strong>REGISTRUJ SE</strong></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- NAVIGATION -->
+
+    <!-- MAIN BANNER -->
+    <section class="main-banner main-banner--loto">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="main-banner__text text-center text-white">
+                        <p><strong>71. kolo</strong> | LOTO sedmica</p>
+                        <p class="main-banner__text__num">1.500.000<sup>€</sup></p>
+                        <p>Molim vas stavite tekst koji će stati u jedan red da bi bilo lepo.</p>
+                    </div>
+                    <div id="countdown" class="d-none d-lg-flex"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAIN BANNER -->
+
+    <!-- TICKET -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                <div class="ticket-card">
+
+                    <div class="row ticket-card__tab-btns list-group" id="list-tab" role="tablist">
+                        <button class="col-sm-6 btn btn-tab ticket-card__btn active" id="standard"
+                            data-toggle="list" href="#standardni" role="tab"
+                            aria-controls="standard"><strong>Standardni tiket</strong></button>
+                        <button class="col-sm-6 btn btn-tab ticket-card__btn" id="sistem"
+                            data-toggle="list" href="#sistemski" role="tab"
+                            aria-controls="sistem"><strong>Sistemski tiket</strong></button>
+                    </div>
+
+                    <div class="tab-content row" id="ticket-tabContent">
+                        <div class="col-sm-12 tab-pane fade show active" id="standardni" role="tabpanel" aria-labelledby="standard">
+                            <div class="row">
+                                <div class="col-sm-5">
+                                    <a href="#" class="link-black underline text-sm"><strong>Odigraj omiljenu kombinaciju</strong></a>
+                                </div>
+                                <div class="col-sm-5">
+                                    <a href="#" class="link-black underline text-sm"><strong>Ponovi poslednju kombinaciju</strong></a>
+                                </div>
+                            </div>
+                            <div class="ticket-card__row active row mt-4">
+                                <div class="col-sm-12">
+                                    <p><strong>Tiket 1</strong></p>
+                                    <form class="ticket-fields">
+                                        <button class="btn btn-dark mr-3"><strong>QP</strong></button>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="36"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="3"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="6"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="24"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="4"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="31"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="8"></input>
+                                        </span>
+
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
+                                            xml:space="preserve" class="ticket-close">
+                                            <path class="ticket-close__outline"
+                                                d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+                                            <path class="ticket-close__sign"
+                                                d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                        </svg>
+
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;"
+                                            xml:space="preserve" class="ticket-heart active">
+                                            <defs>
+                                                <path
+                                                    d="M60.45 345.45L15 200.91 83.18 73.64l143.64-11.82 96.36 106.36L365 97.27l102.73-49.09 130.91 66.37 17.27 183.63L320 582.73 60.45 345.45z"
+                                                    id="a" />
+                                                <path
+                                                    d="M470 37.3c-67.43 0-110.13 40.27-134.07 74.06-6.21 8.77-11.49 17.56-15.93 25.83-4.44-8.27-9.72-17.06-15.93-25.83C280.13 77.57 237.43 37.3 170 37.3c-47.95 0-91.74 19.72-123.31 55.54C16.58 127.01 0 172.77 0 221.69c0 53.25 20.79 102.78 65.43 155.87 39.9 47.45 97.29 96.36 163.76 153 24.76 21.11 50.38 42.93 77.64 66.79l.82.71c3.54 3.1 7.94 4.64 12.35 4.64 4.41 0 8.82-1.54 12.35-4.64l.82-.71c27.26-23.86 52.88-45.68 77.65-66.79 66.46-56.64 123.85-105.55 163.75-153C619.21 324.47 640 274.94 640 221.69c0-48.92-16.58-94.68-46.69-128.85C561.74 57.02 517.95 37.3 470 37.3zM320 559.08c-23.17-20.14-45.14-38.87-66.49-57.06C123.43 391.17 37.5 317.95 37.5 221.69c0-39.79 13.26-76.74 37.33-104.06C99.18 90.01 132.97 74.8 170 74.8c51.41 0 84.65 31.67 103.47 58.24 16.89 23.83 25.7 47.85 28.7 57.07A18.752 18.752 0 00320 203.05c8.12 0 15.31-5.22 17.83-12.94 3-9.22 11.81-33.24 28.7-57.07C385.36 106.47 418.59 74.8 470 74.8c37.03 0 70.82 15.21 95.17 42.83 24.07 27.32 37.33 64.27 37.33 104.06 0 96.26-85.93 169.48-216.01 280.33-21.35 18.19-43.32 36.91-66.49 57.06z"
+                                                    id="b" />
+                                            </defs>
+                                            <use xlink:href="#a" fill="#fff" class="ticket-heart__bg" />
+                                            <use xlink:href="#a" fill-opacity="0" stroke="#000"
+                                                class="ticket-heart__stroke" />
+                                            <g>
+                                                <use xlink:href="#b" class="ticket-heart__stroke" />
+                                                <use xlink:href="#b" fill-opacity="0" stroke="#000"
+                                                    stroke-opacity="0" class="ticket-heart__stroke" />
+                                            </g>
+                                        </svg>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-sm-12">
+                                    <form class="ticket-fields">
+                                        <button class="btn btn-dark mr-3"><strong>QP</strong></button>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="36"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="3"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="6"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="24"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="4"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="31"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="8"></input>
+                                        </span>
+
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
+                                            xml:space="preserve" class="ticket-close">
+                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                        </svg>
+
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;"
+                                            xml:space="preserve" class="ticket-heart">
+                                            <defs>
+                                                <path
+                                                    d="M60.45 345.45L15 200.91 83.18 73.64l143.64-11.82 96.36 106.36L365 97.27l102.73-49.09 130.91 66.37 17.27 183.63L320 582.73 60.45 345.45z"
+                                                    id="a" />
+                                                <path
+                                                    d="M470 37.3c-67.43 0-110.13 40.27-134.07 74.06-6.21 8.77-11.49 17.56-15.93 25.83-4.44-8.27-9.72-17.06-15.93-25.83C280.13 77.57 237.43 37.3 170 37.3c-47.95 0-91.74 19.72-123.31 55.54C16.58 127.01 0 172.77 0 221.69c0 53.25 20.79 102.78 65.43 155.87 39.9 47.45 97.29 96.36 163.76 153 24.76 21.11 50.38 42.93 77.64 66.79l.82.71c3.54 3.1 7.94 4.64 12.35 4.64 4.41 0 8.82-1.54 12.35-4.64l.82-.71c27.26-23.86 52.88-45.68 77.65-66.79 66.46-56.64 123.85-105.55 163.75-153C619.21 324.47 640 274.94 640 221.69c0-48.92-16.58-94.68-46.69-128.85C561.74 57.02 517.95 37.3 470 37.3zM320 559.08c-23.17-20.14-45.14-38.87-66.49-57.06C123.43 391.17 37.5 317.95 37.5 221.69c0-39.79 13.26-76.74 37.33-104.06C99.18 90.01 132.97 74.8 170 74.8c51.41 0 84.65 31.67 103.47 58.24 16.89 23.83 25.7 47.85 28.7 57.07A18.752 18.752 0 00320 203.05c8.12 0 15.31-5.22 17.83-12.94 3-9.22 11.81-33.24 28.7-57.07C385.36 106.47 418.59 74.8 470 74.8c37.03 0 70.82 15.21 95.17 42.83 24.07 27.32 37.33 64.27 37.33 104.06 0 96.26-85.93 169.48-216.01 280.33-21.35 18.19-43.32 36.91-66.49 57.06z"
+                                                    id="b" />
+                                            </defs>
+                                            <use xlink:href="#a" fill="#fff" class="ticket-heart__bg" />
+                                            <use xlink:href="#a" fill-opacity="0" stroke="#000"
+                                                class="ticket-heart__stroke" />
+                                            <g>
+                                                <use xlink:href="#b" class="ticket-heart__stroke" />
+                                                <use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"
+                                                    class="ticket-heart__stroke" />
+                                            </g>
+                                        </svg>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row mt-4">
+                                <div class="col-sm-12">
+                                    <form class="ticket-fields">
+                                        <button class="btn btn-dark mr-3"><strong>QP</strong></button>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="36"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="3"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="6"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="24"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="4"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="31"></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="8"></input>
+                                        </span>
+
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
+                                            xml:space="preserve" class="ticket-close">
+                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                        </svg>
+
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;"
+                                            xml:space="preserve" class="ticket-heart">
+                                            <defs>
+                                                <path
+                                                    d="M60.45 345.45L15 200.91 83.18 73.64l143.64-11.82 96.36 106.36L365 97.27l102.73-49.09 130.91 66.37 17.27 183.63L320 582.73 60.45 345.45z"
+                                                    id="a" />
+                                                <path
+                                                    d="M470 37.3c-67.43 0-110.13 40.27-134.07 74.06-6.21 8.77-11.49 17.56-15.93 25.83-4.44-8.27-9.72-17.06-15.93-25.83C280.13 77.57 237.43 37.3 170 37.3c-47.95 0-91.74 19.72-123.31 55.54C16.58 127.01 0 172.77 0 221.69c0 53.25 20.79 102.78 65.43 155.87 39.9 47.45 97.29 96.36 163.76 153 24.76 21.11 50.38 42.93 77.64 66.79l.82.71c3.54 3.1 7.94 4.64 12.35 4.64 4.41 0 8.82-1.54 12.35-4.64l.82-.71c27.26-23.86 52.88-45.68 77.65-66.79 66.46-56.64 123.85-105.55 163.75-153C619.21 324.47 640 274.94 640 221.69c0-48.92-16.58-94.68-46.69-128.85C561.74 57.02 517.95 37.3 470 37.3zM320 559.08c-23.17-20.14-45.14-38.87-66.49-57.06C123.43 391.17 37.5 317.95 37.5 221.69c0-39.79 13.26-76.74 37.33-104.06C99.18 90.01 132.97 74.8 170 74.8c51.41 0 84.65 31.67 103.47 58.24 16.89 23.83 25.7 47.85 28.7 57.07A18.752 18.752 0 00320 203.05c8.12 0 15.31-5.22 17.83-12.94 3-9.22 11.81-33.24 28.7-57.07C385.36 106.47 418.59 74.8 470 74.8c37.03 0 70.82 15.21 95.17 42.83 24.07 27.32 37.33 64.27 37.33 104.06 0 96.26-85.93 169.48-216.01 280.33-21.35 18.19-43.32 36.91-66.49 57.06z"
+                                                    id="b" />
+                                            </defs>
+                                            <use xlink:href="#a" fill="#fff" class="ticket-heart__bg" />
+                                            <use xlink:href="#a" fill-opacity="0" stroke="#000"
+                                                class="ticket-heart__stroke" />
+                                            <g>
+                                                <use xlink:href="#b" class="ticket-heart__stroke" />
+                                                <use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"
+                                                    class="ticket-heart__stroke" />
+                                            </g>
+                                        </svg>
+
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 tab-pane fade" id="sistemski" role="tabpanel" aria-labelledby="sistem">
+                            2gtgrgtf
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="DIV_Bingo">
+                                <div class="row align-items-end">
+                                    <div class="col-lg-6">
+                                        <div class="float_left-bingo mb-2">
+                                            <div class="Form_Txt_Left01">
+                                                <span class="bingo">Bingo</span> 
+                                            </div>
+                                            <div class="Form_Txt_Left01a" id="rb_bingo">
+                                                <div class="js-switch checkbox" data-style="rounded" data-label="yes-no">
+                                                    <input type="checkbox" id="cb-1">
+                                                    <label class="label" for="cb-1"></label>
+                                                </div>
+                                            </div>
+                                            <div id="bingo_price" class="Form_Txt_Right01" type="text">60,00 din.</div>
+                                        </div>
+                                        <div class="float_left-bingo">
+                                            <div class="Form_Txt_Left01">
+                                                <span class="bingoPlus">Bingo+</span> 
+                                            </div>
+                                            <div class="Form_Txt_Left01a" id="rb_bingoPlus">
+                                                <div class="js-switch checkbox" data-style="rounded" data-label="yes-no">
+                                                    <input type="checkbox" id="cb-2">
+                                                    <label class="label" for="cb-2"></label>
+                                                </div>
+                                            </div>
+                                            <div id="bingo_plus_price" type="text" class="Form_Txt_Right01">40,00 din.</div>
+                                        </div>
+                                        <div class="total-price d-flex d-lg-block justify-content-center">
+                                            <div class="Form_Txt_Left01b">
+                                                Ukupno:
+                                            </div>
+                                            <div class="float_right">
+                                                <div id="total_price" class="Form_Txt_Right01a">100,00 din.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 d-flex d-lg-block justify-content-center mt-4 mt-lg-0">
+                                        <button class="Button_Big btn-dark" id="btn-bingo-play" data-target="#bingo-ticket-overview">Igraj</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- TICKET -->
+
+    <!-- DRAW BANNER -->
+    <section class="draw-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="db-purple-bg">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3">
+                                <div class="draw-banner-srecko">
+                                    <img src="images/bingo/bingo-srecko.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="draw-banner-text">
+                                    <p>BINGO izvlačenje ponedeljkom, od 19.55h</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="draw-banner-tv">
+                                    <img src="images/bingo/happy-tv_logo.svg" alt="">
+                                    <img class="d-none d-lg-block" src="images/bingo/crvene-tackice-01.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DRAW BANNER -->
+
+    <!-- HOW TO PLAY -->
+    <section class="how-to-play how-to-play--bingo">
+        <div class="how-to-play__headline">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img class="star" src="images/bingo/zvezdica-tackice-bingo.svg" alt="">
+                        <h1>Kako da igram Bingo<span>?</span></h1>
+                        <img class="girl" src="images/bingo/girl-how-to-play.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="how-to-play__grid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="grid-item">
+                            <div class="grid-item__header grid-item__header--purple text-center text-uppercase text-white">
+                                <span>B34</span>
+                            </div>
+                            <div class="grid-item__body">
+                                <h3>Šta je Bingo 34?</h3>
+                                <p>Registruj se i igraj svoje
+                                omiljene igre onlajn uz našu
+                                registracionu karticu.Lorem
+                                ipsum dolor sit amet,
+                                consectetuer adipiscing elit,
+                                sed diam nonummy nibh
+                                euismod.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="grid-item">
+                            <div class="grid-item__header grid-item__header--orange text-center text-uppercase text-white">
+                                <span>B39</span>
+                            </div>
+                            <div class="grid-item__body">
+                                <h3>Šta je Bingo 39?</h3>
+                                <p>Registruj se i igraj svoje
+                                omiljene igre onlajn uz našu
+                                registracionu karticu.Lorem
+                                ipsum dolor sit amet,
+                                consectetuer adipiscing elit,
+                                sed diam nonummy nibh
+                                euismod dolor sit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="grid-item">
+                            <div class="grid-item__header grid-item__header--blue text-center text-uppercase text-white">
+                                <span>B40+</span>
+                            </div>
+                            <div class="grid-item__body">
+                                <h3>Šta je Bingo 40+?</h3>
+                                <p>Registruj se i igraj svoje
+                                omiljene igre onlajn uz našu
+                                registracionu karticu.Lorem
+                                ipsum dolor sit amet,
+                                consectetuer adipiscing elit,
+                                sed diam nonummy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="grid-item">
+                            <div class="grid-item__header grid-item__header--blue text-center text-uppercase text-white">
+                                <img class="grid-item-img01" src="images/bingo/plus-img.svg" alt="">
+                            </div>
+                            <div class="grid-item__body">
+                                <h3>Šta je BingoPlus?</h3>
+                                <p>Registruj se i igraj svoje
+                                omiljene igre onlajn uz našu
+                                registracionu karticu.Lorem
+                                ipsum dolor sit amet,
+                                consectetuer adipiscing elit,
+                                sed diam nonummy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="grid-item">
+                            <div class="grid-item__header grid-item__header--purple text-center text-uppercase text-white">
+                                <img class="grid-item-img02" src="images/bingo/centar-img.svg" alt="">
+                            </div>
+                            <div class="grid-item__body">
+                                <h3>Šta je Centar?</h3>
+                                <p>Registruj se i igraj svoje
+                                omiljene igre onlajn uz našu
+                                registracionu karticu.Lorem
+                                ipsum dolor sit amet,
+                                consectetuer adipiscing elit,
+                                sed diam nonummy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="grid-item">
+                            <div class="grid-item__header grid-item__header--green text-center text-uppercase text-white">
+                                <img class="grid-item-img03" src="images/bingo/kockica-img.svg" alt="">
+                            </div>
+                            <div class="grid-item__body">
+                                <h3>Šta je Kockica?</h3>
+                                <p>Registruj se i igraj svoje
+                                omiljene igre onlajn uz našu
+                                registracionu karticu.Lorem
+                                ipsum dolor sit amet,
+                                consectetuer adipiscing elit,
+                                sed diam nonummy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                        <button class="btn-dark regulations" id="" data-target="">Bingo pravila</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HOW TO PLAY -->
+
+    <!-- CLOVER -->
+    <section class="clover">
+       <div class="container">
+           <div class="row text-center text-uppercase">
+               <div class="col-12">
+                   <p>Budi odgovoran</p>
+                   <h2>Igraj na sreću!<br>S‘merom!</h2>
+               </div>
+           </div>
+       </div>
+    </section>
+    <!-- CLOVER -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 mb-3">
+                    <img src="images/DLS-logo-neg.svg">
+                </div>
+                <div class="col-sm-3 col-6 offset-md-1">
+                    <img src="images/Igraj odgovorno.svg">
+                </div>
+                <div class="col-sm-3 col-6 footer-social">
+                    <a href="https://www.facebook.com/LotoSrbija" class="footer-social__item">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/LotoDSL" class="footer-social__item">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lotosrbija/" class="footer-social__item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4 pb-4 border-bottom">
+                <div class="col-sm-2">
+                    <ul>
+                        <li><a href="#"><strong>IGRE</strong></a></li>
+                        <li><a href="#">Loto</a></li>
+                        <li><a href="#">Bingo</a></li>
+                        <li><a href="#">Greb Greb</a></li>
+                        <li><a href="#">eSrećke</a></li>
+                        <li><a href="#">Srećkovo takmičenje</a></li>
+                        <li><a href="#">Pravila igre</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul>
+                        <li><a href="#"><strong>REZULTATI</strong></a></li>
+                        <li><a href="#">Loto</a></li>
+                        <li><a href="#">Bingo</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul>
+                        <li><a href="#"><strong>VESTI</strong></a></li>
+                        <li><a href="#">Novosti</a></li>
+                        <li><a href="#">Srećni dobitnici</a></li>
+                        <li><a href="#">Arhiva</a></li>
+                        <li><a href="#">DOP</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul>
+                        <li><a href="#"><strong>O NAMA</strong></a></li>
+                        <li><a href="#">Istorijat</a></li>
+                        <li><a href="#">Finansijski izveštaji</a></li>
+                        <li><a href="#">Ostala dokumenta</a></li>
+                        <li><a href="#">Javne nabavke</a></li>
+                        <li><a href="#">Anketa</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul>
+                        <li><a href="#"><strong>POMOĆ</strong></a></li>
+                        <li><a href="#">Šta je Loto Online?</a></li>
+                        <li><a href="#">Šta je DLS račun?</a></li>
+                        <li><a href="#">Šta je Moj nalog?</a></li>
+                        <li><a href="#">eSrećke?</a></li>
+                        <li><a href="#">Srećkovo takmičenje?</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <ul>
+                        <li><a href="#"><strong>KONTAKT</strong></a></li>
+                        <li><a href="#">Državna lutrija Srbije</a></li>
+                        <li><a href="#">Uskočka 4-6</a></li>
+                        <li><a href="#">Tel: 0800 202 303</a></li>
+                        <li><a href="#">(Pon-Ned. 07:00-22:00h)</a></li>
+                        <li><a href="#">11000 Beograd, Srbija</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-4 align-items-end">
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="#"><strong>DOP</strong></a></li>
+                        <li><a href="#">Odgovorno priređivanje</a></li>
+                        <li><a href="#">Kome pomažete igrajući igre</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 offset-md-1">
+                    <ul>
+                        <li>
+                            <a href="#" class="d-inline"><strong>Uslovi</strong></a>&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="d-inline"><strong>Politika privatnosti</strong></a>&nbsp;&nbsp;
+                            <a href="#" class="d-inline"><strong>Polisa kolačića</strong></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <a href="/DLSFiles/Dokumenti/Državna lutrija Srbije.apk"><img src="images/applestore.png"
+                                    width="160"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#"><img src="images/googlestore.png" width="160"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 ml-auto mt-3">
+                    <ul>
+                        <li class="color-white">
+                            <a href="#" class="active">Srpski</a> | <a href="#">English</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+
+    <script src="https://kit.fontawesome.com/b071412929.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -191,6 +191,10 @@ input[type='radio'] {
     background: linear-gradient(-215deg, var(--brand-purple), var(--brand-purple) 65%, #822eb7 65%, #822eb7 100%);
 }
 
+.main-banner--loto {
+	background: linear-gradient(-215deg, var(--brand-red), var(--brand-red) 65%, #ba1521 65%, #ba1521 100%);
+}
+
 .main-banner .main-banner__text__num {
 	font-size: 52px;
 	font-weight: 800;
@@ -241,13 +245,98 @@ input[type='radio'] {
 /* << MAIN BANNER */
 
 /* BINGO TICKET >> */
-.bingo-ticket {
+.bingo-ticket,
+.ticket-card {
 	background: white;
 	margin-top: -35px;
 	border-radius: 15px;
 	box-shadow: 0 0 30px 0 rgba(0,0,0,.3);
 	padding: 30px;
 	position: relative;
+	overflow: hidden;
+}
+/* todo - mozemo .bingo-ticket da zamenimo skroz na .ticket-card? da bude univerzalno */
+
+.ticket-card__tab-btns {
+	flex-direction: row;
+	margin-top: -30px;
+	margin-right: -30px;
+	margin-bottom: 30px;
+	margin-left: -30px;
+}
+
+.ticket-card__btn {
+	padding: .75rem .375rem;
+	border-radius: 0;
+}
+
+.ticket-fields {
+	display: flex;
+	align-items: center;
+}
+
+.ticket-fields__field {
+	border: 2px solid;
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	font-size: 1rem;
+	text-align: center;
+	font-weight: 600;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.ticket-card__row.active .ticket-fields__field {
+	background-color: var(--brand-yellow);
+	border-color: var(--brand-yellow);
+}
+
+.ticket-close {
+	margin-left: 18px;
+	height: 21px;
+	cursor: pointer;
+}
+
+.ticket-close__outline,
+.ticket-close__sign {
+	fill: var(--brand-darker-gray);
+}
+
+.ticket-close:hover,
+.ticket-close.active {
+	background-color: var(--brand-black);
+}
+
+.ticket-close:hover .ticket-close__outline,
+.ticket-close.active .ticket-close__outline {
+	fill: var(--brand-black);
+}
+
+.ticket-close:hover .ticket-close__sign,
+.ticket-close.active .ticket-close__sign {
+	fill: var(--brand-white);
+}
+
+
+.ticket-heart {
+	margin-left: 18px;
+	height: 21px;
+	cursor: pointer;
+}
+
+.ticket-heart__stroke {
+	fill: var(--brand-darker-gray);
+}
+
+.ticket-heart:hover .ticket-heart__bg,
+.ticket-heart.active .ticket-heart__bg {
+	fill: var(--brand-red);
+}
+
+.ticket-heart:hover .ticket-heart__stroke,
+.ticket-heart.active .ticket-heart__stroke {
+	fill: var(--brand-red);
 }
 
 .bingo-logo {
@@ -468,7 +557,8 @@ input[type='radio'] {
 	font-size: 18px;
 }
 
-.bingo-ticket hr {
+.bingo-ticket hr,
+.ticket-card hr {
 	border-top: 1px solid var(--brand-dark-gray);
 	margin-top: 20px;
 	margin-bottom: 30px;
@@ -1148,7 +1238,8 @@ button.regulations {
 	/* << MAIN BANNER */
 
 	/* BINGO TICKET >> */
-	.bingo-ticket {
+	.bingo-ticket,
+	.ticket-card {
 		padding: 30px 15px;
 	}
 

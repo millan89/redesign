@@ -32,6 +32,7 @@ style.css
     --brand-dark-gray: #152238;   
     --brand-dark-gray-2: #666666;   
     --brand-light-gray: #EEF2FB;   
+    --brand-darker-gray: #969ca5;
     --brand-purple: #A73BEC;  
     --brand-green: #00CF4C;
     --brand-green-2: #66E294;
@@ -65,6 +66,10 @@ p strong {
 p.lg,
 a.lg {
     font-size: 1.4rem;
+}
+
+.text-sm {
+    font-size: .9rem;
 }
 
 .h1,
@@ -164,6 +169,40 @@ img {
     color: var(--brand-white);
     border-color: var(--brand-dark-gray);
     background-color: var(--brand-dark-gray);
+}
+
+.btn-tab {
+    background-color: var(--brand-light-gray);
+    border-color: var(--brand-light-gray);
+    color: var(--brand-darker-gray);
+}
+
+.btn-tab.active {
+    background-color: var(--brand-white);
+    border-color: var(--brand-white);
+    color: var(--brand-black);
+}
+
+.btn-tab:hover {
+    color: var(--brand-black);
+}
+
+.btn-tab:not(:disabled):not(.disabled):active {
+    background-color: var(--brand-light-gray);
+    border-color: var(--brand-light-gray);
+    color: var(--brand-black);
+}
+
+.link-black {
+    color: var(--brand-black);
+}
+
+.underline {
+    border-bottom: 2px solid;
+}
+
+.underline:hover {
+    text-decoration: none;
 }
 
 
