@@ -84,8 +84,8 @@ input[type='radio'] {
 
 .checkbox input[type="checkbox"]:checked + label, 
 .radiobutton input[type="radio"]:checked + label {
-	background: #00CF4C;
-	border-color: #00cf4c;
+	background: var(--brand-white);
+	border-color: var(--brand-white);
 	-webkit-transform: translate3d(26px, 0, 0);
 	transform: translate3d(26px, 0, 0);
 }
@@ -179,6 +179,24 @@ input[type='radio'] {
 #rb_bingoPlus .radiobutton input[type="radio"]:checked + label {
 	background: var(--brand-light-blue-2);
 	border-color: var(--brand-light-blue-2);
+}
+
+.custom-checkbox {
+	cursor: pointer;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+	color: #fff;
+	border-color: var(--brand-black);
+	background-color: var(--brand-black);
+}
+
+.custom-checkbox .custom-control-label::before {
+	border-radius: 50%;
+}
+
+.custom-checkbox label::before {
+	border: 2px solid var(--brand-black);
 }
 /* checkbox & radiobuttons */
 
@@ -275,16 +293,28 @@ input[type='radio'] {
 	align-items: center;
 }
 
-.ticket-fields__field {
+.ticket-fields__field,
+.ticket-fields__field:disabled {
 	border: 2px solid;
 	border-radius: 50%;
 	width: 44px;
 	height: 44px;
+	color: var(--brand-black);
 	font-size: 1rem;
 	text-align: center;
 	font-weight: 600;
 	margin-left: 6px;
 	margin-right: 6px;
+	background-color: var(--brand-white);
+}
+
+.ticket-fields__field.ticket-fields__field--sm,
+.ticket-fields__field.ticket-fields__field--sm:disabled {
+	width: 32px;
+	height: 32px;
+	font-size: 0.9rem;
+	margin-left: 2px;
+	margin-right: 2px;
 }
 
 .ticket-card__row.active .ticket-fields__field {
@@ -574,6 +604,14 @@ input[type='radio'] {
 
 .Form_Txt_Left01 span.bingoPlus {
 	background-color: var(--brand-light-blue-2);
+}
+
+.Form_Txt_Left01 span.lotoPlus {
+	background-color: var(--brand-dark-blue-1);
+}
+
+.Form_Txt_Left01 span.joker {
+	background-color: var(--brand-green);
 }
 
 .Form_Txt_Left01 span {
@@ -1227,6 +1265,16 @@ button.regulations {
 		top: -130px;
 	}
 
+	.ticket-fields .btn-dark {
+		padding: .5rem;
+	}
+
+	.ticket-fields__field,
+	.ticket-fields__field:disabled {
+		width: 32px;
+		height: 32px;
+	}
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -1269,6 +1317,43 @@ button.regulations {
 		font-size: 32px;
 	}
 	/* << CLOVER */
+
+	.ticket-fields {
+		flex-wrap: wrap;
+	}
+
+	.ticket-close-text {
+		display: inline-block !important;
+		margin: 0.6em auto;
+		font-size: 0.8rem;
+	}
+
+	.ticket-fields .btn-dark {
+		padding: .25rem;
+		margin-right: .5rem !important;
+	}
+
+	.ticket-fields__field,
+	.ticket-fields__field:disabled {
+		width: 8vw;
+		height: 8vw;
+		font-size: 1rem;
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+
+	.ticket-close {
+		position: absolute;
+		bottom: 0;
+		margin: auto;
+		left: 0;
+		right: 0;
+	}
+
+	.ticket-heart {
+		margin-left: 10px;
+	}
+
 }
 
 /* Extra large devices */

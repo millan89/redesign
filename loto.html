@@ -94,14 +94,14 @@
     <!-- TICKET -->
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+            <div class="col-lg-8 offset-lg-2 col-md-12">
                 <div class="ticket-card">
 
                     <div class="row ticket-card__tab-btns list-group" id="list-tab" role="tablist">
-                        <button class="col-sm-6 btn btn-tab ticket-card__btn active" id="standard"
+                        <button class="col-6 btn btn-tab ticket-card__btn active" id="standard"
                             data-toggle="list" href="#standardni" role="tab"
                             aria-controls="standard"><strong>Standardni tiket</strong></button>
-                        <button class="col-sm-6 btn btn-tab ticket-card__btn" id="sistem"
+                        <button class="col-6 btn btn-tab ticket-card__btn" id="sistem"
                             data-toggle="list" href="#sistemski" role="tab"
                             aria-controls="sistem"><strong>Sistemski tiket</strong></button>
                     </div>
@@ -116,7 +116,7 @@
                                     <a href="#" class="link-black underline text-sm"><strong>Ponovi poslednju kombinaciju</strong></a>
                                 </div>
                             </div>
-                            <div class="ticket-card__row active row mt-4">
+                            <div class="ticket-card__row active row mt-3">
                                 <div class="col-sm-12">
                                     <p><strong>Tiket 1</strong></p>
                                     <form class="ticket-fields">
@@ -148,11 +148,12 @@
                                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
-                                            xml:space="preserve" class="ticket-close">
+                                            xml:space="preserve" class="ticket-close active d-none d-sm-block">
                                             <path class="ticket-close__outline"
                                                 d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
     c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
     V360.909z" />
+                    
                                             <path class="ticket-close__sign"
                                                 d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
         s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
@@ -184,33 +185,36 @@
                                             </g>
                                         </svg>
 
+                                        <a href="#" class="ticket-close-text text-sm link-black underline d-block d-sm-none"><strong>Obriši
+                                                sve</strong></a>
+
                                     </form>
                                 </div>
                             </div>
-                            <div class="row mt-4">
+                            <div class="ticket-card__row active row mt-3">
                                 <div class="col-sm-12">
                                     <form class="ticket-fields">
                                         <button class="btn btn-dark mr-3"><strong>QP</strong></button>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="36"></input>
+                                            <input class="ticket-fields__field" type="text" value="36" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="3"></input>
+                                            <input class="ticket-fields__field" type="text" value="3" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="6"></input>
+                                            <input class="ticket-fields__field" type="text" value="6" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="24"></input>
+                                            <input class="ticket-fields__field" type="text" value="24" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="4"></input>
+                                            <input class="ticket-fields__field" type="text" value="4" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="31"></input>
+                                            <input class="ticket-fields__field" type="text" value="31" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="8"></input>
+                                            <input class="ticket-fields__field" type="text" value="8" disabled></input>
                                         </span>
 
                                         <?xml version="1.0" encoding="iso-8859-1"?>
@@ -218,7 +222,78 @@
                                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
-                                            xml:space="preserve" class="ticket-close">
+                                            xml:space="preserve" class="ticket-close active d-none d-sm-block">
+                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                        </svg>
+
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;"
+                                            xml:space="preserve" class="ticket-heart active">
+                                            <defs>
+                                                <path
+                                                    d="M60.45 345.45L15 200.91 83.18 73.64l143.64-11.82 96.36 106.36L365 97.27l102.73-49.09 130.91 66.37 17.27 183.63L320 582.73 60.45 345.45z"
+                                                    id="a" />
+                                                <path
+                                                    d="M470 37.3c-67.43 0-110.13 40.27-134.07 74.06-6.21 8.77-11.49 17.56-15.93 25.83-4.44-8.27-9.72-17.06-15.93-25.83C280.13 77.57 237.43 37.3 170 37.3c-47.95 0-91.74 19.72-123.31 55.54C16.58 127.01 0 172.77 0 221.69c0 53.25 20.79 102.78 65.43 155.87 39.9 47.45 97.29 96.36 163.76 153 24.76 21.11 50.38 42.93 77.64 66.79l.82.71c3.54 3.1 7.94 4.64 12.35 4.64 4.41 0 8.82-1.54 12.35-4.64l.82-.71c27.26-23.86 52.88-45.68 77.65-66.79 66.46-56.64 123.85-105.55 163.75-153C619.21 324.47 640 274.94 640 221.69c0-48.92-16.58-94.68-46.69-128.85C561.74 57.02 517.95 37.3 470 37.3zM320 559.08c-23.17-20.14-45.14-38.87-66.49-57.06C123.43 391.17 37.5 317.95 37.5 221.69c0-39.79 13.26-76.74 37.33-104.06C99.18 90.01 132.97 74.8 170 74.8c51.41 0 84.65 31.67 103.47 58.24 16.89 23.83 25.7 47.85 28.7 57.07A18.752 18.752 0 00320 203.05c8.12 0 15.31-5.22 17.83-12.94 3-9.22 11.81-33.24 28.7-57.07C385.36 106.47 418.59 74.8 470 74.8c37.03 0 70.82 15.21 95.17 42.83 24.07 27.32 37.33 64.27 37.33 104.06 0 96.26-85.93 169.48-216.01 280.33-21.35 18.19-43.32 36.91-66.49 57.06z"
+                                                    id="b" />
+                                            </defs>
+                                            <use xlink:href="#a" fill="#fff" class="ticket-heart__bg" />
+                                            <use xlink:href="#a" fill-opacity="0" stroke="#000"
+                                                class="ticket-heart__stroke" />
+                                            <g>
+                                                <use xlink:href="#b" class="ticket-heart__stroke" />
+                                                <use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"
+                                                    class="ticket-heart__stroke" />
+                                            </g>
+                                        </svg>
+
+                                        <a href="#" class="ticket-close-text text-sm link-black underline d-block d-sm-none"><strong>Obriši
+                                                sve</strong></a>
+
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row mt-3">
+                                <div class="col-sm-12">
+                                    <form class="ticket-fields">
+                                        <button class="btn btn-dark mr-3"><strong>QP</strong></button>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
+                                        </span>
+
+                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
+                                            xml:space="preserve" class="ticket-close d-none d-sm-block">
                                             <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
     c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
     V360.909z" />
@@ -252,34 +327,36 @@
                                             </g>
                                         </svg>
 
+                                        <a href="#" class="ticket-close-text text-sm link-black underline d-block d-sm-none"><strong>Obriši
+                                                sve</strong></a>
 
                                     </form>
                                 </div>
                             </div>
-                            <div class="row mt-4">
+                            <div class="row mt-3">
                                 <div class="col-sm-12">
                                     <form class="ticket-fields">
                                         <button class="btn btn-dark mr-3"><strong>QP</strong></button>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="36"></input>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="3"></input>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="6"></input>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="24"></input>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="4"></input>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="31"></input>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
                                         </span>
                                         <span>
-                                            <input class="ticket-fields__field" type="text" value="8"></input>
+                                            <input class="ticket-fields__field" type="text" value="" disabled></input>
                                         </span>
 
                                         <?xml version="1.0" encoding="iso-8859-1"?>
@@ -287,7 +364,7 @@
                                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                             viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
-                                            xml:space="preserve" class="ticket-close">
+                                            xml:space="preserve" class="ticket-close d-none d-sm-block">
                                             <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
     c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
     V360.909z" />
@@ -321,6 +398,8 @@
                                             </g>
                                         </svg>
 
+                                        <a href="#" class="ticket-close-text text-sm link-black underline d-block d-sm-none"><strong>Obriši
+        sve</strong></a>
 
                                     </form>
                                 </div>
@@ -331,55 +410,142 @@
                         </div>
                     </div>
 
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="float_left-bingo mb-2">
+                                        <div class="Form_Txt_Left01">
+                                            <span class="lotoPlus">LOTO+</span>
+                                        </div>
+                                        <div class="Form_Txt_Left01a">
+                                            <div class="js-switch checkbox" data-style="rounded"
+                                                data-label="yes-no">
+                                                <input type="checkbox" id="cb-1">
+                                                <label class="label" for="cb-1"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="float_left-bingo">
+                                        <div class="Form_Txt_Left01">
+                                            <span class="joker">JOKER</span>
+                                        </div>
+                                        <div class="Form_Txt_Left01a">
+                                            <div class="js-switch checkbox" data-style="rounded" data-label="yes-no">
+                                                <input type="checkbox" id="cb-2">
+                                                <label class="label" for="cb-2"></label>
+                                            </div>
+                                        </div>
+                                        <div class="Form_Txt_Left01a d-flex">
+                                            <div class="custom-control custom-checkbox mr-3">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">1</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mr-3">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2">2</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mr-3">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label" for="customCheck3">5</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mr-3">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
+                                                <label class="custom-control-label" for="customCheck4">10</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox mr-3">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck5">
+                                                <label class="custom-control-label" for="customCheck5">50</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="float-right mt-3">
+                                        <span>
+                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text"
+                                                value="45" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="" disabled></input>
+                                        </span>
+                                        <span>
+                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="" disabled></input>
+                                        </span>
+                                        <button class="btn btn-dark ml-2 btn--padd-xs"><strong>QP</strong></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-12">
                             <hr>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="DIV_Bingo">
-                                <div class="row align-items-end">
-                                    <div class="col-lg-6">
-                                        <div class="float_left-bingo mb-2">
-                                            <div class="Form_Txt_Left01">
-                                                <span class="bingo">Bingo</span> 
-                                            </div>
-                                            <div class="Form_Txt_Left01a" id="rb_bingo">
-                                                <div class="js-switch checkbox" data-style="rounded" data-label="yes-no">
-                                                    <input type="checkbox" id="cb-1">
-                                                    <label class="label" for="cb-1"></label>
-                                                </div>
-                                            </div>
-                                            <div id="bingo_price" class="Form_Txt_Right01" type="text">60,00 din.</div>
-                                        </div>
-                                        <div class="float_left-bingo">
-                                            <div class="Form_Txt_Left01">
-                                                <span class="bingoPlus">Bingo+</span> 
-                                            </div>
-                                            <div class="Form_Txt_Left01a" id="rb_bingoPlus">
-                                                <div class="js-switch checkbox" data-style="rounded" data-label="yes-no">
-                                                    <input type="checkbox" id="cb-2">
-                                                    <label class="label" for="cb-2"></label>
-                                                </div>
-                                            </div>
-                                            <div id="bingo_plus_price" type="text" class="Form_Txt_Right01">40,00 din.</div>
-                                        </div>
-                                        <div class="total-price d-flex d-lg-block justify-content-center">
-                                            <div class="Form_Txt_Left01b">
-                                                Ukupno:
-                                            </div>
-                                            <div class="float_right">
-                                                <div id="total_price" class="Form_Txt_Right01a">100,00 din.</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 d-flex d-lg-block justify-content-center mt-4 mt-lg-0">
-                                        <button class="Button_Big btn-dark" id="btn-bingo-play" data-target="#bingo-ticket-overview">Igraj</button>
-                                    </div>
+                    <div class="row mt-2">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <p class="text-sm">Loto</p>
+                                    <p class="text-sm">Loto +</p>
+                                    <p class="text-sm">Joker</p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <p class="text-sm">80,00 din</p>
+                                    <p class="text-sm">00,00 din</p>
+                                    <p class="text-sm">100,00 din</p>
+                                </div>
+                                <div class="col-lg-5 mt-3">
+                                    <p class="h3"><strong>Ukupno</strong></p>
+                                </div>
+                                <div class="col-lg-7 mt-3">
+                                    <p class="h3"><strong>100,00 din.</strong></p>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex">   
+                                <div class="Form_Txt_Left01">
+                                    <p><strong>Pretplata:&nbsp;&nbsp;</strong></p>
+                                </div>
+                                <div class="Form_Txt_Left01a">
+                                    <div class="js-switch checkbox" data-style="rounded" data-label="yes-no">
+                                        <input type="checkbox" id="cb-2">
+                                        <label class="label" for="cb-2"></label>
+                                    </div>
+                                </div>
+                                <div class="Form_Txt_Left01a d-flex">
+                                    <div class="custom-control custom-checkbox mr-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
+                                        <label class="custom-control-label" for="customCheck6">2</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mr-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
+                                        <label class="custom-control-label" for="customCheck7">3</label>
+                                    </div>
+                                    <div class="custom-control custom-checkbox mr-3">
+                                        <input type="checkbox" class="custom-control-input" id="customCheck8">
+                                        <label class="custom-control-label" for="customCheck8">4</label>
+                                    </div>
+                                </div>
+                            </div>    
+                            <button class="Button_Big btn-dark mt-4" id="btn-bingo-play"
+                                data-target="#bingo-ticket-overview">Igraj</button>
                         </div>
                     </div>
 
