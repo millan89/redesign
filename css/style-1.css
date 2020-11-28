@@ -322,6 +322,32 @@ input[type='radio'] {
 	border-color: var(--brand-yellow);
 }
 
+.ticket-fields span {
+	position: relative;
+}
+
+.ticket-fields span::after {
+	position: absolute;
+	content: none;
+	font-family: var(--font-fa);
+	font-weight: 600;
+	top: 23%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 1rem;
+	width: 100%;
+	text-align: center;
+}
+
+.ticket-fields:hover span:after {
+	content: "\f067";
+}
+
+.ticket-card__row.active .ticket-fields:hover span:after {
+	content: none;
+}
+
 .ticket-close {
 	margin-left: 18px;
 	height: 21px;
@@ -348,7 +374,6 @@ input[type='radio'] {
 	fill: var(--brand-white);
 }
 
-
 .ticket-heart {
 	margin-left: 18px;
 	height: 21px;
@@ -367,6 +392,10 @@ input[type='radio'] {
 .ticket-heart:hover .ticket-heart__stroke,
 .ticket-heart.active .ticket-heart__stroke {
 	fill: var(--brand-red);
+}
+
+.form-choose {
+	display: flex;
 }
 
 .bingo-logo {
@@ -1216,6 +1245,16 @@ button.regulations {
 		width: 120px;
 		margin-bottom: 15px;
 	}
+
+	.form-choose {
+		flex-wrap: wrap;
+	}
+
+	.form-choose__numbers {
+		width: 100%;
+		margin-top: 1rem;
+	}
+
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -1352,6 +1391,21 @@ button.regulations {
 
 	.ticket-heart {
 		margin-left: 10px;
+	}
+
+	.ticket-fields__field.ticket-fields__field--sm,
+	.ticket-fields__field.ticket-fields__field--sm:disabled {
+		width: 28px;
+		height: 28px;
+		margin-left: 1px;
+		margin-right: 1px;
+	}
+
+	.ticket-card .submit-btn {
+		float: none !important;
+		margin: auto;
+		margin-top: auto;
+		display: block;
 	}
 
 }
