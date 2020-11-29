@@ -319,8 +319,8 @@ input[type='radio'] {
 
 .modal .ticket-fields__field.ticket-fields__field--sm,
 .ticket-fields__field.ticket-fields__field--sm:disabled {
-	width: 32px;
-	height: 32px;
+	width: 36px;
+	height: 36px;
 	font-size: 0.9rem;
 	margin: 4px;
 }
@@ -1420,6 +1420,11 @@ button.regulations {
 		margin: auto;
 		margin-top: auto;
 		display: block;
+	}
+
+	.ticket-card__tab-btns {
+		margin-right: -15px;
+		margin-left: -15px;
 	}
 
 }
