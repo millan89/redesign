@@ -219,6 +219,41 @@ select {
     font-weight: 300 !important;
 }
 
+.form-control {
+    font-weight: 700;
+    color: var(--brand-black);
+    border: 2px solid var(--brand-black);
+}
+
+.form-control-tc {
+    text-align: center;
+}
+
+.form-control:disabled,
+.form-control[readonly] {
+    background-color: var(--brand-white);
+}
+
+.form-control.fc-active-red {
+    background-color: var(--brand-red);
+    border-color: var(--brand-red);
+    color: var(--brand-white);
+}
+
+.form-control.fc-active-red-light {
+    background-color: #fdedee;
+    border-color: #fdedee;
+    color: var(--brand-red);
+    font-weight: 400;
+}
+
+.form-control.fc-gray {
+    background-color: var(--brand-light-gray);
+    border-color: var(--brand-light-gray);
+    color: var(--brand-black);
+    font-weight: 400;
+}
+
 
 /* LONG SHADOW */
 .ls {
@@ -1493,6 +1528,8 @@ header .btn {
 
 .modal-header {
     display: block;
+    padding-bottom: 0;
+    border-bottom: 0 none;
 }
 
 .modal-title {
@@ -1503,6 +1540,7 @@ header .btn {
 .modal-numbers {
     text-align: center;
     position: relative;
+    margin-bottom: 0;
 }
 
 .modal-numbers strong {
@@ -1526,12 +1564,41 @@ header .btn {
     position: absolute;
 }
 
+.modal-footer {
+    border-top: 0 none;
+}
+
+.modal-footer .cancel {
+    position: absolute;
+    right: 0;
+    font-size: .8rem;
+}
+
 .modal .close {
     position: absolute;
     top: 0.5rem;
     right: 0.7rem;
 }
+.ticket-modal span {
+    display: inline-block;
+}
 
+.ticket-modal span.active {
+    position: relative;
+}
+
+.ticket-modal span.active:after {
+    position: absolute;
+    background: url(../images/cross.svg) no-repeat center;
+    top: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    opacity: .8;
+    margin: auto;
+}
 
 /* PRE FOOTER */
 .pre-footer {

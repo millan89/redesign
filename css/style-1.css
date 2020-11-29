@@ -317,6 +317,14 @@ input[type='radio'] {
 	margin-right: 2px;
 }
 
+.modal .ticket-fields__field.ticket-fields__field--sm,
+.ticket-fields__field.ticket-fields__field--sm:disabled {
+	width: 32px;
+	height: 32px;
+	font-size: 0.9rem;
+	margin: 4px;
+}
+
 .ticket-card__row.active .ticket-fields__field {
 	background-color: var(--brand-yellow);
 	border-color: var(--brand-yellow);
@@ -396,6 +404,11 @@ input[type='radio'] {
 
 .form-choose {
 	display: flex;
+	justify-content: flex-end;
+}
+
+.form-choose .custom-checkbox:last-of-type {
+	margin-right: 0 !important;
 }
 
 .bingo-logo {
@@ -1248,6 +1261,7 @@ button.regulations {
 
 	.form-choose {
 		flex-wrap: wrap;
+		justify-content: flex-start;
 	}
 
 	.form-choose__numbers {
