@@ -306,6 +306,8 @@ input[type='radio'] {
 	margin-left: 6px;
 	margin-right: 6px;
 	background-color: var(--brand-white);
+	-webkit-text-fill-color: var(--brand-black);
+	opacity: 1;	/* required on iOS */
 }
 
 .ticket-fields__field.ticket-fields__field--sm,
@@ -319,8 +321,8 @@ input[type='radio'] {
 
 .modal .ticket-fields__field.ticket-fields__field--sm,
 .ticket-fields__field.ticket-fields__field--sm:disabled {
-	width: 36px;
-	height: 36px;
+	width: 40px;
+	height: 40px;
 	font-size: 0.9rem;
 	margin: 4px;
 }
@@ -332,6 +334,8 @@ input[type='radio'] {
 
 .ticket-fields span {
 	position: relative;
+	display: inline-block;
+	cursor: pointer;
 }
 
 .ticket-fields span::after {
@@ -339,7 +343,7 @@ input[type='radio'] {
 	content: none;
 	font-family: var(--font-fa);
 	font-weight: 600;
-	top: 23%;
+	top: 22%;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -795,6 +799,11 @@ input[type='radio'] {
 	background: linear-gradient(180deg, var(--brand-white), var(--brand-white) 150px,var(--brand-light-pink) 150px, var(--brand-light-pink) 100%);
 }
 
+.how-to-play__grid--loto {
+	background-color: var(--brand-light-red);
+	background: linear-gradient(180deg, var(--brand-white), var(--brand-white) 150px, var(--brand-light-red) 150px, var(--brand-light-red) 100%);
+}
+
 .how-to-play__grid .grid-item {
 	margin-bottom: 50px;
 }
@@ -822,9 +831,29 @@ input[type='radio'] {
 	background: linear-gradient(-215deg, var(--brand-light-blue-2), var(--brand-light-blue-2) 57%, #0fb4c9 57%, #0fb4c9 100%);
 }
 
+.grid-item__header--darkblue {
+	background-color: var(--brand-dark-blue-2);
+	background: linear-gradient(-215deg, var(--brand-dark-blue-2), var(--brand-dark-blue-2) 57%, #1455c6 57%, #1455c6 100%);
+}
+
+.grid-item__header--red {
+	background-color: var(--brand-red);
+	background: linear-gradient(-215deg, var(--brand-red), var(--brand-red) 57%, #ba1521 57%, #ba1521 100%);
+}
+
 .grid-item__header--green {
 	background-color: var(--brand-green);
 	background: linear-gradient(-215deg, var(--brand-green), var(--brand-green) 57%,#05b153 57%, #05b153 100%);
+}
+
+.grid-item__header--lightgreen {
+	background-color: var(--brand-green-2);
+	background: linear-gradient(-215deg, var(--brand-green-2), var(--brand-green-2) 57%, #3bac65 57%, #3bac65 100%);
+}
+
+.grid-item__header--yellow {
+	background-color: var(--brand-yellow);
+	background: linear-gradient(-215deg, var(--brand-yellow), var(--brand-yellow) 57%, #e1911d 57%, #e1911d 100%);
 }
 
 .grid-item__header span {
@@ -1386,13 +1415,19 @@ button.regulations {
 		margin-right: .5rem !important;
 	}
 
+	.ticket-fields span::after {
+		top: 20%;
+		left: 2%;
+		font-size: 0.8rem;
+	}
+
 	.ticket-fields__field,
 	.ticket-fields__field:disabled {
 		width: 8vw;
 		height: 8vw;
 		font-size: 1rem;
-		margin-left: 2px;
-		margin-right: 2px;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	.ticket-close {

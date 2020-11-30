@@ -21,6 +21,7 @@ style.css
     --brand-black: #000;
     --brand-red: #F01B2B;   
     --brand-red-2: #B01521;
+    --brand-light-red: #ffedf1;
     --brand-dark-blue-1: #0048D0;   
     --brand-dark-blue-2: #005DFF;   
     --brand-light-blue-1: #67BEC9;   
@@ -52,6 +53,14 @@ style.css
 
 .color-white {
     color: var(--brand-white) !important;
+}
+
+.color-purple {
+    color: var(--brand-purple) !important;
+}
+
+.color-red {
+    color: var(--brand-red) !important;
 }
 
 p {
@@ -1575,12 +1584,14 @@ header .btn {
     position: absolute;
     right: 0;
     font-size: .8rem;
+    cursor: pointer;
 }
 
 .modal-footer .fav-numbers {
     position: absolute;
     left: 0;
     font-size: .8rem;
+    cursor: pointer;
 }
 
 .modal .close {
@@ -1588,6 +1599,13 @@ header .btn {
     top: 0.5rem;
     right: 0.7rem;
 }
+
+.ticket-modal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .ticket-modal span {
     display: inline-block;
 }
