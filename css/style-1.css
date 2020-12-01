@@ -649,6 +649,11 @@ p {
 	margin-top: 220px;
 }
 
+.draw-banner__container--red {
+	background-color: var(--brand-red);
+	margin-top: 220px;
+}
+
 .draw-banner-srecko img {
 	position: absolute;
 	width: 200px;
