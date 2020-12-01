@@ -54,7 +54,7 @@ p {
 	height: 22px; 
 	background: #fff; 
 	border-radius: 50%; 
-	transition: 0.3s; 
+	transition: 0.5s; 
 }
 
 .switchToggle input:checked + label, 
@@ -70,7 +70,7 @@ p {
 	left: 26px; 
 	width: 26px; 
 	height: 26px; 
-	transition: 0.3s; 
+	transition: 0.5s; 
 	color: #fff; 
 	font-size: 14px;
 }
@@ -83,7 +83,7 @@ p {
 	left: 6px; 
 	width: 26px; 
 	height: 26px; 
-	transition: 0.3s; 
+	transition: 0.5s; 
 	color: #fff; 
 	font-size: 14px;
 }
@@ -619,11 +619,9 @@ p {
 #btn-bingo-play {
 	text-transform: uppercase;
 	float: right;
-	border-radius: 4px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	width: 160px;
-	padding: 4px;
 	font-size: 18px;
 }
 
@@ -639,12 +637,15 @@ p {
 /* << BINGO TICKET */
 
 /* DRAW BANNER >> */
-.draw-banner .db-purple-bg {
-	background-color: var(--brand-purple);
+.draw-banner__container {
 	color: #fff;
 	position: relative;
 	padding: 30px 0;
 	border-radius: 12px;
+}
+
+.draw-banner__container--purple {
+	background-color: var(--brand-purple);
 	margin-top: 220px;
 }
 
