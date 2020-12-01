@@ -699,17 +699,13 @@ p {
 	margin: 30px 0 50px;
 }
 
-.how-to-play__headline h1 span {
-	color: var(--brand-purple);
-}
-
 .how-to-play__headline .girl {
 	border-radius: 50%;
 	margin: 0 auto;
 	display: block;
 }
 
-.how-to-play__grid {
+.how-to-play__grid--bingo {
 	background-color: var(--brand-light-pink);
 	background: linear-gradient(180deg, var(--brand-white), var(--brand-white) 150px,var(--brand-light-pink) 150px, var(--brand-light-pink) 100%);
 }
@@ -805,9 +801,6 @@ p {
 button.regulations {
 	text-transform: uppercase;
 	font-size: 18px;
-	padding: 12px;
-	line-height: 1;
-	border-radius: 4px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	width: 240px;
