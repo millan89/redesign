@@ -1016,6 +1016,7 @@ header .btn {
 .home-results__hd {
     display: flex;
     align-items: flex-start;
+    font-size: 3rem;
 }
 
 .home-results__hd img {
@@ -1891,6 +1892,10 @@ header .btn {
 
     .home-results__hd {
         margin-bottom: 30px;
+    }
+
+    .home-results .list-group {
+        padding-left: 15px;
     }
 
     .hero-balls-wrap__items {

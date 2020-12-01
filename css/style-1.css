@@ -660,6 +660,11 @@ p {
 	margin-left: -50px;
 }
 
+.draw-banner-tv--loto img:first-child {
+	width: 90px;
+	margin-left: -70px;
+}
+
 .draw-banner-tv img:last-child {
 	position: absolute;
 	width: 200px;
