@@ -180,6 +180,12 @@ img {
     background-color: var(--brand-dark-gray);
 }
 
+.btn-dark:hover {
+    color: #fff;
+    background-color: var(--brand-darker-gray);
+    border-color: var(--brand-darker-gray);
+}
+
 .btn-tab {
     background-color: var(--brand-light-gray);
     border-color: var(--brand-light-gray);
@@ -1949,6 +1955,10 @@ header .btn {
 
     .order-xxs-0 {
         order: 0;
+    }
+
+    .mt-xxs-2 {
+        margin-top: 2rem;
     }
     
 }

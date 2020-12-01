@@ -371,14 +371,20 @@ input[type='radio'] {
 	fill: var(--brand-darker-gray);
 }
 
-.ticket-close:hover,
 .ticket-close.active {
 	background-color: var(--brand-black);
 }
 
-.ticket-close:hover .ticket-close__outline,
+.ticket-close:hover {
+	background-color: var(--brand-darker-gray);
+}
+
 .ticket-close.active .ticket-close__outline {
 	fill: var(--brand-black);
+}
+
+.ticket-close:hover .ticket-close__outline {
+	fill: var(--brand-darker-gray);
 }
 
 .ticket-close:hover .ticket-close__sign,
@@ -749,6 +755,11 @@ input[type='radio'] {
 .draw-banner-tv img:first-child {
 	width: 180px;
 	margin-left: -50px;
+}
+
+.draw-banner-tv--loto img:first-child {
+	width: 80px;
+	margin-left: -70px;
 }
 
 .draw-banner-tv img:last-child {
