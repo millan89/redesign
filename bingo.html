@@ -362,7 +362,7 @@
                                     </div>
                                 </div>
                                 <div class="bingo-kockica">
-                                    <img src="images/bingo/cube.svg" alt="">
+                                    <img src="images/bingo/kockica-1.svg" alt="" id="rollDice">
                                     <p>Kockica</p>
                                 </div>
                             </div>
@@ -466,7 +466,7 @@
                     <div class="col-12">
                         <img class="star" src="images/bingo/zvezdica-tackice-bingo.svg" alt="">
                         <h1>Kako da igram Bingo<span class="color-purple">?</span></h1>
-                        <img class="girl" src="images/bingo/girl-how-to-play.png" alt="">
+                        <img class="girl" src="images/bingo/@2x-Bingo-riba.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -717,6 +717,18 @@
         </div>
     </footer>
     <!-- FOOTER -->
+
+    <!-- kockica se bira -->
+    <script>
+        window.onload = chooseDice;
+
+        var sixDices = new Array("images/bingo/kockica-1.svg","images/bingo/kockica-2.svg","images/bingo/kockica-3.svg","images/bingo/kockica-4.svg","images/bingo/kockica-5.svg","images/bingo/kockica-6.svg");
+
+        function chooseDice() {
+        var randomNum = Math.floor(Math.random() * sixDices.length);
+        document.getElementById("rollDice").src = sixDices[randomNum];
+        }
+    </script>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

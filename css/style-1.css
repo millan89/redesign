@@ -138,20 +138,24 @@ p {
 }
 
 .main-banner #countdown div:not(:last-child) {
-	margin-right: 20px;
+	margin-right: 10px;
+}
+
+.main-banner #countdown div:first-child {
+	margin-right: 14px;
 }
 
 .main-banner #countdown div {
 	display: block;
 	text-align: center;
-    width: 55px;
-    font-size: 22px;
+    width: 50px;
+    font-size: 20px;
     line-height: 1rem;
     font-weight: 700;
     background-color: var(--brand-dark-gray);
     padding: 10px;
     border-radius: 5px;
-    height: 55px;
+    height: 50px;
 }
 
 .main-banner #countdown div span {
@@ -160,9 +164,9 @@ p {
 }
 
 .main-banner #countdown span.double-dot {
-    font-size: 22px;
+    font-size: 20px;
 	font-weight: 700;
-	transform: translate(-10px, 8px);
+	transform: translate(-5px, 8px);
 }
 /* << MAIN BANNER */
 
@@ -708,6 +712,8 @@ p {
 	border-radius: 50%;
 	margin: 0 auto;
 	display: block;
+	max-width: 300px;
+	width: 100%;
 }
 
 .how-to-play__grid--bingo {
@@ -1134,6 +1140,10 @@ button.regulations {
 @media (max-width: 1199.98px) {
 	/* MAIN BANNER >> */
     .main-banner #countdown div:not(:last-child) {
+		margin-right: 10px;
+	}
+
+	.main-banner #countdown div:first-child {
 		margin-right: 14px;
 	}
 
@@ -1147,7 +1157,7 @@ button.regulations {
 
 	.main-banner #countdown span.double-dot {
 		font-size: 20px;
-		transform: translate(-7px, 8px);
+		transform: translate(-5px, 8px);
 	}
 	/* << MAIN BANNER */
 
