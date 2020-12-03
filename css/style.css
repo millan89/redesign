@@ -67,6 +67,10 @@ style.css
     background-color: var(--brand-light-gray);
 }
 
+.bg-color-dgray {
+    background-color: var(--brand-dark-gray);
+}
+
 p {
     font-weight: 300;
     font-size: 1.2rem;

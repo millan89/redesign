@@ -1427,6 +1427,7 @@ button.regulations {
 
 /* Extra large devices */
 @media (min-width: 1200px) {
+
 	/* HOW TO PLAY >> */
 	.grid-item__body {
 		min-height: 300px;
@@ -1436,4 +1437,17 @@ button.regulations {
 	.esgg-hero .es-text {
 		margin-left: 200px;
 	}
+
+}
+
+@media (min-width: 992px) {
+
+	.ml-from-md-0 {
+		margin-left: 0;
+	}
+
+	.mr-from-md-0 {
+		margin-right: 0;
+	}
+
 }
