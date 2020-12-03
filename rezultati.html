@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-1.css">
 
-    <title>Državna lutrija Srbije</title>
+    <title>Rezultati</title>
 </head>
 <body>
 
@@ -74,696 +74,157 @@
     </header>
     <!-- NAVIGATION -->
 
-    <!-- MAIN BANNER -->
-    <section class="main-banner main-banner--loto">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="main-banner__text text-center text-white">
-                        <p><strong>71. kolo</strong> | LOTO sedmica</p>
-                        <p class="main-banner__text__num">1.500.000<sup>€</sup></p>
-                        <p>Molim vas stavite tekst koji će stati u jedan red da bi bilo lepo.</p>
-                    </div>
-                    <div id="countdown" class="d-none d-lg-flex"></div>
+    <!-- SCORE FORM -->
+    <section class="score-form score-form--loto">
+        <div class="container color-white">
+            <h1><img src="images/rezultati/rezultati-ikonica.svg" class="align-baseline mr-2" width="60" /><strong>Rezultati</strong>
+            </h1>
+            <form action="#" class="row">
+                <div class="col">
+                    <label class="my-1 d-block" for="inlineFormCustomSelectPref">Igra za pretragu:</label>
+                    <select class="custom-select" id="inlineFormCustomSelectPref">
+                        <option value="1">Loto</option>
+                        <option value="2">Bingo</option>
+                    </select>
                 </div>
-            </div>
+                <div class="col">
+                    <label class="my-1 d-block" for="inlineFormCustomSelectPref2">Pretraži po:</label>
+                    <select class="custom-select" id="inlineFormCustomSelectPref2">
+                        <option value="1">Broju kola</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="my-1 d-block" for="inlineFormCustomSelectPref3">Broj kola:</label>
+                    <select class="custom-select" id="inlineFormCustomSelectPref3">
+                        <option value="1">84</option>
+                        <option value="2">85</option>
+                        <option value="3">86</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="my-1 d-block" for="inlineFormCustomSelectPref4">Godina:</label>
+                    <select class="custom-select" id="inlineFormCustomSelectPref4">
+                        <option value="1">2020</option>
+                        <option value="2">2019</option>
+                        <option value="3">2018</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label class="my-1 d-block" for="">&nbsp;</label>
+                    <button type="submit" class="btn btn-dark"><strong>PRETRAGA</strong></button>
+                </div>
+            </form>
         </div>
     </section>
-    <!-- MAIN BANNER -->
+    <!-- SCORE FORM -->
 
-    <!-- TICKET -->
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-9 col-md-12">
-                <div class="ticket-card">
-
-                    <div class="row ticket-card__tab-btns list-group" id="list-tab" role="tablist">
-                        <button class="col-6 btn btn-tab ticket-card__btn active" id="standard"
-                            data-toggle="list" href="#standardni" role="tab"
-                            aria-controls="standard"><strong>Standardni tiket</strong></button>
-                        <button class="col-6 btn btn-tab ticket-card__btn" id="sistem"
-                            data-toggle="list" href="#sistemski" role="tab"
-                            aria-controls="sistem"><strong>Sistemski tiket</strong></button>
-                    </div>
-
-                    <div class="tab-content row" id="ticket-tabContent">
-                        <div class="col-sm-12 tab-pane fade show active" id="standardni" role="tabpanel" aria-labelledby="standard">
-                            <div class="row">
-                                <div class="col-sm-5">
-                                    <a href="#" class="link-black underline text-sm"><strong>Odigraj omiljenu kombinaciju</strong></a>
-                                </div>
-                                <div class="col-sm-5">
-                                    <a href="#" class="link-black underline text-sm"><strong>Ponovi poslednju kombinaciju</strong></a>
-                                </div>
-                            </div>
-                            <div class="ticket-card__row active row mt-3">
-                                <div class="col-sm-12">
-                                    <p><strong>Tiket 1</strong></p>
-                                    <form class="ticket-fields">
-                                        <button class="btn btn-dark mr-3"><strong>QP</strong></button>
-                                        <div data-toggle="modal" data-target="#Loto">
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="36" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="3" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="6" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="24" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="4" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="31" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="8" readonly></input>
-                                            </span>
-                                        </div>
-
-                                        <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
-                                            xml:space="preserve" class="ticket-close active d-none d-sm-block">
-                                            <path class="ticket-close__outline"
-                                                d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
-    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
-    V360.909z" />
-                    
-                                            <path class="ticket-close__sign"
-                                                d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
-        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
-        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
-        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
-                                        </svg>
-
-                                        <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;"
-                                            xml:space="preserve" class="ticket-heart active">
-                                            <defs>
-                                                <path
-                                                    d="M60.45 345.45L15 200.91 83.18 73.64l143.64-11.82 96.36 106.36L365 97.27l102.73-49.09 130.91 66.37 17.27 183.63L320 582.73 60.45 345.45z"
-                                                    id="a" />
-                                                <path
-                                                    d="M470 37.3c-67.43 0-110.13 40.27-134.07 74.06-6.21 8.77-11.49 17.56-15.93 25.83-4.44-8.27-9.72-17.06-15.93-25.83C280.13 77.57 237.43 37.3 170 37.3c-47.95 0-91.74 19.72-123.31 55.54C16.58 127.01 0 172.77 0 221.69c0 53.25 20.79 102.78 65.43 155.87 39.9 47.45 97.29 96.36 163.76 153 24.76 21.11 50.38 42.93 77.64 66.79l.82.71c3.54 3.1 7.94 4.64 12.35 4.64 4.41 0 8.82-1.54 12.35-4.64l.82-.71c27.26-23.86 52.88-45.68 77.65-66.79 66.46-56.64 123.85-105.55 163.75-153C619.21 324.47 640 274.94 640 221.69c0-48.92-16.58-94.68-46.69-128.85C561.74 57.02 517.95 37.3 470 37.3zM320 559.08c-23.17-20.14-45.14-38.87-66.49-57.06C123.43 391.17 37.5 317.95 37.5 221.69c0-39.79 13.26-76.74 37.33-104.06C99.18 90.01 132.97 74.8 170 74.8c51.41 0 84.65 31.67 103.47 58.24 16.89 23.83 25.7 47.85 28.7 57.07A18.752 18.752 0 00320 203.05c8.12 0 15.31-5.22 17.83-12.94 3-9.22 11.81-33.24 28.7-57.07C385.36 106.47 418.59 74.8 470 74.8c37.03 0 70.82 15.21 95.17 42.83 24.07 27.32 37.33 64.27 37.33 104.06 0 96.26-85.93 169.48-216.01 280.33-21.35 18.19-43.32 36.91-66.49 57.06z"
-                                                    id="b" />
-                                            </defs>
-                                            <use xlink:href="#a" fill="#fff" class="ticket-heart__bg" />
-                                            <use xlink:href="#a" fill-opacity="0" stroke="#000"
-                                                class="ticket-heart__stroke" />
-                                            <g>
-                                                <use xlink:href="#b" class="ticket-heart__stroke" />
-                                                <use xlink:href="#b" fill-opacity="0" stroke="#000"
-                                                    stroke-opacity="0" class="ticket-heart__stroke" />
-                                            </g>
-                                        </svg>
-
-                                        <a href="#" class="ticket-close-text text-sm link-black underline d-block d-sm-none"><strong>Obriši
-                                                sve</strong></a>
-
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="ticket-card__row active row mt-3">
-                                <div class="col-sm-12">
-                                    <form class="ticket-fields">
-                                        <button class="btn btn-dark mr-3"><strong>QP</strong></button>
-                                        <div data-toggle="modal" data-target="#Loto">
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="36" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="3" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="6" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="24" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="4" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="31" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="8" readonly></input>
-                                            </span>
-                                        </div>
-
-                                        <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
-                                            xml:space="preserve" class="ticket-close active d-none d-sm-block">
-                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
-    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
-    V360.909z" />
-                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
-        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
-        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
-        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
-                                        </svg>
-
-                                        <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;"
-                                            xml:space="preserve" class="ticket-heart active">
-                                            <defs>
-                                                <path
-                                                    d="M60.45 345.45L15 200.91 83.18 73.64l143.64-11.82 96.36 106.36L365 97.27l102.73-49.09 130.91 66.37 17.27 183.63L320 582.73 60.45 345.45z"
-                                                    id="a" />
-                                                <path
-                                                    d="M470 37.3c-67.43 0-110.13 40.27-134.07 74.06-6.21 8.77-11.49 17.56-15.93 25.83-4.44-8.27-9.72-17.06-15.93-25.83C280.13 77.57 237.43 37.3 170 37.3c-47.95 0-91.74 19.72-123.31 55.54C16.58 127.01 0 172.77 0 221.69c0 53.25 20.79 102.78 65.43 155.87 39.9 47.45 97.29 96.36 163.76 153 24.76 21.11 50.38 42.93 77.64 66.79l.82.71c3.54 3.1 7.94 4.64 12.35 4.64 4.41 0 8.82-1.54 12.35-4.64l.82-.71c27.26-23.86 52.88-45.68 77.65-66.79 66.46-56.64 123.85-105.55 163.75-153C619.21 324.47 640 274.94 640 221.69c0-48.92-16.58-94.68-46.69-128.85C561.74 57.02 517.95 37.3 470 37.3zM320 559.08c-23.17-20.14-45.14-38.87-66.49-57.06C123.43 391.17 37.5 317.95 37.5 221.69c0-39.79 13.26-76.74 37.33-104.06C99.18 90.01 132.97 74.8 170 74.8c51.41 0 84.65 31.67 103.47 58.24 16.89 23.83 25.7 47.85 28.7 57.07A18.752 18.752 0 00320 203.05c8.12 0 15.31-5.22 17.83-12.94 3-9.22 11.81-33.24 28.7-57.07C385.36 106.47 418.59 74.8 470 74.8c37.03 0 70.82 15.21 95.17 42.83 24.07 27.32 37.33 64.27 37.33 104.06 0 96.26-85.93 169.48-216.01 280.33-21.35 18.19-43.32 36.91-66.49 57.06z"
-                                                    id="b" />
-                                            </defs>
-                                            <use xlink:href="#a" fill="#fff" class="ticket-heart__bg" />
-                                            <use xlink:href="#a" fill-opacity="0" stroke="#000"
-                                                class="ticket-heart__stroke" />
-                                            <g>
-                                                <use xlink:href="#b" class="ticket-heart__stroke" />
-                                                <use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"
-                                                    class="ticket-heart__stroke" />
-                                            </g>
-                                        </svg>
-
-                                        <a href="#" class="ticket-close-text text-sm link-black underline d-block d-sm-none"><strong>Obriši
-                                                sve</strong></a>
-
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-sm-12">
-                                    <form class="ticket-fields">
-                                        <button class="btn btn-dark mr-3"><strong>QP</strong></button>
-                                        <div data-toggle="modal" data-target="#Loto">
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                        </div>
-
-                                        <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
-                                            xml:space="preserve" class="ticket-close d-none d-sm-block">
-                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
-    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
-    V360.909z" />
-                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
-        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
-        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
-        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
-                                        </svg>
-
-                                        <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;"
-                                            xml:space="preserve" class="ticket-heart">
-                                            <defs>
-                                                <path
-                                                    d="M60.45 345.45L15 200.91 83.18 73.64l143.64-11.82 96.36 106.36L365 97.27l102.73-49.09 130.91 66.37 17.27 183.63L320 582.73 60.45 345.45z"
-                                                    id="a" />
-                                                <path
-                                                    d="M470 37.3c-67.43 0-110.13 40.27-134.07 74.06-6.21 8.77-11.49 17.56-15.93 25.83-4.44-8.27-9.72-17.06-15.93-25.83C280.13 77.57 237.43 37.3 170 37.3c-47.95 0-91.74 19.72-123.31 55.54C16.58 127.01 0 172.77 0 221.69c0 53.25 20.79 102.78 65.43 155.87 39.9 47.45 97.29 96.36 163.76 153 24.76 21.11 50.38 42.93 77.64 66.79l.82.71c3.54 3.1 7.94 4.64 12.35 4.64 4.41 0 8.82-1.54 12.35-4.64l.82-.71c27.26-23.86 52.88-45.68 77.65-66.79 66.46-56.64 123.85-105.55 163.75-153C619.21 324.47 640 274.94 640 221.69c0-48.92-16.58-94.68-46.69-128.85C561.74 57.02 517.95 37.3 470 37.3zM320 559.08c-23.17-20.14-45.14-38.87-66.49-57.06C123.43 391.17 37.5 317.95 37.5 221.69c0-39.79 13.26-76.74 37.33-104.06C99.18 90.01 132.97 74.8 170 74.8c51.41 0 84.65 31.67 103.47 58.24 16.89 23.83 25.7 47.85 28.7 57.07A18.752 18.752 0 00320 203.05c8.12 0 15.31-5.22 17.83-12.94 3-9.22 11.81-33.24 28.7-57.07C385.36 106.47 418.59 74.8 470 74.8c37.03 0 70.82 15.21 95.17 42.83 24.07 27.32 37.33 64.27 37.33 104.06 0 96.26-85.93 169.48-216.01 280.33-21.35 18.19-43.32 36.91-66.49 57.06z"
-                                                    id="b" />
-                                            </defs>
-                                            <use xlink:href="#a" fill="#fff" class="ticket-heart__bg" />
-                                            <use xlink:href="#a" fill-opacity="0" stroke="#000"
-                                                class="ticket-heart__stroke" />
-                                            <g>
-                                                <use xlink:href="#b" class="ticket-heart__stroke" />
-                                                <use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"
-                                                    class="ticket-heart__stroke" />
-                                            </g>
-                                        </svg>
-
-                                        <a href="#" class="ticket-close-text text-sm link-black underline d-block d-sm-none"><strong>Obriši
-                                                sve</strong></a>
-
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-sm-12">
-                                    <form class="ticket-fields">
-                                        <button class="btn btn-dark mr-3"><strong>QP</strong></button>
-                                        <div data-toggle="modal" data-target="#Loto">
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                            <span>
-                                                <input class="ticket-fields__field" type="text" value="" readonly></input>
-                                            </span>
-                                        </div>
-
-                                        <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 384.97 384.97" style="enable-background:new 0 0 384.97 384.97;"
-                                            xml:space="preserve" class="ticket-close d-none d-sm-block">
-                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
-    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
-    V360.909z" />
-                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
-        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
-        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
-        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
-                                        </svg>
-
-                                        <?xml version="1.0" encoding="iso-8859-1"?>
-                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                            viewBox="0 0 640 640" style="enable-background:new 0 0 640 640;"
-                                            xml:space="preserve" class="ticket-heart">
-                                            <defs>
-                                                <path
-                                                    d="M60.45 345.45L15 200.91 83.18 73.64l143.64-11.82 96.36 106.36L365 97.27l102.73-49.09 130.91 66.37 17.27 183.63L320 582.73 60.45 345.45z"
-                                                    id="a" />
-                                                <path
-                                                    d="M470 37.3c-67.43 0-110.13 40.27-134.07 74.06-6.21 8.77-11.49 17.56-15.93 25.83-4.44-8.27-9.72-17.06-15.93-25.83C280.13 77.57 237.43 37.3 170 37.3c-47.95 0-91.74 19.72-123.31 55.54C16.58 127.01 0 172.77 0 221.69c0 53.25 20.79 102.78 65.43 155.87 39.9 47.45 97.29 96.36 163.76 153 24.76 21.11 50.38 42.93 77.64 66.79l.82.71c3.54 3.1 7.94 4.64 12.35 4.64 4.41 0 8.82-1.54 12.35-4.64l.82-.71c27.26-23.86 52.88-45.68 77.65-66.79 66.46-56.64 123.85-105.55 163.75-153C619.21 324.47 640 274.94 640 221.69c0-48.92-16.58-94.68-46.69-128.85C561.74 57.02 517.95 37.3 470 37.3zM320 559.08c-23.17-20.14-45.14-38.87-66.49-57.06C123.43 391.17 37.5 317.95 37.5 221.69c0-39.79 13.26-76.74 37.33-104.06C99.18 90.01 132.97 74.8 170 74.8c51.41 0 84.65 31.67 103.47 58.24 16.89 23.83 25.7 47.85 28.7 57.07A18.752 18.752 0 00320 203.05c8.12 0 15.31-5.22 17.83-12.94 3-9.22 11.81-33.24 28.7-57.07C385.36 106.47 418.59 74.8 470 74.8c37.03 0 70.82 15.21 95.17 42.83 24.07 27.32 37.33 64.27 37.33 104.06 0 96.26-85.93 169.48-216.01 280.33-21.35 18.19-43.32 36.91-66.49 57.06z"
-                                                    id="b" />
-                                            </defs>
-                                            <use xlink:href="#a" fill="#fff" class="ticket-heart__bg" />
-                                            <use xlink:href="#a" fill-opacity="0" stroke="#000"
-                                                class="ticket-heart__stroke" />
-                                            <g>
-                                                <use xlink:href="#b" class="ticket-heart__stroke" />
-                                                <use xlink:href="#b" fill-opacity="0" stroke="#000" stroke-opacity="0"
-                                                    class="ticket-heart__stroke" />
-                                            </g>
-                                        </svg>
-
-                                        <a href="#" class="ticket-close-text text-sm link-black underline d-block d-sm-none"><strong>Obriši
-        sve</strong></a>
-
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 tab-pane fade" id="sistemski" role="tabpanel" aria-labelledby="sistem">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <p class="h5 mb-4"><strong>SISTEM OD</strong></p>
-                                    <div class="row">
-                                        <div class="col-5 pr-1">
-                                            <p class="text-center text-sm">Brojeva</p>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <p class="text-center text-sm">Broj kombinacija</p>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0">
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc" value="8" readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-gray" value="8" readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-active-red" value="9"
-                                                readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-active-red-light"
-                                                value="64"
-                                                readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc" value="10" readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-gray" value="120"
-                                                readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc" value="11" readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-gray" value="426"
-                                                readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc" value="12" readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-gray" value="520"
-                                                readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <p class="h5 mb-4 mt-xxs-2"><strong>SISTEM OD</strong></p>
-                                    <div class="row">
-                                        <div class="col-5 pr-1">
-                                            <p class="text-center text-sm">Brojeva</p>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <p class="text-center text-sm">Broj kombinacija</p>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0">
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc" value="13" readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-gray" value="165"
-                                                readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc"
-                                                value="14" readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-gray"
-                                                value="5874" readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc" value="15" readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-gray" value="58446"
-                                                readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc" value="16" readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-gray" value="78426"
-                                                readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="row align-items-center mb-2">
-                                        <div class="col-5 pr-1">
-                                            <input type="text" class="form-control form-control-tc" value="17" readonly>
-                                        </div>
-                                        <div class="col-5 pl-1 pr-1">
-                                            <input type="text" class="form-control form-control-tc fc-gray" value="221879"
-                                                readonly>
-                                        </div>
-                                        <div class="col-2 pl-0 pr-0 ticket-fields">
-                                            <span data-toggle="modal" data-target="#Loto2">
-                                                <input class="ticket-fields__field" type="text" value="" readonly="">
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row mt-5">
-                        <div class="col-12">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="mb-2 d-flex">
-                                        <div class="Form_Txt_Left01">
-                                            <span class="lotoPlus">LOTO+</span>
-                                        </div>
-                                        <div class="Form_Txt_Left01a">
-                                            <div class="js-switch checkbox" data-style="rounded"
-                                                data-label="yes-no">
-                                                <input type="checkbox" id="cb-1">
-                                                <label class="label" for="cb-1"></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-8">
-                                    <div class="form-choose">
-                                        <div class="Form_Txt_Left01">
-                                            <span class="joker">JOKER</span>
-                                        </div>
-                                        <div class="Form_Txt_Left01a">
-                                            <div class="js-switch checkbox" data-style="rounded" data-label="yes-no">
-                                                <input type="checkbox" id="cb-2">
-                                                <label class="label" for="cb-2"></label>
-                                            </div>
-                                        </div>
-                                        <div class="Form_Txt_Left01a d-flex form-choose__numbers">
-                                            <div class="custom-control custom-checkbox mr-3">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                <label class="custom-control-label" for="customCheck1">1</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mr-3">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                <label class="custom-control-label" for="customCheck2">2</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mr-3">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                                <label class="custom-control-label" for="customCheck3">5</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mr-3">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                                                <label class="custom-control-label" for="customCheck4">10</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox mr-3">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck5">
-                                                <label class="custom-control-label" for="customCheck5">50</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="float-right-mob mt-3">
-                                        <span>
-                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text"
-                                                value="45" readonly></input>
-                                        </span>
-                                        <span>
-                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4" readonly></input>
-                                        </span>
-                                        <span>
-                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12" readonly></input>
-                                        </span>
-                                        <span>
-                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="" readonly></input>
-                                        </span>
-                                        <span>
-                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="" readonly></input>
-                                        </span>
-                                        <span>
-                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="" readonly></input>
-                                        </span>
-                                        <span>
-                                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="" readonly></input>
-                                        </span>
-                                        <button class="btn btn-dark ml-2 btn--padd-xs"><strong>QP</strong></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+    <!-- SCORE TABS -->
+    <div class="score-tabs">
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-sm-8">
+                    <p class="h3 p--cern"><strong>83. KOLO - PETAK, 16.10.2020</strong></p>
+                </div>
+                <div class="col-md-4 list-group score-tabs__list-tabs" id="list-tab" role="tablist">
+                    <button class="btn btn-primary btn--padd-xs btn--cern active" id="loto-tab"
+                        data-toggle="list" href="#loto" role="tab" aria-controls="home"><strong>LOTO</strong></button>
+                    <button class="btn btn-primary btn--padd-xs btn--cern" id="bingo-tab"
+                        data-toggle="list" href="#bingo" role="tab" aria-controls="profile"><strong>BINGO</strong></button>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="loto" role="tabpanel" aria-labelledby="loto-tab">
                     <div class="row">
                         <div class="col-12">
-                            <hr>
-                        </div>
-                    </div>
-
-                    <div class="row mt-2">
-                        <div class="col-xl-6">
-                            <div class="row">
-                                <div class="col-5">
-                                    <p class="text-sm">Loto</p>
-                                    <p class="text-sm">Loto +</p>
-                                    <p class="text-sm">Joker</p>
+                            <div class="logo-line logo-line--loto">
+                                <div class="logo-line__img">
+                                    <?xml version="1.0" encoding="utf-8"?>
+                                    <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 130 28.4" enable-background="new 0 0 130 28.4"
+                                        xml:space="preserve">
+                                        <path fill="#fff" d="M111.7,28.4c12.3,0,18.3-4.5,18.3-14.2S124,0,111.7,0S93.5,4.5,93.5,14.2c0,7.9,4,12.4,12.2,13.8l0.5-0.2v-1.3l0.8,1
+			l1.2-0.4l-0.7,1l0,0C108.7,28.3,110.2,28.4,111.7,28.4 M107.6,16.7c-0.1-0.6-0.2-1.2-0.2-1.9c0-3.7,1.4-5.6,4.3-5.6
+			c2.9,0,4.3,1.9,4.3,5.6c0,3.2-1.3,5.2-3.5,5.5l3.4,2.5h-4.5l-1.4,4.3l-1.4-4.3h-4.5l3.6-2.6l-1.4-4.3L107.6,16.7z M126.4,10.1
+			l0.7,1l1.1-0.4l-0.7,1l0.7,1l-1.1-0.4l-0.7,1v-1.2l-1.1-0.4l1.1-0.4V10.1z M118,15.1l0.4,1.1h1.1l-0.9,0.7l0.3,1.1l-0.9-0.7
+			l-0.9,0.7l0.4-1.1l-0.9-0.7h1.1L118,15.1z M119.9,2.3l1.3,4.1h4.3L122,8.9l1.3,4.1l-3.5-2.5l-3.5,2.5l1.3-4.1l-3.5-2.5h4.3
+			L119.9,2.3z M102.5,17.2l0.4,1.1h1.1l-0.9,0.7l0.4,1.1l-0.9-0.7l-0.9,0.7l0.4-1.1l-0.9-0.7h1.1L102.5,17.2z M103.3,8.6l1.5,2.1
+			l2.4-0.8l-1.5,2l1.5,2.1l-2.4-0.8l-1.5,2v-2.5l-2.4-0.8l2.4-0.8V8.6z M122.9,14.8l0.1,1.1l1.1,0.3l-1.1,0.4l0.1,1.1l-0.7-0.9
+			l-1.1,0.4l0.6-1l-0.7-0.9l1.1,0.3L122.9,14.8z M108.8,4l0.1,1.1l1.1,0.3l-1.1,0.4l0.1,1.1L108.3,6l-1.1,0.4l0.6-1l-0.7-0.9
+			l1.1,0.3L108.8,4z M1.1,27.6H3l-0.7-0.9l2.8,0.9h1.8l2.3-3.1v3.1h14.6c0.8,0,1.4-0.6,1.4-1.4v-6.8c0-0.8-0.6-1.4-1.4-1.4h-8.6l0,0
+			c-0.7,0-1.3-0.6-1.3-1.3l0,0v-4.8l-2.1,1l0.3,2.6l-1.8-1.9l-2.6,0.9L9,12.2l-1.7-1.9l2.6,0.5l1.3-2.3l0.3,2.6l2.3,0.5V2.2
+			c0-0.8-0.6-1.4-1.4-1.4h-11C0.6,0.8,0,1.4,0,2.2v9.2l0,0l1-0.6l-0.4,1.1l0.9,0.7H0.3L0,13.5v3.6L1.1,17L0,18v8.5
+			C0.1,27,0.6,27.5,1.1,27.6 M12.6,18.5l1.5,1.9l2.3-0.8l-1.4,2l1.5,1.9l-2.3-0.7l-1.4,2l-0.1-2.4l-2.3-0.7l2.3-0.8L12.6,18.5z
+			 M3.6,20.9l0.6,1l1.2-0.2l-0.8,0.9l0.6,1l-1.1-0.5L3.3,24l0.1-1.2l-1.1-0.5l1.2-0.2L3.6,20.9z M5.9,15.4v1.2L7,17l-1.1,0.3v1.2
+			l-0.7-1l-1.1,0.3l0.7-0.9l-0.7-1l1.1,0.4L5.9,15.4z M20.1,20.3v1.2l1.1,0.4l-1.1,0.4v1.2l-0.7-1l-1.1,0.3l0.7-0.9l-0.7-1l1.1,0.4
+			L20.1,20.3z M62.4,10L62.4,10c0,0.9,0.6,1.5,1.4,1.5h2.6l-1.1-2L62.4,10z M62.4,4.2v4.3l1.5-1.6L62.4,4.2z M84.2,19.2v-0.8
+			l-0.3,0.3L84.2,19.2z M71.9,27.6h4.3l-1-1.5l-2.4,0.7l1.5-2l-1.4-2.1l2.4,0.8l1.5-2V24l2.4,0.8l-2.4,0.7v1.9h6.3
+			c0.8,0,1.4-0.6,1.4-1.4v-6.6L83.7,19l-0.8,0.8l0.2-1.1l-1-0.5l1.1-0.2l0.2-1.1l0.5,1l0.6-0.1v-5.1c0-0.1,0-0.1,0-0.2l-0.9-0.4
+			l-3.2,3.3l0.6-4.6l-4.1-2L81.4,8L82,3.4l2.2,4.1l4.5-0.8L85.5,10l0.7,1.3h4.9c0.8,0,1.4-0.6,1.4-1.4V2.2c0-0.8-0.6-1.4-1.4-1.4
+			H72.3l-0.4,1.1l-0.4-1.1h-7.7c-0.7,0-1.3,0.6-1.4,1.3v1.1l3.4,1.6l3.1-3.4L68.3,6l4.2,2L68,8.9l-0.3,2.6H69c0.8,0,1.4,0.6,1.4,1.4
+			v13.3C70.5,26.9,71.1,27.6,71.9,27.6 M76.2,2.2l0.5,1L77.8,3L77,3.8l0.5,1l-1-0.5l-0.8,0.8L75.9,4l-1-0.5L76,3.3L76.2,2.2z
+			 M73.8,10.2l0.5,1l1.1-0.2l-0.8,0.8l0.5,1l-1-0.5l-0.8,0.8l0.2-1.1l-1-0.5l1.1-0.2L73.8,10.2z M76.5,15.5l0.3,1.1l1.1,0.1l-1,0.6
+			l0.3,1.1l-0.9-0.7l-1,0.6l0.4-1l-0.9-0.7l1.1,0.1L76.5,15.5z M43.6,28.4c12.3,0,18.3-4.5,18.3-14.2S55.9,0,43.6,0
+			C31.3,0,25.4,4.5,25.4,14.2c0,7.9,4,12.4,12.2,13.8l0.5-0.2v-1.3l0.8,1l1.2-0.4l-0.7,1l0,0C40.6,28.3,42.1,28.4,43.6,28.4
+			 M39.5,16.7c-0.1-0.6-0.2-1.2-0.2-1.9c0-3.7,1.4-5.6,4.3-5.6s4.3,1.9,4.3,5.6c0,3.2-1.3,5.2-3.5,5.5l3.4,2.5h-4.5l-1.4,4.3
+			l-1.4-4.3H36l3.6-2.6l-1.3-4.3L39.5,16.7z M58.3,10.1l0.7,1l1.1-0.4l-0.7,1l0.7,1L59,12.3l-0.7,1v-1.2l-1.1-0.4l1.1-0.4V10.1z
+			 M49.9,15.1l0.4,1.1h1.1l-0.9,0.7l0.4,1.1L50,17.3L49.1,18l0.4-1.1l-0.9-0.7h1.1L49.9,15.1z M51.8,2.3l1.3,4.1h4.3l-3.5,2.5
+			l1.3,4.1l-3.5-2.5l-3.4,2.4l1.3-4.1l-3.5-2.5h4.3L51.8,2.3z M34.4,17.2l0.4,1.1h1.1L35,19l0.4,1.1l-0.9-0.7l-0.9,0.7L34,19
+			l-0.9-0.7h1.1L34.4,17.2z M35.2,8.6l1.5,2.1l2.4-0.8l-1.5,2l1.5,2.1l-2.4-0.8l-1.5,2v-2.5l-2.4-0.8l2.4-0.8V8.6z M54.8,14.8
+			l0.1,1.1l1.1,0.3l-1.1,0.4l0.1,1.1l-0.7-0.9l-1.1,0.4l0.6-1l-0.7-0.9l1.1,0.3L54.8,14.8z M40.7,4l0.1,1.1l1.1,0.3l-1.1,0.4
+			l0.1,1.1L40.2,6l-1.1,0.5l0.6-1L39,4.6l1.1,0.3L40.7,4z" />
+                                    </svg>
                                 </div>
-                                <div class="col-7">
-                                    <p class="text-sm">80,00 din</p>
-                                    <p class="text-sm">00,00 din</p>
-                                    <p class="text-sm">100,00 din</p>
-                                </div>
-                                <div class="col-5 mt-3 mb-3">
-                                    <p class="h3"><strong>Ukupno</strong></p>
-                                </div>
-                                <div class="col-7 mt-3">
-                                    <p class="h3"><strong>100,00 din.</strong></p>
-                                </div>
+                                <div class="logo-line__line"></div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="d-flex">   
-                                <div class="Form_Txt_Left01">
-                                    <p><strong>Pretplata:&nbsp;&nbsp;</strong></p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#">Arhiva rezultata</a>
+                            <div class="ticket-fields">
+                                <div data-toggle="modal" data-target="#Loto">
+                                    <span>
+                                        <input class="ticket-fields__field" type="text" value="36" readonly></input>
+                                    </span>
+                                    <span>
+                                        <input class="ticket-fields__field" type="text" value="3" readonly></input>
+                                    </span>
+                                    <span>
+                                        <input class="ticket-fields__field" type="text" value="6" readonly></input>
+                                    </span>
+                                    <span>
+                                        <input class="ticket-fields__field" type="text" value="24" readonly></input>
+                                    </span>
+                                    <span>
+                                        <input class="ticket-fields__field" type="text" value="4" readonly></input>
+                                    </span>
+                                    <span>
+                                        <input class="ticket-fields__field" type="text" value="31" readonly></input>
+                                    </span>
+                                    <span>
+                                        <input class="ticket-fields__field" type="text" value="8" readonly></input>
+                                    </span>
                                 </div>
-                                <div class="Form_Txt_Left01a mr-3">
-                                    <div class="switchToggle">
-                                        <input type="checkbox" id="switch">
-                                        <label for="switch"></label>
-                                    </div>
-                                </div>
-                                <div class="Form_Txt_Left01a d-flex">
-                                    <div class="custom-control custom-checkbox mr-3">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck6">
-                                        <label class="custom-control-label" for="customCheck6">2</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox mr-3">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck7">
-                                        <label class="custom-control-label" for="customCheck7">3</label>
-                                    </div>
-                                    <div class="custom-control custom-checkbox mr-3">
-                                        <input type="checkbox" class="custom-control-input" id="customCheck8">
-                                        <label class="custom-control-label" for="customCheck8">4</label>
-                                    </div>
-                                </div>
-                            </div>    
-                            <button class="Button_Big btn btn-dark mt-4 submit-btn" id="btn-bingo-play"
-                                data-target="#bingo-ticket-overview">Igraj</button>
+
+                                <a href="#"
+                                    class="ticket-close-text text-sm link-black underline d-block d-sm-none"><strong>Obriši
+                                        sve</strong></a>
+
+                            </div>
                         </div>
                     </div>
-
                 </div>
-                <p class="mt-5 text-sm">Morate biti prijavljeni da biste odigrali Loto tiket! <a
-                        href="#"><strong>Prijavi se.</strong></a></p>
+                <div class="tab-pane fade" id="bingo" role="tabpanel" aria-labelledby="bingo-tab">
+                    data-dismiss
+                </div>
             </div>
         </div>
     </div>
-    <!-- TICKET -->
-
-    <!-- DRAW BANNER -->
-    <section class="draw-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="db-purple-bg">
-                        <div class="row align-items-center">
-                            <div class="col-lg-3">
-                                <div class="draw-banner-srecko">
-                                    <img src="images/loto-srecko.png" alt="">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="draw-banner-text">
-                                    <p><strong>LOTO izvlačenje utorak/petak, od 20h</strong></p>
-                                </div>
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="draw-banner-tv draw-banner-tv--loto">
-                                    <img src="images/TV-Prva.svg" alt="">
-                                    <img class="d-none d-lg-block" src="images/plave-tackice3.svg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- DRAW BANNER -->
+    <!-- SCORE TABS -->
 
     <!-- HOW TO PLAY -->
     <section class="how-to-play how-to-play--bingo">
@@ -889,19 +350,6 @@
         </div>
     </section>
     <!-- HOW TO PLAY -->
-
-    <!-- CLOVER -->
-    <section class="clover">
-       <div class="container">
-           <div class="row text-center text-uppercase">
-               <div class="col-12">
-                   <p>Budi odgovoran</p>
-                   <h2>Igraj na sreću!<br>S‘merom!</h2>
-               </div>
-           </div>
-       </div>
-    </section>
-    <!-- CLOVER -->
 
     <!-- FOOTER -->
     <footer class="footer">

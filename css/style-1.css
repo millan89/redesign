@@ -27,6 +27,11 @@ p {
 	border: 2px solid var(--brand-black);
 }
 
+.custom-select {
+	height: calc(1.5em + .75rem + 5px);
+	font-weight: 400 !important;
+}
+
 .switchToggle input[type=checkbox] {
 	height: 0; 
 	width: 0; 
@@ -246,7 +251,7 @@ p {
 	cursor: pointer;
 }
 
-.ticket-fields span::after {
+.ticket-fields.ticket-fields--hover-plus span::after {
 	position: absolute;
 	content: none;
 	font-family: var(--font-fa);
@@ -260,11 +265,11 @@ p {
 	text-align: center;
 }
 
-.ticket-fields:hover span:after {
+.ticket-fields.ticket-fields--hover-plus:hover span:after {
 	content: "\f067";
 }
 
-.ticket-card__row.active .ticket-fields:hover span:after {
+.ticket-card__row.active .ticket-fields.ticket-fields--hover-plus:hover span:after {
 	content: none;
 }
 
@@ -1298,6 +1303,7 @@ button.regulations {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
 	/* MAIN BANNER >> */
     .main-banner .main-banner__text__num {
 		font-size: 38px;
@@ -1352,9 +1358,8 @@ button.regulations {
 		margin-right: .5rem !important;
 	}
 
-	.ticket-fields span::after {
-		top: 20%;
-		left: 2%;
+	.ticket-fields.ticket-fields--hover-plus span::after {
+		top: 22%;
 		font-size: 0.8rem;
 	}
 

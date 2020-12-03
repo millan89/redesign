@@ -72,6 +72,10 @@ p strong {
     font-weight: 700;
 }
 
+.p--cern {
+    letter-spacing: 3px;
+}
+
 p.lg,
 a.lg {
     font-size: 1.4rem;
@@ -137,6 +141,7 @@ img {
     border-color: var(--brand-red-2);
 }
 
+.btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active {
     background-color: var(--brand-red);
     border-color: var(--brand-red);
@@ -828,6 +833,10 @@ header {
 
 header .btn {
     min-width: 150px;
+}
+
+.navbar {
+    padding: .5rem 0;
 }
 
 .navbar-collapse .btn {
@@ -1634,6 +1643,52 @@ header .btn {
     margin: auto;
 }
 
+
+/* SCORE FORM */
+.score-form {
+    padding: 70px 0;
+}
+
+.score-form--loto {
+    background-color: var(--brand-red);
+}
+
+
+/* SCORE TABS */
+.score-tabs__list-tabs {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.score-tabs__list-tabs .btn {
+    min-width: 102px;
+}
+
+.logo-line--loto .logo-line__img {
+    background-color: var(--brand-red);
+}
+
+.logo-line__img {
+    padding: .75rem 0;
+    width: 210px;
+    float: left;
+}
+
+.logo-line__img svg {
+    height: 32px;
+    display: block;
+    margin: auto;
+}
+
+.logo-line__line {
+    float: right;
+    height: 10px;
+    width: calc(100% - 220px);
+    background-color: var(--brand-red);
+}
+
+
+
 /* PRE FOOTER */
 .pre-footer {
     margin-top: 110px;
@@ -1738,6 +1793,10 @@ header .btn {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+
+    header {
+        margin-bottom: 0;
+    }
 
     .navbar {
         flex-direction: row-reverse;
