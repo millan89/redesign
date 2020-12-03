@@ -232,12 +232,31 @@ p {
 	margin-right: 2px;
 }
 
+.ticket-fields__field.ticket-fields__field--lg,
+.ticket-fields__field.ticket-fields__field--lg:disabled {
+	width: 56px;
+	height: 56px;
+	font-size: 1.2rem;
+}
+
 .modal .ticket-fields__field.ticket-fields__field--sm,
 .ticket-fields__field.ticket-fields__field--sm:disabled {
 	width: 40px;
 	height: 40px;
 	font-size: 0.9rem;
 	margin: 4px;
+}
+
+.ticket-fields__field.ticket-fields__field--loto {
+	border-color: var(--brand-red);
+}
+
+.ticket-fields__field.ticket-fields__field--lotoplus {
+	border-color: var(--brand-dark-blue-1);
+}
+
+.ticket-fields__field.ticket-fields__field--joker {
+	border-color: var(--brand-green);
 }
 
 .ticket-card__row.active .ticket-fields__field {

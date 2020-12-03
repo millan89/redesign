@@ -63,6 +63,10 @@ style.css
     color: var(--brand-red) !important;
 }
 
+.bg-color-lgray {
+    background-color: var(--brand-light-gray);
+}
+
 p {
     font-weight: 300;
     font-size: 1.2rem;
@@ -145,6 +149,31 @@ img {
 .btn-primary:not(:disabled):not(.disabled):active {
     background-color: var(--brand-red);
     border-color: var(--brand-red);
+}
+
+.btn-primary-tab {
+    color: var(--brand-darker-gray);
+    border-color: var(--brand-darker-gray);
+    background-color: var(--brand-white);
+}
+
+.btn-primary-tab.active {
+    color: var(--brand-white);
+    border-color: var(--brand-red);
+    background-color: var(--brand-red);
+}
+
+.btn-primary-tab:hover,
+.btn-primary-tab.active:hover {
+    color: var(--brand-white);
+    border-color: var(--brand-dark-gray-2);
+    background-color: var(--brand-dark-gray-2);
+}
+
+.btn-primary-tab.active:not(:disabled):not(.disabled):active {
+    color: var(--brand-white);
+    border-color: var(--brand-red);
+    background-color: var(--brand-red);
 }
 
 .btn-outline-primary {
@@ -1658,14 +1687,27 @@ header .btn {
 .score-tabs__list-tabs {
     flex-direction: row;
     justify-content: flex-end;
+    padding-left: 15px;
 }
 
 .score-tabs__list-tabs .btn {
     min-width: 102px;
 }
 
+.score-tabs .ticket-fields__field {
+    margin-bottom: 12%;
+}
+
 .logo-line--loto .logo-line__img {
     background-color: var(--brand-red);
+}
+
+.logo-line--lotoplus .logo-line__img {
+    background-color: var(--brand-dark-blue-1);
+}
+
+.logo-line--joker .logo-line__img {
+    background-color: var(--brand-green);
 }
 
 .logo-line__img {
@@ -1675,16 +1717,29 @@ header .btn {
 }
 
 .logo-line__img svg {
-    height: 32px;
+    height: 20px;
     display: block;
     margin: auto;
 }
 
 .logo-line__line {
     float: right;
-    height: 10px;
+    height: 1vw;
     width: calc(100% - 220px);
     background-color: var(--brand-red);
+    max-height: 10px;
+}
+
+.logo-line__line--loto {
+    background-color: var(--brand-red);
+}
+
+.logo-line__line--lotoplus {
+    background-color: var(--brand-dark-blue-1);
+}
+
+.logo-line__line--joker {
+    background-color: var(--brand-green);
 }
 
 
@@ -1877,6 +1932,10 @@ header .btn {
     .float-right-mob {
         float: left !important;
     }
+
+    .flex-d-column-sm {
+        flex-direction: column;
+    }
     
 }
 
@@ -1989,6 +2048,11 @@ header .btn {
 
     .games-btns .slick-prev {
         order: -1;
+    }
+
+    .score-tabs__list-tabs .btn {
+        width: 50%;
+        margin-top: 2rem;
     }
 
 }
