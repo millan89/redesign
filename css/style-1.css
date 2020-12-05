@@ -1382,12 +1382,19 @@ button.regulations {
 		font-size: 0.8rem;
 	}
 
-	.ticket-fields__field.ticket-fields__field--lg,
-	.ticket-fields__field.ticket-fields__field--lg:disabled,
 	.ticket-fields__field,
 	.ticket-fields__field:disabled {
 		width: 8vw;
 		height: 8vw;
+		font-size: 1rem;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.ticket-fields__field.ticket-fields__field--lg,
+	.ticket-fields__field.ticket-fields__field--lg:disabled {
+		width: 11vw;
+		height: 11vw;
 		font-size: 1rem;
 		margin-left: 0;
 		margin-right: 0;
