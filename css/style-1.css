@@ -1382,6 +1382,8 @@ button.regulations {
 		font-size: 0.8rem;
 	}
 
+	.ticket-fields__field.ticket-fields__field--lg,
+	.ticket-fields__field.ticket-fields__field--lg:disabled,
 	.ticket-fields__field,
 	.ticket-fields__field:disabled {
 		width: 8vw;
