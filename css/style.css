@@ -2085,6 +2085,10 @@ header .btn {
         max-width: 20%;
     }
 
+    .score-block svg {
+        min-width: 58px;
+    }
+
     .order-xxs-0 {
         order: 0;
     }
