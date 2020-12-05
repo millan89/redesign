@@ -71,6 +71,10 @@ style.css
     background-color: var(--brand-dark-gray);
 }
 
+.bg-color-yellow {
+    background-color: var(--brand-yellow);
+}
+
 p {
     font-weight: 300;
     font-size: 1.2rem;
@@ -165,6 +169,12 @@ img {
     color: var(--brand-white);
     border-color: var(--brand-red);
     background-color: var(--brand-red);
+}
+
+.btn-primary-tab--purple.active {
+    color: var(--brand-white);
+    border-color: var(--brand-purple);
+    background-color: var(--brand-purple);
 }
 
 .btn-primary-tab:hover,
@@ -1680,10 +1690,15 @@ header .btn {
 /* SCORE FORM */
 .score-form {
     padding: 70px 0;
+    transition: background 300ms ease-in-out;
 }
 
 .score-form--loto {
     background-color: var(--brand-red);
+}
+
+.score-form--bingo {
+    background-color: var(--brand-purple);
 }
 
 
@@ -1712,6 +1727,14 @@ header .btn {
 
 .logo-line--joker .logo-line__img {
     background-color: var(--brand-green);
+}
+
+.logo-line--bingo .logo-line__img {
+    background-color: var(--brand-purple);
+}
+
+.logo-line--bingoplus .logo-line__img {
+    background-color: var(--brand-light-blue-2);
 }
 
 .logo-line__img {
@@ -1746,6 +1769,13 @@ header .btn {
     background-color: var(--brand-green);
 }
 
+.logo-line__line--bingo {
+    background-color: var(--brand-purple);
+}
+
+.logo-line__line--bingoplus {
+    background-color: var(--brand-light-blue-2);
+}
 
 
 /* PRE FOOTER */

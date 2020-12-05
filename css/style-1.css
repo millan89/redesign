@@ -259,6 +259,14 @@ p {
 	border-color: var(--brand-green);
 }
 
+.ticket-fields__field.ticket-fields__field--bingo {
+	border-color: var(--brand-purple);
+}
+
+.ticket-fields__field.ticket-fields__field--bingoplus {
+	border-color: var(--brand-light-blue-2);
+}
+
 .ticket-card__row.active .ticket-fields__field {
 	background-color: var(--brand-yellow);
 	border-color: var(--brand-yellow);

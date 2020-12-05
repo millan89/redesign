@@ -140,4 +140,16 @@ $(document).ready(function(){
     }, 1000);
     // end COUNTDOWN
 
+
+    // REZULTATI page - adding modifier class on header
+    $(".score-tabs__list-tabs #bingo-tab").click(function() {
+        $(".score-form").addClass('score-form--bingo');
+        $(".score-form").removeClass('score-form--loto');
+    });
+
+    $(".score-tabs__list-tabs #loto-tab").click(function() {
+        $(".score-form").addClass('score-form--loto');
+        $(".score-form").removeClass('score-form--bingo');
+    })
+
 });
