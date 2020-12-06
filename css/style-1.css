@@ -114,7 +114,6 @@ p {
 	color: var(--brand-red);
 	text-decoration: none;
 	font-weight: 300;
-	transition: all ease-in-out 250ms;
 }
 
 .link-arrow::after {
@@ -123,6 +122,7 @@ p {
 	font-family: var(--font-fa);
 	font-weight: 700;
 	margin-left: 5px;
+	transition: all ease-in-out 250ms;
 }
 
 .link-arrow:hover {
@@ -131,7 +131,6 @@ p {
 }
 
 .link-arrow:hover::after {
-	transition: all ease-in 250ms;
 	margin-left: 12px;
 }
 /* link-arrow */
