@@ -911,7 +911,8 @@ header .btn {
 
 .dropdown-menu {
     border: 0 none;
-    border-radius: 0;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
 .dropdown-item {
@@ -2100,6 +2101,10 @@ header .btn {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+
+    .dropdown-menu {
+        box-shadow: none;
+    }
 
     .hero-balls-wrap__items {
         padding: 6px;
