@@ -23,11 +23,14 @@ style.css
     --brand-red-2: #B01521;
     --brand-light-red: #ffedf1;
     --brand-dark-blue-1: #0048D0;   
-    --brand-dark-blue-2: #005DFF;   
+    --brand-dark-blue-2: #005DFF;
+    --brand-dark-blue-3: #00519D;
     --brand-light-blue-1: #67BEC9;   
     --brand-light-blue-2: #05CFD5;   
     --brand-light-blue-3: #99BEFF;
-    --brand-pink: #FFB9C8;   
+    --brand-light-blue-4: #e3faeb;
+    --brand-pink: #FFB9C8;
+    --brand-pink-2: #fef8dd;
     --brand-yellow: #FAD62A; 
     --brand-yellow-2: #FAE420;
     --brand-dark-gray: #152238;   
@@ -49,6 +52,10 @@ style.css
 
 .color-blue {
     color: var(--brand-dark-blue-1);
+}
+
+.color-darkblue {
+    color: var(--brand-dark-blue-3);
 }
 
 .color-white {
@@ -2115,8 +2122,38 @@ header .btn {
         max-width: 20%;
     }
 
+    .score-block__cols {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .score-block svg {
         min-width: 58px;
+    }
+
+    .score-block .h6.pl-3.mb-0 {
+        padding-left: 0 !important;
+    }
+
+    .score-block .pl-0 {
+        padding-left: 15px !important;
+    }
+
+    .score-block p {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .score-block br {
+        display: none;
+    }
+
+    .score-block .col-md-12.mb-4 {
+        margin-bottom: 3rem !important;
+    }
+
+    .score-block .col-md-12.mb-4:last-of-type {
+        margin-bottom: 1.5rem !important;
     }
 
     .order-xxs-0 {
