@@ -87,6 +87,7 @@ p {
     font-size: 1.2rem;
 }
 
+a strong,
 p strong {
     font-weight: 700;
 }
