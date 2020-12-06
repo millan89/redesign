@@ -109,6 +109,34 @@ p {
 
 /* checkbox & radiobuttons */
 
+/* link-arrow */
+.link-arrow {
+	color: var(--brand-red);
+	text-decoration: none;
+	font-weight: 300;
+}
+
+.link-arrow i {
+	font-size: 12px;
+}
+
+/* .link-arrow::after {
+	content: '\f054';
+	font-size: 12px;
+	font-family: var(--font-fa);
+} */
+
+.link-arrow:hover {
+	color: var(--brand-dark-gray);
+	transition: all ease-in 250ms;
+}
+
+.link-arrow:hover > i {
+	transform: translateX(7px);
+	transition: all ease-in 250ms;
+}
+/* link-arrow */
+
 /* MAIN BANNER >> */
 .main-banner {
     padding: 20px 0 50px;
@@ -876,20 +904,13 @@ button.regulations {
 	background-color: var(--brand-light-blue-2);
 }
 
-.esgg-hero .es-logo {
-	width: 180px;
-	position: absolute;
-	left: 15px;
-	top: -210px;
-}
-
 .esgg-hero__bg {
 	background-image: url(../images/e-srecke/e-srecke-devojka_bg.png);
 	background-repeat: no-repeat;
-	background-position-x: center;
-	background-position-y: center;
+	background-position-x: 140px;
+	background-position-y: -160px;
 	background-size: inherit;
-	padding: 260px 0 220px;
+	padding: 140px 0 170px;
 }
 
 .esgg-hero .es-text h1 {
@@ -938,26 +959,6 @@ button.regulations {
 
 .srecke-item__rules {
 	margin-top: 5px;
-}
-
-.srecke-item__rules a {
-	color: var(--brand-red);
-	text-decoration: none;
-	font-weight: 300;
-}
-
-.srecke-item__rules a i {
-	font-size: 12px;
-}
-
-.srecke-item__rules a:hover {
-	color: var(--brand-dark-gray);
-	transition: all ease-in 250ms;
-}
-
-.srecke-item__rules a:hover > i {
-	transform: translateX(7px);
-	transition: all ease-in 250ms;
 }
 
 .srecke-item__play {
@@ -1193,6 +1194,10 @@ button.regulations {
 	}
 	/* << MAIN BANNER */
 
+	.esgg-hero__bg {
+		background-position-x: 70px;
+	}
+
 	/* DRAW BANNER >> */
 	.draw-banner-srecko img {
 		left: 80px;
@@ -1221,6 +1226,10 @@ button.regulations {
 		justify-content: center;
 	}
 	/* << BINGO TICKET */
+
+	.esgg-hero__bg {
+		background-position-x: 0;
+	}
 
 	/* DRAW BANNER >> */
 	.draw-banner-srecko img {
@@ -1272,7 +1281,8 @@ button.regulations {
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 	.esgg-hero__bg {
-		padding: 220px 0 180px;
+		background-position-x: -500px;
+		background-position-y: -120px;
 	}
 
 	.esgg-hero .es-logo {
@@ -1450,11 +1460,6 @@ button.regulations {
 		min-height: 300px;
 	}
 	/* << HOW TO PLAY */
-
-	.esgg-hero .es-text {
-		margin-left: 200px;
-	}
-
 }
 
 @media (min-width: 992px) {
