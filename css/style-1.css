@@ -111,7 +111,6 @@ p {
 
 /* link-arrow */
 .link-arrow {
-	color: var(--brand-red);
 	text-decoration: none;
 	font-weight: 300;
 }
@@ -122,7 +121,7 @@ p {
 	font-family: var(--font-fa);
 	font-weight: 700;
 	margin-left: 5px;
-	transition: all ease-in-out 250ms;
+	transition: margin ease-in-out .1s;
 }
 
 .link-arrow:hover {
@@ -133,6 +132,19 @@ p {
 .link-arrow:hover::after {
 	margin-left: 12px;
 }
+
+.link-arrow--red {
+	color: var(--brand-red);
+}
+
+.link-arrow--purple {
+	color: var(--brand-purple);
+}
+
+.link-arrow--darkblue {
+	color: var(--brand-dark-blue-3);
+}
+
 /* link-arrow */
 
 /* MAIN BANNER >> */
