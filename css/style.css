@@ -1793,21 +1793,16 @@ header .btn {
 #msform {
     text-align: center;
     position: relative;
-    margin-top: 30px;
+}
+
+.msform--fields {
+    min-height: 500px;
 }
 
 #msform fieldset {
-    background: white;
-    border: 0 none;
-    border-radius: 0px;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-    padding: 20px 30px;
-    box-sizing: border-box;
-    width: 80%;
-    margin: 0 10%;
-
-    /*stacking fieldsets above each other*/
     position: relative;
+    margin-top: 20px;
+    width: 100%;
 }
 
 /*Hide all except first fieldset*/
@@ -1818,28 +1813,12 @@ header .btn {
 /*inputs*/
 #msform input,
 #msform textarea {
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    margin-bottom: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: montserrat;
-    color: #2C3E50;
-    font-size: 13px;
+    border-width: 1px;
+    font-weight: 400;
 }
 
-#msform input:focus,
-#msform textarea:focus {
-    -moz-box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    border: 1px solid #ee0979;
-    outline-width: 0;
-    transition: All 0.5s ease-in;
-    -webkit-transition: All 0.5s ease-in;
-    -moz-transition: All 0.5s ease-in;
-    -o-transition: All 0.5s ease-in;
+#msform label {
+    font-weight: 300;
 }
 
 /*buttons*/
@@ -1878,15 +1857,6 @@ header .btn {
 }
 
 /*headings*/
-.fs-title {
-    font-size: 18px;
-    text-transform: uppercase;
-    color: #2C3E50;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-
 .fs-subtitle {
     font-weight: normal;
     font-size: 13px;
@@ -1925,6 +1895,8 @@ header .btn {
     background: white;
     border-radius: 25px;
     margin: 0 auto 10px auto;
+    z-index: 1;
+    position: relative;
 }
 
 /*progressbar connectors*/
@@ -1936,8 +1908,7 @@ header .btn {
     position: absolute;
     left: -50%;
     top: 9px;
-    z-index: -1;
-    /*put it behind the numbers*/
+    z-index: 0;
 }
 
 #progressbar li:first-child:after {

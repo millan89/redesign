@@ -86,46 +86,14 @@
 
                     <div class="row">
                         <div class="col-md-6 col-md-offset-3">
-                            <form id="msform">
-
+                            <div id="msform">
                                 <ul id="progressbar">
-                                    <li class="active">Personal Details</li>
-                                    <li>Social Profiles</li>
-                                    <li>Account Setup</li>
+                                    <li class="active"><strong>1. Korisnički podaci</strong></li>
+                                    <li><strong>2. Lični podaci</strong></li>
+                                    <li><strong>3. Dodatna podešavanja</strong></li>
+                                    <li><strong>4. Gotovo!</strong></li>
                                 </ul>
-
-                                <fieldset>
-                                    <h2 class="fs-title">Personal Details</h2>
-                                    <h3 class="fs-subtitle">Tell us something more about you</h3>
-                                    <input type="text" name="fname" placeholder="First Name" />
-                                    <input type="text" name="lname" placeholder="Last Name" />
-                                    <input type="text" name="phone" placeholder="Phone" />
-                                    <input type="button" name="next" class="next action-button" value="Next" />
-                                </fieldset>
-
-                                <fieldset>
-                                    <h2 class="fs-title">Social Profiles</h2>
-                                    <h3 class="fs-subtitle">Your presence on the social network</h3>
-                                    <input type="text" name="twitter" placeholder="Twitter" />
-                                    <input type="text" name="facebook" placeholder="Facebook" />
-                                    <input type="text" name="gplus" placeholder="Google Plus" />
-                                    <input type="button" name="previous" class="previous action-button-previous"
-                                        value="Previous" />
-                                    <input type="button" name="next" class="next action-button" value="Next" />
-                                </fieldset>
-                                
-                                <fieldset>
-                                    <h2 class="fs-title">Create your account</h2>
-                                    <h3 class="fs-subtitle">Fill in your credentials</h3>
-                                    <input type="text" name="email" placeholder="Email" />
-                                    <input type="password" name="pass" placeholder="Password" />
-                                    <input type="password" name="cpass" placeholder="Confirm Password" />
-                                    <input type="button" name="previous" class="previous action-button-previous"
-                                        value="Previous" />
-                                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
-                                </fieldset>
-
-                            </form>
+                            </div>
                         </div>
                     </div>
 
@@ -140,8 +108,68 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-9 col-md-12">
-                <div class="ticket-card">
-                    text
+                <div class="ticket-card row justify-content-center">
+                    <form id="msform" class="msform--fields col-xl-8">
+                        <fieldset>
+                            <p class="h2 mb-5"><strong>1. KORISNIČKI PODACI</strong></p>
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label text-left">Korisničko ime:
+                                    <sup class="color-red">*</sup></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label text-left">E-mail: <sup
+                                        class="color-red">*</sup></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="inputPassword" class="col-sm-4 col-form-label text-left">Ponovite e-mail:
+                                    <sup
+                                        class="color-red">*</sup></label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control" id="inputPassword">
+                                </div>
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+
+                        <fieldset>
+                            <p class="h2"><strong>2. LIČNI PODACI</strong></p>
+                            <h3 class="fs-subtitle">Your presence on the social network</h3>
+                            <input type="text" class="form-control" name="twitter" placeholder="Twitter" />
+                            <input type="text" class="form-control" name="facebook" placeholder="Facebook" />
+                            <input type="text" class="form-control" name="gplus" placeholder="Google Plus" />
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+
+                        <fieldset>
+                            <p class="h2"><strong>3. DODATNA PODEŠAVANJA</strong></p>
+                            <h3 class="fs-subtitle">Fill in your credentials</h3>
+                            <input type="text" class="form-control" name="email" placeholder="Email" />
+                            <input type="password" name="pass" placeholder="Password" />
+                            <input type="password" name="cpass" placeholder="Confirm Password" />
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+                            <input type="button" name="next" class="next action-button" value="Next" />
+                        </fieldset>
+
+                        <fieldset>
+                            <p class="h2"><strong>4. GOTOVO!</strong></p>
+                            <h3 class="fs-subtitle">Fill in your credentials</h3>
+                            <input type="text" class="form-control" name="email" placeholder="Email" />
+                            <input type="password" name="pass" placeholder="Password" />
+                            <input type="password" name="cpass" placeholder="Confirm Password" />
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+                            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
@@ -295,366 +323,6 @@
         </div>
     </footer>
     <!-- AFTER FOOTER -->
-
-    <!-- Modal loto -->
-    <div class="modal fade" id="Loto" tabindex="-1" aria-labelledby="LotoLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="LotoLabel">TVOJI SREĆNI BROJEVI</h5>
-                    <p class="modal-numbers"><strong>7 / 11</strong></p>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form class="ticket-modal">
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span class="active">
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span class="active">
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span class="active">
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span data-toggle="button" aria-pressed="false">
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
-                    </form>
-                </div>
-                <div class="modal-footer justify-content-center">
-                    <button type="button" class="btn btn-secondary"><strong>IGRAJ</strong></button>
-                    <p class="underline cancel mr-4"><strong>Poništi sve</strong></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Modal loto2 -->
-    <div class="modal fade" id="Loto2" tabindex="-1" aria-labelledby="Loto2Label" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="LotoLabel">TVOJI BROJEVI</h5>
-                    <p class="modal-numbers"><strong>7 / 11</strong></p>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form class="ticket-modal">
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span class="active">
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span class="active">
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span class="active">
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span data-toggle="button" aria-pressed="false">
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
-                    </form>
-                </div>
-                <div class="modal-footer justify-content-center">
-                    <p class="underline fav-numbers ml-4"><strong>Unesi omiljene brojeve</strong></p>
-                    <button type="button" class="btn btn-secondary"><strong>IGRAJ</strong></button>
-                    <p class="underline cancel mr-4"><strong>Poništi sve</strong></p>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
