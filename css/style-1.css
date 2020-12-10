@@ -160,6 +160,10 @@ p {
 	background: linear-gradient(-215deg, var(--brand-red), var(--brand-red) 65%, #ba1521 65%, #ba1521 100%);
 }
 
+.main-banner--blue {
+	background-color: var(--brand-dark-blue-1);
+}
+
 .main-banner .main-banner__text__num {
 	font-size: 52px;
 	font-weight: 800;
