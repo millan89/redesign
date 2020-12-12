@@ -84,8 +84,8 @@
                         <p>Registruj se i uživaj u online igrama u svakom trenutku.</p>
                     </div>
 
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12">
                             <div id="msform">
                                 <ul id="progressbar">
                                     <li class="active"><strong>1. Korisnički podaci</strong></li>
@@ -107,34 +107,45 @@
     <!-- REGISTRATION -->
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-lg-9 col-md-12">
+            <div class="col-lg-9 col-md-12 mb-5">
                 <div class="ticket-card row justify-content-center">
-                    <form id="msform" class="msform--fields col-xl-8">
-                        <fieldset>
-                            <p class="h2 mb-5"><strong>1. KORISNIČKI PODACI</strong></p>
+                    <form id="msform" class="msform--fields needs-validation col-xl-8" novalidate>
+                        <fieldset class="text-right">
+                            <p class="h2 mb-5 text-center"><strong>1. KORISNIČKI PODACI</strong></p>
                             <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-4 col-form-label text-left">Korisničko ime:
+                                <label for="a" class="col-sm-4 col-form-label text-left">Korisničko ime:
                                     <sup class="color-red">*</sup></label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="inputPassword">
+                                    <input type="text" class="form-control form-control--gray" id="a"
+                                        required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-4 col-form-label text-left">E-mail: <sup
+                                <label for="b" class="col-sm-4 col-form-label text-left">E-mail: <sup
                                         class="color-red">*</sup></label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="inputPassword">
+                                    <input type="email" class="form-control form-control--gray" id="b" required>
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <label for="inputPassword" class="col-sm-4 col-form-label text-left">Ponovite e-mail:
-                                    <sup
-                                        class="color-red">*</sup></label>
+                                <label for="c" class="col-sm-4 col-form-label text-left">Ponovite e-mail:
+                                    <sup class="color-red">*</sup></label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="inputPassword">
+                                    <input type="email" class="form-control form-control--gray" id="c" required>
                                 </div>
                             </div>
-                            <input type="button" name="next" class="next action-button" value="Next" />
+                            <div class="form-group row">
+                                <label for="d" class="col-sm-4 col-form-label text-left">Lozinka:
+                                    <sup class="color-red">*</sup></label>
+                                <div class="col-sm-8">
+                                    <input type="password" class="form-control form-control--gray" id="d" required>
+                                    <p class="text-xs text-left mt-2">Dužina lozinke ne sme biti manja od 6 karaktera.
+                                        Lozinka mora sadržati barem jedan broj ili veliko slovo.</p>
+                                </div>
+                            </div>
+                             <a href="#" class="mr-4">Pomoć?</a><input type="submit" name="next"
+                                 class="next action-button btn btn-success font-weight-bold"
+                                value="DALJE" />
                         </fieldset>
 
                         <fieldset>
@@ -417,6 +428,27 @@
         $(".submit").click(function(){
         return false;
         })
+    </script>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
     </script>
 </body>
 </html>

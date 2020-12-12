@@ -105,6 +105,11 @@ a.lg {
     font-size: .9rem;
 }
 
+.text-xs {
+    font-size: .8rem;
+    line-height: 1.2;
+}
+
 .h1,
 h1 {
     font-size: 3.2rem;
@@ -264,6 +269,12 @@ img {
     color: var(--brand-black);
 }
 
+.btn-success {
+    color: #fff;
+    background-color: var(--brand-green);
+    border-color: var(--brand-green);
+}
+
 .link-black {
     color: var(--brand-black);
 }
@@ -294,6 +305,19 @@ select {
     font-weight: 700;
     color: var(--brand-black);
     border: 2px solid var(--brand-black);
+}
+
+.form-control--gray {
+    background-color: var(--brand-light-gray);
+    border-color: var(--brand-light-gray);
+}
+
+.form-control.form-control--gray.is-valid,
+.was-validated .form-control.form-control--gray:valid,
+.form-control.form-control--gray.is-invalid,
+.was-validated .form-control.form-control--gray:invalid {
+    background-color: var(--brand-light-gray) !important;
+    border-color: var(--brand-light-gray) !important;
 }
 
 .form-control-tc {
@@ -1796,7 +1820,7 @@ header .btn {
 }
 
 .msform--fields {
-    min-height: 500px;
+    min-height: 450px;
 }
 
 #msform fieldset {
@@ -1822,23 +1846,6 @@ header .btn {
 }
 
 /*buttons*/
-#msform .action-button {
-    width: 100px;
-    background: #ee0979;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 25px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px;
-}
-
-#msform .action-button:hover,
-#msform .action-button:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
-}
-
 #msform .action-button-previous {
     width: 100px;
     background: #C5C5F1;
@@ -1874,30 +1881,48 @@ header .btn {
 
 #progressbar li {
     list-style-type: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 9px;
-    width: 33.33%;
+    color: var(--brand-white);
+    font-size: 18px;
+    width: 25%;
     float: left;
     position: relative;
-    letter-spacing: 1px;
 }
 
 #progressbar li:before {
     content: counter(step);
     counter-increment: step;
-    width: 24px;
-    height: 24px;
+    width: 50px;
+    height: 50px;
     line-height: 26px;
     display: block;
-    font-size: 12px;
-    color: #333;
-    background: white;
+    font-size: 22px;
+    color: var(--brand-dark-blue-2);
+    padding: 11px;
+    background-color: #90a9ef;
     border-radius: 25px;
     margin: 0 auto 10px auto;
     z-index: 1;
     position: relative;
+    font-family: var(--font-fa);
+    font-weight: 600;
 }
+
+#progressbar li:nth-child(1):before {
+    content: "\f234";
+}
+
+#progressbar li:nth-child(2):before {
+    content: "\f4fc";
+}
+
+#progressbar li:nth-child(3):before {
+    content: "\f4fe";
+}
+
+#progressbar li:nth-child(4):before {
+    content: "\f00c";
+}
+
 
 /*progressbar connectors*/
 #progressbar li:after {
@@ -1907,7 +1932,7 @@ header .btn {
     background: white;
     position: absolute;
     left: -50%;
-    top: 9px;
+    top: 28%;
     z-index: 0;
 }
 
@@ -1920,7 +1945,7 @@ header .btn {
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: #ee0979;
+    background: var(--brand-red);
     color: white;
 }
 
