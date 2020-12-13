@@ -35,7 +35,8 @@ style.css
     --brand-yellow-2: #FAE420;
     --brand-dark-gray: #152238;   
     --brand-dark-gray-2: #666666;   
-    --brand-light-gray: #EEF2FB;   
+    --brand-light-gray: #EEF2FB;
+    --brand-light-gray-2: #c5c8cd;
     --brand-darker-gray: #969ca5;
     --brand-purple: #A73BEC;  
     --brand-green: #00CF4C;
@@ -56,6 +57,14 @@ style.css
 
 .color-darkblue {
     color: var(--brand-dark-blue-3);
+}
+
+.color-dark-gray {
+    color: var(--brand-darker-gray);
+}
+
+.color-light-gray {
+    color: var(--brand-light-gray-2);
 }
 
 .color-white {
@@ -318,6 +327,24 @@ select {
 .was-validated .form-control.form-control--gray:invalid {
     background-color: var(--brand-light-gray) !important;
     border-color: var(--brand-light-gray) !important;
+}
+
+.custom-control-input.is-valid~.custom-control-label,
+.was-validated .custom-control-input:valid~.custom-control-label,
+.form-check-input.is-valid~.form-check-label,
+.was-validated .form-check-input:valid~.form-check-label {
+    color: var(--brand-black);
+}
+
+.custom-control-input.is-valid:checked~.custom-control-label::before,
+.was-validated .custom-control-input:valid:checked~.custom-control-label::before {
+    border-color: var(--brand-black);
+    background-color: var(--brand-black);
+}
+
+.custom-control-input.is-valid~.custom-control-label::before,
+.was-validated .custom-control-input:valid~.custom-control-label::before {
+    border-color: var(--brand-black);
 }
 
 .form-control-tc {
@@ -1606,6 +1633,18 @@ header .btn {
     left: 0;
 }
 
+.eighteen--h {
+    font-size: 1rem;
+    height: 42px;
+    width: 42px;
+    margin-right: 0;
+    line-height: 1.5;
+}
+
+.eighteen--h::after {
+    border: 2px solid currentColor;
+}
+
 
 /* GREB */
 .greb {
@@ -1820,7 +1859,11 @@ header .btn {
 }
 
 .msform--fields {
-    min-height: 450px;
+    min-height: 420px;
+}
+
+.col-form-label {
+    line-height: 1.2;
 }
 
 #msform fieldset {
@@ -1877,12 +1920,13 @@ header .btn {
     overflow: hidden;
     /*CSS counters to number the steps*/
     counter-reset: step;
+    padding-left: 0;
 }
 
 #progressbar li {
     list-style-type: none;
     color: var(--brand-white);
-    font-size: 18px;
+    font-size: 17px;
     width: 25%;
     float: left;
     position: relative;
@@ -1915,24 +1959,47 @@ header .btn {
     content: "\f4fc";
 }
 
+#progressbar li.active:nth-child(2):before {
+    background-color: var(--brand-orange);
+    border-color: var(--brand-orange);
+}
+
 #progressbar li:nth-child(3):before {
     content: "\f4fe";
+}
+
+#progressbar li.active:nth-child(3):after {
+    border-color: var(--brand-orange);
+}
+
+#progressbar li.active:nth-child(3):before {
+    background-color: var(--brand-yellow);
+    border-color: var(--brand-yellow);
 }
 
 #progressbar li:nth-child(4):before {
     content: "\f00c";
 }
 
+#progressbar li.active:nth-child(4):after {
+    border-color: var(--brand-yellow);
+}
+
+#progressbar li.active:nth-child(4):before {
+    background-color: var(--brand-green);
+    border-color: var(--brand-green);
+}
+
 
 /*progressbar connectors*/
 #progressbar li:after {
     content: '';
-    width: 100%;
+    width: 76%;
     height: 2px;
-    background: white;
+    border-top: 4px dotted #90a9ef;
     position: absolute;
-    left: -50%;
-    top: 28%;
+    left: -38%;
+    top: 26%;
     z-index: 0;
 }
 
@@ -1946,7 +2013,9 @@ header .btn {
 #progressbar li.active:before,
 #progressbar li.active:after {
     background: var(--brand-red);
+    border: 2px solid var(--brand-red);
     color: white;
+    line-height: 23px;
 }
 
 
@@ -2124,6 +2193,10 @@ header .btn {
 
     .pre-footer-col>.row {
         justify-content: start;
+    }
+
+    #progressbar li {
+        font-size: 13px;
     }
 
     .img-xs {
@@ -2323,6 +2396,14 @@ header .btn {
 
     .score-block .col-md-12.mb-4:last-of-type {
         margin-bottom: 1.5rem !important;
+    }
+
+    #progressbar li strong {
+        display: none;
+    }
+
+    #progressbar li::after {
+        top: 38%;
     }
 
     .order-xxs-0 {

@@ -152,4 +152,10 @@ $(document).ready(function(){
         $(".score-form").removeClass('score-form--bingo');
     })
 
+
+    // Enable tooltips
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
 });

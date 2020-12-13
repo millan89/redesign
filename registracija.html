@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-1.css">
 
-    <title>Loto</title>
+    <title>Registracija</title>
 </head>
 <body>
 
@@ -80,11 +80,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="main-banner__text text-center text-white pt-5">
-                        <h1 class="h2"><strong>Klikom do milionskih premija uz DLS online!</strong></h1>
+                        <h1 class="h2"><strong>Klikom do milionskih premija uz DLS online!</strong> <span
+                                class="eighteen eighteen--h float-right">18+</span></h1>
                         <p>Registruj se i uživaj u online igrama u svakom trenutku.</p>
                     </div>
 
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center mt-5">
                         <div class="col-lg-12">
                             <div id="msform">
                                 <ul id="progressbar">
@@ -108,77 +109,270 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-9 col-md-12 mb-5">
-                <div class="ticket-card row justify-content-center">
-                    <form id="msform" class="msform--fields needs-validation col-xl-8" novalidate>
+                <div class="ticket-card row">
+                    <form id="msform" class="msform--fields needs-validation col-xl-12 mb-3" novalidate>
+
                         <fieldset class="text-right">
-                            <p class="h2 mb-5 text-center"><strong>1. KORISNIČKI PODACI</strong></p>
                             <div class="form-group row">
-                                <label for="a" class="col-sm-4 col-form-label text-left">Korisničko ime:
-                                    <sup class="color-red">*</sup></label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control form-control--gray" id="a"
-                                        required>
+                                <label class="col-sm-4 col-form-label text-left"></label>
+                                <div class="col-sm-6">
+                                    <p class="h4 mb-4 text-left"><strong>1. KORISNIČKI PODACI</strong></p>
                                 </div>
+                                <div class="col-sm-2"></div>
                             </div>
                             <div class="form-group row">
-                                <label for="b" class="col-sm-4 col-form-label text-left">E-mail: <sup
+                                <label for="a" class="col-sm-4 col-form-label text-right text-right-mob">Korisničko ime:<sup class="color-red">*</sup></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control--gray" id="a" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="b" class="col-sm-4 col-form-label text-right text-right-mob">E-mail:<sup
                                         class="color-red">*</sup></label>
-                                <div class="col-sm-8">
+                                <div class="col-sm-6">
                                     <input type="email" class="form-control form-control--gray" id="b" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
                                 </div>
+                                <div class="col-sm-2"></div>
                             </div>
                             <div class="form-group row">
-                                <label for="c" class="col-sm-4 col-form-label text-left">Ponovite e-mail:
-                                    <sup class="color-red">*</sup></label>
-                                <div class="col-sm-8">
+                                <label for="c" class="col-sm-4 col-form-label text-right text-right-mob">Ponovite e-mail:<sup class="color-red">*</sup></label>
+                                <div class="col-sm-6">
                                     <input type="email" class="form-control form-control--gray" id="c" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
                                 </div>
+                                <div class="col-sm-2"></div>
                             </div>
                             <div class="form-group row">
-                                <label for="d" class="col-sm-4 col-form-label text-left">Lozinka:
-                                    <sup class="color-red">*</sup></label>
-                                <div class="col-sm-8">
+                                <label for="d" class="col-sm-4 col-form-label text-right text-right-mob">Lozinka:<sup class="color-red">*</sup></label>
+                                <div class="col-sm-6">
                                     <input type="password" class="form-control form-control--gray" id="d" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
                                     <p class="text-xs text-left mt-2">Dužina lozinke ne sme biti manja od 6 karaktera.
                                         Lozinka mora sadržati barem jedan broj ili veliko slovo.</p>
                                 </div>
+                                <div class="col-sm-2"></div>
                             </div>
-                             <a href="#" class="mr-4">Pomoć?</a><input type="submit" name="next"
-                                 class="next action-button btn btn-success font-weight-bold"
-                                value="DALJE" />
+                            <div class="form-group row">
+                                <label for="d" class="col-sm-4 col-form-label text-right text-right-mob"></label>
+                                <div class="col-sm-6 text-right d-flex justify-content-between align-items-center">
+                                   <a href="#" class="mr-4">Pomoć?</a><input type="submit" name="next"
+                                       class="next action-button btn btn-success font-weight-bold"
+                                       value="DALJE" />
+                                </div>
+                                <div class="col-sm-2">
+                                    
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="text-right">
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label text-left"></label>
+                                <div class="col-sm-6">
+                                    <p class="h4 mb-4 text-left"><strong>2. LIČNI PODACI</strong></p>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="a1" class="col-sm-4 col-form-label text-right text-right-mob">Ime:<sup class="color-red">*</sup></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control--gray" id="a1" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="b1" class="col-sm-4 col-form-label text-right text-right-mob">Prezime:<sup
+                                        class="color-red">*</sup></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control--gray" id="b1" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="c1" class="col-sm-4 col-form-label text-right text-right-mob">Mesto:<sup class="color-red">*</sup></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control--gray" id="c1" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="d1" class="col-sm-4 col-form-label text-right text-right-mob">JMBG:<sup class="color-red">*</sup></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control--gray" id="d1" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
+                                    <p class="text-xs text-left mt-2">Dužina lozinke ne sme biti manja od 6 karaktera.
+                                        Lozinka mora sadržati barem jedan broj ili veliko slovo.</p>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="d" class="col-sm-4 col-form-label text-right text-right-mob"></label>
+                                <div class="col-sm-6 text-right d-flex justify-content-between align-items-center">
+                                    <a href="#" class="mr-4">Pomoć?</a><input type="submit" name="next"
+                                        class="next action-button btn btn-success font-weight-bold" value="DALJE" />
+                                </div>
+                                <div class="col-sm-2">
+
+                                </div>
+                            </div>
                         </fieldset>
 
                         <fieldset>
-                            <p class="h2"><strong>2. LIČNI PODACI</strong></p>
-                            <h3 class="fs-subtitle">Your presence on the social network</h3>
-                            <input type="text" class="form-control" name="twitter" placeholder="Twitter" />
-                            <input type="text" class="form-control" name="facebook" placeholder="Facebook" />
-                            <input type="text" class="form-control" name="gplus" placeholder="Google Plus" />
-                            <input type="button" name="previous" class="previous action-button-previous"
-                                value="Previous" />
-                            <input type="button" name="next" class="next action-button" value="Next" />
+                            <div class="form-group row">
+                                <label class="col-sm-4 col-form-label text-left"></label>
+                                <div class="col-sm-6">
+                                    <p class="h4 mb-4 text-left"><strong>3. DODATNA PODEŠAVANJA</strong></p>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="a1" class="col-sm-4 col-form-label text-right text-right-mob">Broj mob. telefona:<sup class="color-red">*</sup></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control--gray" id="a1"
+                                        placeholder="+3816XXXXXXXXX" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="b1" class="col-sm-4 col-form-label text-right text-right-mob">Željeni način komunikacije:<sup class="color-red">*</sup></label>
+                                <div class="col-sm-6 text-left">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">SMS</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">e-mail</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="a1" class="col-sm-4 col-form-label text-right text-right-mob"><i class="fas fa-info-circle"
+                                        data-toggle="tooltip" data-placement="top" title="Tooltip on top Broj bankovnog
+                                        računa"></i> Broj
+                                    bankovnog računa:</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control--gray" id="a1"
+                                        placeholder="XXX-XXXXXXXXXXXX-XX" required>
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="c1" class="col-sm-4 col-form-label text-right text-right-mob">Sigurnosno pitanje:<br><span class="text-xs">(opciono)</span></label>
+                                <div class="col-sm-6">
+                                    <select class="form-control custom-select">
+                                        <option>Izaberite pitanje</option>
+                                        <option>Omiljena hrana</option>
+                                        <option>Nesto drugo</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="a1" class="col-sm-4 col-form-label text-right text-right-mob">Sigurnosni odgovor:<br><span
+                                        class="text-xs">(opciono)</span></label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control--gray" id="a1">
+                                    <div class="invalid-feedback text-left">
+                                        Greška!
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row align-items-center">
+                                <label for="b1" class="col-sm-4 col-form-label text-right text-right-mob"><i
+                                        class="fas fa-info-circle" data-toggle="tooltip" data-placement="top"
+                                        title="Tooltip on top"></i> Da li ste funkcioner?:<sup
+                                        class="color-red">*</sup></label>
+                                <div class="col-sm-6 text-left">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio11" value="option1">
+                                        <label class="form-check-label" for="inlineRadio11">DA</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                            id="inlineRadio22" value="option2">
+                                        <label class="form-check-label" for="inlineRadio22">Ne</label>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="d1" class="col-sm-4 col-form-label text-left"></label>
+                                <div class="col-sm-6">
+                                    <img src="https://i.dlpng.com/static/png/7049835_preview.png" alt="">
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="a1" class="col-sm-4 col-form-label text-right text-right-mob"></label>
+                                <div class="col-sm-6">
+                                    <div class="row">
+                                        <div class="col-8">
+                                            <div class="custom-control custom-checkbox text-left">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">Prihvatam sve
+                                                  <a href="#" class="underline">uslove</a> igranja</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 text-right">
+                                            <a href="#" class="underline">Pomoć?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="d" class="col-sm-4 col-form-label text-right text-right-mob"></label>
+                                <div class="col-sm-6 text-right d-flex justify-content-between align-items-center">
+                                    <input type="button" name="next"
+                                        class="next action-button btn btn-success btn-block font-weight-bold float-right
+                                        mt-3 btn-lgg"
+                                        value="KREIRAJ NALOG" />
+                                </div>
+                                <div class="col-sm-2"></div>
+                            </div>
+                            
                         </fieldset>
 
-                        <fieldset>
-                            <p class="h2"><strong>3. DODATNA PODEŠAVANJA</strong></p>
-                            <h3 class="fs-subtitle">Fill in your credentials</h3>
-                            <input type="text" class="form-control" name="email" placeholder="Email" />
-                            <input type="password" name="pass" placeholder="Password" />
-                            <input type="password" name="cpass" placeholder="Confirm Password" />
-                            <input type="button" name="previous" class="previous action-button-previous"
-                                value="Previous" />
-                            <input type="button" name="next" class="next action-button" value="Next" />
-                        </fieldset>
-
-                        <fieldset>
-                            <p class="h2"><strong>4. GOTOVO!</strong></p>
-                            <h3 class="fs-subtitle">Fill in your credentials</h3>
-                            <input type="text" class="form-control" name="email" placeholder="Email" />
-                            <input type="password" name="pass" placeholder="Password" />
-                            <input type="password" name="cpass" placeholder="Confirm Password" />
-                            <input type="button" name="previous" class="previous action-button-previous"
-                                value="Previous" />
-                            <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                        <fieldset class="text-center">
+                            <img src="images/zvezdica-tackice-green.svg" alt="" height="100">
+                            <h2 class="mt-4"><strong>Uspešno ste kreirali nalog!</strong></h2>
+                            <p>Link za potvdu naloga je poslat na vašu e-mail adresu.</p>
+                            <i class="fas fa-envelope-open-text fa-4x color-light-gray mt-4"></i>
                         </fieldset>
                     </form>
                 </div>
@@ -356,8 +550,8 @@
         if(animating) return false;
         animating = true;
 
-        current_fs = $(this).parent();
-        next_fs = $(this).parent().next();
+        current_fs = $(this).parent().parent().parent();
+        next_fs = $(this).parent().parent().parent().next();
 
         //activate next step on progressbar using the index of next_fs
         $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
@@ -379,41 +573,6 @@
         'position': 'absolute'
         });
         next_fs.css({'left': left, 'opacity': opacity});
-        },
-        duration: 800,
-        complete: function(){
-        current_fs.hide();
-        animating = false;
-        },
-        //this comes from the custom easing plugin
-        easing: 'easeInOutBack'
-        });
-        });
-
-        $(".previous").click(function(){
-        if(animating) return false;
-        animating = true;
-
-        current_fs = $(this).parent();
-        previous_fs = $(this).parent().prev();
-
-        //de-activate current step on progressbar
-        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-        //show the previous fieldset
-        previous_fs.show();
-        //hide the current fieldset with style
-        current_fs.animate({opacity: 0}, {
-        step: function(now, mx) {
-        //as the opacity of current_fs reduces to 0 - stored in "now"
-        //1. scale previous_fs from 80% to 100%
-        scale = 0.8 + (1 - now) * 0.2;
-        //2. take current_fs to the right(50%) - from 0%
-        left = ((1-now) * 50)+"%";
-        //3. increase opacity of previous_fs to 1 as it moves in
-        opacity = 1 - now;
-        current_fs.css({'left': left});
-        previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
         },
         duration: 800,
         complete: function(){
