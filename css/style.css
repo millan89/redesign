@@ -2334,6 +2334,15 @@ header .btn {
         margin-top: 2rem;
     }
 
+    .eighteen-abs {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 0.8rem;
+        height: 34px;
+        width: 34px;
+    }
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
