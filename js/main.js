@@ -106,6 +106,47 @@ $(document).ready(function(){
         });
     }
 
+    // Dobitnici carousel  
+    if ($('.dobitnici-carousel').length) { 
+        $('.dobitnici-carousel').slick({
+            centerMode: true,
+            centerPadding: '10px',
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            prevArrow: $('#prevv'),
+            nextArrow: $('#nextt'),
+            responsive: [
+                {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 992,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 2
+                }
+                },
+                {
+                breakpoint: 700,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '30px',
+                    slidesToShow: 1
+                }
+                }
+            ]
+        });
+    }
+
 
     // COUNTDOWN
     // Set the date we're counting down to

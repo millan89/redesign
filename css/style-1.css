@@ -1271,6 +1271,97 @@ button.regulations {
 	justify-content: center;
 }
 
+.hero-dobitnici {
+	background-image: url(../images/dobitnici/hero-pattern-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 100px 0 230px;
+}
+
+.hero-dobitnici__content p {
+	font-weight: 500;
+}
+
+.hero-dobitnici__content h2 {
+	background-color: var(--brand-red);
+	padding: 5px 20px;
+	font-size: 40px;
+}
+
+.dobitnici-carousel {
+	margin-top: -180px;
+}
+
+.dobitnici-carousel__item {
+	padding: 90px 40px 40px;
+	box-shadow: 0 0 20px rgba(0,0,0,.3);
+	border-radius: 20px;
+	margin: 90px 30px 30px;
+	position: relative;
+	background-color: var(--brand-white);
+}
+
+.dobitnici-carousel__item--loto {
+	background-color: var(--brand-red);
+	color: #fff;
+}
+
+.dobitnici-carousel__item .item-img {
+	transform: translateY(-90px);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.dobitnici-carousel__item .item-img img {
+	border-radius: 50%;
+	max-width: 180px;
+	display: block;
+	margin: 0 auto;
+}
+
+.dobitnici-carousel__item .item-name {
+	font-weight: bold;
+	margin: 20px 0;
+}
+
+.dobitnici-carousel__item .item-testimonial {
+	font-family: var(--font-unna);
+	font-style: italic;
+	color: #8d8d8d;
+	font-size: 26px;
+	line-height: 1;
+	padding-bottom: 20px;
+}
+
+.dobitnici-carousel__item .item-decoration {
+	position: relative;
+	bottom: 0;
+	margin: 20px auto;
+	width: 50px;
+	height: 1px;
+	content: "";
+	background-color: var(--brand-dark-gray);
+	left: 0;
+	right: 0;
+}
+
+.dobitnici-carousel__item .item-game {
+	font-weight: bold;
+}
+
+.dobitnici-carousel__item .item-prize {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.dobitnici-carousel__item .item-prize--loto {
+	font-size: calc(1.5rem + 70%);
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	/* MAIN BANNER >> */
