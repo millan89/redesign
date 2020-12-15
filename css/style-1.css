@@ -1539,7 +1539,9 @@ button.regulations {
 
 	.esgg-hero--greb .gg-logo {
 		width: 140px;
-		top: -130px;
+		top: -150px;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.ticket-fields .btn-dark {
@@ -1552,6 +1554,25 @@ button.regulations {
 		height: 32px;
 	}
 
+	.esgg-hero--greb {
+		background-color: #fecbe4;
+	}
+
+	.esgg-hero--greb .gg-img-mob img {
+		display: block;
+		margin: 0 auto;
+		max-width: 500px;
+		width: 100%;
+	}
+
+	.esgg-hero--greb .esgg-hero__bg {
+		background-image: none;
+		padding: 220px 0 0px;
+	}
+
+	.esgg-hero--greb .gg-text {
+		text-align: center;
+	}
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
