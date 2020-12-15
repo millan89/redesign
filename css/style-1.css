@@ -1211,8 +1211,6 @@ button.regulations {
 	text-transform: uppercase;
 	font-size: 18px;
 	padding: 12px;
-	line-height: 1;
-	border-radius: 4px;
 	font-weight: 700;
 	letter-spacing: 1px;
 	width: 240px;
@@ -1360,6 +1358,32 @@ button.regulations {
 
 .dobitnici-carousel__item .item-prize--loto {
 	font-size: calc(1.5rem + 70%);
+}
+
+.greb-modal {
+	padding-right: 0;
+}
+
+.greb-modal .close {
+	font-size: 1.7rem;
+	color: #fff;
+	text-shadow: 0 0 0 #fff;
+}
+
+.greb-modal .modal-content {
+	background-color: transparent;
+	border: 0;
+}
+
+.greb-modal .modal-body {
+	padding: 0;
+}
+
+.greb-modal .modal-body img {
+	margin: 0 auto;
+	display: block;
+	max-height: 60vh;
+	max-width: 85vw;
 }
 
 /* Large devices (desktops, less than 1200px) */
