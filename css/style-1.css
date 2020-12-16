@@ -1522,8 +1522,24 @@ button.regulations {
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
 	.esgg-hero__bg {
-		background-position-x: -500px;
-		background-position-y: -120px;
+		padding: 100px 0 50px;
+		background-image: none;
+	}
+
+	.esgg-hero--es .es-text {
+		text-align: center;
+	}
+
+	.esgg-hero--es .esgg-img-mob {
+		position: relative;
+		z-index: 1;
+	}
+
+	.esgg-hero--es .esgg-img-mob img {
+		display: block;
+		margin: 0 auto;
+		max-width: 500px;
+		width: 100%;
 	}
 
 	.esgg-hero .es-logo {
@@ -1550,6 +1566,7 @@ button.regulations {
 		width: 250px;
 		right: 0;
 		top: 0;
+		align-self: center;
 	}
 
 	.loto-banner__text {
@@ -1600,6 +1617,11 @@ button.regulations {
 
 	.esgg-hero--greb .gg-text {
 		text-align: center;
+	}
+
+	.five-games {
+		position: relative;
+		z-index: 2;
 	}
 }
 
