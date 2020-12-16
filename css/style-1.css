@@ -1339,10 +1339,10 @@ button.regulations {
 	padding-bottom: 20px;
 }
 
-.dobitnici-carousel__item .item-decoration {
+.dobitnici-carousel__item .item-decoration--line {
 	position: relative;
 	bottom: 0;
-	margin: 20px auto;
+	margin: 20px auto 30px;
 	width: 50px;
 	height: 1px;
 	content: "";
@@ -1351,17 +1351,23 @@ button.regulations {
 	right: 0;
 }
 
+.dobitnici-carousel__item .item-decoration--star img {
+	height: 25px;
+	display: block;
+	margin: 0 auto 9px;
+}
+
 .dobitnici-carousel__item .item-game {
 	font-weight: bold;
 }
 
 .dobitnici-carousel__item .item-prize {
-	font-size: 1.5rem;
+	font-size: 24px;
 	font-weight: bold;
 }
 
 .dobitnici-carousel__item .item-prize--loto {
-	font-size: calc(1.5rem + 70%);
+	font-size: 35px;
 }
 
 .greb-modal {
@@ -1388,6 +1394,23 @@ button.regulations {
 	display: block;
 	max-height: 60vh;
 	max-width: 85vw;
+}
+
+.dobitnici-carousel-wrapper {
+	position: relative;
+}
+
+.games-btns--dobitnici button {
+	position: absolute;
+	padding: 0px;
+	width: 40px;
+	height: 40px;
+	margin-left: 8px;
+	transform: none;
+}
+
+.games-btns--dobitnici button::before {
+	color: var(--brand-dark-gray);
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -1739,6 +1762,14 @@ button.regulations {
 
 	.five-games__wrapper__item {
 		max-width: 240px;
+	}
+
+	.dobitnici-carousel__item {
+		padding: 90px 20px 40px;
+	}
+
+	.dobitnici-carousel__item .item-prize--loto {
+		font-size: 32px;
 	}
 }
 

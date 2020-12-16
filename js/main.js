@@ -121,8 +121,8 @@ $(document).ready(function(){
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
+                    centerPadding: '10px',
+                    slidesToShow: 2
                 }
                 },
                 {
@@ -130,8 +130,8 @@ $(document).ready(function(){
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 2
+                    centerPadding: '10px',
+                    slidesToShow: 1
                 }
                 },
                 {
@@ -139,7 +139,7 @@ $(document).ready(function(){
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '30px',
+                    centerPadding: '0px',
                     slidesToShow: 1
                 }
                 }
