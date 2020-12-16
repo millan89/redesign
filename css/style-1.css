@@ -999,6 +999,10 @@ button.regulations {
 	justify-content: center;
 }
 
+.srecke-item__img img {
+	align-self: center;
+}
+
 .srecke-item__text-big {
 	font-size: 18px;
 	font-weight: 700;
