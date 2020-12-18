@@ -1413,6 +1413,75 @@ button.regulations {
 	color: var(--brand-dark-gray);
 }
 
+.page-mimi {
+	display:none
+}
+
+.page-active {
+	display: block;
+}
+
+#luckmoshy1::before {
+	content: 'Svi dobitnici';
+	font-size: 22px;
+	width: 280px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.pagination {
+	border-radius: 0;
+	align-items: center;
+	font-weight: 500;
+}
+
+.pagination .page-link {
+	padding: 0 5px;
+	line-height: 1;
+	border: 0;
+	font-size: 1rem;
+	color: var(--brand-dark-gray);
+}
+
+.pagination .prev .page-link,
+.pagination .next .page-link {
+	font-size: 1.6rem;
+	color: var(--brand-darker-gray);
+}
+
+.pagination .prev .page-link:hover,
+.pagination .next .page-link:hover,
+.pagination .page-item.active .page-link,
+.pagination .last .page-link:hover {
+	color: var(--brand-dark-gray);
+	background-color: transparent;
+}
+
+.pagination .prev .page-link:focus, 
+.pagination .next .page-link:focus,
+.pagination .page-item.active .page-link,
+.pagination .last .page-link:hover {
+	color: var(--brand-dark-gray);
+	box-shadow: 0 0 0;
+}
+
+.pagination .page-item.active .page-link {
+	color: var(--brand-dark-gray);
+	background-color: transparent;
+	border-color: none;
+}
+
+.pagination .strana {
+	margin-left: auto;
+}
+
+.pagination .line-middle {
+	height: 1px;
+	width: 100%;
+	background-color: var(--brand-dark-gray);
+	background: linear-gradient(to right, transparent, transparent 3%, var(--brand-dark-gray) 3%, var(--brand-dark-gray) 97%, transparent 97%, transparent 100%);
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	/* MAIN BANNER >> */
@@ -1540,6 +1609,10 @@ button.regulations {
 	.five-games__wrapper__item {
 		max-width: 190px;
 	}
+
+	.pagination .line-middle {
+		width: 75%;
+	}
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -1645,6 +1718,10 @@ button.regulations {
 	.five-games {
 		position: relative;
 		z-index: 2;
+	}
+
+	.pagination .line-middle {
+		width: 45%;
 	}
 }
 
@@ -1770,6 +1847,20 @@ button.regulations {
 
 	.dobitnici-carousel__item .item-prize--loto {
 		font-size: 32px;
+	}
+
+	.pagination {
+		flex-wrap: wrap;
+	}
+
+	#luckmoshy1::before {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	.pagination .line-middle {
+		display: none;
 	}
 }
 
