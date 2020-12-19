@@ -1546,7 +1546,7 @@ button.regulations {
 }
 
 .our-players__cash h1::after {
-	content: url(/images/dobitnici/frcokla.svg);
+	content: url(../images/dobitnici/frcokla.svg);
 	width: 130px;
 	display: block;
 	position: absolute;
@@ -1833,6 +1833,10 @@ button.regulations {
 		position: relative;
 		transform: translateX(-50%);
 		margin-bottom: -10px;
+	}
+
+	.our-players .megafon {
+		width: 100px;
 	}
 
 	.our-players__cash h1::after {
