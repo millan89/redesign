@@ -1518,6 +1518,49 @@ button.regulations {
 	font-weight: 500;
 }
 
+.our-players {
+	padding-top: 60px;
+}
+
+.our-players .megafon {
+	width: 150px;
+	margin: 80px auto 0;
+	display: block;
+}
+
+.our-players h5 {
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.our-players__cash h1 {
+	background-color: var(--brand-purple);
+	color: #fff;
+	display: inline-block;
+	padding: 15px 45px;
+	font-weight: 900;
+	border-radius: 12px;
+	margin: 15px 0;
+	position: relative;
+	z-index: 2;
+}
+
+.our-players__cash h1::after {
+	content: url(/images/dobitnici/frcokla.svg);
+	width: 130px;
+	display: block;
+	position: absolute;
+	right: -58px;
+	top: 45px;
+}
+
+.our-players__srecko {
+	position: absolute;
+	z-index: 1;
+	width: 150px;
+	top: -36px;
+	left: 72px;
+}
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -1574,6 +1617,12 @@ button.regulations {
 
 	.five-games__wrapper {
 		padding: 30px 10px 50px;
+	}
+
+	.our-players__srecko {
+		width: 140px;
+		top: -26px;
+		left: 27px;
 	}
 }
 
@@ -1649,6 +1698,22 @@ button.regulations {
 
 	.pagination .line-middle {
 		width: 75%;
+	}
+
+	.our-players__srecko {
+		width: 140px;
+		top: -33px;
+		left: 64px;
+	}
+
+	.our-players__cash h1::after {
+		width: 100px;
+		right: -37px;
+		top: 54px;
+	}
+
+	.our-players .megafon {
+		width: 130px;
 	}
 }
 
@@ -1759,6 +1824,21 @@ button.regulations {
 
 	.pagination .line-middle {
 		width: 45%;
+	}
+
+	.our-players__srecko {
+		width: 110px;
+		top: 0;
+		left: 50%;
+		position: relative;
+		transform: translateX(-50%);
+		margin-bottom: -10px;
+	}
+
+	.our-players__cash h1::after {
+		width: 80px;
+		right: -31px;
+		top: 40px;
 	}
 }
 
@@ -1898,6 +1978,14 @@ button.regulations {
 
 	.pagination .line-middle {
 		display: none;
+	}
+
+	.our-players__cash h1 {
+		padding: 15px 30px;
+	}
+
+	.our-players h5 {
+		letter-spacing: 1px;
 	}
 }
 
