@@ -132,6 +132,12 @@ img {
     max-width: 100%;
 }
 
+.separator-sm {
+    border-bottom: 1px solid;
+    width: 40px;
+    display: inline-block;
+}
+
 
 
 
@@ -282,6 +288,12 @@ img {
     color: #fff;
     background-color: var(--brand-green);
     border-color: var(--brand-green);
+}
+
+.btn-info {
+    color: #fff;
+    background-color: var(--brand-dark-blue-2);
+    border-color: var(--brand-dark-blue-2);
 }
 
 .link-black {
@@ -2413,6 +2425,10 @@ header .btn {
 
     #progressbar li::after {
         top: 38%;
+    }
+
+    .flex-dir-column-mob {
+        flex-direction: column;
     }
 
     .order-xxs-0 {
