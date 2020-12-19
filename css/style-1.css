@@ -1413,6 +1413,10 @@ button.regulations {
 	color: var(--brand-dark-gray);
 }
 
+.all-winners {
+	margin: 80px 0 120px;
+}
+
 .page-mimi {
 	display:none
 }
@@ -1433,6 +1437,7 @@ button.regulations {
 	border-radius: 0;
 	align-items: center;
 	font-weight: 500;
+	margin-bottom: 50px;
 }
 
 .pagination .page-link {
@@ -1481,6 +1486,38 @@ button.regulations {
 	background-color: var(--brand-dark-gray);
 	background: linear-gradient(to right, transparent, transparent 3%, var(--brand-dark-gray) 3%, var(--brand-dark-gray) 97%, transparent 97%, transparent 100%);
 }
+
+.winnerBox__img {
+	display: flex;
+	justify-content: center;
+}
+
+.winnerBox__img img {
+	border-radius: 50%;
+	max-width: 100%;
+	width: 260px;
+}
+
+.winnerBox__txt .wBt-date {
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: 500;
+	color: var(--brand-darker-gray);
+}
+
+.winnerBox__txt .wBt-headline {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.winnerBox__txt .wBt-link {
+	font-size: 16px;
+}
+
+.winnerBox__txt .wBt-link .link-arrow {
+	font-weight: 500;
+}
+
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
