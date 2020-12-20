@@ -147,6 +147,28 @@ $(document).ready(function(){
         });
     }
 
+    // Partners  
+    if ($('.partners').length) { 
+        $('.partners').slick({
+            infinite: true,
+            centerPadding: '20px',
+            slidesToShow: 5,
+            prevArrow: $('#par-prevv'),
+            nextArrow: $('#par-nextt'),
+            responsive: [
+                {
+                breakpoint: 700,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '0px',
+                    slidesToShow: 2
+                }
+                }
+            ]
+        });
+    };
+
 
     // COUNTDOWN
     // Set the date we're counting down to

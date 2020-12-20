@@ -138,6 +138,17 @@ img {
     display: inline-block;
 }
 
+.skewed-bg {
+    background: var(--brand-light-blue-4);
+    padding: 0;
+    transform: skew(0deg, -10deg);
+    padding: 30px 0;
+}
+
+.skewed-bg .skewed-bg__content {
+    transform: skew(0deg, 10deg);
+    text-align: center;
+}
 
 
 
@@ -386,6 +397,50 @@ select {
     border-color: var(--brand-light-gray);
     color: var(--brand-black);
     font-weight: 400;
+}
+
+.file-drop-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    padding: 25px;
+    border: 2px dashed #ccc;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.fake-btn {
+    background-color: #eef2fb;
+    border-radius: 3px;
+    padding: 8px 15px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.file-msg {
+    font-size: small;
+    font-weight: 300;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.file-input:focus {
+    outline: none;
 }
 
 
@@ -1675,6 +1730,12 @@ header .btn {
 }
 
 
+/* PARTNERS */
+.partners-item__img {
+    padding: 10px;
+}
+
+
 /* MODALS */
 .modal-dialog {
     max-width: 660px;
@@ -2064,6 +2125,7 @@ header .btn {
 .footer {
     background-color: var(--brand-dark-gray);
     padding: 70px 0;
+    position: relative;
 }
 
 .footer-social {
