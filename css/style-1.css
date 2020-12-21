@@ -1417,7 +1417,8 @@ button.regulations {
 	margin: 80px 0 120px;
 }
 
-.page-mimi {
+.page-mimi,
+.page-mimi2 {
 	display:none
 }
 
@@ -1427,6 +1428,14 @@ button.regulations {
 
 #luckmoshy1::before {
 	content: 'Svi dobitnici';
+	font-size: 22px;
+	width: 280px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+#luckmoshy2::before {
+	content: 'Srećne vesti';
 	font-size: 22px;
 	width: 280px;
 	text-transform: uppercase;
@@ -1519,7 +1528,7 @@ button.regulations {
 }
 
 .our-players {
-	padding-top: 60px;
+	padding-top: 20px;
 }
 
 .our-players .megafon {
@@ -1976,8 +1985,7 @@ button.regulations {
 
 	#luckmoshy1::before {
 		width: 100%;
-		text-align: center;
-		margin-bottom: 15px;
+		margin-bottom: 20px;
 	}
 
 	.pagination .line-middle {
