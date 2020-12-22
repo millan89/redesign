@@ -1571,6 +1571,122 @@ button.regulations {
 	left: 72px;
 }
 
+.izvestaj {
+	margin-top: 80px;
+	margin-bottom: 120px;
+}
+
+.form-control--search {
+	border: 1px solid var(--brand-black);
+	background-image: url(../images/magnifiying-glass.svg);
+	background-repeat: no-repeat;
+	background-size: 20px;
+	background-position-x: 10px;
+	background-position-y: center;
+	padding: 20px 10px 20px 40px;
+	font-weight: 300;
+}
+
+.izvestaj__naziv {
+	font-size: 18px;
+	display: block;
+	font-weight: 700;
+	margin: 20px 0;
+}
+
+.izvestaj__tabele .myTable td {
+	vertical-align: middle;
+} 
+
+.izvestaj__tabele .myTable td img {
+	min-width: 20px;
+	max-width: 20px;
+}
+
+.izvestaj__tabele .myTable tr {
+	border: 1px solid var(--brand-black);
+}
+
+.izvestaj__tabele .myTable tr td {
+	border: 0;
+	height: 75px;
+}
+
+.izvestaj__aside .aside-nav {
+	list-style: none;
+	padding: 0;
+}
+
+.izvestaj__aside .aside-nav li a {
+	color: var(--brand-black);
+	text-decoration: none;
+	font-weight: 300;
+	display: inline-block;
+	padding: 15px;
+	line-height: 1;
+	margin-bottom: 10px;
+	transition: 400ms all;
+}
+
+.izvestaj__aside .aside-nav li a.active {
+	background-color: #e0ecff;
+	color: var(--brand-dark-blue-2);
+	font-weight: 700;
+	border-radius: 4px;
+}
+
+.izvestaj__aside .aside-nav li a:not(.active):hover  {
+	color: var(--brand-dark-blue-2);
+}
+
+.paginate_controls {
+	display: flex;
+	justify-content: right;
+	margin-top: 40px;
+}
+
+.paginate_controls .paginate_control_prev {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	margin-right: 10px;
+	font-weight: 300;
+}
+
+.paginate_controls .paginate_control_prev:disabled,
+.paginate_controls .paginate_control_next:disabled {
+	color: var(--brand-darker-gray);
+}
+
+.paginate_controls .paginate_control_next {
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+	margin-left: 10px;
+	font-weight: 300;
+}
+
+.paginate_controls input[type='button']:not(.paginate_control_prev, .paginate_control_next) {
+	background-color: transparent;
+	border: 0;
+	color: var(--brand-darker-gray);
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 1;
+	font-weight: 300;
+}
+
+.paginate_controls input.active:not(.paginate_control_prev, .paginate_control_next) {
+	background-color: var(--brand-black);
+	border: 0;
+	padding: 0px;
+	color: var(--brand-white);
+	border-radius: 50%;
+}
+
+
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	/* MAIN BANNER >> */
