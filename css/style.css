@@ -2207,6 +2207,19 @@ header .btn {
         padding: 0;
     }
 
+    .navbar-collapse {
+        padding: 15px;
+        background-color: var(--brand-white);
+    }
+
+    .navbar-collapse .navbar-nav {
+        margin-bottom: 10px;
+    }
+
+    .navbar-collapse .btn+.btn {
+        margin-top: 10px;
+    }
+
     .hero .slick-arrow {
         display: none !important;
     }
@@ -2306,19 +2319,6 @@ header .btn {
 
     .text-right-mob {
         text-align: left !important;
-    }
-
-    .navbar-collapse {
-        padding: 15px;
-        background-color: var(--brand-white);
-    }
-
-    .navbar-collapse .navbar-nav {
-        margin-bottom: 10px;
-    }
-
-    .navbar-collapse .btn + .btn {
-        margin-top: 10px;
     }
 
     .hero-text {
@@ -2495,6 +2495,10 @@ header .btn {
 
     .order-xxs-0 {
         order: 0;
+    }
+
+    .icon-heading {
+        height: 44px;
     }
 
     .mt-xxs-2 {
