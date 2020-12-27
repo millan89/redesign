@@ -114,9 +114,17 @@ a.lg {
     font-size: .9rem;
 }
 
+.text-sm.custom-control-label:before {
+    top: 0.15rem;
+}
+
 .text-xs {
     font-size: .8rem;
     line-height: 1.2;
+}
+
+hr {
+    border-color: var(--brand-black);
 }
 
 .h1,
@@ -442,6 +450,26 @@ select {
 .file-input:focus {
     outline: none;
 }
+
+
+.selectize-control .option .title {
+    display: block;
+}
+
+.selectize-control .option .url {
+    font-size: 12px;
+    display: block;
+    color: #a0a0a0;
+}
+
+.selectize-control .item a {
+    color: #006ef5;
+}
+
+.selectize-control .item.active a {
+    color: #303030;
+}
+
 
 
 /* LONG SHADOW */
