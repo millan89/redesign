@@ -451,6 +451,19 @@ select {
     outline: none;
 }
 
+.file-ico {
+    position: absolute;
+    right: 4%;
+    top: 24%;
+    height: 100%;
+    width: 30px;
+    background: url(../images/upload-doc.svg) no-repeat;
+}
+
+.file-drop-area.is-active .file-ico {
+    background: url(../images/upload-doc-active.svg) no-repeat;
+}
+
 
 .selectize-control .option .title {
     display: block;
@@ -2507,6 +2520,14 @@ header .btn {
 
     .score-block .col-md-12.mb-4:last-of-type {
         margin-bottom: 1.5rem !important;
+    }
+
+    .file-drop-area {
+        padding: 15px 5px;
+    }
+
+    .file-ico {
+        top: 14%;
     }
 
     #progressbar li strong {
