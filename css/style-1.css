@@ -1685,6 +1685,159 @@ button.regulations {
 	border-radius: 50%;
 }
 
+.image-banner {
+	height: 250px;
+	background-image: url(../images/o-nama/Hero-fotka.jpg);
+	background-position-x: center;
+	background-position-y: -120px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 60px;
+}
+
+.about-us-banner {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.about-us-txt__big {
+	font-size: 22px;
+	font-weight: 700;
+	display: block;
+	margin-bottom: 2rem;
+}
+
+.about-us-banner__num h1 {
+	background-color: var(--brand-red);
+	display: inline-block;
+	position: relative;
+	font-weight: 900;
+	border-radius: 12px;
+	padding: 15px 50px;
+}
+
+.about-us-banner__num h1::after {
+	content: url(../images/dobitnici/frcokla.svg);
+	width: 100px;
+	display: block;
+	position: absolute;
+	right: -45px;
+	top: 45px;
+}
+
+.about-us-banner__num h1::before {
+	content: url(../images/zuta-loptica.svg);
+	width: 60px;
+	display: block;
+	position: absolute;
+	left: -25px;
+	top: -30px;
+	transform: rotate(-20deg);
+}
+
+.about-us-banner h5 {
+	letter-spacing: 2px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.about-us-banner h2 {
+	letter-spacing: 2px;
+	font-weight: 700;
+	margin-top: 15px;
+}
+
+.igre-gradient {
+	background-image: linear-gradient(-320deg, #f4136b, #4a007d);
+	padding: 100px;
+	border-radius: 20px;
+}
+
+.igre-gradient::before {
+	content: url(../images/o-nama/zute-tackice@o-nama.svg);
+	position: absolute;
+	top: 100px;
+	left: -150px;
+	width: 200px;
+}
+
+.igre-gradient__item {
+	padding: 20px;
+	background-color: blueviolet;
+	display: flex;
+	height: 178px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+.igre-gradient__item--loto {
+	background-image: linear-gradient(-225deg, var(--brand-red), var(--brand-red) 50%, #ba1521 50%);
+}
+
+.igre-gradient__item--lotoPlus {
+	background-image: linear-gradient(-225deg, var(--brand-dark-blue-1), var(--brand-dark-blue-1) 50%, #0038a1 50%);
+}
+
+.igre-gradient__item--joker {
+	background-image: linear-gradient(-225deg, var(--brand-green), var(--brand-green) 50%, #00a13b 50%);
+}
+
+.igre-gradient__item--bingo {
+	background-image: linear-gradient(-225deg, var(--brand-purple), var(--brand-purple) 50%, #822eb7 50%);
+}
+
+.igre-gradient__item--greb {
+	background-image: linear-gradient(-225deg, var(--brand-yellow), var(--brand-yellow) 50%, #dfa021 50%);
+}
+
+.igre-gradient__item--srecke {
+	background-image: linear-gradient(-225deg, var(--brand-light-blue-2), var(--brand-light-blue-2) 50%, #04a1a5 50%);
+}
+
+.about-us-igre .btn {
+	padding: 0.75rem 1.75rem;
+}
+
+.igre-gradient__item img {
+	max-width: 150px;
+	display: block;
+	margin: 0 auto;
+}
+
+.podeli-wrapp {
+	background-color: var(--brand-dark-blue-1);
+	padding: 100px 100px 80px;
+	border-radius: 20px;
+	margin-top: 200px;
+	position: relative;
+}
+
+.podeli-wrapp::before {
+	content: url(../images/o-nama/Srce-ikonica.svg);
+	width: 150px;
+	position: absolute;
+	right: 30px;
+	top: -75px;
+}
+
+.card--podeli {
+	border: 0;
+	background-color: var(--brand-light-gray);
+	padding: 80px 100px;
+	position: relative;
+	border-radius: 0 0 20px 20px;
+}
+
+.triangle-blue {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 30px 0 30px;
+	border-color: var(--brand-dark-blue-1) transparent transparent transparent;
+	position: absolute;
+	top: 0;
+}
 
 
 /* Large devices (desktops, less than 1200px) */
@@ -1748,6 +1901,10 @@ button.regulations {
 		width: 140px;
 		top: -26px;
 		left: 27px;
+	}
+
+	.image-banner {
+		background-position-y: -50px;
 	}
 }
 
@@ -1839,6 +1996,11 @@ button.regulations {
 
 	.our-players .megafon {
 		width: 130px;
+	}
+
+	.image-banner {
+		height: 220px;
+		background-position-y: -20px;
 	}
 }
 
@@ -1968,6 +2130,23 @@ button.regulations {
 		width: 80px;
 		right: -31px;
 		top: 40px;
+	}
+
+	.image-banner {
+		height: 200px;
+		background-position-y: 0;
+	}
+
+	.about-us-banner__num h1::before {
+		width: 50px;
+		left: -20px;
+		top: -25px;
+	}
+
+	.about-us-banner__num h1::after {
+		width: 80px;
+		right: -35px;
+		top: 35px;
 	}
 }
 
@@ -2114,6 +2293,35 @@ button.regulations {
 
 	.our-players h5 {
 		letter-spacing: 1px;
+	}
+
+	.about-us-banner__num h1 {
+		font-size: 28px;
+		padding: 15px 30px;
+	}
+
+	.about-us-banner__num h1::before {
+		width: 40px;
+		left: -15px;
+		top: -15px;
+	}
+
+	.about-us-banner__num h1::after {
+		width: 60px;
+		right: -20px;
+		top: 35px;
+	}
+
+	.about-us-banner h5 {
+		font-size: 16px;
+	}
+
+	.about-us-banner h2 {
+		font-size: 25px;
+	}
+
+	.igre-gradient {
+		padding: 50px;
 	}
 }
 
