@@ -1809,7 +1809,7 @@ button.regulations {
 	background-color: var(--brand-dark-blue-1);
 	padding: 100px 100px 80px;
 	border-radius: 20px;
-	margin-top: 200px;
+	margin-top: 180px;
 	position: relative;
 }
 
@@ -1827,6 +1827,7 @@ button.regulations {
 	padding: 80px 100px;
 	position: relative;
 	border-radius: 0 0 20px 20px;
+	margin-top: -15px;
 }
 
 .triangle-blue {
@@ -1839,6 +1840,99 @@ button.regulations {
 	top: 0;
 }
 
+.know-more-btn:hover {
+	text-decoration: none;
+}
+
+.about-us-18plus {
+	margin-top: 120px;
+	margin-bottom: 100px;
+}
+
+.sre18plus {
+	position: relative;
+	margin-top: 25px;
+}
+
+.sre18plus img {
+	display: block;
+	margin: 0 auto;
+	max-width: 300px;
+	width: 100%;
+}
+
+.card--18plus {
+	border: 0;
+	padding: 40px 0 0;
+}
+
+ul.red-star {
+	font-size: 1.2rem;
+	font-weight: 300;
+	padding-left: 0;
+	list-style-position: inside;
+	list-style-image: url(../images/o-nama/red-star15@o-nama.png);
+}
+
+.card--18plus__banner {
+	background-color: var(--brand-pink-2);
+	padding: 40px;
+	margin-top: 40px;
+}
+
+.card--18plus__banner p {
+	margin-bottom: 0;
+	font-size: 16px;
+}
+
+.know-more-btn--dark {
+	color: var(--brand-black);
+}
+
+.know-more-btn--dark:hover {
+	color: var(--brand-black);
+}
+
+.know-more-btn--dark i {
+	color: var(--brand-yellow);
+}
+
+.obrenovic {
+	background-color: var(--brand-light-gray);
+	padding: 100px 0;
+}
+
+.know-more-btn--dark-mo i {
+	color: var(--brand-dark-blue-1);
+}
+
+.obrenovic__slika img {
+	border-radius: 50%;
+	width: 100%;
+	max-width: 300px;
+}
+
+.triangle-mob {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 30px 0 30px;
+	border-color: var(--brand-light-gray) transparent transparent transparent;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.about-dls {
+	margin: 130px 0 100px;
+}
+
+.about-dls__srecko {
+	display: block;
+	margin: 0 auto;
+	width: 80px;
+}
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -1905,6 +1999,10 @@ button.regulations {
 
 	.image-banner {
 		background-position-y: -50px;
+	}
+
+	.sre18plus {
+		margin-top: 50px;
 	}
 }
 
@@ -2148,6 +2246,10 @@ button.regulations {
 		right: -35px;
 		top: 35px;
 	}
+
+	.sre18plus {
+		margin-top: 0;
+	}
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -2322,6 +2424,20 @@ button.regulations {
 
 	.igre-gradient {
 		padding: 50px;
+	}
+
+	.podeli-wrapp {
+		padding: 60px 50px 70px;
+		border-radius: 20px;
+	}
+
+	.podeli-wrapp::before {
+		width: 130px;
+		right: 20px;
+	}
+
+	.card--podeli {
+		padding: 60px 50px;
 	}
 }
 
