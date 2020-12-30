@@ -1907,9 +1907,9 @@ ul.red-star {
 }
 
 .obrenovic__slika img {
-	border-radius: 50%;
 	width: 100%;
 	max-width: 300px;
+	align-self: center;
 }
 
 .triangle-mob {
