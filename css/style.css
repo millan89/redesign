@@ -378,6 +378,10 @@ select {
     border-color: var(--brand-black);
 }
 
+.custom-select-nonselect {
+    background: var(--brand-white) url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;
+}
+
 .form-control-tc {
     text-align: center;
 }
@@ -435,6 +439,7 @@ select {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    max-width: 140px;
 }
 
 .file-input {
@@ -481,6 +486,67 @@ select {
 
 .selectize-control .item.active a {
     color: #303030;
+}
+
+
+/* TABLE PAGER */
+.table-pager--loc thead {
+    border-bottom: 1px solid;
+}
+
+.table-pager--loc th {
+    cursor: pointer;
+    padding: 2% 0;
+    background-position: left;
+    padding-left: 20px;
+}
+
+.table-pager--loc td {
+    padding: 1% 0;
+}
+
+.sorting-table {
+    padding-bottom: 50px;
+}
+
+.sorting-table .dataTables_scroll {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.sorting-table #example_info {
+    float: left;
+    color: var(--brand-dark-blue-1);
+    font-weight: 600;
+}
+
+.sorting-table #example_paginate {
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.sorting-table .paginate_button {
+    color: var(--brand-black) !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sorting-table #example_paginate span .paginate_button {
+    background: var(--brand-dark-gray-2);
+    border-radius: 50%;
+    width: 25px;
+    display: inline-block;
+    height: 25px;
+    padding: 0px 2px;
+    margin: 5px;
+    text-align: center;
+    color: var(--brand-white) !important;
+}
+
+.sorting-table #example_paginate span .paginate_button.current {
+    background: var(--brand-black);
 }
 
 
@@ -2432,7 +2498,6 @@ header .btn {
 
     .games-btns {
         justify-content: space-between !important;
-        padding: 0 15px;
     }
 
     .games-btns > p,
