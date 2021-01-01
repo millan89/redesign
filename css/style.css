@@ -2209,6 +2209,76 @@ header .btn {
 }
 
 
+/* MAP */
+.map {
+    position: relative;
+    min-height: 440px;
+    font-size: 1rem;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.pin {
+    background: url(../images/pin.svg) no-repeat;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    top: 30%;
+    left: 22%;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.pin--store {
+    background: url(../images/mesto.svg) no-repeat;
+    top: 20%;
+    left: 45%;
+}
+
+.pin--store .pin__text {
+    transform: translate(-1.5em, 3.2em);
+}
+
+.pin__text {
+    background: var(--brand-white);
+    width: 13em;
+    padding: 0.8em;
+    border-radius: 6px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transform: translate(-2em, 5em);
+    position: relative;
+    opacity: 0;
+}
+
+.pin__text:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid var(--brand-white);
+    top: -0.6em;
+    left: 2.8em;
+}
+
+.pin.active .pin__text {
+    opacity: 1;
+}
+
+.pin__text span {
+    display: block;
+}
+
+
 /* PRE FOOTER */
 .pre-footer {
     margin-top: 110px;
