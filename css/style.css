@@ -2550,6 +2550,7 @@ header .btn {
 
     .prodaja-checkboxes > div {
         width: 100%;
+        margin: 5px 0;
     }
 
     .prodaja-checkboxes .text-sm {
