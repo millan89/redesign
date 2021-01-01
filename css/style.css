@@ -499,6 +499,7 @@ select {
     padding: 2% 0;
     background-position: left;
     padding-left: 20px;
+    outline: none;
 }
 
 .table-pager--loc td {
@@ -531,6 +532,7 @@ select {
     color: var(--brand-black) !important;
     cursor: pointer;
     text-decoration: none;
+    outline: none;
 }
 
 .sorting-table #example_paginate span .paginate_button {
@@ -539,7 +541,7 @@ select {
     width: 25px;
     display: inline-block;
     height: 25px;
-    padding: 0px 2px;
+    padding: 1px 2px;
     margin: 5px;
     text-align: center;
     color: var(--brand-white) !important;
@@ -2393,6 +2395,13 @@ header .btn {
         font-size: 13px;
     }
 
+    .sorting-table #example_paginate,
+    .sorting-table #example_info {
+        clear: both;
+        float: none;
+        margin: 8px 0;
+    }
+
     .img-xs {
         width: 300px;
         max-width: 100%;
@@ -2523,6 +2532,30 @@ header .btn {
         width: 34px;
     }
 
+    .fake-btn {
+        font-size: 8px;
+    }
+
+    .table-pager {
+        min-width: 900px;
+    }
+
+    .prodaja-checkboxes > div {
+        width: 100%;
+    }
+
+    .prodaja-checkboxes .text-sm {
+        font-size: 1rem;
+    }
+
+    .prodaja-checkboxes .text-sm.custom-control-label:before {
+        top: .25rem;
+    }
+
+    .justify-content-left-sm {
+        justify-content: flex-start !important;
+    }
+
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -2613,6 +2646,10 @@ header .btn {
 
     .icon-heading {
         height: 44px;
+    }
+
+    .mt-xxs-1 {
+        margin-top: 1rem;
     }
 
     .mt-xxs-2 {
