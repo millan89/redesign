@@ -547,6 +547,14 @@ select {
     color: var(--brand-white) !important;
 }
 
+.sorting-table #example_paginate .paginate_button.previous {
+    margin-right: 10px;
+}
+
+.sorting-table #example_paginate .paginate_button.next {
+    margin-left: 10px;
+}
+
 .sorting-table #example_paginate span .paginate_button.current {
     background: var(--brand-black);
 }
@@ -2399,7 +2407,7 @@ header .btn {
     .sorting-table #example_info {
         clear: both;
         float: none;
-        margin: 8px 0;
+        margin: 10px 0 0;
     }
 
     .img-xs {
@@ -2537,7 +2545,7 @@ header .btn {
     }
 
     .table-pager {
-        min-width: 900px;
+        min-width: 860px;
     }
 
     .prodaja-checkboxes > div {
