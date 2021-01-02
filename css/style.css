@@ -1274,12 +1274,16 @@ header .btn {
     font-size: 1.6rem;
 }
 
-.slick-prev:hover,
 .slick-prev:focus,
-.slick-next:hover,
 .slick-next:focus {
+    opacity: 1;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
     opacity: .45;
 }
+
 
 .slick-dots {
     position: absolute;
