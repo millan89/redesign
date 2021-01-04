@@ -2427,6 +2427,7 @@ header .btn {
     .navbar-collapse {
         padding: 15px;
         background-color: var(--brand-white);
+        box-shadow: 0px 25px 20px -5px rgba(0, 0, 0, 0.5);
     }
 
     .navbar-collapse .navbar-nav {
