@@ -2290,6 +2290,24 @@ header .btn {
     display: block;
 }
 
+.pin__close {
+    position: absolute;
+    top: .1em;
+    right: .2em;
+    height: 1em;
+    width: 1em;
+}
+
+.pin__close:after {
+    font-family: var(--font-fa);
+    content: "\f00d";
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 
 /* PRE FOOTER */
 .pre-footer {
