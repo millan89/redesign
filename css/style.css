@@ -2267,7 +2267,7 @@ header .btn {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     transform: translate(-2em, 5em);
     position: relative;
-    opacity: 0;
+    display: none;
 }
 
 .pin__text:after {
@@ -2283,7 +2283,7 @@ header .btn {
 }
 
 .pin.active .pin__text {
-    opacity: 1;
+    display: block;
 }
 
 .pin__text span {
