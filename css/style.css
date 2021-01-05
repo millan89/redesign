@@ -79,6 +79,10 @@ style.css
     color: var(--brand-red) !important;
 }
 
+.color-green {
+    color: var(--brand-green) !important;
+}
+
 .bg-color-lgray {
     background-color: var(--brand-light-gray);
 }
@@ -1154,6 +1158,37 @@ header .btn {
 
 .dropdown-item {
     padding: .5rem 1.5rem;
+}
+
+.nav-user {
+    margin: 0;
+}
+
+.nav-user__img {
+    height: 26px;
+    border-radius: 50%;
+}
+
+.nav-user__msg {
+    font-size: 1.4rem;
+    vertical-align: sub;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-user__msg span {
+    position: absolute;
+    top: -0.3em;
+    right: -0.6em;
+    background: var(--brand-red);
+    font-size: 0.6rem;
+    color: white;
+    border-radius: 50%;
+    font-weight: 500;
+    padding: 0.3em 0.1em;
+    height: 1.5em;
+    width: 1.5em;
+    text-align: center;
 }
 
 
@@ -2309,6 +2344,37 @@ header .btn {
     bottom: 0;
 }
 
+
+/* PROFILE */
+.ticket-card__hd {
+    margin: -30px -30px 0px -30px;
+    background-color: var(--brand-dark-gray);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.t-left__img {
+    /* height: 70px; */
+}
+
+.t-right p {
+    color: var(--brand-white);
+    font-size: .9rem;
+}
+
+.t-right p:last-of-type {
+    margin-bottom: 0;
+}
+
+.list-profile-tabs {
+    margin-left: -15px;
+    margin-right: -30px;
+    width: 100% !important;
+    max-width: inherit;
+}
+
+
+
 /* PRE FOOTER */
 .pre-footer {
     margin-top: 110px;
@@ -2427,7 +2493,7 @@ header .btn {
     .navbar-collapse {
         padding: 15px;
         background-color: var(--brand-white);
-        box-shadow: 0px 25px 20px -5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 25px 20px -5px rgba(0, 0, 0, 0.3);
     }
 
     .navbar-collapse .navbar-nav {
@@ -2436,6 +2502,10 @@ header .btn {
 
     .navbar-collapse .btn+.btn {
         margin-top: 10px;
+    }
+
+    .m-sm-1 {
+        margin: 1rem !important;
     }
 
     .hero .slick-arrow {
