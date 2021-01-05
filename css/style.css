@@ -520,14 +520,14 @@ select {
     margin-bottom: 10px;
 }
 
-.sorting-table #example_info {
+.sorting-table .dataTables_info {
     float: left;
     color: var(--brand-dark-blue-1);
     font-weight: 600;
     font-size: .9rem;
 }
 
-.sorting-table #example_paginate {
+.sorting-table .dataTables_paginate {
     float: right;
     display: flex;
     align-items: center;
@@ -541,7 +541,7 @@ select {
     outline: none;
 }
 
-.sorting-table #example_paginate span .paginate_button {
+.sorting-table .dataTables_paginate span .paginate_button {
     background: var(--brand-dark-gray-2);
     border-radius: 50%;
     display: inline-block;
@@ -552,15 +552,15 @@ select {
     color: var(--brand-white) !important;
 }
 
-.sorting-table #example_paginate .paginate_button.previous {
+.sorting-table .dataTables_paginate .paginate_button.previous {
     margin-right: 10px;
 }
 
-.sorting-table #example_paginate .paginate_button.next {
+.sorting-table .dataTables_paginate .paginate_button.next {
     margin-left: 10px;
 }
 
-.sorting-table #example_paginate span .paginate_button.current {
+.sorting-table .dataTables_paginate span .paginate_button.current {
     background: var(--brand-black);
 }
 
@@ -2376,7 +2376,7 @@ header .btn {
 }
 
 .list-profile-tabs {
-    margin-left: -15px;
+    margin-left: -30px;
     margin-right: -30px;
     width: 100% !important;
     max-width: inherit;
@@ -2586,8 +2586,8 @@ header .btn {
         font-size: 13px;
     }
 
-    .sorting-table #example_paginate,
-    .sorting-table #example_info {
+    .sorting-table .dataTables_paginate,
+    .sorting-table .dataTables_info {
         clear: both;
         float: none;
         margin: 10px 0 0;

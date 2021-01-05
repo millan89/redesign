@@ -135,24 +135,24 @@
                         </div>
                     </div>
 
-                    <div class="list-profile-tabs">
+                    <div class="list-profile-tabs col">
                         <div class="row list-group" id="list-tab" role="tablist">
-                            <button class="col-sm-2 btn btn-tab ticket-card__btn active" id="uplate" data-toggle="list"
+                            <button class="col btn btn-tab ticket-card__btn active" id="uplate" data-toggle="list"
                                 href="#uplate1" role="tab"
                                 aria-controls="uplate"><strong>Uplate/isplate</strong></button>
-                            <button class="col-sm-2 btn btn-tab ticket-card__btn" id="odgovorno" data-toggle="list"
+                            <button class="col btn btn-tab ticket-card__btn" id="odgovorno" data-toggle="list"
                                 href="#odgovorno1" role="tab" aria-controls="odgovorno"><strong>Igraj
                                     odgovorno</strong></button>
-                            <button class="col-sm-2 btn btn-tab ticket-card__btn" id="istorija" data-toggle="list"
+                            <button class="col btn btn-tab ticket-card__btn" id="istorija" data-toggle="list"
                                 href="#istorija1" role="tab" aria-controls="istorija"><strong>Istorija
                                     igranja</strong></button>
-                            <button class="col-sm-2 btn btn-tab ticket-card__btn" id="omiljeni" data-toggle="list"
+                            <button class="col btn btn-tab ticket-card__btn" id="omiljeni" data-toggle="list"
                                 href="#omiljeni1" role="tab" aria-controls="omiljeni"><strong>Omiljeni
                                     brojevi</strong></button>
-                            <button class="col-sm-2 btn btn-tab ticket-card__btn" id="poruke" data-toggle="list"
+                            <button class="col btn btn-tab ticket-card__btn" id="poruke" data-toggle="list"
                                 href="#poruke1" role="tab" aria-controls="poruke"><strong>Poruke <span
                                         class="new-msg new-msg--rel">12</span></strong></button>
-                            <button class="col-sm-2 btn btn-tab ticket-card__btn" id="profil" data-toggle="list"
+                            <button class="col btn btn-tab ticket-card__btn" id="profil" data-toggle="list"
                                     href="#profil1" role="tab" aria-controls="profil"><strong>Moj profil</strong></button>
                         </div>
                     </div>
@@ -161,7 +161,178 @@
                         <div class="tab-content row" id="ticket-tabContent">
                             <div class="col-sm-12 tab-pane fade show active" id="uplate1" role="tabpanel"
                                 aria-labelledby="uplate">
-                                dsadsad
+
+                                <div class="list-profile-tabs row justify-content-center">
+                                    <div class="col-md-10 mt-5">
+                                        <div class="row list-group" id="list-tab" role="tablist">
+                                            <button class="col btn btn-darkk rounded-pill active" id="pregled_uplata"
+                                                data-toggle="list" href="#pregled_uplata1" role="tab"
+                                                aria-controls="pregled_uplata">Pregled uplata</button>
+                                            <button class="col btn btn-darkk rounded-pill" id="izvrsi_uplatu"
+                                                data-toggle="list" href="#izvrsi_uplatu1" role="tab"
+                                                aria-controls="izvrsi_uplatu">Izvrši uplatu</button>
+                                            <button class="col btn btn-darkk rounded-pill" id="pregled_isplata"
+                                                data-toggle="list" href="#pregled_isplata1" role="tab"
+                                                aria-controls="pregled_isplata">Pregled isplata</button>
+                                            <button class="col btn btn-darkk rounded-pill" id="zatraži_isplatu"
+                                                data-toggle="list" href="#zatraži_isplatu1" role="tab"
+                                                aria-controls="zatraži_isplatu">Zatraži isplatu</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="my-5 sorting-table">
+
+                                    <table id="pregled-uplata" class="display nowrap table-pager table-pager--loc"
+                                        style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th class="custom-select-nonselect">Naziv:</th>
+                                                <th class="custom-select-nonselect">Adresa:</th>
+                                                <th class="custom-select-nonselect">Radno vreme:</th>
+                                                <th class="custom-select-nonselect">Tip:</th>
+                                                <th class="custom-select-nonselect">Napomena:</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>TC Usce</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jelenak</td>
+                                                <td>Heroja 19</td>
+                                                <td>12-20</td>
+                                                <td>Cvrsta gradnja</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Delta city</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jelenak</td>
+                                                <td>Heroja 19</td>
+                                                <td>12-20</td>
+                                                <td>Cvrsta gradnja</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Delta city</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jelenak</td>
+                                                <td>Heroja 19</td>
+                                                <td>12-20</td>
+                                                <td>Cvrsta gradnja</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Delta city</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Agencija Jelenak</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Jelenak</td>
+                                                <td>Heroja 19</td>
+                                                <td>12-20</td>
+                                                <td>Cvrsta gradnja</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Delta city</td>
+                                                <td>Narodnih heroja 19</td>
+                                                <td>08-20</td>
+                                                <td>Lokal - čvrsta gradnja</td>
+                                                <td>Napomena</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
                             </div>
                             <div class="col-sm-12 tab-pane fade" id="odgovorno1" role="tabpanel" aria-labelledby="odgovorno">
                                 czxczx
@@ -189,7 +360,7 @@
 
 
 
-                    <form id="msform" class="msform--fields needs-validation col-xl-12 mb-3" novalidate>
+                    <!-- <form id="msform" class="msform--fields needs-validation col-xl-12 mb-3" novalidate>
 
                         <fieldset class="text-right">
                             <div class="form-group row">
@@ -263,164 +434,14 @@
                             <p>Link za potvdu naloga je poslat na vašu e-mail adresu.</p>
                             <i class="fas fa-envelope-open-text fa-4x color-light-gray mt-4"></i>
                         </fieldset>
-                    </form>
+                    </form> -->
+
+
                 </div>
             </div>
         </div>
     </div>
     <!-- PROFILE -->
-
-
-    <div class="container my-5 sorting-table">
-
-        <table id="example" class="display nowrap table-pager table-pager--loc" style="width:100%">
-            <thead>
-                <tr>
-                    <th class="custom-select-nonselect">Naziv:</th>
-                    <th class="custom-select-nonselect">Adresa:</th>
-                    <th class="custom-select-nonselect">Radno vreme:</th>
-                    <th class="custom-select-nonselect">Tip:</th>
-                    <th class="custom-select-nonselect">Napomena:</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>TC Usce</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Jelenak</td>
-                    <td>Heroja 19</td>
-                    <td>12-20</td>
-                    <td>Cvrsta gradnja</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Delta city</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Jelenak</td>
-                    <td>Heroja 19</td>
-                    <td>12-20</td>
-                    <td>Cvrsta gradnja</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Delta city</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Jelenak</td>
-                    <td>Heroja 19</td>
-                    <td>12-20</td>
-                    <td>Cvrsta gradnja</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Delta city</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Agencija Jelenak</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-                <tr>
-                    <td>Jelenak</td>
-                    <td>Heroja 19</td>
-                    <td>12-20</td>
-                    <td>Cvrsta gradnja</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Delta city</td>
-                    <td>Narodnih heroja 19</td>
-                    <td>08-20</td>
-                    <td>Lokal - čvrsta gradnja</td>
-                    <td>Napomena</td>
-                </tr>
-            </tbody>
-        </table>
-
-    </div>
 
 
     <!-- FOOTER -->
@@ -661,10 +682,11 @@
 
     <script>
         $(document).ready(function() {
-            $('#example').DataTable( {
+            $('#pregled-uplata').DataTable( {
                 "scrollX": true,
-                "searching": false,
-                "lengthChange": false,
+                "dom": '<<"toolbar">flr>tip',
+                "searching": true,
+                "lengthChange": true,
                 "pageLength": 5,
                 "language": {
                     "paginate": {
@@ -674,6 +696,8 @@
                     "info": "_END_ od ukupno _TOTAL_ rezultata"
                 },
             } );
+
+            $("div.toolbar").html('<h3 class="font-weight-bold">Pregled svih vaših uplata</h3>');
         } );
     </script>
 
