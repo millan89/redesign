@@ -1176,7 +1176,7 @@ header .btn {
     cursor: pointer;
 }
 
-.nav-user__msg span {
+.new-msg {
     position: absolute;
     top: -0.3em;
     right: -0.6em;
@@ -1189,6 +1189,15 @@ header .btn {
     height: 1.5em;
     width: 1.5em;
     text-align: center;
+}
+
+.new-msg--rel {
+    position: relative;    
+    font-size: 0.7rem;
+    height: 1.6em;
+    width: 1.6em;
+    padding: .1em;
+    display: inline-block;
 }
 
 
@@ -2373,6 +2382,9 @@ header .btn {
     max-width: inherit;
 }
 
+.list-profile-tabs .list-group {
+    flex-direction: row;
+}
 
 
 /* PRE FOOTER */
