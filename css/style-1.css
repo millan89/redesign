@@ -2230,6 +2230,15 @@ ul.red-star {
 		top: 40px;
 	}
 
+	.sorting-table #pregled-uplata_wrapper.dataTables_wrapper>div:first-child {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.sorting-table #pregled-uplata_length {
+		margin: 10px 0;
+	}
+
 	.image-banner {
 		height: 200px;
 		background-position-y: 0;
@@ -2265,6 +2274,10 @@ ul.red-star {
 	.bingo-ticket,
 	.ticket-card {
 		padding: 30px 15px;
+	}
+
+	.ticket-card--profile {
+		padding: 30px 25px;
 	}
 
 	.ticket_next-prev {

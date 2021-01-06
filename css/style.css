@@ -356,6 +356,11 @@ select {
     border-color: var(--brand-light-gray);
 }
 
+.form-control--light {
+    border: 1px solid #ced4da;
+    font-weight: 400;
+}
+
 .form-control.form-control--gray.is-valid,
 .was-validated .form-control.form-control--gray:valid,
 .form-control.form-control--gray.is-invalid,
@@ -413,6 +418,10 @@ select {
     border-color: var(--brand-light-gray);
     color: var(--brand-black);
     font-weight: 400;
+}
+
+.custom-input {
+    height: calc(1.5em + .75rem + 5px);
 }
 
 .file-drop-area {
@@ -494,10 +503,6 @@ select {
 
 
 /* TABLE PAGER */
-.table-pager--loc thead {
-    border-bottom: 1px solid;
-}
-
 .table-pager--loc th {
     cursor: pointer;
     padding: 2% 0;
@@ -508,6 +513,11 @@ select {
 
 .table-pager--loc td {
     padding: 1% 0;
+}
+
+.table-pager--font-sm th,
+.table-pager--font-sm td {
+    font-size: .8rem;
 }
 
 .sorting-table {
@@ -532,6 +542,35 @@ select {
     display: flex;
     align-items: center;
     font-size: .9rem;
+}
+
+.sorting-table .dataTables_scrollBody {
+    border-top: 1px solid;
+    padding-top: 6px;
+}
+
+.sorting-table select.custom-select {
+    width: 70px;
+    padding: 0.375rem 0.375rem;
+    margin: 0 .375rem;
+    height: calc(1.5em + .75rem + 2px);
+}
+
+.sorting-table .dataTables_length label {
+    font-weight: 400;
+    font-size: .9rem;
+    margin: 0;
+}
+
+.sorting-table .dataTables_filter label {
+    margin: 0;
+}
+
+.sorting-table #pregled-uplata_wrapper.dataTables_wrapper>div:first-child {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    align-items: center;
 }
 
 .sorting-table .paginate_button {
@@ -1153,7 +1192,6 @@ header .btn {
 .dropdown-menu {
     border: 0 none;
     border-radius: 3px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
 }
 
 .dropdown-item {
@@ -1165,7 +1203,7 @@ header .btn {
 }
 
 .nav-user__img {
-    height: 26px;
+    height: 2.2em;
     border-radius: 50%;
 }
 
@@ -2362,10 +2400,6 @@ header .btn {
     padding-left: 15px;
 }
 
-.t-left__img {
-    /* height: 70px; */
-}
-
 .t-right p {
     color: var(--brand-white);
     font-size: .9rem;
@@ -2477,6 +2511,15 @@ header .btn {
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 
+    .navbar-nav .nav-link {
+        font-size: 0.8rem;
+        padding: .5rem !important;
+    }
+
+    .nav-user {
+        font-size: 0.8rem;
+    }
+
     .h1-lg {
         font-size: 2.6rem;
         line-height: 1.2;
@@ -2516,8 +2559,26 @@ header .btn {
         margin-top: 10px;
     }
 
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: .5rem 0 !important;
+    }
+
+    .t-left {
+        margin-bottom: 20px;
+    }
+
+    .t-left__img {
+        max-height: 110px;
+    }
+
     .m-sm-1 {
         margin: 1rem !important;
+    }
+
+    .nav-user {
+        font-size: 1rem;
+        margin-left: 0 !important;
     }
 
     .hero .slick-arrow {
@@ -2531,6 +2592,10 @@ header .btn {
 
     .brzo-lako__text {
         padding: 0px 0px 60px;
+    }
+
+    .text-right-tablet {
+        text-align: left !important;
     }
 
     .winners-text {
@@ -2744,6 +2809,20 @@ header .btn {
         top: .25rem;
     }
 
+    .ticket-card--profile > .list-profile-tabs .list-group button {
+        font-size: 0.8em;
+        min-width: 110px;
+    }
+
+    .ticket-card__inner {
+        padding: 0;
+    }
+
+    .list-group--nd>button {
+        font-size: 0.9rem;
+        border-radius: 4px !important;
+    }
+
     .justify-content-left-sm {
         justify-content: flex-start !important;
     }
@@ -2828,6 +2907,23 @@ header .btn {
         top: 38%;
     }
 
+    .t-right .row div {
+        display: table;
+    }
+
+    .t-right .pr-0 {
+        padding-right: 15px !important
+    }
+
+    .t-right p {
+        width: 33.33%;
+        display: table-cell;
+        font-size: 0.8rem;
+        padding: 2%;
+        text-align: center !important;
+        vertical-align: middle;
+    }
+
     .flex-dir-column-mob {
         flex-direction: column;
     }
@@ -2852,6 +2948,10 @@ header .btn {
 
 
 @media (min-width: 1199.99px) {
+
+    .dropdown-menu {
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+    }
 
     .games-btns.games-btns--side-bnts button.slick-prev {
         transform: translate(-50px, -70px)

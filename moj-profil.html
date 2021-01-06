@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Igre
                             </a>
@@ -55,7 +55,7 @@
                         <li class="nav-item">
                             <a class="nav-link px-3" href="#">Vesti</a>
                         </li>
-                        <li class="nav-item dropdown px-3">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 O nama
@@ -103,11 +103,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-11 mb-5">
-                <div class="ticket-card row" style="margin-top: -163px;">
+                <div class="ticket-card ticket-card--profile row" style="margin-top: -163px;">
 
                     <div class="ticket-card__hd py-4">
                         <div class="row justify-content-between align-items-center">
-                            <div class="col-sm-5 t-left d-flex">
+                            <div class="col-lg-5 t-left d-flex">
                                 <div class="row align-items-center">
                                      <div class="col-4">
                                          <img src="images/Pomoc-igracima.png" alt="" class="t-left__img">
@@ -118,14 +118,14 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-7 t-right">
+                            <div class="col-lg-7 t-right">
                                 <div class="row">
-                                    <div class="col-8 pr-0">
-                                        <p class="text-right">Trenutno raspoloživo stanje na računu:</p>
-                                        <p class="text-right">Trenutno stanje bonusa na računu:</p>
-                                        <p class="text-right">Reservisan iznos:</p>
+                                    <div class="col-sm-8 pr-0">
+                                        <p class="text-right text-right-tablet">Trenutno raspoloživo stanje na računu:</p>
+                                        <p class="text-right text-right-tablet">Trenutno stanje bonusa na računu:</p>
+                                        <p class="text-right text-right-tablet">Reservisan iznos:</p>
                                     </div>
-                                    <div class="col-4">
+                                    <div class="col-sm-4">
                                         <p class="color-green"><strong>15,679.000,00 din.</strong></p>
                                         <p><strong>0,00 din.</strong></p>
                                         <p><strong>0,00 din.</strong></p>
@@ -157,181 +157,167 @@
                         </div>
                     </div>
 
-                    <div class="col-12">
+                    <div class="col-12 ticket-card__inner">
                         <div class="tab-content row" id="ticket-tabContent">
                             <div class="col-sm-12 tab-pane fade show active" id="uplate1" role="tabpanel"
                                 aria-labelledby="uplate">
 
-                                <div class="list-profile-tabs row justify-content-center">
+                                <div class="row justify-content-center">
                                     <div class="col-md-10 mt-5">
-                                        <div class="row list-group" id="list-tab" role="tablist">
-                                            <button class="col btn btn-darkk rounded-pill active" id="pregled_uplata"
+                                        <div class="row list-group flex-row list-group--nd" id="list-tab" role="tablist">
+                                            <button class="col btn btn-darkk rounded-pill px-1 mx-1 active" id="pregled_uplata"
                                                 data-toggle="list" href="#pregled_uplata1" role="tab"
                                                 aria-controls="pregled_uplata">Pregled uplata</button>
-                                            <button class="col btn btn-darkk rounded-pill" id="izvrsi_uplatu"
-                                                data-toggle="list" href="#izvrsi_uplatu1" role="tab"
-                                                aria-controls="izvrsi_uplatu">Izvrši uplatu</button>
-                                            <button class="col btn btn-darkk rounded-pill" id="pregled_isplata"
+                                            <li class="nav-item dropdown col px-1 mx-1 list-unstyled" >
+                                                <button class="nav-link dropdown-toggle btn btn-darkk rounded-pill"
+                                                    id="navbarDropdown"
+                                                    role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Izvrši uplatu
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item"
+                                                        id="izvrsi_uplatu_uplatnica" data-toggle="list" href="#izvrsi_uplatu_uplatnica1"
+                                                        role="tab" aria-controls="izvrsi_uplatu_uplatnica">Uplatnica</a>
+                                                    <a class="dropdown-item" id="izvrsi_uplatu_kartica"
+                                                        data-toggle="list" href="#izvrsi_uplatu_kartica1" role="tab"
+                                                        aria-controls="izvrsi_uplatu_kartica">Kartica</a>
+                                                </div>
+                                            </li>
+                                            
+                                            <button class="col btn btn-darkk rounded-pill px-1 mx-1" id="pregled_isplata"
                                                 data-toggle="list" href="#pregled_isplata1" role="tab"
                                                 aria-controls="pregled_isplata">Pregled isplata</button>
-                                            <button class="col btn btn-darkk rounded-pill" id="zatraži_isplatu"
+                                            <button class="col btn btn-darkk rounded-pill px-1 mx-1" id="zatraži_isplatu"
                                                 data-toggle="list" href="#zatraži_isplatu1" role="tab"
                                                 aria-controls="zatraži_isplatu">Zatraži isplatu</button>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div class="my-5 sorting-table">
+                                <div class="tab-content row" id="ticket-tabContent">
+                                    <div class="col-sm-12 tab-pane fade show active" id="pregled_uplata1" role="tabpanel"
+                                        aria-labelledby="pregled_uplata">
+                                        <div class="mt-5 sorting-table">
 
-                                    <table id="pregled-uplata" class="display nowrap table-pager table-pager--loc"
-                                        style="width:100%">
-                                        <thead>
-                                            <tr>
-                                                <th class="custom-select-nonselect">Naziv:</th>
-                                                <th class="custom-select-nonselect">Adresa:</th>
-                                                <th class="custom-select-nonselect">Radno vreme:</th>
-                                                <th class="custom-select-nonselect">Tip:</th>
-                                                <th class="custom-select-nonselect">Napomena:</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>TC Usce</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jelenak</td>
-                                                <td>Heroja 19</td>
-                                                <td>12-20</td>
-                                                <td>Cvrsta gradnja</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Delta city</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jelenak</td>
-                                                <td>Heroja 19</td>
-                                                <td>12-20</td>
-                                                <td>Cvrsta gradnja</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Delta city</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jelenak</td>
-                                                <td>Heroja 19</td>
-                                                <td>12-20</td>
-                                                <td>Cvrsta gradnja</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Delta city</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Agencija Jelenak</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Jelenak</td>
-                                                <td>Heroja 19</td>
-                                                <td>12-20</td>
-                                                <td>Cvrsta gradnja</td>
-                                                <td></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Delta city</td>
-                                                <td>Narodnih heroja 19</td>
-                                                <td>08-20</td>
-                                                <td>Lokal - čvrsta gradnja</td>
-                                                <td>Napomena</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                            <table id="pregled-uplata"
+                                                class="display nowrap table-pager table-pager--loc table-pager--font-sm"
+                                                style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="custom-select-nonselect">Datum</th>
+                                                        <th class="custom-select-nonselect">Iznos u din.</th>
+                                                        <th class="custom-select-nonselect">Način uplate</th>
+                                                        <th class="custom-select-nonselect">ID transakcije</th>
+                                                        <th class="custom-select-nonselect">Terminal</th>
+                                                        <th class="custom-select-nonselect">ID uplate</th>
+                                                        <th class="custom-select-nonselect">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>500,00</td>
+                                                        <td>Platna kartica</td>
+                                                        <td>Inicijalizacija</td>
+                                                        <td>23899379</td>
+                                                        <td>97244</td>
+                                                        <td class="font-weight-bold color-blue">Započeta</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>1500,00</td>
+                                                        <td>Platna kartica</td>
+                                                        <td>Inicijalizacija</td>
+                                                        <td>46899379</td>
+                                                        <td>97244</td>
+                                                        <td class="font-weight-bold color-green">Uspešna</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>5300,00</td>
+                                                        <td>Platna kartica</td>
+                                                        <td>Inicijalizacija</td>
+                                                        <td>46099379</td>
+                                                        <td>97244</td>
+                                                        <td class="font-weight-bold color-red">Neuspesna</td>
+                                                    </tr>
+                                                     <tr>
+                                                         <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                         <td>1500,00</td>
+                                                         <td>Platna kartica</td>
+                                                         <td>Inicijalizacija</td>
+                                                         <td>46899379</td>
+                                                         <td>97244</td>
+                                                         <td class="font-weight-bold color-green">Uspešna</td>
+                                                     </tr>
+                                                     <tr>
+                                                         <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                         <td>5300,00</td>
+                                                         <td>Platna kartica</td>
+                                                         <td>Inicijalizacija</td>
+                                                         <td>46099379</td>
+                                                         <td>97244</td>
+                                                         <td class="font-weight-bold color-red">Neuspesna</td>
+                                                     </tr>
+                                                </tbody>
+                                            </table>
 
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 tab-pane fade" id="izvrsi_uplatu_uplatnica1"
+                                        role="tabpanel" aria-labelledby="izvrsi_uplatu_uplatnica">
+                                        <form class="needs-validation row flex-d-column-sm mt-5" novalidate>
+                                            <div class="col-sm-3 mb-3">
+                                                <label class="my-1 d-block" for="inlineFormCustomSelectPref">Unesi iznos u dinarima:</label>
+                                                <input type="number" class="form-control custom-input" min="100" required>
+                                                <div class="invalid-feedback text-left">
+                                                    Vrednost ne može biti manja od 100 rsd
+                                                </div>
+                                            </div>
+                                            <div class="col mb-3">
+                                                <label class="my-1 d-block" for="">&nbsp;</label>
+                                                <button type="submit"
+                                                    class="btn btn-success"><strong>POPUNI UPLATNICU</strong></button>
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <img src="images/uplatnica.jpg" alt="">
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <button type="submit"
+                                                    class="btn btn-info m-auto d-block"><strong>STAMPAJ
+                                                        UPLATNICU</strong></button>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="col-sm-12 tab-pane fade" id="izvrsi_uplatu_kartica1" role="tabpanel"
+                                        aria-labelledby="izvrsi_uplatu_kartica">
+                                        <form class="needs-validation row flex-d-column-sm mt-5" novalidate>
+                                            <div class="col-sm-3 mb-3">
+                                                <label class="my-1 d-block" for="inlineFormCustomSelectPref">Unesi iznos
+                                                    u dinarima:</label>
+                                                <input type="number" class="form-control custom-input" min="100"
+                                                    required>
+                                                <div class="invalid-feedback text-left">
+                                                    Vrednost ne može biti manja od 100 rsd
+                                                </div>
+                                            </div>
+                                            <div class="col mb-3">
+                                                <label class="my-1 d-block" for="">&nbsp;</label>
+                                                <button type="submit" class="btn btn-success"><strong>POPUNI
+                                                        UPLATNICU</strong></button>
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <button type="submit"
+                                                    class="btn btn-info m-auto d-block"><strong>STAMPAJ
+                                                        UPLATNICU</strong></button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
+
+                                
 
                             </div>
                             <div class="col-sm-12 tab-pane fade" id="odgovorno1" role="tabpanel" aria-labelledby="odgovorno">
@@ -631,60 +617,17 @@
                             event.stopPropagation();
                         }
                         form.classList.add('was-validated');
-
-                        $(this).hide(1200, function(){
-                            $('#ty-contact').show(200);
-
-                            //scroll to upwards
-                            $([document.documentElement, document.body]).animate({
-                            scrollTop: $("body").offset().top
-                            }, 500);
-                        });
-
                     }, false);
                 });
             }, false);
         })();
-    </script>
-    <script>
-        // <select id="select-links"></select>
-
-        $('#select-links').selectize({
-        theme: 'links',
-        maxItems: 1,
-        valueField: 'id',
-        searchField: 'title',
-        options: [
-        {id: 1, title: 'Beograd', url: '(Novi Beograd)'},
-        {id: 2, title: 'Beograd', url: '(Zemun)'},
-        {id: 3, title: 'Novi Sad', url: '(Stari grad)'},
-        ],
-        render: {
-        option: function(data, escape) {
-        return '<div class="option">' +
-            '<span class="title">' + escape(data.title) + '</span>' +
-            '<span class="url">' + escape(data.url) + '</span>' +
-            '</div>';
-        },
-        item: function(data, escape) {
-        return '<div class="item"><a href="' + escape(data.url) + '">' + escape(data.title) + '</a></div>';
-        }
-        },
-        create: function(input) {
-        return {
-        id: 0,
-        title: input,
-        url: '#'
-        };
-        }
-        });
     </script>
 
     <script>
         $(document).ready(function() {
             $('#pregled-uplata').DataTable( {
                 "scrollX": true,
-                "dom": '<<"toolbar">flr>tip',
+                "dom": '<<"toolbar">lfr>tip',
                 "searching": true,
                 "lengthChange": true,
                 "pageLength": 5,
@@ -693,11 +636,16 @@
                         "next": "Sledeća",
                         "previous": "Prethodna"
                     },
-                    "info": "_END_ od ukupno _TOTAL_ rezultata"
+                    "info": "_END_ od ukupno _TOTAL_ rezultata",
+                    "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                    "search": ""
                 },
             } );
 
-            $("div.toolbar").html('<h3 class="font-weight-bold">Pregled svih vaših uplata</h3>');
+            $("div.toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših uplata</h4>');
+            $(".sorting-table select").addClass('custom-select');
+            $(".sorting-table input[type='search']").addClass('form-control form-control--light');
+            $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");
         } );
     </script>
 
