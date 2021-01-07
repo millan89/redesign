@@ -164,7 +164,7 @@
 
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 mt-5">
-                                        <div class="row list-group flex-row list-group--nd" id="list-tab" role="tablist">
+                                        <div class="row list-group flex-row list-group--nd" id="list-tabb" role="tablist">
                                             <button class="col btn btn-darkk rounded-pill px-1 mx-1 active" id="pregled_uplata"
                                                 data-toggle="list" href="#pregled_uplata1" role="tab"
                                                 aria-controls="pregled_uplata">Pregled uplata</button>
@@ -293,28 +293,96 @@
 
                                     <div class="col-sm-12 tab-pane fade" id="izvrsi_uplatu_kartica1" role="tabpanel"
                                         aria-labelledby="izvrsi_uplatu_kartica">
-                                        <form class="needs-validation row flex-d-column-sm mt-5" novalidate>
-                                            <div class="col-sm-3 mb-3">
-                                                <label class="my-1 d-block" for="inlineFormCustomSelectPref">Unesi iznos
+                                        <form class="needs-validation row mt-5 flex-column align-items-center" novalidate>
+                                            <div class="col-4 mt-3">
+                                                <img src="images/Kartice.jpg" alt="">
+                                                <label class="mt-4 mb-1 d-block text-center"
+                                                    for="inlineFormCustomSelectPref">Unesi iznos
                                                     u dinarima:</label>
-                                                <input type="number" class="form-control custom-input" min="100"
+                                                <input type="number" class="form-control custom-input text-center"
+                                                    min="100"
                                                     required>
                                                 <div class="invalid-feedback text-left">
                                                     Vrednost ne može biti manja od 100 rsd
                                                 </div>
-                                            </div>
-                                            <div class="col mb-3">
-                                                <label class="my-1 d-block" for="">&nbsp;</label>
-                                                <button type="submit" class="btn btn-success"><strong>POPUNI
-                                                        UPLATNICU</strong></button>
-                                            </div>
-                                            <div class="col-12 mt-3">
-                                                <button type="submit"
-                                                    class="btn btn-info m-auto d-block"><strong>STAMPAJ
+                                                <button type="submit" class="btn btn-success btn-block mt-4 mb-3 mx-auto"><strong>POPUNI
                                                         UPLATNICU</strong></button>
                                             </div>
                                         </form>
                                     </div>
+
+
+                                    <div class="col-sm-12 tab-pane fade" id="pregled_isplata1"
+                                        role="tabpanel" aria-labelledby="pregled_isplata">
+                                        <div class="mt-5 sorting-table">
+
+                                            <table id="pregled-isplata"
+                                                class="display nowrap table-pager table-pager--loc table-pager--font-sm"
+                                                style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="custom-select-nonselect">Datum</th>
+                                                        <th class="custom-select-nonselect">Iznos u din.</th>
+                                                        <th class="custom-select-nonselect">Način uplate</th>
+                                                        <th class="custom-select-nonselect">ID transakcije</th>
+                                                        <th class="custom-select-nonselect">Terminal</th>
+                                                        <th class="custom-select-nonselect">ID uplate</th>
+                                                        <th class="custom-select-nonselect">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>500,00</td>
+                                                        <td>Platna kartica</td>
+                                                        <td>Inicijalizacija</td>
+                                                        <td>23899379</td>
+                                                        <td>97244</td>
+                                                        <td class="font-weight-bold color-blue">Započeta</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>1500,00</td>
+                                                        <td>Platna kartica</td>
+                                                        <td>Inicijalizacija</td>
+                                                        <td>46899379</td>
+                                                        <td>97244</td>
+                                                        <td class="font-weight-bold color-green">Uspešna</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>5300,00</td>
+                                                        <td>Platna kartica</td>
+                                                        <td>Inicijalizacija</td>
+                                                        <td>46099379</td>
+                                                        <td>97244</td>
+                                                        <td class="font-weight-bold color-red">Neuspesna</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>1500,00</td>
+                                                        <td>Platna kartica</td>
+                                                        <td>Inicijalizacija</td>
+                                                        <td>46899379</td>
+                                                        <td>97244</td>
+                                                        <td class="font-weight-bold color-green">Uspešna</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>5300,00</td>
+                                                        <td>Platna kartica</td>
+                                                        <td>Inicijalizacija</td>
+                                                        <td>46099379</td>
+                                                        <td>97244</td>
+                                                        <td class="font-weight-bold color-red">Neuspesna</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                    </div>
+
+
                                 </div>
 
                                 
@@ -647,17 +715,37 @@
             $(".sorting-table input[type='search']").addClass('form-control form-control--light');
             $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");
         } );
+
+        $(document).ready(function() {
+        $('#pregled-isplata').DataTable( {
+        "scrollX": true,
+        "dom": '<<"toolbar">lfr>tip',
+            "searching": true,
+            "lengthChange": true,
+            "pageLength": 5,
+            "language": {
+            "paginate": {
+            "next": "Sledeća",
+            "previous": "Prethodna"
+            },
+            "info": "_END_ od ukupno _TOTAL_ rezultata",
+            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+            "search": ""
+            },
+            } );
+
+            $("div.toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših isplata</h4>');
+            $(".sorting-table select").addClass('custom-select');
+            $(".sorting-table input[type='search']").addClass('form-control form-control--light');
+            $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");
+        });
     </script>
 
     <script>
-        $("html").click(function() {
-            $(".pin").removeClass("active");
-        });
-        $(".pin").click(function(event){
-            event.stopPropagation();
-        });
-        $(".pin").click(function(){
-            $(this).toggleClass("active");
+        $('#list-tabb button').on('click', function (e) {
+            e.preventDefault()
+            $('#list-tabb button').removeClass('active');
+            $('#list-tabb .dropdown-item').removeClass('active');
         })
     </script>
     

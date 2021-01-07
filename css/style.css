@@ -566,7 +566,8 @@ select {
     margin: 0;
 }
 
-.sorting-table #pregled-uplata_wrapper.dataTables_wrapper>div:first-child {
+.sorting-table #pregled-uplata_wrapper.dataTables_wrapper>div:first-child,
+.sorting-table #pregled-isplata_wrapper.dataTables_wrapper>div:first-child {
     display: flex;
     justify-content: space-between;
     margin-bottom: 14px;
