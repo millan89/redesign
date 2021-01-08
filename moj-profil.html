@@ -164,7 +164,7 @@
 
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 mt-5">
-                                        <div class="row list-group flex-row list-group--nd" id="list-tabb" role="tablist">
+                                        <div class="row list-group flex-row list-group--nd list-tab__inner" id="list-tabb" role="tablist">
                                             <button class="col btn btn-darkk rounded-pill px-1 mx-1 active" id="pregled_uplata"
                                                 data-toggle="list" href="#pregled_uplata1" role="tab"
                                                 aria-controls="pregled_uplata">Pregled uplata</button>
@@ -172,7 +172,7 @@
                                                 <button class="nav-link dropdown-toggle btn btn-darkk rounded-pill"
                                                     id="navbarDropdown"
                                                     role="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
+                                                    aria-expanded="false" style="width: 100%;">
                                                     Izvrši uplatu
                                                 </button>
                                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -184,13 +184,28 @@
                                                         aria-controls="izvrsi_uplatu_kartica">Kartica</a>
                                                 </div>
                                             </li>
-                                            
                                             <button class="col btn btn-darkk rounded-pill px-1 mx-1" id="pregled_isplata"
                                                 data-toggle="list" href="#pregled_isplata1" role="tab"
                                                 aria-controls="pregled_isplata">Pregled isplata</button>
-                                            <button class="col btn btn-darkk rounded-pill px-1 mx-1" id="zatraži_isplatu"
+                                            <!-- <button class="col btn btn-darkk rounded-pill px-1 mx-1" id="zatraži_isplatu"
                                                 data-toggle="list" href="#zatraži_isplatu1" role="tab"
-                                                aria-controls="zatraži_isplatu">Zatraži isplatu</button>
+                                                aria-controls="zatraži_isplatu">Zatraži isplatu</button> -->
+
+                                            <li class="nav-item dropdown col px-1 mx-1 list-unstyled">
+                                                <button class="nav-link dropdown-toggle btn btn-darkk rounded-pill"
+                                                    id="navbarDropdown" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false" style="width: 100%;">
+                                                    Zatraži isplatu
+                                                </button>
+                                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                    <a class="dropdown-item" id="zatraži_isplatu_tekuci"
+                                                        data-toggle="list" href="#zatraži_isplatu_tekuci1" role="tab"
+                                                        aria-controls="zatraži_isplatu_tekuci">Tekući račun</a>
+                                                    <a class="dropdown-item" id="zatraži_isplatu_lojalnost"
+                                                        data-toggle="list" href="#zatraži_isplatu_lojalnost1" role="tab"
+                                                        aria-controls="zatraži_isplatu_lojalnost">Kartica lojalnosti</a>
+                                                </div>
+                                            </li>
                                         </div>
                                     </div>
                                 </div>
@@ -201,7 +216,7 @@
                                         <div class="mt-5 sorting-table">
 
                                             <table id="pregled-uplata"
-                                                class="display nowrap table-pager table-pager--loc table-pager--font-sm"
+                                                class="display nowrap uplata-isplata table-pager table-pager--loc table-pager--font-sm"
                                                 style="width:100%">
                                                 <thead>
                                                     <tr>
@@ -268,7 +283,7 @@
                                     <div class="col-sm-12 tab-pane fade" id="izvrsi_uplatu_uplatnica1"
                                         role="tabpanel" aria-labelledby="izvrsi_uplatu_uplatnica">
                                         <form class="needs-validation row flex-d-column-sm mt-5" novalidate>
-                                            <div class="col-sm-3 mb-3">
+                                            <div class="col-lg-3">
                                                 <label class="my-1 d-block" for="inlineFormCustomSelectPref">Unesi iznos u dinarima:</label>
                                                 <input type="number" class="form-control custom-input" min="100" required>
                                                 <div class="invalid-feedback text-left">
@@ -294,19 +309,20 @@
                                     <div class="col-sm-12 tab-pane fade" id="izvrsi_uplatu_kartica1" role="tabpanel"
                                         aria-labelledby="izvrsi_uplatu_kartica">
                                         <form class="needs-validation row mt-5 flex-column align-items-center" novalidate>
-                                            <div class="col-4 mt-3">
+                                            <div class="col-sm-4 mt-3 text-center">
                                                 <img src="images/Kartice.jpg" alt="">
-                                                <label class="mt-4 mb-1 d-block text-center"
+                                                <label class="mt-4 mb-1 d-block"
                                                     for="inlineFormCustomSelectPref">Unesi iznos
                                                     u dinarima:</label>
                                                 <input type="number" class="form-control custom-input text-center"
                                                     min="100"
                                                     required>
-                                                <div class="invalid-feedback text-left">
+                                                <div class="invalid-feedback">
                                                     Vrednost ne može biti manja od 100 rsd
                                                 </div>
-                                                <button type="submit" class="btn btn-success btn-block mt-4 mb-3 mx-auto"><strong>POPUNI
-                                                        UPLATNICU</strong></button>
+                                                <button type="submit" class="btn btn-success btn-block mt-4 mb-3 mx-auto"><strong>NASTAVI</strong></button>
+                                                <a href="#" class="mt-5 d-block mb-3">Uputstvo za korišćenje platnih
+                                                    kartica za plaćanje</a>
                                             </div>
                                         </form>
                                     </div>
@@ -317,7 +333,7 @@
                                         <div class="mt-5 sorting-table">
 
                                             <table id="pregled-isplata"
-                                                class="display nowrap table-pager table-pager--loc table-pager--font-sm"
+                                                class="display nowrap uplata-isplata table-pager table-pager--loc table-pager--font-sm"
                                                 style="width:100%">
                                                 <thead>
                                                     <tr>
@@ -332,7 +348,7 @@
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>23.03.2020. <span class="color-dark-gray">12:28</span></td>
                                                         <td>500,00</td>
                                                         <td>Platna kartica</td>
                                                         <td>Inicijalizacija</td>
@@ -359,7 +375,7 @@
                                                         <td class="font-weight-bold color-red">Neuspesna</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>23.03.2020. <span class="color-dark-gray">12:28</span></td>
                                                         <td>1500,00</td>
                                                         <td>Platna kartica</td>
                                                         <td>Inicijalizacija</td>
@@ -368,7 +384,7 @@
                                                         <td class="font-weight-bold color-green">Uspešna</td>
                                                     </tr>
                                                     <tr>
-                                                        <td>06.11.2020. <span class="color-dark-gray">12:28</span></td>
+                                                        <td>23.03.2020. <span class="color-dark-gray">12:28</span></td>
                                                         <td>5300,00</td>
                                                         <td>Platna kartica</td>
                                                         <td>Inicijalizacija</td>
@@ -380,6 +396,28 @@
                                             </table>
 
                                         </div>
+                                    </div>
+
+                                    <div class="col-sm-12 tab-pane fade" id="zatraži_isplatu_lojalnost1" role="tabpanel"
+                                        aria-labelledby="zatraži_isplatu_lojalnost">
+                                         <form class="needs-validation row mt-5 flex-column align-items-center"
+                                             novalidate>
+                                             <div class="col-sm-4 mt-3 text-center">
+                                                 <img src="images/Kartice.jpg" alt="">
+                                                 <label class="mt-4 mb-1 d-block" for="inlineFormCustomSelectPref">Unesi
+                                                     iznos
+                                                     u dinarima:</label>
+                                                 <input type="number" class="form-control custom-input text-center"
+                                                     min="100" required>
+                                                 <div class="invalid-feedback">
+                                                     Vrednost ne može biti manja od 100 rsd
+                                                 </div>
+                                                 <button type="submit"
+                                                     class="btn btn-success btn-block mt-4 mb-3 mx-auto"><strong>NASTAVI</strong></button>
+                                                 <a href="#" class="mt-5 d-block mb-3">Uputstvo za korišćenje platnih
+                                                     kartica za plaćanje</a>
+                                             </div>
+                                         </form>
                                     </div>
 
 
@@ -409,87 +447,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
-
-
-                    <!-- <form id="msform" class="msform--fields needs-validation col-xl-12 mb-3" novalidate>
-
-                        <fieldset class="text-right">
-                            <div class="form-group row">
-                                <label class="col-sm-4 col-form-label text-left"></label>
-                                <div class="col-sm-6">
-                                    <p class="h4 mb-4 text-left"><strong>1. KORISNIČKI PODACI</strong></p>
-                                </div>
-                                <div class="col-sm-2"></div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="a" class="col-sm-4 col-form-label text-right text-right-mob">Korisničko ime:<sup
-                                        class="color-red">*</sup></label>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control form-control--gray" id="a" required>
-                                    <div class="invalid-feedback text-left">
-                                        Greška!
-                                    </div>
-                                </div>
-                                <div class="col-sm-2"></div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="b" class="col-sm-4 col-form-label text-right text-right-mob">E-mail:<sup
-                                        class="color-red">*</sup></label>
-                                <div class="col-sm-6">
-                                    <input type="email" class="form-control form-control--gray" id="b" required>
-                                    <div class="invalid-feedback text-left">
-                                        Greška!
-                                    </div>
-                                </div>
-                                <div class="col-sm-2"></div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="c" class="col-sm-4 col-form-label text-right text-right-mob">Ponovite
-                                    e-mail:<sup class="color-red">*</sup></label>
-                                <div class="col-sm-6">
-                                    <input type="email" class="form-control form-control--gray" id="c" required>
-                                    <div class="invalid-feedback text-left">
-                                        Greška!
-                                    </div>
-                                </div>
-                                <div class="col-sm-2"></div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="d" class="col-sm-4 col-form-label text-right text-right-mob">Lozinka:<sup
-                                        class="color-red">*</sup></label>
-                                <div class="col-sm-6">
-                                    <input type="password" class="form-control form-control--gray" id="d" required>
-                                    <div class="invalid-feedback text-left">
-                                        Greška!
-                                    </div>
-                                    <p class="text-xs text-left mt-2">Dužina lozinke ne sme biti manja od 6 karaktera.
-                                        Lozinka mora sadržati barem jedan broj ili veliko slovo.</p>
-                                </div>
-                                <div class="col-sm-2"></div>
-                            </div>
-                            <div class="form-group row">
-                                <label for="d" class="col-sm-4 col-form-label text-right text-right-mob"></label>
-                                <div class="col-sm-6 text-right d-flex justify-content-between align-items-center">
-                                    <a href="#" class="mr-4">Pomoć?</a><input type="submit" name="next"
-                                        class="next action-button btn btn-success font-weight-bold" value="DALJE" />
-                                </div>
-                                <div class="col-sm-2">
-
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <fieldset class="text-center">
-                            <img src="images/zvezdica-tackice-green.svg" alt="" height="100">
-                            <h2 class="mt-4"><strong>Uspešno ste kreirali nalog!</strong></h2>
-                            <p>Link za potvdu naloga je poslat na vašu e-mail adresu.</p>
-                            <i class="fas fa-envelope-open-text fa-4x color-light-gray mt-4"></i>
-                        </fieldset>
-                    </form> -->
-
 
                 </div>
             </div>
@@ -693,7 +650,7 @@
 
     <script>
         $(document).ready(function() {
-            $('#pregled-uplata').DataTable( {
+            $('.uplata-isplata').DataTable( {
                 "scrollX": true,
                 "dom": '<<"toolbar">lfr>tip',
                 "searching": true,
@@ -707,34 +664,11 @@
                     "info": "_END_ od ukupno _TOTAL_ rezultata",
                     "lengthMenu": "Prikaži _MENU_ rezultata po strani",
                     "search": ""
-                },
+                }
             } );
-
-            $("div.toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših uplata</h4>');
-            $(".sorting-table select").addClass('custom-select');
-            $(".sorting-table input[type='search']").addClass('form-control form-control--light');
-            $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");
-        } );
-
-        $(document).ready(function() {
-        $('#pregled-isplata').DataTable( {
-        "scrollX": true,
-        "dom": '<<"toolbar">lfr>tip',
-            "searching": true,
-            "lengthChange": true,
-            "pageLength": 5,
-            "language": {
-            "paginate": {
-            "next": "Sledeća",
-            "previous": "Prethodna"
-            },
-            "info": "_END_ od ukupno _TOTAL_ rezultata",
-            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-            "search": ""
-            },
-            } );
-
-            $("div.toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših isplata</h4>');
+            $("#pregled-uplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših uplata</h4>');
+            $("#pregled-isplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših isplata</h4>');
+            
             $(".sorting-table select").addClass('custom-select');
             $(".sorting-table input[type='search']").addClass('form-control form-control--light');
             $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");
