@@ -2671,15 +2671,16 @@ header .btn {
 
     .list-group--nd>button,
     .list-group--nd .dropdown button {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
         border-radius: 4px !important;
         padding: 0.45rem 0;
         width: 25%;
         white-space: pre-line;
+        min-height: 106px;
     }
 
     .list-group--nd .dropdown-item {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .list-group--nd .dropdown-menu {
