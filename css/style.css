@@ -2919,6 +2919,15 @@ header .btn {
         margin-bottom: 1.5rem !important;
     }
 
+
+    .dataTables_wrapper .d-flex.justify-content-between {
+        flex-direction: column;
+    }
+
+    #blokada_wrapper .dataTables_length {
+        margin-bottom: 10px;
+    }
+
     .file-drop-area {
         padding: 15px 5px;
     }
