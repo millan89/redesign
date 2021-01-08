@@ -1775,24 +1775,48 @@ button.regulations {
 	background-image: linear-gradient(-225deg, var(--brand-red), var(--brand-red) 50%, #ba1521 50%);
 }
 
+.igre-gradient__item--loto img {
+	max-width: 110px;
+}
+
 .igre-gradient__item--lotoPlus {
 	background-image: linear-gradient(-225deg, var(--brand-dark-blue-1), var(--brand-dark-blue-1) 50%, #0038a1 50%);
+}
+
+.igre-gradient__item--lotoPlus img {
+	max-width: 120px;
 }
 
 .igre-gradient__item--joker {
 	background-image: linear-gradient(-225deg, var(--brand-green), var(--brand-green) 50%, #00a13b 50%);
 }
 
+.igre-gradient__item--joker img {
+	max-width: 135px;
+}
+
 .igre-gradient__item--bingo {
 	background-image: linear-gradient(-225deg, var(--brand-purple), var(--brand-purple) 50%, #822eb7 50%);
+}
+
+.igre-gradient__item--bingo img {
+	max-width: 105px;
 }
 
 .igre-gradient__item--greb {
 	background-image: linear-gradient(-225deg, var(--brand-yellow), var(--brand-yellow) 50%, #dfa021 50%);
 }
 
+.igre-gradient__item--greb img {
+	max-width: 100px;
+}
+
 .igre-gradient__item--srecke {
 	background-image: linear-gradient(-225deg, var(--brand-light-blue-2), var(--brand-light-blue-2) 50%, #04a1a5 50%);
+}
+
+.igre-gradient__item--srecke img {
+	max-width: 110px;
 }
 
 .about-us-igre .btn {
@@ -1800,7 +1824,7 @@ button.regulations {
 }
 
 .igre-gradient__item img {
-	max-width: 150px;
+	/* max-width: 150px; */
 	display: block;
 	margin: 0 auto;
 }
@@ -1869,9 +1893,13 @@ button.regulations {
 ul.red-star {
 	font-size: 1.2rem;
 	font-weight: 300;
-	padding-left: 0;
-	list-style-position: inside;
+	padding-left: 25px;
+	list-style-position: outside;
 	list-style-image: url(../images/o-nama/red-star15@o-nama.png);
+}
+
+ul.red-star li {
+	padding-left: 15px;
 }
 
 .card--18plus__banner {
@@ -2447,6 +2475,7 @@ ul.red-star {
 	.podeli-wrapp::before {
 		width: 130px;
 		right: 20px;
+		top: -95px;
 	}
 
 	.card--podeli {
