@@ -309,6 +309,11 @@ p {
 	border-color: var(--brand-light-blue-2);
 }
 
+.ticket-fields__field.ticket-fields__field--m-sm {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
 .ticket-card__row.active .ticket-fields__field {
 	background-color: var(--brand-yellow);
 	border-color: var(--brand-yellow);
@@ -2388,6 +2393,11 @@ ul.red-star li {
 		margin: auto;
 		left: 0;
 		right: 0;
+	}
+
+	.ticket-close--static {
+		position: relative;
+		margin: 0 0 0 0.4rem;
 	}
 
 	.ticket-heart {
