@@ -1965,14 +1965,63 @@ ul.red-star li {
 .toolbar_wrapp {
 	display: flex;
 	align-items: center;
+	margin-bottom: 50px;
 }
 
-.toolbar_wrapp #dobitnici_info {
-	margin-left: auto;
+.sorting-table--dobitnici .toolbar_wrapp #dobitnici_info {
+	float: right;
+}
+
+.sorting-table--dobitnici .dataTables_scroll {
+	border-bottom: 0px solid;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.sorting-table--dobitnici .dataTables_scrollBody {
+	border-top: 0px solid;
+	padding-top: 0px;
+}
+
+.sorting-table--dobitnici .dataTables_paginate {
+	font-size: 1.4rem;
+}
+
+.sorting-table--dobitnici .toolbar {
+	margin-right: 20px;
+}
+
+.sorting-table--dobitnici .dataTables_info {
+	color: var(--brand-black);
+	font-weight: 600;
+	font-size: .9rem;
+}
+
+.la-linea {
+	width: 64%;
+	height: 1px;
+	background-color: var(--brand-black);
+	display: block;
+	margin: 0 auto;
+}
+
+.winnerBox {
+	display: flex;
+	align-items: center;
+}
+
+.half-on-lg {
+	width: 50%;
+	display: block;
+	float: left;
 }
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+	.la-linea {
+		width: 55%;
+	}
+
 	/* MAIN BANNER >> */
     .main-banner #countdown div:not(:last-child) {
 		margin-right: 10px;
@@ -2045,6 +2094,10 @@ ul.red-star li {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+	.la-linea {
+		width: 35%;
+	}
+
 	/* BINGO TICKET >> */
 	.float_left-bingo {
 		justify-content: center;
@@ -2137,10 +2190,36 @@ ul.red-star li {
 		height: 220px;
 		background-position-y: -20px;
 	}
+
+	.sorting-table--dobitnici .dataTables_paginate, 
+	.sorting-table--dobitnici .dataTables_info {
+		margin: 0px 0 0;
+	}
 }
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+	.toolbar_wrapp {
+		flex-wrap: wrap;
+	}
+
+	.sorting-table--dobitnici .toolbar {
+		margin-right: 0;
+		display: block;
+		width: 100%;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.la-linea {
+		display: none;
+	}
+
+	.sorting-table--dobitnici .toolbar_wrapp #dobitnici_info {
+		float: none;
+		margin-left: auto;
+	}
+
 	.esgg-hero__bg {
 		padding: 100px 0 50px;
 		background-image: none;
