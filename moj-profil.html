@@ -458,96 +458,142 @@
 
                             </div>
                             <div class="col-sm-12 tab-pane fade" id="odgovorno1" role="tabpanel" aria-labelledby="odgovorno">
-                                <form class="needs-validation row mt-5 flex-column" novalidate>
+                                <div class="row mt-5 flex-column">
                                     <h4 class="font-weight-bold text-center mt-2 mb-5">Blokada igranja i ograničenja
                                         sredstava za igru</h4>
-                                    <div class="col-sm-8 mt-3 offset-sm-1">
-                                        <div class="row align-items-center">
-                                            <div class="col-sm-5 pr-0 text-right text-right-mob">
-                                                <label class="my-1 d-block font-weight-normal text-sm">Period od:</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="text" class="form-control font-weight-normal"
-                                                    placeholder="dd/mm/yyyy" minlength="10" minlength="10"
-                                                    required="">
-                                                <div class="invalid-feedback">
-                                                    Datum nije validan. 08/07/2021 je primer validnog formata datuma.
+
+                                    <form class="needs-validation" novalidate>
+                                        <div class="col-sm-8 mt-3 offset-sm-1">
+                                            <div class="row align-items-center">
+                                                <div class="col-sm-5 pr-0 text-right text-right-mob">
+                                                    <label class="my-1 d-block font-weight-normal text-sm">Period od:</label>
                                                 </div>
-                                            </div>
-                                            <div class="col-1 pl-1">
-                                                <i class="far fa-calendar-alt fa-2x" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center mt-4">
-                                            <div class="col-sm-5 pr-0 text-right text-right-mob">
-                                                <label class="my-1 d-block font-weight-normal text-sm">Period do:</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="text" class="form-control font-weight-normal"
-                                                    placeholder="dd/mm/yyyy" minlength="10" minlength="10"
-                                                    required="">
-                                                <div class="invalid-feedback">
-                                                    Datum nije validan. 08/07/2021 je primer validnog formata datuma.
-                                                </div>
-                                            </div>
-                                            <div class="col-1 pl-1">
-                                                <i class="far fa-calendar-alt fa-2x" aria-hidden="true"></i>
-                                            </div>
-                                        </div>
-                                        <div class="row align-items-center mt-4">
-                                            <div class="col-sm-5 pr-0 text-right text-right-mob">
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input"
-                                                                id="customCheck6">
-                                                            <label class="custom-control-label d-block font-weight-normal text-sm"
-                                                                for="customCheck6">Blokada</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-6">
-                                                        <div class="custom-control custom-checkbox">
-                                                            <input type="checkbox" class="custom-control-input limit"
-                                                                id="customCheck61">
-                                                            <label class="custom-control-label d-block font-weight-normal text-sm"
-                                                                for="customCheck61">Ograničenja:</label>
-                                                        </div>
+                                                <div class="col-11 col-sm-6">
+                                                    <input type="text" class="form-control font-weight-normal"
+                                                        placeholder="dd/mm/yyyy" minlength="10" minlength="10"
+                                                        required="">
+                                                    <div class="invalid-feedback">
+                                                        Datum nije validan. 08/07/2021 je primer validnog formata datuma.
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="row align-items-center mt-4 limit-field d-none">
-                                            <div class="col-sm-5 pr-0 text-right text-right-mob">
-                                                <label class="my-1 d-block font-weight-normal text-sm">Ograničenje za
-                                                    igre (din)</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="number" class="form-control font-weight-normal">
-                                                <div class="invalid-feedback">
-                                                    Unos mora biti pozitivan ceo broj!
+                                                <div class="col-1 pl-1">
+                                                    <i class="far fa-calendar-alt fa-lg" aria-hidden="true"></i>
                                                 </div>
                                             </div>
-                                            <div class="col-1 pl-1">
+                                            <div class="row align-items-center mt-4">
+                                                <div class="col-sm-5 pr-0 text-right text-right-mob">
+                                                    <label class="my-1 d-block font-weight-normal text-sm">Period do:</label>
+                                                </div>
+                                                <div class="col-11 col-sm-6">
+                                                    <input type="text" class="form-control font-weight-normal"
+                                                        placeholder="dd/mm/yyyy" minlength="10" minlength="10"
+                                                        required="">
+                                                    <div class="invalid-feedback">
+                                                        Datum nije validan. 08/07/2021 je primer validnog formata datuma.
+                                                    </div>
+                                                </div>
+                                                <div class="col-1 pl-1">
+                                                    <i class="far fa-calendar-alt fa-lg" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center mt-4">
+                                                <div class="col-sm-5 pr-0 text-right text-right-mob">
+                                                </div>
+                                                <div class="col-11 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input"
+                                                                    id="customCheck6">
+                                                                <label class="custom-control-label d-block font-weight-normal text-sm"
+                                                                    for="customCheck6">Blokada</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="custom-control custom-checkbox">
+                                                                <input type="checkbox" class="custom-control-input limit"
+                                                                    id="customCheck61">
+                                                                <label class="custom-control-label d-block font-weight-normal text-sm"
+                                                                    for="customCheck61">Ograničenja</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                            <div class="row align-items-center mt-4 limit-field d-none">
+                                                <div class="col-sm-5 pr-0 text-right text-right-mob">
+                                                    <label class="my-1 d-block font-weight-normal text-sm">Ograničenje za
+                                                        igre (din)</label>
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <input type="number" class="form-control font-weight-normal">
+                                                    <div class="invalid-feedback">
+                                                        Unos mora biti pozitivan ceo broj!
+                                                    </div>
+                                                </div>
+                                                <div class="col-1 pl-1">
+
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="row align-items-center mt-4">
-                                            <div class="col-sm-5 pr-0 text-right text-right-mob">
-                                                
+                                            <div class="row align-items-center mt-4">
+                                                <div class="col-sm-5 pr-0 text-right text-right-mob">
+                                                    
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <button type="submit"
+                                                        class="btn btn-success btn-block mt-4 mb-3 mx-auto"><strong>SAČUVAJ PROMENE</strong></button>
+                                                </div>
+                                                <div class="col-1 pl-1">
+                                                </div>
                                             </div>
-                                            <div class="col-6">
-                                                <button type="submit"
-                                                    class="btn btn-success btn-block mt-4 mb-3 mx-auto"><strong>SAČUVAJ PROMENE</strong></button>
-                                            </div>
-                                            <div class="col-1 pl-1">
-                                            </div>
+
                                         </div>
 
+                                    </form>
+
+                                    <div class="sorting-table mt-5" style="width:100%">
+                                        <table id="blokada" class="display nowrap table-pager table-pager--loc table-pager--font-sm"
+                                            style="width:100%">
+                                            <thead>
+                                                <tr>
+                                                    <th class="custom-select-nonselect">Početak perioda</th>
+                                                    <th class="custom-select-nonselect">Kraj perioda</th>
+                                                    <th class="custom-select-nonselect">Vrsta ograničenja</th>
+                                                    <th class="custom-select-nonselect">Iznos ograničenja</th>
+                                                    <th class="custom-select-nonselect">Raspoloživ iznos</th>
+                                                    <th class="custom-select-nonselect">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>23.03.2020.</td>
+                                                    <td>25.03.2020.</td>
+                                                    <td>Blokada</td>
+                                                    <td>15.000,00</td>
+                                                    <td>255,00</td>
+                                                    <td class="font-weight-bold color-blue">Uspešna</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>12.03.2020.</td>
+                                                    <td>29.03.2020.</td>
+                                                    <td>Blokada</td>
+                                                    <td>15.000,00</td>
+                                                    <td>255,00</td>
+                                                    <td class="font-weight-bold color-blue">Uspešna</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>26.03.2020.</td>
+                                                    <td>29.03.2020.</td>
+                                                    <td>Blokada</td>
+                                                    <td>15.000,00</td>
+                                                    <td>255,00</td>
+                                                    <td class="font-weight-bold color-blue">Uspešna</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                             <div class="col-sm-12 tab-pane fade" id="istorija1" role="tabpanel"
                                 aria-labelledby="istorija">
@@ -789,6 +835,30 @@
             $("#pregled-uplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših uplata</h4>');
             $("#pregled-isplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših isplata</h4>');
             
+            $(".sorting-table select").addClass('custom-select');
+            $(".sorting-table input[type='search']").addClass('form-control form-control--light');
+            $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('#blokada').DataTable({
+                "scrollX": true,
+                "dom": '<"d-flex justify-content-between"lfr>tip',
+                "searching": true,
+                "lengthChange": true,
+                "pageLength": 5,
+                "language": {
+                    "paginate": {
+                        "next": "Sledeća",
+                        "previous": "Prethodna"
+                    },
+                    "info": "_END_ od ukupno _TOTAL_ rezultata",
+                    "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                    "search": ""
+                }
+            });
             $(".sorting-table select").addClass('custom-select');
             $(".sorting-table input[type='search']").addClass('form-control form-control--light');
             $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");
