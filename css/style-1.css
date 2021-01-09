@@ -1962,6 +1962,15 @@ ul.red-star li {
 	width: 80px;
 }
 
+.toolbar_wrapp {
+	display: flex;
+	align-items: center;
+}
+
+.toolbar_wrapp #dobitnici_info {
+	margin-left: auto;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	/* MAIN BANNER >> */
