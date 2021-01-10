@@ -177,6 +177,14 @@ img {
     text-align: center;
 }
 
+.justify-content-end-lg {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cursor-p {
+    cursor: pointer;
+}
 
 
 
@@ -454,6 +462,10 @@ select {
     border-color: var(--brand-light-gray);
     color: var(--brand-black);
     font-weight: 400;
+}
+
+#primljene_length {
+    margin-right: 24px;
 }
 
 .custom-input {
@@ -1277,8 +1289,12 @@ header .btn {
     font-size: 0.7rem;
     height: 1.6em;
     width: 1.6em;
-    padding: .1em;
+    padding: 0.05em;
     display: inline-block;
+}
+
+.new-msg--empty {
+    font-size: 0.3rem;
 }
 
 
@@ -2577,6 +2593,10 @@ header .btn {
         display: block;
         margin: 0 auto -120px;
     }
+
+    #primljene_length {
+        margin: 20px 0;
+    }
     
 }
 
@@ -3033,6 +3053,15 @@ header .btn {
 
     .games-btns.games-btns--side-bnts button.slick-next {
         transform: translate(50px, -70px)
+    }
+
+    .justify-content-end-lg {
+        justify-content: end;
+        flex-direction: row;
+    }
+
+    .list-tab__inner--poruke {
+        margin-bottom: -38px;
     }
 
 }
