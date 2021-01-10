@@ -165,11 +165,11 @@
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 mt-5">
                                         <div class="row list-group flex-row list-group--nd list-tab__inner" id="list-tabb" role="tablist">
-                                            <button class="col btn btn-darkk rounded-pill px-1 mx-1 active" id="pregled_uplata"
+                                            <button class="col btn btn-darkk btn-primary-tab rounded-pill px-1 mx-1 active" id="pregled_uplata"
                                                 data-toggle="list" href="#pregled_uplata1" role="tab"
                                                 aria-controls="pregled_uplata">Pregled uplata</button>
                                             <li class="nav-item dropdown col px-1 mx-1 list-unstyled" >
-                                                <button class="nav-link dropdown-toggle btn btn-darkk rounded-pill"
+                                                <button class="nav-link dropdown-toggle btn btn-darkk btn-primary-tab rounded-pill"
                                                     id="navbarDropdown"
                                                     role="button" data-toggle="dropdown" aria-haspopup="true"
                                                     aria-expanded="false" style="width: 100%;">
@@ -184,12 +184,12 @@
                                                         aria-controls="izvrsi_uplatu_kartica">Plati platnom karticom</a>
                                                 </div>
                                             </li>
-                                            <button class="col btn btn-darkk rounded-pill px-1 mx-1" id="pregled_isplata"
+                                            <button class="col btn btn-darkk btn-primary-tab rounded-pill px-1 mx-1" id="pregled_isplata"
                                                 data-toggle="list" href="#pregled_isplata1" role="tab"
                                                 aria-controls="pregled_isplata">Pregled isplata</button>
 
                                             <li class="nav-item dropdown col px-1 mx-1 list-unstyled">
-                                                <button class="nav-link dropdown-toggle btn btn-darkk rounded-pill"
+                                                <button class="nav-link dropdown-toggle btn btn-darkk btn-primary-tab rounded-pill"
                                                     id="navbarDropdown" role="button" data-toggle="dropdown"
                                                     aria-haspopup="true" aria-expanded="false" style="width: 100%;">
                                                     Zatraži isplatu
@@ -597,15 +597,560 @@
                             </div>
                             <div class="col-sm-12 tab-pane fade" id="istorija1" role="tabpanel"
                                 aria-labelledby="istorija">
-                                czx6czx
+
+                                <h4 class="font-weight-bold mt-5 mb-4">Pregled odigranih igara</h4>
+
+                                <p class="text-sm"><span class="span-color span-color--gray"></span> Sivom bojom su označene igre čije je izvlačenje obavljeno</p>
+                                <p class="text-sm"><span class="span-color span-color--orange"></span> Žutom bojom su označena tekuća kola</p>
+                                <p class="text-sm"><span class="span-color span-color--blue"></span> Plavom bojom su označena buduća kola (pretplata)</p>
+
+                                <div class="sorting-table mt-5" style="width:100%">
+                                    <table id="istorija-t"
+                                    class="display nowrap table-pager table-pager--loc table-pager--font-sm"
+                                        style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th class="custom-select-nonselect">Datum</th>
+                                                <th class="custom-select-nonselect">Naziv igre</th>
+                                                <th class="custom-select-nonselect">Kolo</th>
+                                                <th class="custom-select-nonselect">Iznos uplate</th>
+                                                <th class="custom-select-nonselect">Potrošeni bonus</th>
+                                                <th class="custom-select-nonselect">Iznos dobitka</th>
+                                                <th class="custom-select-nonselect">Robni dobitak</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>06.11.2020. <span class="color-light-gray">13:52</span></td>
+                                                <td>BINGO</td>
+                                                <td class="text-center bg-color-lgray-2">45</td>
+                                                <td>100,00</td>
+                                                <td>5,00</td>
+                                                <td>105,00</td>
+                                                <td class="text-center"><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>25.12.2020. <span class="color-light-gray">13:52</span></td>
+                                                <td>LOTO</td>
+                                                <td class="text-center bg-color-yellow-2">128</td>
+                                                <td>1500,00</td>
+                                                <td>35,00</td>
+                                                <td>255,00</td>
+                                                <td class="text-center"><input type="checkbox"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>13.11.2020. <span class="color-light-gray">13:52</span></td>
+                                                <td>BINGO</td>
+                                                <td class="text-center bg-color-blue">65</td>
+                                                <td>1900,00</td>
+                                                <td>23,00</td>
+                                                <td>1105,00</td>
+                                                <td class="text-center"><input type="checkbox"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            <div class="col-sm-12 tab-pane fade" id="omiljeni1" role="tabpanel"
-                                aria-labelledby="omiljeni">
-                                cz5xczx
+
+                            <div class="col-12 tab-pane fade mt-5" id="omiljeni1" role="tabpanel" aria-labelledby="omiljeni">
+                                <div class="row justify-content-center">
+                                    <div class="col-sm-10 col-lg-6">
+                                        <div class="row list-group flex-row list-tab__inner" id="list-tabb"
+                                            role="tablist">
+                                            <button
+                                                class="col btn btn-darkk btn-primary-tab rounded-pill px-1 mx-1 active"
+                                                id="standardni-tiketi"
+                                                data-toggle="list" href="#standardni-tiketi1" role="tab"
+                                                aria-controls="standardni-tiketi">Standardni tiketi</button>
+                                            <button class="col btn btn-darkk btn-primary-tab rounded-pill px-1 mx-1"
+                                                id="sistemski-tiketi"
+                                                data-toggle="list" href="#sistemski-tiketi1" role="tab"
+                                                aria-controls="sistemski-tiketi">Sistemski tiketi</button>
+                                        </div>
+
+                                        <div class="row tab-content">
+                                            <div class="col-sm-12 tab-pane fade show active" id="standardni-tiketi1" role="tabpanel"
+                                                aria-labelledby="standardni-tiketi">
+                                                <h4 class="text-center font-weight-bold mt-5"><i
+                                                        class="fas fa-heart color-red fa-lg"></i> Omiljene kombinacije</h4>
+
+                                                <div class="sorting-table" style="width:100%">
+                                                    <table id="omiljeni"
+                                                        class="display favorite nowrap table-pager table-pager--loc table-pager--font-sm"
+                                                        style="width:100%">
+                                                        <thead style="display: none;">
+                                                            <tr>
+                                                                <th class="custom-select-nonselect">&bnsp;</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="ticket-fields">
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="36"
+                                                                                readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="3"
+                                                                                readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="6"
+                                                                                readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="24"
+                                                                                readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="4"
+                                                                                readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="31"
+                                                                                readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="8"
+                                                                                readonly></input>
+                                                                        </span>
+
+                                                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                                        <svg version="1.1" id="Capa_1"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                                            style="enable-background:new 0 0 384.97 384.97;"
+                                                                            xml:space="preserve"
+                                                                            class="ticket-close ticket-close--static"
+                                                                            data-toggle="modal"
+                                                                            data-target="#favorite-modal">
+                                                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                                        </svg>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="ticket-fields">
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="36" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="3" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="6" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="24" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="4" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="31" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="8" readonly></input>
+                                                                        </span>
+
+                                                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                                        <svg version="1.1" id="Capa_1"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                                            style="enable-background:new 0 0 384.97 384.97;"
+                                                                            xml:space="preserve"
+                                                                            class="ticket-close ticket-close--static"
+                                                                            data-toggle="modal"
+                                                                            data-target="#favorite-modal">
+                                                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                                        </svg>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="ticket-fields">
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="36" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="3" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="6" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="24" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="4" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="31" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="8" readonly></input>
+                                                                        </span>
+
+                                                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                                        <svg version="1.1" id="Capa_1"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                                            style="enable-background:new 0 0 384.97 384.97;"
+                                                                            xml:space="preserve"
+                                                                            class="ticket-close ticket-close--static"
+                                                                            data-toggle="modal"
+                                                                            data-target="#favorite-modal">
+                                                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                                        </svg>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="ticket-fields">
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="36" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="3" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="6" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="24" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="4" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="31" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="8" readonly></input>
+                                                                        </span>
+
+                                                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                                        <svg version="1.1" id="Capa_1"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                                            style="enable-background:new 0 0 384.97 384.97;"
+                                                                            xml:space="preserve"
+                                                                            class="ticket-close ticket-close--static"
+                                                                            data-toggle="modal"
+                                                                            data-target="#favorite-modal">
+                                                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                                        </svg>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <a href="loto.html" class="text-sm mt-5 text-center d-block">Za dodavanje i izmenu omiljene
+                                                        kombinacije, posetite <strong>LOTO</strong> 
+                                                        stranicu.</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 tab-pane fade" id="sistemski-tiketi1" role="tabpanel"
+                                                aria-labelledby="sistemski-tiketi">
+                                                <h4 class="text-center font-weight-bold mt-5"><i
+                                                        class="fas fa-heart color-red fa-lg"></i> Omiljene kombinacije
+                                                </h4>
+
+                                                <div class="sorting-table" style="width:100%">
+                                                    <table id="omiljeni"
+                                                        class="display favorite nowrap table-pager table-pager--loc table-pager--font-sm"
+                                                        style="width:100%">
+                                                        <thead style="display: none;">
+                                                            <tr>
+                                                                <th class="custom-select-nonselect">&bnsp;</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="ticket-fields">
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="36" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="3" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="6" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="24" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="4" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="31" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="8" readonly></input>
+                                                                        </span>
+
+                                                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                                        <svg version="1.1" id="Capa_1"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                                            style="enable-background:new 0 0 384.97 384.97;"
+                                                                            xml:space="preserve"
+                                                                            class="ticket-close ticket-close--static"
+                                                                            data-toggle="modal"
+                                                                            data-target="#favorite-modal">
+                                                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                                        </svg>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="ticket-fields">
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="36" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="3" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="6" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="24" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="4" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="31" readonly></input>
+                                                                        </span>
+                                                                        <span>
+                                                                            <input
+                                                                                class="ticket-fields__field ticket-fields__field--m-sm"
+                                                                                type="text" value="8" readonly></input>
+                                                                        </span>
+
+                                                                        <?xml version="1.0" encoding="iso-8859-1"?>
+                                                                        <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                                        <svg version="1.1" id="Capa_1"
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                                            x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                                            style="enable-background:new 0 0 384.97 384.97;"
+                                                                            xml:space="preserve"
+                                                                            class="ticket-close ticket-close--static"
+                                                                            data-toggle="modal"
+                                                                            data-target="#favorite-modal">
+                                                                            <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                                            <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+        s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+        l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+        l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                                        </svg>
+
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <a href="loto.html" class="text-sm mt-5 text-center d-block">Za dodavanje i
+                                                        izmenu omiljene
+                                                        kombinacije, posetite <strong>LOTO</strong>
+                                                        stranicu.</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-12 tab-pane fade" id="poruke1" role="tabpanel"
+
+                            <div class="col-sm-12 tab-pane fade pt-5" id="poruke1" role="tabpanel"
                                 aria-labelledby="poruke">
-                                c3zxczx
+                                <div class="row list-group flex-row list-tab__inner" id="list-tabb" role="tablist">
+                                    <button class="btn btn-darkk btn-primary-tab rounded-pill px-3 mx-1 active"
+                                        id="primljene-poruke" data-toggle="list" href="#primljene-poruke1" role="tab"
+                                        aria-controls="primljene-poruke">Primljene poruke</button>
+                                    <button class="btn btn-darkk btn-primary-tab rounded-pill px-3 mx-1"
+                                        id="prosledjene-poruke" data-toggle="list" href="#prosledjene-poruke1" role="tab"
+                                        aria-controls="prosledjene-poruke">Prosleđene poruke</button>
+                                </div>
+
+                                <div class="row tab-content">
+                                    <div class="col-sm-12 tab-pane fade show active" id="primljene-poruke1"
+                                        role="tabpanel" aria-labelledby="primljene-poruke">
+
+                                        <div class="sorting-table" style="width:100%">
+                                            <table id="primljene"
+                                                class="display primljene nowrap table-pager table-pager--loc
+                                                table-pager--font-sm"
+                                                style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Naslov poruke</th>
+                                                        <th class="custom-select-nonselect">Datum</th>
+                                                        <th>&nbsp;</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-envelope mr-2 color-green fa-lg"></i><strong>Obaveštenje o
+                                                                dodeli Bonusa...</strong>
+                                                        </td>
+                                                        <td>
+                                                            2560651
+                                                        </td>
+                                                        <td>dsfdsfsdf</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-12 tab-pane fade" id="prosledjene-poruke1" role="tabpanel"
+                                        aria-labelledby="prosledjene-poruke">
+                                        <h4 class="text-center font-weight-bold mt-5"><i
+                                                class="fas fa-heart color-red fa-lg"></i> Omiljene kombinacije
+                                        </h4>
+
+                                    </div>
+                                </div>
+                               
                             </div>
                             <div class="col-sm-12 tab-pane fade" id="profil1" role="tabpanel"
                                 aria-labelledby="profil">
@@ -780,14 +1325,55 @@
     </footer>
     <!-- AFTER FOOTER -->
 
+    <div class="modal fade" tabindex="-1" id="favorite-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fas fa-heart-broken color-red text-center fa-3x d-block"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4 class="font-weight-bold">Brisanje omiljene kombinacije</h4>
+                    <p>Da li ste sigurni da želite da obrišete izabranu kombinaciju?</p>
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button type="button" class="btn btn-success font-weight-bold px-5" data-toggle="modal"
+                        data-target="#favorite-modal-done" data-dismiss="modal"
+                        aria-label="Close">DA</button>
+                    <button type="button" class="btn btn-dark font-weight-bold px-5" data-dismiss="modal"
+                        aria-label="Close">NE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="favorite-modal-done">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <i class="fas fa-check-circle color-green text-center fa-3x d-block"></i>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                    <h4 class="font-weight-bold">Brisanje omiljene kombinacije</h4>
+                    <p>Uspešno obrisana omiljena kombinacija!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
     </script>
-    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js">
-    </script>
+    <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
     <script src="js/main.js"></script>
     <script src="js/selectize.js"></script>
 
@@ -834,15 +1420,8 @@
             } );
             $("#pregled-uplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših uplata</h4>');
             $("#pregled-isplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših isplata</h4>');
-            
-            $(".sorting-table select").addClass('custom-select');
-            $(".sorting-table input[type='search']").addClass('form-control form-control--light');
-            $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");
-        });
-    </script>
+    
 
-    <script>
-        $(document).ready(function () {
             $('#blokada').DataTable({
                 "scrollX": true,
                 "dom": '<"d-flex justify-content-between"lfr>tip',
@@ -859,6 +1438,57 @@
                     "search": ""
                 }
             });
+
+            $('#istorija-t').DataTable({
+                "scrollX": true,
+                "dom": '<"d-flex justify-content-between"lfr>tip',
+                "searching": true,
+                "lengthChange": true,
+                "pageLength": 5,
+                "language": {
+                "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                "search": ""
+                }
+            });
+
+            $('.favorite').DataTable({
+                "scrollX": false,
+                "dom": '<"d-flex justify-content-center mt-4 mb-4"lfr>t<"d-flex justify-content-center mt-4 mb-2"p>',
+                "searching": false,
+                "lengthChange": true,
+                "pageLength": 3,
+                "language": {
+                "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+                },
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                "search": ""
+                }
+            });
+
+            $('#primljene').DataTable({
+            "scrollX": true,
+            "dom": '<"d-flex justify-content-end mb-4"lfr>t<"d-flex justify-content-between mt-4 mb-2"ip>',
+                    "searching": true,
+                    "lengthChange": true,
+                    "pageLength": 3,
+                    "language": {
+                    "paginate": {
+                    "next": "Sledeća",
+                    "previous": "Prethodna"
+                    },
+                    "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                    "search": ""
+                    }
+                    });
+
+
             $(".sorting-table select").addClass('custom-select');
             $(".sorting-table input[type='search']").addClass('form-control form-control--light');
             $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");

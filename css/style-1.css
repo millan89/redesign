@@ -309,6 +309,11 @@ p {
 	border-color: var(--brand-light-blue-2);
 }
 
+.ticket-fields__field.ticket-fields__field--m-sm {
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
 .ticket-card__row.active .ticket-fields__field {
 	background-color: var(--brand-yellow);
 	border-color: var(--brand-yellow);
@@ -2353,12 +2358,15 @@ ul.red-star li {
 		top: 40px;
 	}
 
-	.sorting-table #pregled-uplata_wrapper.dataTables_wrapper>div:first-child {
+	/* todo */
+	.sorting-table #pregled-uplata_wrapper.dataTables_wrapper>div:first-child,
+	.sorting-table #pregled-isplata_wrapper.dataTables_wrapper>div:first-child {
 		align-items: flex-start;
 		flex-direction: column;
 	}
 
-	.sorting-table #pregled-uplata_length {
+	.sorting-table #pregled-uplata_length,
+	.sorting-table #pregled-isplata_length {
 		margin: 10px 0;
 	}
 
@@ -2474,6 +2482,11 @@ ul.red-star li {
 		margin: auto;
 		left: 0;
 		right: 0;
+	}
+
+	.ticket-close--static {
+		position: relative;
+		margin: 0 0 0 0.4rem;
 	}
 
 	.ticket-heart {
