@@ -1496,37 +1496,6 @@ button.regulations {
 	background: linear-gradient(to right, transparent, transparent 3%, var(--brand-dark-gray) 3%, var(--brand-dark-gray) 97%, transparent 97%, transparent 100%);
 }
 
-.winnerBox__img {
-	display: flex;
-	justify-content: center;
-}
-
-.winnerBox__img img {
-	border-radius: 50%;
-	max-width: 100%;
-	width: 260px;
-}
-
-.winnerBox__txt .wBt-date {
-	font-size: 14px;
-	letter-spacing: 2px;
-	font-weight: 500;
-	color: var(--brand-darker-gray);
-}
-
-.winnerBox__txt .wBt-headline {
-	font-size: 22px;
-	font-weight: 600;
-}
-
-.winnerBox__txt .wBt-link {
-	font-size: 16px;
-}
-
-.winnerBox__txt .wBt-link .link-arrow {
-	font-weight: 500;
-}
-
 .our-players {
 	padding-top: 20px;
 }
@@ -2014,6 +1983,44 @@ ul.red-star li {
 	width: 50%;
 	display: block;
 	float: left;
+	height: 180px;
+}
+
+.winnerBox__img {
+	display: flex;
+	justify-content: center;
+	width: 22%;
+	margin-right: 3%;
+}
+
+.winnerBox__txt {
+	width: 75%;
+}
+
+.winnerBox__img img {
+	border-radius: 50%;
+	max-width: 100%;
+	width: 260px;
+}
+
+.winnerBox__txt .wBt-date {
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: 500;
+	color: var(--brand-darker-gray);
+}
+
+.winnerBox__txt .wBt-headline {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.winnerBox__txt .wBt-link {
+	font-size: 16px;
+}
+
+.winnerBox__txt .wBt-link .link-arrow {
+	font-weight: 500;
 }
 
 /* Large devices (desktops, less than 1200px) */
