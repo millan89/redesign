@@ -2031,6 +2031,7 @@ ul.red-star li {
 
 .happyBox {
 	display: flex;
+	margin: 15px;
 }
 
 .happyBox__img {
@@ -2044,6 +2045,32 @@ ul.red-star li {
 .happyBox__txt {
 	width: 50%;
 	background-color: var(--brand-light-gray);
+	border-radius: 0 15px 15px 0;
+	padding: 30px;
+}
+
+.happyBox__bg {
+	width: 50%;
+	border-radius: 15px 0 0 15px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.happyBox__txt .wBt-date {
+	font-size: 14px;
+	letter-spacing: 2px;
+	font-weight: 500;
+	color: var(--brand-darker-gray);
+}
+
+.happyBox__txt .wBt-headline {
+	font-size: 22px;
+	font-weight: 600;
+}
+
+.happyBox__txt .wBt-link {
+	font-size: 15px;
 }
 
 /* Large devices (desktops, less than 1200px) */
