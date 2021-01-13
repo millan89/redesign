@@ -1982,13 +1982,14 @@ ul.red-star li {
 .winnerBox {
 	display: flex;
 	align-items: center;
+	min-height: 180px;
+	margin-bottom: 30px;
 }
 
 .half-on-lg {
 	width: 50%;
 	display: block;
 	float: left;
-	height: 180px;
 }
 
 .winnerBox__img {
@@ -2005,7 +2006,7 @@ ul.red-star li {
 .winnerBox__img img {
 	border-radius: 50%;
 	max-width: 100%;
-	width: 260px;
+	width: 200px;
 }
 
 .winnerBox__txt .wBt-date {
@@ -2026,6 +2027,23 @@ ul.red-star li {
 
 .winnerBox__txt .wBt-link .link-arrow {
 	font-weight: 500;
+}
+
+.happyBox {
+	display: flex;
+}
+
+.happyBox__img {
+	width: 50%;
+}
+
+.happyBox__img img {
+	border-radius: 12px 0 0 12px;
+}
+
+.happyBox__txt {
+	width: 50%;
+	background-color: var(--brand-light-gray);
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -2106,6 +2124,11 @@ ul.red-star li {
 
 /* Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+	.half-on-lg {
+		width: 100%;
+		float: none;
+	}
+	
 	.la-linea {
 		width: 35%;
 	}
@@ -2211,6 +2234,25 @@ ul.red-star li {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+	
+	.winnerBox {
+		flex-wrap: wrap;
+	}
+
+	.winnerBox__img {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.table-pager--dob {
+		min-width: auto;
+	}
+
+	.winnerBox__txt {
+		width: 100%;
+		margin-top: 20px;
+	}
+	
 	.toolbar_wrapp {
 		flex-wrap: wrap;
 	}
@@ -2227,7 +2269,8 @@ ul.red-star li {
 		display: none;
 	}
 
-	.sorting-table--dobitnici .toolbar_wrapp #dobitnici_info {
+	.sorting-table--dobitnici .toolbar_wrapp #dobitnici_info,
+	.sorting-table--dobitnici .toolbar_wrapp #happy-news_info {
 		float: none;
 		margin-left: auto;
 	}
