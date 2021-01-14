@@ -1983,7 +1983,7 @@ ul.red-star li {
 	display: flex;
 	align-items: center;
 	min-height: 180px;
-	margin-bottom: 30px;
+	margin: 15px;
 }
 
 .half-on-lg {
@@ -2536,6 +2536,22 @@ ul.red-star li {
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
 
+	.happyBox {
+		display: block;
+	}
+
+	.happyBox__txt {
+		width: 100%;
+		border-radius: 0 0 15px 15px;
+	}
+
+	.happyBox__bg {
+		width: 100%;
+		border-radius: 15px 15px 0 0;
+		background-position: top center;
+		min-height: 200px;
+	}
+
 	/* MAIN BANNER >> */
     .main-banner .main-banner__text__num {
 		font-size: 38px;
@@ -2670,11 +2686,6 @@ ul.red-star li {
 		flex-wrap: wrap;
 	}
 
-	#luckmoshy1::before {
-		width: 100%;
-		margin-bottom: 20px;
-	}
-
 	.pagination .line-middle {
 		display: none;
 	}
@@ -2734,6 +2745,10 @@ ul.red-star li {
 
 /* Extra large devices */
 @media (min-width: 1200px) {
+
+	.happyBox {
+		min-height: 325px;
+	}
 
 	/* HOW TO PLAY >> */
 	.grid-item__body {
