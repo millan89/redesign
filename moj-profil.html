@@ -1141,7 +1141,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr class="font-weight-bold">
-                                                        <td class="cursor-p">
+                                                        <td class="cursor-p" data-toggle="modal"
+                                                            data-target="#message-modal">
                                                             <i class="far fa-envelope mr-2 color-green fa-lg position-relative"><span
                                                                     class="new-msg new-msg--empty"></span></i>Obaveštenje
                                                                 o promeni radnog vremena...
@@ -1151,7 +1152,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="cursor-p">
+                                                        <td class="cursor-p" data-toggle="modal"
+                                                            data-target="#message-modal">
                                                             <i class="fas fa-envelope-open-text mr-2 color-light-gray fa-lg"></i>Obaveštenje o
                                                                 dodeli Bonusa...
                                                         </td>
@@ -1160,7 +1162,8 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td class="cursor-p">
+                                                        <td class="cursor-p" data-toggle="modal"
+                                                            data-target="#message-modal">
                                                             <i class="fas fa-envelope-open-text mr-2 color-light-gray fa-lg"></i>Obaveštenje o
                                                                 dodeli Bonusa...
                                                         </td>
@@ -1175,9 +1178,72 @@
                                     </div>
                                     <div class="col-sm-12 tab-pane fade" id="prosledjene-poruke1" role="tabpanel"
                                         aria-labelledby="prosledjene-poruke">
-                                        <h4 class="text-center font-weight-bold mt-5"><i
-                                                class="fas fa-heart color-red fa-lg"></i> Omiljene kombinacije
-                                        </h4>
+                                        <div class="sorting-table" style="width:100%">
+                                            <table id="poslate" class="display poslate nowrap table-pager table-pager--loc
+                                                table-pager--font-sm" style="width:100%">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Naslov poruke</th>
+                                                        <th class="custom-select-nonselect">Datum</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr class="font-weight-bold">
+                                                        <td class="cursor-p" data-toggle="modal"
+                                                            data-target="#message-modal">
+                                                            <i
+                                                                class="far fa-envelope mr-2 color-green fa-lg position-relative"><span
+                                                                    class="new-msg new-msg--empty"></span></i>Obaveštenje
+                                                            o
+                                                            dodeli Bonusa...
+                                                        </td>
+                                                        <td>
+                                                            08.09.2020. 12:28 <a href="#"
+                                                                class="ml-3 font-weight-normal">Prosledi poruku</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="font-weight-bold">
+                                                        <td class="cursor-p" data-toggle="modal"
+                                                            data-target="#message-modal">
+                                                            <i
+                                                                class="far fa-envelope mr-2 color-green fa-lg position-relative"><span
+                                                                    class="new-msg new-msg--empty"></span></i>Obaveštenje
+                                                            o promeni radnog vremena...
+                                                        </td>
+                                                        <td>
+                                                            08.09.2020. 12:28 <a href="#"
+                                                                class="ml-3 font-weight-normal">Prosledi poruku</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cursor-p" data-toggle="modal"
+                                                            data-target="#message-modal">
+                                                            <i
+                                                                class="fas fa-envelope-open-text mr-2 color-light-gray fa-lg"></i>Obaveštenje
+                                                            o
+                                                            dodeli Bonusa...
+                                                        </td>
+                                                        <td>
+                                                            08.09.2020. 12:28 <a href="#"
+                                                                class="ml-3 font-weight-normal">Prosledi poruku</a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="cursor-p" data-toggle="modal"
+                                                            data-target="#message-modal">
+                                                            <i
+                                                                class="fas fa-envelope-open-text mr-2 color-light-gray fa-lg"></i>Obaveštenje
+                                                            o
+                                                            dodeli Bonusa...
+                                                        </td>
+                                                        <td>
+                                                            08.09.2020. 12:28 <a href="#"
+                                                                class="ml-3 font-weight-normal">Prosledi poruku</a>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
 
                                     </div>
                                 </div>
@@ -1185,7 +1251,201 @@
                             </div>
                             <div class="col-sm-12 tab-pane fade" id="profil1" role="tabpanel"
                                 aria-labelledby="profil">
-                                czdxczx
+                                <div class="moj-profil">
+                                    <div class="row py-5">
+                                        <div class="col-sm-4">
+                                            <h5 class="color-light-gray font-weight-bold">LIČNI PODACI</h5>
+                                        </div>
+                                        <div class="col-8 text-sm">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Ime:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">Nikola</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Prezime:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">Bogatić</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Mesto:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">Beograd (Savski Venac), Srbija</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Datum rođenja:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">22.04.1977.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 my-3"></div>
+
+                                        <div class="col-sm-4">
+                                            <h5 class="color-light-gray font-weight-bold">LIČNA
+                                                IDENTIFIKACIJA</h5>
+                                        </div>
+                                        <div class="col-8 text-sm">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>JMBG:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">2204977715466</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Broj bankovnog računa:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">220-49777154-66</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Broj mobilnog telefona:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">+220 4977 715466</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Broj kartice lojalnosti:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">2204977715466</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 my-3"></div>
+
+                                        <div class="col-sm-4">
+                                            <h5 class="color-light-gray font-weight-bold">PODACI ZA PRIJAVU</h5>
+                                        </div>
+                                        <div class="col-8 text-sm">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Korisničko ime:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">bogati_dzoni</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>E-mail:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">nikola.nikolic@mail.com</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Sigurnosno pitanje:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">Omiljeno žensko ime?</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Sigurnosni odgovor:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">Jovana</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>Da li ste funkcioner:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">Ne</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 my-3"></div>
+
+                                        <div class="col-sm-4">
+                                            <h5 class="color-light-gray font-weight-bold">ŽELJENI NAČIN
+                                                KOMUNIKACIJE</h5>
+                                        </div>
+                                        <div class="col-8 text-sm">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>E-mail:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">DA</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <p>SMS:</p>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <p class="font-weight-bold">NE</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 my-3"></div>
+
+                                        <div class="col-sm-4">
+                                            
+                                        </div>
+                                        <div class="col-sm-8 text-sm">
+                                            <div class="row">
+                                                <div class="col-sm-6 my-xs-05">
+                                                   <button class="btn btn-dark font-weight-bold">PROMENI PODATKE</button>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <button class="btn btn-success font-weight-bold">PROMENI
+                                                        LOZINKU</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="moj-profil-lozinka d-none">
+                                    <div class="row justify-content-center py-5">
+                                        <div class="col-md-4">
+                                            <form class="needs-validation" novalidate>
+                                                <h5 class="font-weight-bold mb-4">Promena lozinke:</h5>
+                                                <label class="font-weight-normal">Trenutna lozinka: <sup class="color-red">*</sup> </label>
+                                                <input type="password" class="form-control form-control--gray" required>
+                                                <label class="font-weight-normal mt-4">Nova lozinka: <sup class="color-red">*</sup> </label>
+                                                <input type="password" class="form-control form-control--gray" required>
+                                                <label class="font-weight-normal mt-4">Potvrda nove lozinke: <sup
+                                                        class="color-red">*</sup> </label>
+                                                <input type="password" class="form-control form-control--gray" required>
+
+                                                <button class="btn btn-success btn-block mt-5 font-weight-bold" type="submit">PROMENI
+                                                    LOZINKU</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                     </div>
@@ -1415,16 +1675,30 @@
                         Bonus možete iskoristiti do 31.12.2020. godine.<br>
                         Identifikator transakcije - 61969<br>
                         Srećno!<br><br>
+                        <span class="separator-sm separator-sm--block separator-sm--red"></span>
+                        <br>
                         Državna lutrija Srbije<br>
                         Tel. 0800 202 303<br>
                         www.lutrija.rs</p>
                 </div>
-                <div class="modal-footer d-flex justify-content-between">
-                    <input type="text" class="form-control" value="zecar.vesna@gmail.com">
-                    <button type="button" class="btn btn-success font-weight-bold px-5" data-toggle="modal"
-                        data-target="#favorite-modal-done" data-dismiss="modal" aria-label="Close">DA</button>
-                    <button type="button" class="btn btn-dark font-weight-bold px-5" data-dismiss="modal"
-                        aria-label="Close">NE</button>
+                <div class="px-3 py-4 row justify-content-between">
+                    <div class="col-12">
+                        <label class="font-weight-normal m-0">Poruku poslati na</label>
+                    </div>
+                    <div class="col-sm-4 col-12 my-xs-05">
+                        <input type="text" class="form-control font-weight-normal"
+                            value="zecar.vesna@gmail.com">
+                    </div>
+                    <div class="col-sm-4 col-12 my-xs-05">
+                        <button type="button" class="btn btn-success font-weight-bold px-3 btn-block text-sm" data-toggle="modal"
+                            data-target="#favorite-modal-done" data-dismiss="modal" aria-label="Close">PROSLEDI
+                            PORUKU</button>
+                    </div>
+                    <div class="col-sm-4 col-12 my-xs-05">
+                        <button type="button" class="btn btn-dark font-weight-bold px-3 btn-block text-sm"
+                            data-dismiss="modal"
+                            aria-label="Close">OBRIŠI PORUKU</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1550,8 +1824,25 @@
                     "info": "_END_ od ukupno _TOTAL_ rezultata",
                     "lengthMenu": "Prikaži _MENU_ rezultata po strani",
                     "search": ""
-                    }
-                    });
+                }
+            });
+
+            $('#poslate').DataTable({
+            "scrollX": true,
+            "dom": '<"d-flex justify-content-end-lg mb-4"lfr>t<"d-flex justify-content-between mt-4 mb-2"ip>',
+                    "searching": true,
+                    "lengthChange": true,
+                    "pageLength": 5,
+                    "language": {
+                    "paginate": {
+                    "next": "Sledeća",
+                    "previous": "Prethodna"
+                    },
+                    "info": "_END_ od ukupno _TOTAL_ rezultata",
+                    "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                    "search": ""
+                }
+            });
 
 
             $(".sorting-table select").addClass('custom-select');
@@ -1576,6 +1867,8 @@
                 $('.limit-field').removeClass('d-flex');
             }
         })
+
+        // sakrivanje prikazivanje koraka
     </script>
     
 </body>

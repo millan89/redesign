@@ -165,6 +165,14 @@ img {
     display: inline-block;
 }
 
+.separator-sm--block {
+    display: block;
+}
+
+.separator-sm--red {
+    border-color: var(--brand-red);
+}
+
 .skewed-bg {
     background: var(--brand-light-gray);
     padding: 0;
@@ -405,6 +413,10 @@ select {
     font-weight: 400;
 }
 
+.form-control--md {
+    height: 42px;
+}
+
 .form-control.form-control--gray.is-valid,
 .was-validated .form-control.form-control--gray:valid,
 .form-control.form-control--gray.is-invalid,
@@ -464,7 +476,8 @@ select {
     font-weight: 400;
 }
 
-#primljene_length {
+#primljene_length,
+#poslate_length {
     margin-right: 24px;
 }
 
@@ -2007,6 +2020,10 @@ header .btn {
 
 
 /* MODALS */
+.modal {
+    z-index: 9999999999;
+}
+
 .modal-dialog {
     max-width: 660px;
 }
@@ -2479,8 +2496,8 @@ header .btn {
     flex-direction: row;
 }
 
-.list-tabb__inner {
-
+.moj-profil .text-sm p {
+    font-size: .9rem;
 }
 
 
@@ -2594,7 +2611,8 @@ header .btn {
         margin: 0 auto -120px;
     }
 
-    #primljene_length {
+    #primljene_length,
+    #poslate_length {
         margin: 20px 0;
     }
     
@@ -2909,6 +2927,16 @@ header .btn {
 
     .justify-content-left-sm {
         justify-content: flex-start !important;
+    }
+
+    .my-xs-05 {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .my-xs-1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
 }
