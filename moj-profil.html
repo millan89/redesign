@@ -1416,8 +1416,8 @@
                                                    <button class="btn btn-dark font-weight-bold">PROMENI PODATKE</button>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <button class="btn btn-success font-weight-bold">PROMENI
-                                                        LOZINKU</button>
+                                                    <button class="btn btn-success font-weight-bold"
+                                                        id="change-pass">PROMENI LOZINKU</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -1438,9 +1438,20 @@
                                                         class="color-red">*</sup> </label>
                                                 <input type="password" class="form-control form-control--gray" required>
 
-                                                <button class="btn btn-success btn-block mt-5 font-weight-bold" type="submit">PROMENI
-                                                    LOZINKU</button>
+                                                <button class="btn btn-success btn-block mt-5 font-weight-bold"
+                                                    type="submit" id="change-pass-success">PROMENI LOZINKU</button>
                                             </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="moj-profil-lozinka-2 d-none py-5">
+                                    <div class="row justify-content-center py-5">
+                                        <div class="col-12 text-center">
+                                            <i class="fas fa-check-circle fa-3x color-green"></i>
+                                            <h2 class="font-weight-bold my-4">Uspešno ste promenili lozinku!</h2>
+                                            <a href="#" class="moj-profil-back-2 link-arrow-left d-block m-auto">Nazad na
+                                                profil</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1868,7 +1879,33 @@
             }
         })
 
-        // sakrivanje prikazivanje koraka
+        $('#change-pass').click(function(){
+            $('.moj-profil').hide('500');
+            $('.moj-profil-lozinka').addClass('d-block');
+
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(".ticket-card ").offset().top
+            }, 500);
+        })
+
+        $('#change-pass-success').click(function(){
+            $('.moj-profil-lozinka').removeClass('d-block');
+            $('.moj-profil-lozinka').addClass('d-none');
+            $('.moj-profil-lozinka-2').addClass('d-block');
+
+            $([document.documentElement, document.body]).animate({
+               scrollTop: $(".ticket-card").offset().top
+            }, 500);
+        })
+
+        $('.moj-profil-back-2').click(function(){
+            $('.moj-profil-lozinka').addClass('d-block');
+            $('.moj-profil-lozinka-2').removeClass('d-block');
+
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(".ticket-card").offset().top
+            }, 500);
+        })
     </script>
     
 </body>

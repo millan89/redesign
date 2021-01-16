@@ -115,6 +115,11 @@ p {
 	font-weight: 300;
 }
 
+.link-arrow-left {
+	text-decoration: none;
+	font-weight: 300;
+}
+
 .link-arrow::after {
 	content: '\f054';
 	font-size: 12px;
@@ -124,13 +129,32 @@ p {
 	transition: margin ease-in-out .1s;
 }
 
+.link-arrow-left:before {
+	content: '\f053';
+	font-size: 12px;
+	font-family: var(--font-fa);
+	font-weight: 700;
+	margin-right: 5px;
+	display: inline-block;
+	transition: transform ease-in-out .1s;
+}
+
 .link-arrow:hover {
+	color: var(--brand-dark-gray);
+	text-decoration: none;
+}
+
+.link-arrow-left:hover {
 	color: var(--brand-dark-gray);
 	text-decoration: none;
 }
 
 .link-arrow:hover::after {
 	margin-left: 12px;
+}
+
+.link-arrow-left:hover::before {
+	transform: translateX(-5px);
 }
 
 .link-arrow--red {
