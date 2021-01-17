@@ -213,7 +213,8 @@
                                         <div class="mt-5 sorting-table">
 
                                             <table id="pregled-uplata"
-                                                class="display nowrap uplata-isplata table-pager table-pager--loc table-pager--font-sm"
+                                                class="display nowrap datatable uplata-isplata table-pager
+                                                table-pager--loc table-pager--font-sm"
                                                 style="width:100%">
                                                 <thead>
                                                     <tr>
@@ -330,7 +331,8 @@
                                         <div class="mt-5 sorting-table">
 
                                             <table id="pregled-isplata"
-                                                class="display nowrap uplata-isplata table-pager table-pager--loc table-pager--font-sm"
+                                                class="display nowrap datatable uplata-isplata table-pager
+                                                table-pager--loc table-pager--font-sm"
                                                 style="width:100%">
                                                 <thead>
                                                     <tr>
@@ -553,7 +555,8 @@
                                     </form>
 
                                     <div class="sorting-table mt-5" style="width:100%">
-                                        <table id="blokada" class="display nowrap table-pager table-pager--loc table-pager--font-sm"
+                                        <table id="blokada"
+                                            class="display datatable nowrap table-pager table-pager--loc table-pager--font-sm"
                                             style="width:100%">
                                             <thead>
                                                 <tr>
@@ -606,7 +609,7 @@
 
                                 <div class="sorting-table mt-5" style="width:100%">
                                     <table id="istorija-t"
-                                    class="display nowrap table-pager table-pager--loc table-pager--font-sm"
+                                    class="display nowrap table-pager datatable table-pager--loc table-pager--font-sm"
                                         style="width:100%">
                                         <thead>
                                             <tr>
@@ -1119,7 +1122,7 @@
 
                                         <div class="sorting-table" style="width:100%">
                                             <table id="primljene"
-                                                class="display primljene nowrap table-pager table-pager--loc
+                                                class="display datatable primljene nowrap table-pager table-pager--loc
                                                 table-pager--font-sm"
                                                 style="width:100%">
                                                 <thead>
@@ -1179,7 +1182,8 @@
                                     <div class="col-sm-12 tab-pane fade" id="prosledjene-poruke1" role="tabpanel"
                                         aria-labelledby="prosledjene-poruke">
                                         <div class="sorting-table" style="width:100%">
-                                            <table id="poslate" class="display poslate nowrap table-pager table-pager--loc
+                                            <table id="poslate"
+                                                class="display datatable poslate nowrap table-pager table-pager--loc
                                                 table-pager--font-sm" style="width:100%">
                                                 <thead>
                                                     <tr>
@@ -1773,6 +1777,7 @@
                 "searching": true,
                 "lengthChange": true,
                 "pageLength": 5,
+                "autoWidth": true,
                 "language": {
                     "paginate": {
                         "next": "Sledeća",
@@ -1901,6 +1906,13 @@
             $([document.documentElement, document.body]).animate({
                 scrollTop: $(".ticket-card").offset().top
             }, 500);
+        });
+
+        $(function(){
+            $('.list-group button').on('shown.bs.tab', function (e) {
+                var tables = $('.sorting-table .datatable').DataTable();
+                tables.columns.adjust().draw();
+            })
         })
     </script>
     
