@@ -338,6 +338,30 @@ img {
     color: var(--brand-black);
 }
 
+.btn-dark-tab {
+    background-color: var(--brand-light-gray);
+    border-color: var(--brand-light-gray);
+    color: var(--brand-darker-gray);
+}
+
+.btn-dark-tab.active {
+    background-color: var(--brand-dark-gray);
+    border-color: var(--brand-dark-gray);
+    color: var(--brand-white);
+}
+
+.btn-dark-tab:hover {
+    background-color: var(--brand-dark-gray-2);
+    border-color: var(--brand-dark-gray-2);
+    color: var(--brand-white);
+}
+
+.btn-dark-tab:not(:disabled):not(.disabled):active {
+    background-color: var(--brand-dark-gray);
+    border-color: var(--brand-dark-gray);
+    color: var(--brand-white);
+}
+
 .btn-success {
     color: #fff;
     background-color: var(--brand-green);
@@ -1308,6 +1332,11 @@ header .btn {
 
 .new-msg--empty {
     font-size: 0.3rem;
+}
+
+.logged-in,
+.logged-out {
+    display: flex;
 }
 
 
@@ -2539,7 +2568,7 @@ header .btn {
 
 .footer-social {
     margin-left: auto;
-    justify-content: end;
+    justify-content: flex-end;
     display: flex;
     align-items: center;
 }
@@ -2649,6 +2678,11 @@ header .btn {
         padding: .5rem 0 !important;
     }
 
+    .logged-in,
+    .logged-out {
+        flex-direction: column;
+    }
+
     .t-left {
         margin-bottom: 20px;
     }
@@ -2729,7 +2763,7 @@ header .btn {
     }
 
     .pre-footer-col>.row {
-        justify-content: start;
+        justify-content: flex-start;
     }
 
     #progressbar li {
@@ -3089,7 +3123,7 @@ header .btn {
     }
 
     .justify-content-end-lg {
-        justify-content: end;
+        justify-content: flex-end;
         flex-direction: row;
     }
 

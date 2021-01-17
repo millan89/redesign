@@ -188,6 +188,10 @@ p {
 	background-color: var(--brand-dark-blue-2);
 }
 
+.main-banner--red {
+	background-color: var(--brand-red);
+}
+
 .main-banner .main-banner__text__num {
 	font-size: 52px;
 	font-weight: 800;
