@@ -2559,6 +2559,14 @@ ul.red-star li {
 	.sre18plus {
 		margin-top: 0;
 	}
+
+	.donacija__img::before {
+		display: none;
+	}
+	
+	.donacija__img::after {
+		display: none;
+	}
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
