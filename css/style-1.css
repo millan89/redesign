@@ -2172,6 +2172,23 @@ ul.red-star li {
 	color: var(--brand-dark-gray);
 }
 
+.bg-dobitnik {
+	background-image: url(../images/dobitnici/hero-pattern-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+	padding: 100px 0 230px;
+}
+
+.dobitnik-img {
+	margin-top: -260px;
+}
+
+.dobitnik-img img {
+	border-radius: 20px;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	.la-linea {
