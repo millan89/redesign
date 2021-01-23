@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-1.css">
 
-    <title>Prodajna mesta</title>
+    <title>Uplatna mesta</title>
 </head>
 <body>
 
@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Igre
                             </a>
@@ -55,7 +55,7 @@
                         <li class="nav-item">
                             <a class="nav-link px-3" href="#">Vesti</a>
                         </li>
-                        <li class="nav-item dropdown px-3">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 O nama
@@ -67,18 +67,27 @@
                             </div>
                         </li>
                     </ul>
-                    <p class="nav-user text-sm mr-md-3 m-sm-1">
-                        <img src="images/Pomoc-igracima.png" alt="" class="nav-user__img">
-                        <strong class="ml-1">bogati_dzoni</strong>
-                        <i class="fas fa-envelope nav-user__msg ml-2">
-                            <span>12</span>
-                        </i>
-                    </p>
-                    <a href="#" class="btn btn-outline-dark mr-md-2 my-sm-0" type="submit" style="display: block;">ODJAVI SE</a>
-                    <a href="#" class="btn btn-outline-dark mr-md-2 my-sm-0" type="submit"
-                    style="display: none;">PRIJAVI SE</a>
-                    <a href="#" class="btn btn-primary my-sm-0" type="submit" style="display: none;"><strong>REGISTRUJ
-                            SE</strong></a>
+
+                    <!-- Logged in -->
+                    <div class="logged-in" style="display: none;">
+                        <p class="nav-user text-sm mr-md-4 m-sm-1">
+                            <img src="images/Pomoc-igracima.png" alt="" class="nav-user__img">
+                            <strong class="ml-1">bogati_dzoni</strong>
+                            <a href="moj-profil.html" class="link-black">
+                                <i class="fas fa-envelope nav-user__msg ml-2">
+                                    <span class="new-msg">12</span>
+                                </i>
+                            </a>
+                        </p>
+                        <a href="#" class="btn btn-outline-dark mr-md-2 my-sm-0" type="submit">ODJAVI SE</a>
+                    </div>
+
+                    <!-- Logged out -->
+                    <div class="logged-out">
+                        <a href="#" class="btn btn-outline-dark mr-md-2 my-sm-0" type="submit">PRIJAVI SE</a>
+                        <a href="#" class="btn btn-primary my-sm-0" type="submit"><strong>REGISTRUJ
+                                SE</strong></a>
+                    </div>
                 </div>
             </nav>
         </div>

@@ -2128,6 +2128,7 @@ header .btn {
 
 .ticket-modal span {
     display: inline-block;
+    cursor: pointer;
 }
 
 .ticket-modal span.active {

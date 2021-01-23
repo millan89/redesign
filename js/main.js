@@ -172,7 +172,7 @@ $(document).ready(function(){
 
     // COUNTDOWN
     // Set the date we're counting down to
-    var countDownDate = new Date("Jan 1, 2021 00:00:00").getTime();
+    var countDownDate = new Date("May 1, 2021 00:00:00").getTime();
 
     // Update the count down every 1 second
     var x = setInterval(function() {
@@ -220,4 +220,19 @@ $(document).ready(function(){
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
     });
+
+    // Add/remove active state in modal
+    $('#Loto .ticket-modal span').click(function(){
+        $(this).toggleClass('active');
+    })
+
+    // Delete row
+    $('.ticket-close').click(function(){
+        $(this).closest('.ticket-card__row').remove();
+    })
+
+    $('.payment-btn').click(function(){
+        event.preventDefault();
+        $('.payment-slip').removeClass('d-none');
+    })
 });

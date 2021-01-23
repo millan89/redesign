@@ -294,7 +294,7 @@
                                         <form class="needs-validation row flex-d-column-sm mt-5" novalidate>
                                             <div class="col-lg-3">
                                                 <label class="my-1 d-block" for="inlineFormCustomSelectPref">Unesi iznos u dinarima:</label>
-                                                <input type="number" class="form-control custom-input" min="100" required>
+                                                <input type="number" class="form-control custom-input" min="100" value="100" required>
                                                 <div class="invalid-feedback text-left">
                                                     Vrednost ne može biti manja od 100 rsd
                                                 </div>
@@ -302,14 +302,12 @@
                                             <div class="col mb-3">
                                                 <label class="my-1 d-block" for="">&nbsp;</label>
                                                 <button type="submit"
-                                                    class="btn btn-success"><strong>POPUNI UPLATNICU</strong></button>
+                                                    class="btn btn-success payment-btn"><strong>POPUNI UPLATNICU</strong></button>
                                             </div>
-                                            <div class="col-12 mt-3">
+                                            <div class="col-12 mt-3 payment-slip d-none">
                                                 <img src="images/uplatnica.jpg" alt="">
-                                            </div>
-                                            <div class="col-12 mt-3">
-                                                <button type="submit"
-                                                    class="btn btn-info m-auto d-block"><strong>STAMPAJ
+                                                <button type="button"
+                                                    class="btn btn-info m-auto d-block mt-4"><strong>STAMPAJ
                                                         UPLATNICU</strong></button>
                                             </div>
                                         </form>
