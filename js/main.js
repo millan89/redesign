@@ -231,6 +231,7 @@ $(document).ready(function(){
         $(this).closest('.ticket-card__row').remove();
     })
 
+    // Reveal payment slip
     $('.payment-btn').click(function(){
         event.preventDefault();
         $('.payment-slip').removeClass('d-none');

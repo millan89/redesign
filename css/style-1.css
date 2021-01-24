@@ -989,6 +989,9 @@ button.regulations {
 .esgg-hero--es {
 	background-color: var(--brand-light-blue-2);
 }
+.esgg-hero--faq {
+	background-color: var(--brand-light-blue-4);
+}
 
 .esgg-hero__bg {
 	background-image: url(../images/e-srecke/e-srecke-devojka_bg.png);
@@ -997,6 +1000,14 @@ button.regulations {
 	background-position-y: -160px;
 	background-size: inherit;
 	padding: 140px 0 170px;
+}
+
+.esgg-hero--faq .esgg-hero__bg {
+	background-image: url(../images/Lik-faq.png);
+	background-position-x: 720px;
+	background-position-y: 0px;
+	background-size: 500px;
+	padding: 90px 0;
 }
 
 .esgg-hero .es-text h1 {

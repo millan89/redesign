@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- We will revisit font in the end -->
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-1.css">
+
+    <title>Faq</title>
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                    aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img width="140" src="images\DLS logo.svg">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Igre
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Loto</a>
+                                <a class="dropdown-item" href="#">Bingo</a>
+                                <a class="dropdown-item" href="#">Greb greb</a>
+                                <a class="dropdown-item" href="#">e-Srećke</a>
+                                <a class="dropdown-item" href="#">Srećkovo takmičenje</a>
+                                <a class="dropdown-item" href="#">Pravila igara</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">Rezultati</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">Uplatna mesta</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="#">Vesti</a>
+                        </li>
+                        <li class="nav-item dropdown px-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                O nama
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-dark mr-sm-2 my-sm-0" type="submit">PRIJAVI SE</a>
+                    <a href="#" class="btn btn-primary my-sm-0" type="submit"><strong>REGISTRUJ SE</strong></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- NAVIGATION -->
+
+    <!-- ESGG HERO -->
+    <section class="esgg-hero esgg-hero--es esgg-hero--faq">
+        <div class="esgg-hero__bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2 offset-sm-1">
+                        <img src="images/FAQ ikonica-01.svg" >
+                    </div>
+                    <div class="col-4">
+                        <div class="es-text">
+                            <h1>Često
+                                postavljana
+                                pitanja</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="esgg-img-mob d-block d-md-none">
+            <img src="images/e-srecke/e-srecke-devojka_bg-mob.png" alt="">
+        </div>
+    </section>
+    <!-- ESGG HERO -->
+
+
+    <div class="col-12 tab-pane mt-5" role="tabpanel">
+        <div class="row justify-content-center">
+            <div class="col-sm-10 col-lg-6">
+                <div class="row list-group flex-row justify-content-center" role="tablist">
+                    <button
+                        class="btn btn-blue mx-2 my-2 active"
+                        id="faq-loto"
+                        data-toggle="list" href="#faq-loto1" role="tab"
+                        aria-controls="faq-loto">LOTO</button>
+                    <button class="btn btn-blue mx-2 my-2"
+                        id="faq-bingo"
+                        data-toggle="list" href="#faq-bingo1" role="tab"
+                        aria-controls="faq-bingo">BINGO</button>
+                    <button class="btn btn-blue mx-2 my-2"
+                        id="igre-internet"
+                        data-toggle="list" href="#igre-internet1" role="tab"
+                        aria-controls="igre-internet">IGRE PREKO INTERNETA</button>
+                    <button class="btn btn-blue mx-2 my-2"
+                        id="e-srecke"
+                        data-toggle="list" href="#e-srecke1" role="tab"
+                        aria-controls="e-srecke">E-SREĆKE</button>
+                    <button class="btn btn-blue mx-2 my-2"
+                        id="registracija"
+                        data-toggle="list" href="#registracija1" role="tab"
+                        aria-controls="registracija">REGISTRACIJA KORISNIKA</button>
+                    <button class="btn btn-blue mx-2 my-2"
+                        id="android"
+                        data-toggle="list" href="#android1" role="tab"
+                        aria-controls="android">ANDROID APLIKACIJA</button>
+                </div>
+
+                <div class="row tab-content">
+                    <div class="col-sm-12 tab-pane fade show active" id="standardni-tiketi1" role="tabpanel"
+                        aria-labelledby="standardni-tiketi">
+
+                        <div class="sorting-table" style="width:100%">
+                            <table id="omiljeni"
+                                class="display favorite nowrap table-pager table-pager--loc table-pager--font-sm"
+                                style="width:100%">
+                                <thead style="display: none;">
+                                    <tr>
+                                        <th class="custom-select-nonselect">&bnsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="ticket-fields">
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="36"
+                                                        readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="3"
+                                                        readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="6"
+                                                        readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="24"
+                                                        readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="4"
+                                                        readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="31"
+                                                        readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="8"
+                                                        readonly></input>
+                                                </span>
+
+                                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                <svg version="1.1" id="Capa_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                    style="enable-background:new 0 0 384.97 384.97;"
+                                                    xml:space="preserve"
+                                                    class="ticket-close ticket-close--static"
+                                                    data-toggle="modal"
+                                                    data-target="#favorite-modal">
+                                                    <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                    <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+    s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+    l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+    l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                </svg>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="ticket-fields">
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="36" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="3" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="6" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="24" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="4" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="31" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="8" readonly></input>
+                                                </span>
+
+                                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                <svg version="1.1" id="Capa_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                    style="enable-background:new 0 0 384.97 384.97;"
+                                                    xml:space="preserve"
+                                                    class="ticket-close ticket-close--static"
+                                                    data-toggle="modal"
+                                                    data-target="#favorite-modal">
+                                                    <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                    <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+    s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+    l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+    l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                </svg>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="ticket-fields">
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="36" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="3" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="6" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="24" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="4" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="31" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="8" readonly></input>
+                                                </span>
+
+                                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                <svg version="1.1" id="Capa_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                    style="enable-background:new 0 0 384.97 384.97;"
+                                                    xml:space="preserve"
+                                                    class="ticket-close ticket-close--static"
+                                                    data-toggle="modal"
+                                                    data-target="#favorite-modal">
+                                                    <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                    <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+    s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+    l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+    l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                </svg>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="ticket-fields">
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="36" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="3" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="6" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="24" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="4" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="31" readonly></input>
+                                                </span>
+                                                <span>
+                                                    <input
+                                                        class="ticket-fields__field ticket-fields__field--m-sm"
+                                                        type="text" value="8" readonly></input>
+                                                </span>
+
+                                                <?xml version="1.0" encoding="iso-8859-1"?>
+                                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                                <svg version="1.1" id="Capa_1"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                    x="0px" y="0px" viewBox="0 0 384.97 384.97"
+                                                    style="enable-background:new 0 0 384.97 384.97;"
+                                                    xml:space="preserve"
+                                                    class="ticket-close ticket-close--static"
+                                                    data-toggle="modal"
+                                                    data-target="#favorite-modal">
+                                                    <path class="ticket-close__outline" d="M360.909,0H24.061C10.767,0,0,10.767,0,24.061v336.848c0,13.293,10.767,24.061,24.061,24.061h336.848
+    c13.281,0,24.061-10.767,24.061-24.061V24.061C384.97,10.767,374.191,0,360.909,0z M360.909,360.909H24.061V24.061h336.848
+    V360.909z" />
+
+                                                    <path class="ticket-close__sign" d="M111.533,273.172c4.74,4.692,12.439,4.692,17.191,0l64.049-63.52l63.472,63.472c4.74,4.752,12.439,4.752,17.179,0
+    s4.74-12.475,0-17.227l-63.376-63.388l63.015-62.497c4.74-4.704,4.74-12.319,0-17.011c-4.74-4.704-12.439-4.704-17.179,0
+    l-62.931,62.413l-63.869-63.881c-4.74-4.752-12.439-4.752-17.179,0c-4.74,4.764-4.74,12.475,0,17.227l63.773,63.785
+    l-64.134,63.604C106.793,260.853,106.793,268.48,111.533,273.172z" />
+                                                </svg>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 tab-pane fade" id="sistemski-tiketi1" role="tabpanel"
+                        aria-labelledby="sistemski-tiketi">
+
+
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 mb-3">
+                    <img src="images/DLS-logo-neg.svg">
+                </div>
+                <div class="col-sm-3 col-6 offset-md-1">
+                    <img src="images/Igraj odgovorno.svg">
+                </div>
+                <div class="col-sm-3 col-6 footer-social">
+                    <a href="https://www.facebook.com/LotoSrbija" class="footer-social__item">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.youtube.com/user/LotoDSL" class="footer-social__item">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://www.instagram.com/lotosrbija/" class="footer-social__item">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-4 pb-4 border-bottom">
+                <div class="col">
+                    <ul>
+                        <li><a href="#"><strong>IGRE</strong></a></li>
+                        <li><a href="#">Loto</a></li>
+                        <li><a href="#">Bingo</a></li>
+                        <li><a href="#">Greb Greb</a></li>
+                        <li><a href="#">eSrećke</a></li>
+                        <li><a href="#">Tombola <strong>(new)</strong></a></li>
+                        <li><a href="#">Pravila igre</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#"><strong>REZULTATI</strong></a></li>
+                        <li><a href="#">Loto</a></li>
+                        <li><a href="#">Bingo</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#"><strong>NOVOSTI</strong></a></li>
+                        <li><a href="#">Srećni dobitnici</a></li>
+                        <li><a href="#">Vesti</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#"><strong>DLS</strong></a></li>
+                        <li><a href="#">O nama</a></li>
+                        <li><a href="#">Odgovorno poslovanje</a></li>
+                        <li><a href="#">Postani partner</a></li>
+                        <li><a href="#">Finansijski izveštaji</a></li>
+                        <li><a href="#">Javne nabavke</a></li>
+                        <li><a href="#">Ostala dokumenta</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#"><strong>POMOĆ</strong></a></li>
+                        <li><a href="#">Često postavljana pitanja</a></li>
+                        <li><a href="kontakt.html">Postavi pitanje</a></li>
+                        <li><a href="#">Pomoć pri registraciji</a></li>
+                        <li><a href="#">Uplatna mesta</a></li>
+                        <li><a href="o-nama.html#about-us-18plus">Samoisključenje</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#"><strong>KONTAKT</strong></a></li>
+                        <li><a href="#">Državna lutrija Srbije</a></li>
+                        <li><a href="#">Uskočka 4-6</a></li>
+                        <li><a href="#">Tel: 0800 202 303</a></li>
+                        <li><a href="#">Koverta i email adresa:</a></li>
+                        <li><a href="#" href="mailto:helpdesk@lutrija.rs">helpdesk@lutrija.rs</a></li>
+                        <li><a href="#">(Pon-Ned. 07:00-22:00h)</a></li>
+                        <li><a href="#">11000 Beograd, Srbija</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#"><strong>SPONZORSTVA</strong></a></li>
+                        <li><a href="https://kkcrvenazvezda.rs/">KK Crvena Zvezda</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-4 align-items-end">
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="#"><strong>DOP</strong></a></li>
+                        <li><a href="#">Odgovorno priređivanje</a></li>
+                        <li><a href="#">Kome pomažete igrajući igre</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-5">
+                    <ul>
+                        <li>
+                            <a href="https://www.lutrija.rs/DLSFiles/Dokumenti/Op%C5%A1ti%20uslovi%20kori%C5%A1%C4%87enja%20portala.pdf"
+                                class="d-inline"><strong>Opšti uslovi</strong></a>&nbsp;&nbsp;&nbsp;
+                            <a href="#" class="d-inline"><strong>Politika privatnosti</strong></a>&nbsp;&nbsp;
+                            <a href="#" class="d-inline"><strong>Polisa kolačića</strong></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <a href="/DLSFiles/Dokumenti/Državna lutrija Srbije.apk"><img src="images/applestore.png"
+                                    width="160"></a>
+                        </div>
+                        <div class="col-6">
+                            <a href="#"><img src="images/googlestore.png" width="160"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 ml-auto mt-3">
+                    <ul>
+                        <li class="color-white">
+                            <a href="#">Ćirilica</a> | <a href="#" class="active">Latinica</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER -->
+
+
+    <!-- AFTER FOOTER -->
+    <footer class="after-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-4 mt-3">
+                    <span>2020. dls@alrightsreserved</span>
+                </div>
+                <div class="col-sm-6 mt-3 ml-auto">
+                    <div class="row align-items-center">
+                        <div class="col-3 text-center">
+                            <img src="images/Cert1.png" width="110">
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="images/Cert2.png" width="70">
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="images/Cert3.png" width="60">
+                        </div>
+                        <div class="col-3 text-center">
+                            <img src="https://verify.etrustmark.rs/cert/image.php" width="110">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- AFTER FOOTER -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="https://kit.fontawesome.com/b071412929.js" crossorigin="anonymous"></script>
+</body>
+</html>

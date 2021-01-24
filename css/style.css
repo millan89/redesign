@@ -362,6 +362,30 @@ img {
     color: var(--brand-white);
 }
 
+.btn-blue {
+    background-color: transparent;
+    border-color: var(--brand-dark-gray);
+    color: var(--brand-dark-gray);
+}
+
+.btn-blue.active {
+    background-color: var(--brand-dark-blue-2);
+    border-color: var(--brand-dark-blue-2);
+    color: var(--brand-white);
+}
+
+.btn-blue:hover {
+    background-color: var(--brand-dark-blue-2);
+    border-color: var(--brand-dark-blue-2);
+    color: var(--brand-white);
+}
+
+.btn-blue:not(:disabled):not(.disabled):active {
+    background-color: var(--brand-dark-blue-2);
+    border-color: var(--brand-dark-blue-2);
+    color: var(--brand-white);
+}
+
 .btn-success {
     color: #fff;
     background-color: var(--brand-green);
