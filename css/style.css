@@ -2072,6 +2072,52 @@ header .btn {
 }
 
 
+/* ACCORDION */
+.card {
+    border: 1px solid var(--brand-dark-gray);
+}
+
+.card-header {
+    background-color: transparent;
+    border-bottom: 1px solid var(--brand-dark-gray);
+}
+
+.card-body {
+    background-color: var(--brand-light-gray);
+    font-size: 1rem;
+    color: var(--brand-dark-gray-2);
+    padding: 32px 52px;
+}
+
+.accordion .btn {
+    position: relative;
+    text-decoration: none !important;
+}
+
+.accordion .btn.collapsed:before {
+    position: absolute;
+    content: "\f055";
+    font-family: var(--font-fa);
+    font-weight: 600;
+    left: 0;
+    top: 16%;
+    width: 22px;
+    height: 22px;
+    color: var(--brand-dark-blue-2);
+}
+
+.accordion .btn:before {
+    position: absolute;
+    content: "\f056";
+    font-family: var(--font-fa);
+    font-weight: 600;
+    left: 0;
+    top: 16%;
+    width: 22px;
+    height: 22px;
+    color: var(--brand-dark-gray-2);
+}
+
 /* MODALS */
 .modal {
     z-index: 9999999999;
