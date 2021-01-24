@@ -629,6 +629,10 @@ select {
     font-size: .8rem;
 }
 
+.p-0-table td.sorting_1 {
+    padding: 0;
+}
+
 .sorting-table {
     padding-bottom: 50px;
 }
@@ -2075,11 +2079,21 @@ header .btn {
 /* ACCORDION */
 .card {
     border: 1px solid var(--brand-dark-gray);
+    border-bottom: 0;
+    border-radius: 0;
+}
+
+.accordion {
+    border-bottom: 25px solid white;
+}
+
+.accordion tr:last-of-type td.card {
+    border-bottom: 1px solid var(--brand-dark-gray);
 }
 
 .card-header {
     background-color: transparent;
-    border-bottom: 1px solid var(--brand-dark-gray);
+    border-bottom: 0;
 }
 
 .card-body {

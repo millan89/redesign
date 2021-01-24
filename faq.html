@@ -81,12 +81,12 @@
         <div class="esgg-hero__bg">
             <div class="container">
                 <div class="row">
-                    <div class="col-2 offset-sm-1">
-                        <img src="images/FAQ ikonica-01.svg" >
+                    <div class="col-sm-2 offset-sm-1">
+                        <img src="images/FAQ ikonica-01.svg" height="96" class="d-block mb-3">
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-4">
                         <div class="es-text">
-                            <h1>Često
+                            <h1 class="text-left">Često
                                 postavljana
                                 pitanja</h1>
                         </div>
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="esgg-img-mob d-block d-md-none">
-            <img src="images/e-srecke/e-srecke-devojka_bg-mob.png" alt="">
+            <img src="images/Lik-faq.png" alt="">
         </div>
     </section>
     <!-- ESGG HERO -->
@@ -106,148 +106,962 @@
             <div class="col-sm-10 col-lg-6">
                 <div class="row list-group flex-row justify-content-center" role="tablist">
                     <button
-                        class="btn btn-blue mx-2 my-2 active"
+                        class="btn btn-blue px-3 text-sm mx-2 my-2 active"
                         id="faq-loto"
                         data-toggle="list" href="#faq-loto1" role="tab"
                         aria-controls="faq-loto">LOTO</button>
-                    <button class="btn btn-blue mx-2 my-2"
+                    <button class="btn btn-blue px-3 text-sm mx-2 my-2"
                         id="faq-bingo"
                         data-toggle="list" href="#faq-bingo1" role="tab"
                         aria-controls="faq-bingo">BINGO</button>
-                    <button class="btn btn-blue mx-2 my-2"
+                    <button class="btn btn-blue px-3 text-sm mx-2 my-2"
                         id="igre-internet"
                         data-toggle="list" href="#igre-internet1" role="tab"
                         aria-controls="igre-internet">IGRE PREKO INTERNETA</button>
-                    <button class="btn btn-blue mx-2 my-2"
+                    <button class="btn btn-blue px-3 text-sm mx-2 my-2"
                         id="e-srecke"
                         data-toggle="list" href="#e-srecke1" role="tab"
                         aria-controls="e-srecke">E-SREĆKE</button>
-                    <button class="btn btn-blue mx-2 my-2"
+                    <button class="btn btn-blue px-3 text-sm mx-2 my-2"
                         id="registracija"
                         data-toggle="list" href="#registracija1" role="tab"
                         aria-controls="registracija">REGISTRACIJA KORISNIKA</button>
-                    <button class="btn btn-blue mx-2 my-2"
+                    <button class="btn btn-blue px-3 text-sm mx-2 my-2"
                         id="android"
                         data-toggle="list" href="#android1" role="tab"
                         aria-controls="android">ANDROID APLIKACIJA</button>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container mb-5">
+        <div class="row tab-content">
+            <div class="col-sm-12 tab-pane fade show active" id="faq-loto1" role="tabpanel" aria-labelledby="faq-loto">
+                <div class="sorting-table" style="width:100%">
+                    <table id="faq-loto-table" class="display p-0-table nowrap table-pager--loc table-pager--font-sm"
+                        style="width:100%">
+                        <thead style="display: none;">
+                            <tr>
+                                <th class="custom-select-nonselect">&bnsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody class="accordion" id="accordionExample">
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left"
+                                                type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
 
-        <div class="container">
-            <div class="row tab-content">
-                <div class="col-sm-12 tab-pane fade show active" id="faq-loto1" role="tabpanel"
-                    aria-labelledby="faq-loto">
-
-                    <div class="sorting-table" style="width:100%">
-                        <table id="faq-loto-table"
-                            class="display favorite nowrap table-pager table-pager--loc table-pager--font-sm"
-                            style="width:100%">
-                            <thead style="display: none;">
-                                <tr>
-                                    <th class="custom-select-nonselect">&bnsp;</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-
-                                        <div class="accordion" id="accordionExample">
-                                            <div class="card">
-                                                <div class="card-header" id="headingOne">
-                                                    <h2 class="mb-0">
-                                                        <button class="btn btn-link link-black font-weight-bold btn-block text-left"
-                                                            type="button" data-toggle="collapse"
-                                                            data-target="#collapseOne" aria-expanded="true"
-                                                            aria-controls="collapseOne">
-                                                            Kako da odigram LOTO preko interneta?
-                                                        </button>
-                                                    </h2>
-                                                </div>
-
-                                                <div id="collapseOne" class="collapse show"
-                                                    aria-labelledby="headingOne" data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                        U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
-                                                        "Odigraj omiljenu kombinaciju".
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" id="headingTwo">
-                                                    <h2 class="mb-0">
-                                                        <button
-                                                            class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
-                                                            type="button" data-toggle="collapse"
-                                                            data-target="#collapseTwo" aria-expanded="false"
-                                                            aria-controls="collapseTwo">
-                                                            Čemu služi opcija "Poslednji odigrani tiket"?
-                                                        </button>
-                                                    </h2>
-                                                </div>
-                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                                    data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                                        aute, non cupidatat skateboard dolor brunch. Food truck
-                                                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                                        sunt aliqua put a bird on it squid single-origin coffee
-                                                        nulla assumenda shoreditch et. Nihil anim keffiyeh
-                                                        helvetica, craft beer labore wes anderson cred nesciunt
-                                                        sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                                        Leggings occaecat craft beer farm-to-table, raw denim
-                                                        aesthetic synth nesciunt you probably haven't heard of them
-                                                        accusamus labore sustainable VHS.
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-header" id="headingTwo">
-                                                    <h2 class="mb-0">
-                                                        <button
-                                                            class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
-                                                            type="button" data-toggle="collapse"
-                                                            data-target="#collapseThree" aria-expanded="false"
-                                                            aria-controls="collapseThree">
-                                                            Kako da odigram LOTO na uplatnom mestu?
-                                                        </button>
-                                                    </h2>
-                                                </div>
-                                                <div id="collapseThree" class="collapse" aria-labelledby="headingTwo"
-                                                    data-parent="#accordionExample">
-                                                    <div class="card-body">
-                                                        Anim pariatur cliche reprehenderit, enim eiusmod high life
-                                                        accusamus terry richardson ad squid. 3 wolf moon officia
-                                                        aute, non cupidatat skateboard dolor brunch. Food truck
-                                                        quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                                        sunt aliqua put a bird on it squid single-origin coffee
-                                                        nulla assumenda shoreditch et. Nihil anim keffiyeh
-                                                        helvetica, craft beer labore wes anderson cred nesciunt
-                                                        sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                                        Leggings occaecat craft beer farm-to-table, raw denim
-                                                        aesthetic synth nesciunt you probably haven't heard of them
-                                                        accusamus labore sustainable VHS.
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
                                         </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Kako da odigram LOTO na uplatnom mestu?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left"
+                                                type="button" data-toggle="collapse" data-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
 
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingSix">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseSix"
+                                                aria-expanded="false" aria-controls="collapseSix">
+                                                Kako da odigram LOTO na uplatnom mestu?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingSeven">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left"
+                                                type="button" data-toggle="collapse" data-target="#collapseSeven"
+                                                aria-expanded="false" aria-controls="collapseSeven">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
 
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-sm-12 tab-pane fade" id="sistemski-tiketi1" role="tabpanel"
-                    aria-labelledby="sistemski-tiketi">
+                                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingEight">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseEight"
+                                                aria-expanded="false" aria-controls="collapseEight">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingNine">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseNine"
+                                                aria-expanded="false" aria-controls="collapseNine">
+                                                Kako da odigram LOTO na uplatnom mestu?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTen">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left"
+                                                type="button" data-toggle="collapse" data-target="#collapseTen"
+                                                aria-expanded="false" aria-controls="collapseTen">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
 
-
-
-                    
+                                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingEl">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseEl"
+                                                aria-expanded="false" aria-controls="collapseEl">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseEl" class="collapse" aria-labelledby="headingEl"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTw">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseTw"
+                                                aria-expanded="false" aria-controls="collapseTw">
+                                                Kako da odigram LOTO na uplatnom mestu?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTw" class="collapse" aria-labelledby="headingTw"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+            <div class="col-sm-12 tab-pane fade" id="faq-bingo1" role="tabpanel"
+                aria-labelledby="faq-bingo">
+                <div class="sorting-table" style="width:100%">
+                    <table id="faq-loto-table2" class="display p-0-table nowrap table-pager--loc table-pager--font-sm"
+                        style="width:100%">
+                        <thead style="display: none;">
+                            <tr>
+                                <th class="custom-select-nonselect">&bnsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody class="accordion" id="accordionExample">
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left" type="button"
+                                                data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                                Kako da odigram LOTO na uplatnom mestu?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left" type="button"
+                                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingFive">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false"
+                                                aria-controls="collapseFive">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingSix">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false"
+                                                aria-controls="collapseSix">
+                                                Kako da odigram LOTO na uplatnom mestu?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingSeven">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left" type="button"
+                                                data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false"
+                                                aria-controls="collapseSeven">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingEight">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false"
+                                                aria-controls="collapseEight">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingNine">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false"
+                                                aria-controls="collapseNine">
+                                                Kako da odigram LOTO na uplatnom mestu?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTen">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left" type="button"
+                                                data-toggle="collapse" data-target="#collapseTen" aria-expanded="false"
+                                                aria-controls="collapseTen">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingEl">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseEl" aria-expanded="false"
+                                                aria-controls="collapseEl">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseEl" class="collapse" aria-labelledby="headingEl" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTw">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseTw" aria-expanded="false"
+                                                aria-controls="collapseTw">
+                                                Kako da odigram LOTO na uplatnom mestu?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTw" class="collapse" aria-labelledby="headingTw" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 tab-pane fade" id="igre-internet1" role="tabpanel" aria-labelledby="igre-internet">
+                <div class="sorting-table" style="width:100%">
+                    <table id="faq-loto-table3" class="display p-0-table nowrap table-pager--loc table-pager--font-sm"
+                        style="width:100%">
+                        <thead style="display: none;">
+                            <tr>
+                                <th class="custom-select-nonselect">&bnsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody class="accordion" id="accordionExample">
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link link-black font-weight-bold btn-block text-left"
+                                                type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 tab-pane fade" id="e-srecke1" role="tabpanel" aria-labelledby="e-srecke">
+                <div class="sorting-table" style="width:100%">
+                    <table id="faq-loto-table4" class="display p-0-table nowrap table-pager--loc table-pager--font-sm"
+                        style="width:100%">
+                        <thead style="display: none;">
+                            <tr>
+                                <th class="custom-select-nonselect">&bnsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody class="accordion" id="accordionExample">
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left"
+                                                type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-sm-12 tab-pane fade" id="registracija1" role="tabpanel" aria-labelledby="registracija">
+                <div class="sorting-table" style="width:100%">
+                    <table id="faq-loto-table5" class="display p-0-table nowrap table-pager--loc table-pager--font-sm"
+                        style="width:100%">
+                        <thead style="display: none;">
+                            <tr>
+                                <th class="custom-select-nonselect">&bnsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody class="accordion" id="accordionExample">
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left"
+                                                type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne">
+                                                Kako da odigram LOTO preko interneta?
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                            "Odigraj omiljenu kombinaciju".
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="card">
+                                    <div class="card-header" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button
+                                                class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                Čemu služi opcija "Poslednji odigrani tiket"?
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                            accusamus terry richardson ad squid. 3 wolf moon officia
+                                            aute, non cupidatat skateboard dolor brunch. Food truck
+                                            quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                            sunt aliqua put a bird on it squid single-origin coffee
+                                            nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                            helvetica, craft beer labore wes anderson cred nesciunt
+                                            sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                            Leggings occaecat craft beer farm-to-table, raw denim
+                                            aesthetic synth nesciunt you probably haven't heard of them
+                                            accusamus labore sustainable VHS.
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+             <div class="col-sm-12 tab-pane fade" id="android1" role="tabpanel" aria-labelledby="android">
+                 <div class="sorting-table" style="width:100%">
+                     <table id="faq-loto-table6" class="display p-0-table nowrap table-pager--loc table-pager--font-sm"
+                         style="width:100%">
+                         <thead style="display: none;">
+                             <tr>
+                                 <th class="custom-select-nonselect">&bnsp;</th>
+                             </tr>
+                         </thead>
+                         <tbody class="accordion" id="accordionExample">
+                             <tr>
+                                 <td class="card">
+                                     <div class="card-header" id="headingOne">
+                                         <h2 class="mb-0">
+                                             <button
+                                                 class="btn btn-link link-black font-weight-bold btn-block text-left"
+                                                 type="button" data-toggle="collapse" data-target="#collapseOne"
+                                                 aria-expanded="true" aria-controls="collapseOne">
+                                                 Kako da odigram LOTO preko interneta?
+                                             </button>
+                                         </h2>
+                                     </div>
+
+                                     <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                         data-parent="#accordionExample">
+                                         <div class="card-body">
+                                             U okviru vašeg korisničkog naloga na portalu DLS postoji opcija
+                                             "Odigraj omiljenu kombinaciju".
+                                         </div>
+                                     </div>
+                                 </td>
+                             </tr>
+                             <tr>
+                                 <td class="card">
+                                     <div class="card-header" id="headingTwo">
+                                         <h2 class="mb-0">
+                                             <button
+                                                 class="btn btn-link link-black font-weight-bold btn-block text-left collapsed"
+                                                 type="button" data-toggle="collapse" data-target="#collapseTwo"
+                                                 aria-expanded="false" aria-controls="collapseTwo">
+                                                 Čemu služi opcija "Poslednji odigrani tiket"?
+                                             </button>
+                                         </h2>
+                                     </div>
+                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                         data-parent="#accordionExample">
+                                         <div class="card-body">
+                                             Anim pariatur cliche reprehenderit, enim eiusmod high life
+                                             accusamus terry richardson ad squid. 3 wolf moon officia
+                                             aute, non cupidatat skateboard dolor brunch. Food truck
+                                             quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                             sunt aliqua put a bird on it squid single-origin coffee
+                                             nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                             helvetica, craft beer labore wes anderson cred nesciunt
+                                             sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                             Leggings occaecat craft beer farm-to-table, raw denim
+                                             aesthetic synth nesciunt you probably haven't heard of them
+                                             accusamus labore sustainable VHS.
+                                         </div>
+                                     </div>
+                                 </td>
+                             </tr>
+                         </tbody>
+                     </table>
+                 </div>
+             </div>
         </div>
     </div>
 
@@ -428,15 +1242,89 @@
                 "dom": '<<"toolbar">lfr>tip',
                 "searching": false,
                 "lengthChange": false,
-                "pageLength": 5,
+                "pageLength": 9,
                 "language": {
                     "paginate": {
                         "next": "Sledeća",
                         "previous": "Prethodna"
                     },
                     "info": "_END_ od ukupno _TOTAL_ rezultata",
-                    "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-                    "search": ""
+                    "lengthMenu": "Prikaži _MENU_ rezultata po strani"
+                }
+            });
+            $('#faq-loto-table2').DataTable({
+            "scrollX": false,
+            "dom": '<<"toolbar">lfr>tip',
+                "searching": false,
+                "lengthChange": false,
+                "pageLength": 9,
+                "language": {
+                "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani"
+                }
+            });
+            $('#faq-loto-table3').DataTable({
+            "scrollX": false,
+            "dom": '<<"toolbar">lfr>tip',
+                "searching": false,
+                "lengthChange": false,
+                "pageLength": 9,
+                "language": {
+                "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani"
+                }
+            });
+            $('#faq-loto-table4').DataTable({
+            "scrollX": false,
+            "dom": '<<"toolbar">lfr>tip',
+                "searching": false,
+                "lengthChange": false,
+                "pageLength": 9,
+                "language": {
+                "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani"
+                }
+            });
+            $('#faq-loto-table5').DataTable({
+            "scrollX": false,
+            "dom": '<<"toolbar">lfr>tip',
+                "searching": false,
+                "lengthChange": false,
+                "pageLength": 9,
+                "language": {
+                "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani"
+                }
+            });
+            $('#faq-loto-table6').DataTable({
+            "scrollX": false,
+            "dom": '<<"toolbar">lfr>tip',
+                "searching": false,
+                "lengthChange": false,
+                "pageLength": 9,
+                "language": {
+                "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani"
                 }
             });
         });
