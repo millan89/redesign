@@ -2200,6 +2200,19 @@ ul.red-star li {
 	border-radius: 20px;
 }
 
+.yellow-girl {
+	background-image: url(../images/dobitnici/bg-girl@dobitnik.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: scroll;
+	padding: 130px 0 130px;
+}
+
+.yellow-girl h1 {
+	font-weight: 700;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	.la-linea {
@@ -2388,6 +2401,11 @@ ul.red-star li {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+	.yellow-girl {
+		background-position: center left;
+		padding: 130px 0 0;
+	}
 	
 	.winnerBox {
 		flex-wrap: wrap;
