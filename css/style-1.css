@@ -2089,12 +2089,21 @@ ul.red-star li {
 	padding: 30px;
 }
 
+.sorting-table--srecne-vesti .happyBox__txt {
+	width: 60%;
+}
+
 .happyBox__bg {
 	width: 50%;
 	border-radius: 15px 0 0 15px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
+}
+
+.sorting-table--srecne-vesti .happyBox__bg {
+	width: 40%;
+	background-position: center top;
 }
 
 .happyBox__txt .wBt-date {
@@ -2246,7 +2255,8 @@ ul.red-star li {
 	margin-bottom: 30px;
 }
 
-.sorting-table--dobitnik .la-linea {
+ .sorting-table--dobitnik .la-linea,
+ .sorting-table--srecne-vesti .la-linea {
 	width: 50%;
 }
 
@@ -2283,7 +2293,8 @@ ul.red-star li {
 		width: 55%;
 	}
 
-	.sorting-table--dobitnik .la-linea {
+	.sorting-table--dobitnik .la-linea,
+	.sorting-table--srecne-vesti .la-linea {
 		width: 45%;
 	}
 
@@ -2368,7 +2379,8 @@ ul.red-star li {
 		width: 35%;
 	}
 
-	.sorting-table--dobitnik .la-linea {
+	.sorting-table--dobitnik .la-linea,
+	.sorting-table--srecne-vesti .la-linea {
 		width: 35%;
 	}
 
@@ -2706,12 +2718,14 @@ ul.red-star li {
 		display: block;
 	}
 
-	.happyBox__txt {
+	.happyBox__txt,
+	.sorting-table--srecne-vesti .happyBox__txt {
 		width: 100%;
 		border-radius: 0 0 15px 15px;
 	}
 
-	.happyBox__bg {
+	.happyBox__bg,
+	.sorting-table--srecne-vesti .happyBox__bg {
 		width: 100%;
 		border-radius: 15px 15px 0 0;
 		background-position: top center;
@@ -2914,6 +2928,10 @@ ul.red-star li {
 
 	.happyBox {
 		min-height: 325px;
+	}
+
+	.sorting-table--srecne-vesti .happyBox {
+		min-height: 225px;
 	}
 
 	/* HOW TO PLAY >> */
