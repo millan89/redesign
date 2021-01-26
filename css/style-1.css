@@ -2046,6 +2046,7 @@ ul.red-star li {
 	border-radius: 50%;
 	max-width: 100%;
 	width: 200px;
+	align-self: center;
 }
 
 .winnerBox__txt .wBt-date {
@@ -2213,10 +2214,77 @@ ul.red-star li {
 	font-weight: 700;
 }
 
+.share-social-list {
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.share-social-list li {
+	margin-right: 15px;
+}
+
+.share-social-list li .podeli {
+	margin-top: 4px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.share-social-list li .share-social__item {
+	color: var(--brand-dark-gray);
+	font-size: 22px;
+}
+
+.dobitnik-txt__dt {
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	color: var(--brand-darker-gray);
+}
+
+.cont-dobitnik {
+	margin-bottom: 30px;
+}
+
+.sorting-table--dobitnik .la-linea {
+	width: 50%;
+}
+
+.btn--dobitnik {
+	margin-bottom: 100px;
+	min-width: 200px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.sorting-table--dobitnik .winnerBox {
+	display: block;
+}
+
+.sorting-table--dobitnik .winnerBox__img {
+	display: block;
+	width: 100%;
+	margin-right: 0;
+	margin-bottom: 30px;
+}
+
+.sorting-table--dobitnik .winnerBox__img img {
+	max-width: 150px;
+}
+
+.sorting-table--dobitnik .winnerBox__txt {
+	width: 100%;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	.la-linea {
 		width: 55%;
+	}
+
+	.sorting-table--dobitnik .la-linea {
+		width: 45%;
 	}
 
 	/* MAIN BANNER >> */
@@ -2297,6 +2365,10 @@ ul.red-star li {
 	}
 	
 	.la-linea {
+		width: 35%;
+	}
+
+	.sorting-table--dobitnik .la-linea {
 		width: 35%;
 	}
 
@@ -2401,6 +2473,18 @@ ul.red-star li {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+	.sorting-table--dobitnik .winnerBox__img {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.dobitnik-img {
+		margin-top: -160px;
+	}
+
+	.bg-dobitnik {
+		padding: 100px 0 100px;
+	}
 
 	.yellow-girl {
 		background-position: center left;
