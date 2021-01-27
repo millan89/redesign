@@ -2134,12 +2134,12 @@ ul.red-star li {
 	padding-right: .2rem;
 }
 
-.truncate-overflow::before {
+/* .truncate-overflow::before {
   position: absolute;
   content: "...";
-  inset-block-end: 0; /* "bottom" */
-  inset-inline-end: 0; /* "right" */
-}
+  inset-block-end: 0;
+  inset-inline-end: 0; 
+} */
 
 .truncate-overflow::after {
   content: "";
@@ -2285,6 +2285,39 @@ ul.red-star li {
 
 .sorting-table--dobitnik .winnerBox__txt {
 	width: 100%;
+}
+
+.sorting-table--img-carousel .img-carousel {
+	margin-top: -320px;
+}
+
+.sorting-table--img-carousel .img-carousel .img-carousel__item img {
+	border-radius: 20px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.sorting-table--img-carousel #img-carousel_paginate {
+	position: relative;
+	top: -50px;
+	right: 20px;
+	float: right;
+}
+
+.sorting-table--img-carousel #img-carousel_paginate .paginate_button {
+	color: var(--brand-light-gray) !important;
+	font-size: 1.6rem;
+}
+
+.sorting-table--srecne-vesti .happyBox {
+	margin: 15px 0;
+}
+
+.btn--srecne-vesti {
+	margin: 80px 0;
+	min-width: 200px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 /* Large devices (desktops, less than 1200px) */
@@ -2485,6 +2518,10 @@ ul.red-star li {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+	.sorting-table--img-carousel .img-carousel {
+		margin-top: -190px;
+	}
+
 	.sorting-table--dobitnik .winnerBox__img {
 		display: flex;
 		justify-content: center;

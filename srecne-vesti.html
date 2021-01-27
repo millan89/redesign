@@ -81,15 +81,47 @@
     <section class="bg-dobitnik"></section>
     <!-- DOBITNIK BG -->
 
+    <!-- SLIKA PAGINATE -->
+    <div class="container mt-5 sorting-table sorting-table--dobitnici sorting-table--img-carousel">
+
+        <div class="row">
+            <div class="col-lg-10 m-auto">
+
+                <table id="img-carousel" class="img-carousel display nowrap table-pager table-pager--dob" style="width:100%">
+                    <thead style="display: none;">
+                        <tr>
+                            <th class="custom-select-nonselect"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="img-carousel__item">
+                                    <img src="images/dobitnici/hyundai@srecna-vest.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="img-carousel__item">
+                                    <img src="images/dobitnici/dobitnik@dobitnik.png" alt="">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+    <!-- SLIKA PAGINATE -->
     
     <!-- CONT DOBITNIK -->
     <section class="cont-dobitnik">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 m-auto">
-                    <div class="dobitnik-img mb-5">
-                        <img src="images/dobitnici/dobitnik@dobitnik.png" alt="">
-                    </div>
+
                     <div class="dobitnik-txt">
                         <h1 class="mb-5 font-weight-bold">Uručen automobil Hyundai Tuscon</h1>
                         <span class="dobitnik-txt__dt mb-3 d-block">04.11.2020.</span>
@@ -134,7 +166,7 @@
     <!-- CONT DOBITNIK -->
 
     <!-- HAPPY NEWS -->
-    <div class="container my-5 sorting-table sorting-table--dobitnici sorting-table--srecne-vesti">
+    <div class="container mt-5 sorting-table sorting-table--dobitnici sorting-table--srecne-vesti">
 
         <div class="row">
             <div class="col-lg-10 m-auto">
@@ -263,7 +295,7 @@
                         </tr>
                     </tbody>
                 </table>
-                <a href="#" class="btn btn-outline-dark btn-lgg btn--dobitnik"><strong>NAZAD</strong></a>
+                <a href="#" class="btn btn-outline-dark btn-lgg btn--srecne-vesti"><strong>NAZAD</strong></a>
             </div>
         </div>
     </div>
@@ -469,6 +501,25 @@
                 },
             } );
             $("#happy-news_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">SREĆNE VESTI</h4>');
+        } );
+
+        $(document).ready(function() {
+            $('.img-carousel').DataTable( {
+                "scrollX": false,
+                "dom": 'tp',
+                "searching": false,
+                "ordering": false,
+                "lengthChange": false,
+                "pageLength": 1,
+                "pagingType": "simple",
+                "language": {
+                    "paginate": {
+                        "next": '<i class="fas fa-chevron-circle-right"></i>',
+                        "previous": '<i class="fas fa-chevron-circle-left"></i>'
+                    },
+                    "info": "Strana _PAGE_ od _PAGES_"
+                },
+            } );
         } );
     </script>
 
