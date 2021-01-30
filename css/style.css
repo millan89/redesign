@@ -2581,6 +2581,10 @@ header .btn {
     bottom: 0;
 }
 
+.pin-btn {
+    cursor: pointer;
+}
+
 
 /* PROFILE */
 .ticket-card__hd {
