@@ -222,7 +222,7 @@ $(document).ready(function(){
     });
 
     // Add/remove active state in modal
-    $('#Loto .ticket-modal span').click(function(){
+    $('.ticket-modal span').click(function(){
         $(this).toggleClass('active');
     })
 

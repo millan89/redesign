@@ -1067,13 +1067,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="LotoLabel">TVOJI SREĆNI BROJEVI</h5>
-                    <p class="modal-numbers"><strong>0 / 7</strong></p>
+                    <p class="modal-numbers"><strong><span class="active-number-standard">0</span> / 7</strong></p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="ticket-modal">
+                    <form class="ticket-modal ticket-modal--1">
                          <span>
                              <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
                                  readonly></input>
@@ -1106,7 +1106,19 @@
                              <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
                                  readonly></input>
                          </span>
-                         <span class="active">
+                         <span>
+                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
+                                 readonly></input>
+                         </span>
+                         <span>
+                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
+                                 readonly></input>
+                         </span>
+                         <span>
+                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
+                                 readonly></input>
+                         </span>
+                         <span>
                              <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
                                  readonly></input>
                          </span>
@@ -1134,18 +1146,6 @@
                              <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
                                  readonly></input>
                          </span>
-                         <span class="active">
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                 readonly></input>
-                         </span>
-                         <span>
-                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                 readonly></input>
-                         </span>
                          <span>
                              <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
                                  readonly></input>
@@ -1158,7 +1158,7 @@
                              <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
                                  readonly></input>
                          </span>
-                         <span class="active">
+                         <span>
                              <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
                                  readonly></input>
                          </span>
@@ -1247,13 +1247,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="LotoLabel">TVOJI BROJEVI</h5>
-                    <p class="modal-numbers"><strong>7 / 11</strong></p>
+                    <p class="modal-numbers"><strong><span class="active-number-sistem">0</span> / 7</strong></p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="ticket-modal">
+                    <form class="ticket-modal ticket-modal--2">
                         <span>
                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
                                 readonly></input>
@@ -1286,7 +1286,19 @@
                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
                                 readonly></input>
                         </span>
-                        <span class="active">
+                        <span>
+                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
+                                readonly></input>
+                        </span>
+                        <span>
+                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
+                                readonly></input>
+                        </span>
+                        <span>
+                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
+                                readonly></input>
+                        </span>
+                        <span>
                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
                                 readonly></input>
                         </span>
@@ -1314,18 +1326,6 @@
                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
                                 readonly></input>
                         </span>
-                        <span class="active">
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="4"
-                                readonly></input>
-                        </span>
-                        <span>
-                            <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
-                                readonly></input>
-                        </span>
                         <span>
                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
                                 readonly></input>
@@ -1338,7 +1338,7 @@
                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="12"
                                 readonly></input>
                         </span>
-                        <span class="active">
+                        <span>
                             <input class="ticket-fields__field ticket-fields__field--sm" type="text" value="45"
                                 readonly></input>
                         </span>
@@ -1429,5 +1429,16 @@
     <script src="js/main.js"></script>
 
     <script src="https://kit.fontawesome.com/b071412929.js" crossorigin="anonymous"></script>
+
+    <script>
+        $('.ticket-modal--1').click(function(){
+            var num = $(".ticket-modal--1 span.active").length;
+            $('.active-number-standard').text(num);
+        });
+        $('.ticket-modal--2').click(function(){
+            var num = $(".ticket-modal--2 span.active").length;
+            $('.active-number-sistem').text(num);
+        })
+    </script>
 </body>
 </html>
