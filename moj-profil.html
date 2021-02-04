@@ -634,7 +634,7 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
+                                            <tr data-toggle="modal" data-target="#istorija-modal">
                                                 <td>06.11.2020. <span class="color-light-gray">13:52</span></td>
                                                 <td>BINGO</td>
                                                 <td class="text-center bg-color-lgray-2">45</td>
@@ -643,7 +643,7 @@
                                                 <td>105,00</td>
                                                 <td class="text-center"><input type="checkbox"></td>
                                             </tr>
-                                            <tr>
+                                            <tr data-toggle="modal" data-target="#istorija-modal">
                                                 <td>25.12.2020. <span class="color-light-gray">13:52</span></td>
                                                 <td>LOTO</td>
                                                 <td class="text-center bg-color-yellow-2">128</td>
@@ -652,7 +652,7 @@
                                                 <td>255,00</td>
                                                 <td class="text-center"><input type="checkbox"></td>
                                             </tr>
-                                            <tr>
+                                            <tr data-toggle="modal" data-target="#istorija-modal">
                                                 <td>13.11.2020. <span class="color-light-gray">13:52</span></td>
                                                 <td>BINGO</td>
                                                 <td class="text-center bg-color-blue">65</td>
@@ -1720,6 +1720,28 @@
                     </div>
                     <div class="col-sm-4 col-12 my-xs-05">
                         <button type="button" class="btn btn-dark font-weight-bold px-3 btn-block text-sm">OBRIŠI PORUKU</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" tabindex="-1" id="istorija-modal">
+        <div class="modal-dialog">
+            <div class="modal-content p-2">
+                <div class="modal-header">
+                    <h5 class="modal-title text-left">Istorija</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-sm">Tekst</p>
+                </div>
+                <div class="px-3 py-4 row justify-content-between">
+                    <div class="col-sm-4 col-12 my-xs-05">
+                        <button type="button"
+                            class="btn btn-success font-weight-bold px-3 btn-block text-sm">ŠTAMPAJ</button>
                     </div>
                 </div>
             </div>

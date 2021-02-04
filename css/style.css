@@ -2618,6 +2618,10 @@ header .btn {
     font-size: .9rem;
 }
 
+#istorija-t tr {
+    cursor: pointer;
+}
+
 
 /* PRE FOOTER */
 .pre-footer {
