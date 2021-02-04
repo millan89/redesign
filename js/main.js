@@ -3,7 +3,9 @@ $(document).ready(function(){
     // Slick hero
     if ($('.hero').length) {
         $('.hero').slick({
-            dots: true
+            dots: true,
+            prevArrow: false,
+            nextArrow: false
         });
     };
 

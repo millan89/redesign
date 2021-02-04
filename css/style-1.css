@@ -993,21 +993,31 @@ button.regulations {
 	background-color: var(--brand-light-blue-4);
 }
 
-.esgg-hero__bg {
+/* .esgg-hero__bg {
 	background-image: url(../images/e-srecke/e-srecke-devojka_bg.png);
 	background-repeat: no-repeat;
 	background-position-x: 140px;
 	background-position-y: -160px;
 	background-size: inherit;
 	padding: 140px 0 170px;
+} */
+
+.esgg-hero__bg .container {
+	background-image: url(../images/e-srecke/e-srecke-devojka_bg.png);
+	background-position: right top;
+	background-repeat: no-repeat;
+	background-size: 530px;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 
-.esgg-hero--faq .esgg-hero__bg {
+.esgg-hero--faq .esgg-hero__bg .container {
 	background-image: url(../images/Lik-faq.png);
-	background-position-x: 720px;
-	background-position-y: 0px;
+	background-position: right top 10px;
+	background-repeat: no-repeat;
 	background-size: 500px;
-	padding: 90px 0;
+	padding-top: 90px;
+	padding-bottom: 90px;
 }
 
 .esgg-hero .es-text h1 {
@@ -2354,10 +2364,6 @@ ul.red-star li {
 	}
 	/* << MAIN BANNER */
 
-	.esgg-hero__bg {
-		background-position-x: 70px;
-	}
-
 	/* DRAW BANNER >> */
 	.draw-banner-srecko img {
 		left: 80px;
@@ -2423,8 +2429,9 @@ ul.red-star li {
 	}
 	/* << BINGO TICKET */
 
-	.esgg-hero__bg {
-		background-position-x: 0;
+	.esgg-hero--faq .esgg-hero__bg .container {
+		background-position: right bottom;
+		background-size: 240px;
 	}
 
 	/* DRAW BANNER >> */
@@ -2525,6 +2532,15 @@ ul.red-star li {
 	.sorting-table--dobitnik .winnerBox__img {
 		display: flex;
 		justify-content: center;
+	}
+
+	.esgg-hero__bg .container {
+		padding-top: 20px !important;
+		padding-bottom: 20px !important;
+	}
+
+	.esgg-hero__bg .container {
+		background: none !important
 	}
 	
 	.dobitnik-img {
