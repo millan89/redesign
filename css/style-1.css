@@ -1617,6 +1617,7 @@ button.regulations {
 	margin: 20px 0;
 }
 
+/* ZA BRISANJE */
 .izvestaj__tabele .myTable td {
 	vertical-align: middle;
 } 
@@ -1647,6 +1648,7 @@ button.regulations {
 	display: inline-block;
 	padding: 15px;
 	line-height: 1;
+	border: 0;
 	margin-bottom: 10px;
 	transition: 400ms all;
 }

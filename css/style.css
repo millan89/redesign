@@ -679,6 +679,31 @@ select {
     margin: 0;
 }
 
+.sorting-table--docs .dataTables_scrollBody {
+    border: 0 none;
+    overflow: inherit !important
+}
+
+.sorting-table--docs .dataTables_scroll {
+    border:0 none;
+}
+
+.sorting-table--docs td {
+    padding: 1% 12px;
+    border: 1px solid;
+}
+
+.sorting-table--docs th {
+    font-size: 0.8rem;
+    padding-top: 0;
+    padding-bottom: 0px;
+    border-bottom: 10px solid white;
+}
+
+.sorting-table--docs .table-pager > thead {
+    /* display: none; */
+}
+
 .sorting-table #pregled-uplata_wrapper.dataTables_wrapper>div:first-child,
 .sorting-table #pregled-isplata_wrapper.dataTables_wrapper>div:first-child {
     display: flex;
@@ -3050,6 +3075,11 @@ header .btn {
 
     .list-group--nd {
         align-items: center;
+    }
+
+    .sorting-table--docs .dataTables_scrollBody {
+        overflow: auto !important;
+        font-size: .8rem;
     }
 
     .justify-content-left-sm {
