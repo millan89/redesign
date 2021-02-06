@@ -28,14 +28,14 @@
                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img width="140" src="images\DLS logo.svg">
                 </a>
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Igre
                             </a>
@@ -44,7 +44,7 @@
                                 <a class="dropdown-item" href="#">Bingo</a>
                                 <a class="dropdown-item" href="#">Greb greb</a>
                                 <a class="dropdown-item" href="#">e-Srećke</a>
-                                <a class="dropdown-item" href="#">Srećkovo takmičenje</a>
+                                <a class="dropdown-item" href="#">Tombola</a>
                                 <a class="dropdown-item" href="#">Pravila igara</a>
                             </div>
                         </li>
@@ -57,20 +57,39 @@
                         <li class="nav-item">
                             <a class="nav-link px-3" href="#">Vesti</a>
                         </li>
-                        <li class="nav-item dropdown px-3">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 O nama
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Upoznajte nas</a>
+                                <a class="dropdown-item" href="#">Odgovorno priređivanje</a>
+                                <a class="dropdown-item" href="#">Kome pomažete igrajući igre</a>
                             </div>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark mr-sm-2 my-sm-0" type="submit">PRIJAVI SE</a>
-                    <a href="#" class="btn btn-primary my-sm-0" type="submit"><strong>REGISTRUJ SE</strong></a>
+
+                    <!-- Logged in -->
+                    <div class="logged-in" style="display: none;">
+                        <p class="nav-user text-sm mr-md-4 m-sm-1">
+                            <img src="images/Pomoc-igracima.png" alt="" class="nav-user__img">
+                            <strong class="ml-1">bogati_dzoni</strong>
+                            <a href="moj-profil.html" class="link-black">
+                                <i class="fas fa-envelope nav-user__msg ml-2">
+                                    <span class="new-msg">12</span>
+                                </i>
+                            </a>
+                        </p>
+                        <a href="#" class="btn btn-outline-dark mr-md-2 my-sm-0" type="submit">ODJAVI SE</a>
+                    </div>
+
+                    <!-- Logged out -->
+                    <div class="logged-out">
+                        <a href="#" class="btn btn-outline-dark mr-md-2 my-sm-0" type="submit">PRIJAVI SE</a>
+                        <a href="#" class="btn btn-primary my-sm-0" type="submit"><strong>REGISTRUJ
+                                SE</strong></a>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -715,180 +734,163 @@
     </div>
   </section>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3 mb-3">
-                    <img src="images/DLS-logo-neg.svg">
-                </div>
-                <div class="col-sm-3 col-6 offset-md-1">
-                    <img src="images/Igraj odgovorno.svg">
-                </div>
-                <div class="col-sm-3 col-6 footer-social">
-                    <a href="https://www.facebook.com/LotoSrbija" class="footer-social__item">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://www.youtube.com/user/LotoDSL" class="footer-social__item">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                    <a href="https://www.instagram.com/lotosrbija/" class="footer-social__item">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="row mt-4 pb-4 border-bottom">
-                <div class="col">
-                    <ul>
-                        <li><a href="#"><strong>IGRE</strong></a></li>
-                        <li><a href="#">Loto</a></li>
-                        <li><a href="#">Bingo</a></li>
-                        <li><a href="#">Greb Greb</a></li>
-                        <li><a href="#">eSrećke</a></li>
-                        <li><a href="#">Tombola <strong>(new)</strong></a></li>
-                        <li><a href="#">Pravila igre</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li><a href="#"><strong>REZULTATI</strong></a></li>
-                        <li><a href="#">Loto</a></li>
-                        <li><a href="#">Bingo</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li><a href="#"><strong>NOVOSTI</strong></a></li>
-                        <li><a href="#">Srećni dobitnici</a></li>
-                        <li><a href="#">Vesti</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li><a href="#"><strong>DLS</strong></a></li>
-                        <li><a href="#">O nama</a></li>
-                        <li><a href="#">Odgovorno poslovanje</a></li>
-                        <li><a href="#">Postani partner</a></li>
-                        <li><a href="#">Finansijski izveštaji</a></li>
-                        <li><a href="#">Javne nabavke</a></li>
-                        <li><a href="#">Ostala dokumenta</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li><a href="#"><strong>POMOĆ</strong></a></li>
-                        <li><a href="#">Često postavljana pitanja</a></li>
-                        <li><a href="kontakt.html">Postavi pitanje</a></li>
-                        <li><a href="#">Pomoć pri registraciji</a></li>
-                        <li><a href="#">Uplatna mesta</a></li>
-                        <li><a href="o-nama.html#about-us-18plus">Samoisključenje</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li><a href="#"><strong>KONTAKT</strong></a></li>
-                        <li><a href="#">Državna lutrija Srbije</a></li>
-                        <li><a href="#">Uskočka 4-6</a></li>
-                        <li><a href="#">Tel: 0800 202 303</a></li>
-                        <li><a href="#">Koverta i email adresa:</a></li>
-                        <li><a href="#" href="mailto:helpdesk@lutrija.rs">helpdesk@lutrija.rs</a></li>
-                        <li><a href="#">(Pon-Ned. 07:00-22:00h)</a></li>
-                        <li><a href="#">11000 Beograd, Srbija</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul>
-                        <li><a href="#"><strong>SPONZORSTVA</strong></a></li>
-                        <li><a href="https://kkcrvenazvezda.rs/">KK Crvena Zvezda</a></li>
-                    </ul>
-                </div>
-            </div>
+  <!-- FOOTER -->
+  <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-3 mb-3">
+                  <img src="images/DLS-logo-neg.svg">
+              </div>
+              <div class="col-sm-3 col-6 offset-md-1">
+                  <img src="images/Igraj odgovorno.svg">
+              </div>
+              <div class="col-sm-3 col-6 footer-social">
+                  <a href="https://www.facebook.com/LotoSrbija" class="footer-social__item">
+                      <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="https://www.youtube.com/user/LotoDSL" class="footer-social__item">
+                      <i class="fab fa-youtube"></i>
+                  </a>
+                  <a href="https://www.instagram.com/lotosrbija/" class="footer-social__item">
+                      <i class="fab fa-instagram"></i>
+                  </a>
+              </div>
+          </div>
+          <div class="row mt-4 pb-4 border-bottom">
+              <div class="col">
+                  <ul>
+                      <li><a href="#"><strong>IGRE</strong></a></li>
+                      <li><a href="#">Loto</a></li>
+                      <li><a href="#">Bingo</a></li>
+                      <li><a href="#">Greb Greb</a></li>
+                      <li><a href="#">eSrećke</a></li>
+                      <li><a href="#">Tombola</a></li>
+                      <li><a href="#">Pravila igre</a></li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <ul>
+                      <li><a href="#"><strong>REZULTATI</strong></a></li>
+                      <li><a href="#">Loto</a></li>
+                      <li><a href="#">Bingo</a></li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <ul>
+                      <li><a href="#"><strong>NOVOSTI</strong></a></li>
+                      <li><a href="#">Srećni dobitnici</a></li>
+                      <li><a href="#">Vesti</a></li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <ul>
+                      <li><a href="#"><strong>DLS</strong></a></li>
+                      <li><a href="#">O nama</a></li>
+                      <li><a href="#">Odgovorno poslovanje</a></li>
+                      <li><a href="#">Postani partner</a></li>
+                      <li><a href="#">Finansijski izveštaji</a></li>
+                      <li><a href="#">Javne nabavke</a></li>
+                      <li><a href="#">Ostala dokumenta</a></li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <ul>
+                      <li><a href="#"><strong>POMOĆ</strong></a></li>
+                      <li><a href="#">Često postavljana pitanja</a></li>
+                      <li><a href="kontakt.html">Postavi pitanje</a></li>
+                      <li><a href="#">Pomoć pri registraciji</a></li>
+                      <li><a href="#">Uplatna mesta</a></li>
+                      <li><a href="o-nama.html#about-us-18plus">Samoisključenje</a></li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <ul>
+                      <li><a href="#"><strong>KONTAKT</strong></a></li>
+                      <li><a href="#">Državna lutrija Srbije</a></li>
+                      <li><a href="#">Uskočka 4-6</a></li>
+                      <li><a href="#">Tel: 0800 202 303</a></li>
+                      <li><a href="#" href="mailto:helpdesk@lutrija.rs">helpdesk@lutrija.rs</a></li>
+                      <li><a href="#">(Pon-Ned. 07:00-22:00h)</a></li>
+                      <li><a href="#">11000 Beograd, Srbija</a></li>
+                  </ul>
+              </div>
+              <div class="col">
+                  <ul>
+                      <li><a href="#"><strong>SPONZORSTVA</strong></a></li>
+                      <li><a href="https://kkcrvenazvezda.rs/">KK Crvena Zvezda</a></li>
+                  </ul>
+              </div>
+          </div>
 
-            <div class="row mt-4 align-items-end">
-                <div class="col-sm-3">
-                    <ul>
-                        <li><a href="#"><strong>DOP</strong></a></li>
-                        <li><a href="#">Odgovorno priređivanje</a></li>
-                        <li><a href="#">Kome pomažete igrajući igre</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-5">
-                    <ul>
-                        <li>
-                            <a href="https://www.lutrija.rs/DLSFiles/Dokumenti/Op%C5%A1ti%20uslovi%20kori%C5%A1%C4%87enja%20portala.pdf"
-                                class="d-inline"><strong>Opšti uslovi</strong></a>&nbsp;&nbsp;&nbsp;
-                            <a href="#" class="d-inline"><strong>Politika privatnosti</strong></a>&nbsp;&nbsp;
-                            <a href="#" class="d-inline"><strong>Polisa kolačića</strong></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-sm-4">
-                    <div class="row mt-4">
-                        <div class="col-6">
-                            <a href="/DLSFiles/Dokumenti/Državna lutrija Srbije.apk"><img src="images/applestore.png"
-                                    width="160"></a>
-                        </div>
-                        <div class="col-6">
-                            <a href="#"><img src="images/googlestore.png" width="160"></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-2 ml-auto mt-3">
-                    <ul>
-                        <li class="color-white">
-                            <a href="#">Ćirilica</a> | <a href="#" class="active">Latinica</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- FOOTER -->
+          <div class="row mt-4 align-items-end">
+              <div class="col-sm-3">
+                  <ul>
+                      <li><a href="#"><strong>DOP</strong></a></li>
+                      <li><a href="#">Odgovorno priređivanje</a></li>
+                      <li><a href="#">Kome pomažete igrajući igre</a></li>
+                  </ul>
+              </div>
+              <div class="col-sm-5">
+                  <ul>
+                      <li>
+                          <a href="https://www.lutrija.rs/DLSFiles/Dokumenti/Op%C5%A1ti%20uslovi%20kori%C5%A1%C4%87enja%20portala.pdf"
+                              class="d-inline"><strong>Opšti uslovi</strong></a>&nbsp;&nbsp;&nbsp;
+                          <a href="#" class="d-inline"><strong>Politika privatnosti</strong></a>&nbsp;&nbsp;
+                          <a href="#" class="d-inline"><strong>Polisa kolačića</strong></a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="col-sm-4">
+                  <div class="row mt-4">
+                      <div class="col-6">
+                          <a href="/DLSFiles/Dokumenti/Državna lutrija Srbije.apk"><img src="images/applestore.png"
+                                  width="160"></a>
+                      </div>
+                      <div class="col-6">
+                          <a href="#"><img src="images/googlestore.png" width="160"></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm-2 ml-auto mt-3">
+                  <ul>
+                      <li class="color-white">
+                          <a href="#">Ćirilica</a> | <a href="#" class="active">Latinica</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- FOOTER -->
 
 
-    <!-- AFTER FOOTER -->
-    <footer class="after-footer">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-sm-4 mt-3">
-                    <span>2020. dls@alrightsreserved</span>
-                </div>
-                <div class="col-sm-6 mt-3 ml-auto">
-                    <div class="row align-items-center">
-                        <div class="col-3 text-center">
-                            <img src="images/Cert1.png" width="110">
-                        </div>
-                        <div class="col-3 text-center">
-                            <img src="images/Cert2.png" width="70">
-                        </div>
-                        <div class="col-3 text-center">
-                            <img src="images/Cert3.png" width="60">
-                        </div>
-                        <div class="col-3 text-center">
-                            <img src="https://verify.etrustmark.rs/cert/image.php" width="110">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- AFTER FOOTER -->
-
-    <!-- <script src="js/paginate.js"></script>
-
-    <script>
-      let options = {
-          numberPerPage:10, //Amount of data per page
-          goBar:false, //Bar where you can enter the number of the page you want to go to
-          pageCounter:true, //Page counter, which ones are you on, how many pages
-      };
-  
-      let filterOptions = {
-          el:'#searchBox' //Text box to filter, can be a class or an ID
-      };
-  
-      paginate.init('.myTable',options,filterOptions);
-    </script> -->
+  <!-- AFTER FOOTER -->
+  <footer class="after-footer">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-sm-4 mt-3">
+                  <span>2020. dls@alrightsreserved</span>
+              </div>
+              <div class="col-sm-6 mt-3 ml-auto">
+                  <div class="row align-items-center">
+                      <div class="col-3 text-center">
+                          <img src="images/Cert1.png" width="110">
+                      </div>
+                      <div class="col-3 text-center">
+                          <img src="images/Cert2.png" width="70">
+                      </div>
+                      <div class="col-3 text-center">
+                          <img src="images/Cert3.png" width="60">
+                      </div>
+                      <div class="col-3 text-center">
+                          <img src="https://verify.etrustmark.rs/cert/image.php" width="110">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  <!-- AFTER FOOTER -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
@@ -900,158 +902,6 @@
     <script src="js/main.js"></script>
     <script src="js/slick.min.js"></script>
 
-    <script src="https://kit.fontawesome.com/b071412929.js" crossorigin="anonymous"></script>
-
-    <script>
-        $(document).ready(function () {
-            $('#fin').DataTable({
-                "scrollX": true,
-                "dom": '<fr>tip',
-                "searching": true,
-                "lengthChange": false,
-                "pageLength": 10,
-                "language": {
-                    "paginate": {
-                        "next": "Sledeća",
-                        "previous": "Prethodna"
-                    },
-                    "info": "_END_ od ukupno _TOTAL_ rezultata",
-                    "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-                    "search": ""
-                }
-            });
-            $(".sorting-table--docs #fin_filter input").addClass('form-control form-control--search mb-5');
-            $(".sorting-table--docs #fin_filter input").attr("placeholder", "Pronađi dokument");
-
-            $('#sluzL').DataTable({
-            "scrollX": true,
-            "dom": '<fr>tip',
-                "searching": true,
-                "lengthChange": false,
-                "pageLength": 10,
-                "language": {
-                "paginate": {
-                "next": "Sledeća",
-                "previous": "Prethodna"
-                },
-                "info": "_END_ od ukupno _TOTAL_ rezultata",
-                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-                "search": ""
-                }
-                });
-            $(".sorting-table--docs #sluzL_filter input").addClass('form-control form-control--search mb-5');
-            $(".sorting-table--docs #sluzL_filter input").attr("placeholder", "Pronađi dokument");
-
-            $('#sluzB').DataTable({
-            "scrollX": true,
-            "dom": '<fr>tip',
-                "searching": true,
-                "lengthChange": false,
-                "pageLength": 10,
-                "language": {
-                "paginate": {
-                "next": "Sledeća",
-                "previous": "Prethodna"
-                },
-                "info": "_END_ od ukupno _TOTAL_ rezultata",
-                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-                "search": ""
-                }
-                });
-            $(".sorting-table--docs #sluzB_filter input").addClass('form-control form-control--search mb-5');
-            $(".sorting-table--docs #sluzB_filter input").attr("placeholder", "Pronađi dokument");
-
-
-            $('#jav').DataTable({
-            "scrollX": true,
-            "dom": '<fr>tip',
-                "searching": true,
-                "lengthChange": false,
-                "pageLength": 10,
-                "language": {
-                "paginate": {
-                "next": "Sledeća",
-                "previous": "Prethodna"
-                },
-                "info": "_END_ od ukupno _TOTAL_ rezultata",
-                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-                "search": ""
-                }
-                });
-            $(".sorting-table--docs #jav_filter input").addClass('form-control form-control--search mb-5');
-            $(".sorting-table--docs #jav_filter input").attr("placeholder", "Pronađi dokument");
-
-            $('#pravila').DataTable({
-            "scrollX": true,
-            "dom": '<fr>tip',
-                "searching": true,
-                "lengthChange": false,
-                "pageLength": 10,
-                "language": {
-                "paginate": {
-                "next": "Sledeća",
-                "previous": "Prethodna"
-                },
-                "info": "_END_ od ukupno _TOTAL_ rezultata",
-                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-                "search": ""
-                }
-            });
-            $(".sorting-table--docs #pravila_filter input").addClass('form-control form-control--search mb-5');
-            $(".sorting-table--docs #pravila_filter input").attr("placeholder", "Pronađi dokument");
-
-            $('#ostala').DataTable({
-            "scrollX": true,
-            "dom": '<fr>tip',
-                "searching": true,
-                "lengthChange": false,
-                "pageLength": 10,
-                "language": {
-                "paginate": {
-                "next": "Sledeća",
-                "previous": "Prethodna"
-                },
-                "info": "_END_ od ukupno _TOTAL_ rezultata",
-                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-                "search": ""
-                }
-            });
-            $(".sorting-table--docs #ostala_filter input").addClass('form-control form-control--search mb-5');
-            $(".sorting-table--docs #ostala_filter input").attr("placeholder", "Pronađi dokument");
-
-
-            $('#nab').DataTable({
-            "scrollX": true,
-            "dom": '<fr>tip',
-                "searching": true,
-                "lengthChange": false,
-                "pageLength": 10,
-                "language": {
-                "paginate": {
-                "next": "Sledeća",
-                "previous": "Prethodna"
-                },
-                "info": "_END_ od ukupno _TOTAL_ rezultata",
-                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-                "search": ""
-                }
-                });
-            $(".sorting-table--docs #nab_filter input").addClass('form-control form-control--search mb-5');
-            $(".sorting-table--docs #nab_filter input").attr("placeholder", "Pronađi dokument");
-
-        });
-
-        // Adjust column widths
-        $(function(){
-            $('#list-tab a').on('shown.bs.tab', function (e) {
-                var tables = $('.sorting-table .datatable').DataTable();
-            tables.columns.adjust().draw();
-            })
-            $('.list-group-item').click(function(){
-                $('#text-doc').text($(this).text());
-            })
-        })
-    </script>       
-    
+    <script src="https://kit.fontawesome.com/b071412929.js" crossorigin="anonymous"></script>     
 </body>
 </html>

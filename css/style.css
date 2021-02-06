@@ -2647,6 +2647,16 @@ header .btn {
     cursor: pointer;
 }
 
+.data-fields {
+    border: 0 none;
+    background-color: white;
+    color: black;
+}
+
+.data-fields--active {
+    border: 1px solid;
+}
+
 
 /* PRE FOOTER */
 .pre-footer {

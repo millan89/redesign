@@ -238,4 +238,269 @@ $(document).ready(function(){
         event.preventDefault();
         $('.payment-slip').removeClass('d-none');
     })
+
+
+    $('#fin').DataTable({
+        "scrollX": true,
+        "dom": '<fr>tip',
+        "searching": true,
+        "lengthChange": false,
+        "pageLength": 10,
+        "language": {
+            "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+            },
+            "info": "_END_ od ukupno _TOTAL_ rezultata",
+            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+            "search": ""
+        }
+    });
+    $(".sorting-table--docs #fin_filter input").addClass('form-control form-control--search mb-5');
+    $(".sorting-table--docs #fin_filter input").attr("placeholder", "Pronađi dokument");
+
+    $('#sluzL').DataTable({
+    "scrollX": true,
+    "dom": '<fr>tip',
+        "searching": true,
+        "lengthChange": false,
+        "pageLength": 10,
+        "language": {
+        "paginate": {
+        "next": "Sledeća",
+        "previous": "Prethodna"
+        },
+        "info": "_END_ od ukupno _TOTAL_ rezultata",
+        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+        "search": ""
+        }
+        });
+    $(".sorting-table--docs #sluzL_filter input").addClass('form-control form-control--search mb-5');
+    $(".sorting-table--docs #sluzL_filter input").attr("placeholder", "Pronađi dokument");
+
+    $('#sluzB').DataTable({
+    "scrollX": true,
+    "dom": '<fr>tip',
+        "searching": true,
+        "lengthChange": false,
+        "pageLength": 10,
+        "language": {
+        "paginate": {
+        "next": "Sledeća",
+        "previous": "Prethodna"
+        },
+        "info": "_END_ od ukupno _TOTAL_ rezultata",
+        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+        "search": ""
+        }
+        });
+    $(".sorting-table--docs #sluzB_filter input").addClass('form-control form-control--search mb-5');
+    $(".sorting-table--docs #sluzB_filter input").attr("placeholder", "Pronađi dokument");
+
+
+    $('#jav').DataTable({
+    "scrollX": true,
+    "dom": '<fr>tip',
+        "searching": true,
+        "lengthChange": false,
+        "pageLength": 10,
+        "language": {
+        "paginate": {
+        "next": "Sledeća",
+        "previous": "Prethodna"
+        },
+        "info": "_END_ od ukupno _TOTAL_ rezultata",
+        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+        "search": ""
+        }
+        });
+    $(".sorting-table--docs #jav_filter input").addClass('form-control form-control--search mb-5');
+    $(".sorting-table--docs #jav_filter input").attr("placeholder", "Pronađi dokument");
+
+    $('#pravila').DataTable({
+    "scrollX": true,
+    "dom": '<fr>tip',
+        "searching": true,
+        "lengthChange": false,
+        "pageLength": 10,
+        "language": {
+        "paginate": {
+        "next": "Sledeća",
+        "previous": "Prethodna"
+        },
+        "info": "_END_ od ukupno _TOTAL_ rezultata",
+        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+        "search": ""
+        }
+    });
+    $(".sorting-table--docs #pravila_filter input").addClass('form-control form-control--search mb-5');
+    $(".sorting-table--docs #pravila_filter input").attr("placeholder", "Pronađi dokument");
+
+    $('#ostala').DataTable({
+    "scrollX": true,
+    "dom": '<fr>tip',
+        "searching": true,
+        "lengthChange": false,
+        "pageLength": 10,
+        "language": {
+        "paginate": {
+        "next": "Sledeća",
+        "previous": "Prethodna"
+        },
+        "info": "_END_ od ukupno _TOTAL_ rezultata",
+        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+        "search": ""
+        }
+    });
+    $(".sorting-table--docs #ostala_filter input").addClass('form-control form-control--search mb-5');
+    $(".sorting-table--docs #ostala_filter input").attr("placeholder", "Pronađi dokument");
+
+
+    $('#nab').DataTable({
+    "scrollX": true,
+    "dom": '<fr>tip',
+        "searching": true,
+        "lengthChange": false,
+        "pageLength": 10,
+        "language": {
+        "paginate": {
+        "next": "Sledeća",
+        "previous": "Prethodna"
+        },
+        "info": "_END_ od ukupno _TOTAL_ rezultata",
+        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+        "search": ""
+        }
+        });
+    $(".sorting-table--docs #nab_filter input").addClass('form-control form-control--search mb-5');
+    $(".sorting-table--docs #nab_filter input").attr("placeholder", "Pronađi dokument");
+
+    $('.uplata-isplata').DataTable( {
+        "scrollX": true,
+        "dom": '<<"toolbar">lfr>tip',
+        "searching": true,
+        "lengthChange": true,
+        "pageLength": 5,
+        "language": {
+            "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+            },
+            "info": "_END_ od ukupno _TOTAL_ rezultata",
+            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+            "search": ""
+        }
+    } );
+    $("#pregled-uplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših uplata</h4>');
+    $("#pregled-isplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših isplata</h4>');
+
+
+    $('#blokada').DataTable({
+        "scrollX": true,
+        "dom": '<"d-flex justify-content-between"lfr>tip',
+        "searching": true,
+        "lengthChange": true,
+        "pageLength": 5,
+        "autoWidth": true,
+        "language": {
+            "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+            },
+            "info": "_END_ od ukupno _TOTAL_ rezultata",
+            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+            "search": ""
+        }
+    });
+
+    $('#istorija-t').DataTable({
+        "scrollX": true,
+        "dom": '<"d-flex justify-content-between"lfr>tip',
+        "searching": true,
+        "lengthChange": true,
+        "pageLength": 5,
+        "language": {
+        "paginate": {
+        "next": "Sledeća",
+        "previous": "Prethodna"
+        },
+        "info": "_END_ od ukupno _TOTAL_ rezultata",
+        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+        "search": ""
+        }
+    });
+
+    $('.favorite').DataTable({
+        "scrollX": false,
+        "dom": '<"d-flex justify-content-center mt-4 mb-4"lfr>t<"d-flex justify-content-center mt-4 mb-2"p>',
+        "searching": false,
+        "lengthChange": true,
+        "pageLength": 3,
+        "language": {
+        "paginate": {
+        "next": "Sledeća",
+        "previous": "Prethodna"
+        },
+        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+        "search": ""
+        }
+    });
+
+    $('#primljene').DataTable({
+    "scrollX": true,
+    "dom": '<"d-flex justify-content-end-lg mb-4"lfr>t<"d-flex justify-content-between mt-4 mb-2"ip>',
+            "searching": true,
+            "lengthChange": true,
+            "pageLength": 5,
+            "language": {
+            "paginate": {
+            "next": "Sledeća",
+            "previous": "Prethodna"
+            },
+            "info": "_END_ od ukupno _TOTAL_ rezultata",
+            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+            "search": ""
+        }
+    });
+
+    $('#poslate').DataTable({
+    "scrollX": true,
+    "dom": '<"d-flex justify-content-end-lg mb-4"lfr>t<"d-flex justify-content-between mt-4 mb-2"ip>',
+            "searching": true,
+            "lengthChange": true,
+            "pageLength": 5,
+            "language": {
+            "paginate": {
+            "next": "Sledeća",
+            "previous": "Prethodna"
+            },
+            "info": "_END_ od ukupno _TOTAL_ rezultata",
+            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+            "search": ""
+        }
+    });
+
+
+    $(".sorting-table select").addClass('custom-select');
+    $(".sorting-table input[type='search']").addClass('form-control form-control--light');
+    $(".sorting-table input[type='search']").attr("placeholder", "Pretrazi");
+
+    // Adjust column widths
+    $(function(){
+        $('.list-group button').on('shown.bs.tab', function (e) {
+            var tables = $('.sorting-table .datatable').DataTable();
+            tables.columns.adjust().draw();
+        })
+    })
+
+    // Adjust column widths
+    $(function(){
+        $('#list-tab a').on('shown.bs.tab', function (e) {
+            var tables = $('.sorting-table .datatable').DataTable();
+        tables.columns.adjust().draw();
+        })
+        $('.izvestaj .list-group-item').click(function(){
+            $('#text-doc').text($(this).text());
+        })
+    })
 });

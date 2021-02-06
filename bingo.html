@@ -25,14 +25,14 @@
                     aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <img width="140" src="images\DLS logo.svg">
                 </a>
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle px-3" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Igre
                             </a>
@@ -41,7 +41,7 @@
                                 <a class="dropdown-item" href="#">Bingo</a>
                                 <a class="dropdown-item" href="#">Greb greb</a>
                                 <a class="dropdown-item" href="#">e-Srećke</a>
-                                <a class="dropdown-item" href="#">Srećkovo takmičenje</a>
+                                <a class="dropdown-item" href="#">Tombola</a>
                                 <a class="dropdown-item" href="#">Pravila igara</a>
                             </div>
                         </li>
@@ -54,20 +54,39 @@
                         <li class="nav-item">
                             <a class="nav-link px-3" href="#">Vesti</a>
                         </li>
-                        <li class="nav-item dropdown px-3">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 O nama
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="#">Upoznajte nas</a>
+                                <a class="dropdown-item" href="#">Odgovorno priređivanje</a>
+                                <a class="dropdown-item" href="#">Kome pomažete igrajući igre</a>
                             </div>
                         </li>
                     </ul>
-                    <a href="#" class="btn btn-outline-dark mr-sm-2 my-sm-0" type="submit">PRIJAVI SE</a>
-                    <a href="#" class="btn btn-primary my-sm-0" type="submit"><strong>REGISTRUJ SE</strong></a>
+
+                    <!-- Logged in -->
+                    <div class="logged-in" style="display: none;">
+                        <p class="nav-user text-sm mr-md-4 m-sm-1">
+                            <img src="images/Pomoc-igracima.png" alt="" class="nav-user__img">
+                            <strong class="ml-1">bogati_dzoni</strong>
+                            <a href="moj-profil.html" class="link-black">
+                                <i class="fas fa-envelope nav-user__msg ml-2">
+                                    <span class="new-msg">12</span>
+                                </i>
+                            </a>
+                        </p>
+                        <a href="#" class="btn btn-outline-dark mr-md-2 my-sm-0" type="submit">ODJAVI SE</a>
+                    </div>
+
+                    <!-- Logged out -->
+                    <div class="logged-out">
+                        <a href="#" class="btn btn-outline-dark mr-md-2 my-sm-0" type="submit">PRIJAVI SE</a>
+                        <a href="#" class="btn btn-primary my-sm-0" type="submit"><strong>REGISTRUJ
+                                SE</strong></a>
+                    </div>
                 </div>
             </nav>
         </div>
