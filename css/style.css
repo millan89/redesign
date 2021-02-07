@@ -710,8 +710,9 @@ select {
 }
 
 .sorting-table--docs td {
-    padding: 1% 12px;
+    padding: 2% 20px;
     border: 1px solid;
+    font-size: .9rem;
 }
 
 .sorting-table--docs th {

@@ -117,14 +117,15 @@
                     <div class="row">
                         <form id="msform" class="msform--fields needs-validation col-12 py-5 px-4" novalidate>
                             <div class="form-group">
-                                <input type="text" class="form-control form-control--gray" id="a"
+                                <input type="text" class="form-control form-control--gray" id="login_name"
                                     placeholder="Korisničko ime ili e-mail adresa" required>
                                 <div class="invalid-feedback text-left">
                                     Greška!
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control form-control--gray" id="a" placeholder="Lozinka" required>
+                                <input type="password" class="form-control form-control--gray" id="login_pass"
+                                    placeholder="Lozinka" required>
                                 <div class="invalid-feedback text-left">
                                     Greška!
                                 </div>
@@ -142,7 +143,8 @@
                                 <a href="#">Ponovno slanje poruke za potvrdu naloga</a><br>
                             </div>
                             <div class="form-group mt-4">
-                                <button class="action-button btn btn-primary font-weight-bold btn-block">PRIJAVI SE</button>
+                                <button class="action-button btn login_btn btn-tab font-weight-bold btn-block">PRIJAVI
+                                    SE</button>
                             </div>
                         </form>
                         <div id="ty-contact" class="text-center px-2 py-4" style="display: none;">

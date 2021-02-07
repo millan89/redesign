@@ -502,5 +502,14 @@ $(document).ready(function(){
         $('.izvestaj .list-group-item').click(function(){
             $('#text-doc').text($(this).text());
         })
-    })
+    });
+
+});
+
+$('#login_name').keydown(function(){
+    if( $(this).val().length >= 2) {
+        $('.login_btn').addClass('btn-success');
+    } else {
+        $('.login_btn').removeClass('btn-success');
+    }
 });
