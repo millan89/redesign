@@ -288,6 +288,27 @@ img {
     border-color: var(--brand-white);
 }
 
+.btn-outline-border {
+    color: var(--brand-darker-gray);
+    border-color: var(--brand-darker-gray);
+    border: 2px solid;
+    border-left: 0 none;
+    border-top: 0 none;
+    border-right: 0 none;
+}
+
+.btn-outline-border:hover,
+.btn-outline-border.active {
+    color: var(--brand-dark-gray);
+    border-color: var(--brand-dark-gray);
+    background-color: var(--brand-white);
+}
+
+.btn-outline-border:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    border-color: var(--brand-dark-gray);
+}
+
 .btn-secondary,
 .btn-darkk.active {
     color: var(--brand-white);
