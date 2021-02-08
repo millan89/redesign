@@ -1408,7 +1408,7 @@ button.regulations {
 .dobitnici-carousel__item .item-decoration--star img {
 	height: 25px;
 	display: block;
-	margin: 0 auto 9px;
+	margin: 8px auto 17px;
 }
 
 .dobitnici-carousel__item .item-game {
@@ -1418,10 +1418,6 @@ button.regulations {
 .dobitnici-carousel__item .item-prize {
 	font-size: 24px;
 	font-weight: bold;
-}
-
-.dobitnici-carousel__item .item-prize--loto {
-	font-size: 35px;
 }
 
 .greb-modal {
@@ -2911,10 +2907,6 @@ ul.red-star li {
 
 	.dobitnici-carousel__item {
 		padding: 90px 20px 40px;
-	}
-
-	.dobitnici-carousel__item .item-prize--loto {
-		font-size: 32px;
 	}
 
 	.pagination {
