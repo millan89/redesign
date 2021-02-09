@@ -180,6 +180,10 @@ p {
     background: linear-gradient(-215deg, var(--brand-purple), var(--brand-purple) 65%, #822eb7 65%, #822eb7 100%);
 }
 
+.main-banner--bingo-van {
+	background: linear-gradient(-215deg, var(--brand-orange), var(--brand-orange) 65%, #e66200 65%, #e66200 100%);
+}
+
 .main-banner--loto {
 	background: linear-gradient(-215deg, var(--brand-red), var(--brand-red) 65%, #ba1521 65%, #ba1521 100%);
 }
@@ -464,6 +468,20 @@ p {
 	left: -82px;
 }
 
+.DIV_Bingo_Center-table--right .verticalTableText01a {
+	transform: rotate(-90deg);
+	color: #fff;
+	border-radius: 13px;
+	padding: 3px 10px;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-weight: 600;
+	width: 105px;
+	position: absolute;
+	top: 42px;
+	left: -20px;
+}
+
 .verticalTableText01 .verticalTableText01a {
 	background-color: #00CF4C;
 }
@@ -480,6 +498,13 @@ p {
 .Table02,
 .Table03 {
 	margin-left: 40px;
+}
+
+.DIV_Bingo_Center-table--right .Table01,
+.DIV_Bingo_Center-table--right .Table02,
+.DIV_Bingo_Center-table--right .Table03 {
+	margin-right: 40px;
+	margin-left: 0;
 }
 
 .Table01b, 
@@ -535,6 +560,10 @@ p {
 	margin-right: 8px;
 }
 
+.DIV_TicketA1--van {
+	color: var(--brand-orange);
+}
+
 .DIV_Bingo02c1 {
 	line-height: 1;
 	background-color: var(--brand-purple);
@@ -546,6 +575,10 @@ p {
 	padding: 3px 20px;
 	margin-top: 6px;
 	border-radius: 3px;
+}
+
+.DIV_Bingo02c1--van {
+	background-color: var(--brand-orange);
 }
 
 .DIV_Bingo02c2 {
@@ -574,6 +607,10 @@ p {
 	padding-top: 3px;
 	font-size: 18px;
 	margin-right: -14px;
+}
+
+.DIV_Bingo04a--van {
+	border: 2px solid var(--brand-orange);
 }
 
 .DIV_Bingo04b {
@@ -715,6 +752,10 @@ p {
 	margin-left: 8px;
 	position: relative;
 	top: 8px;
+}
+
+.Button_Small.outline_none.vanredni i {
+	color: var(--brand-orange);
 }
 
 .Form_Txt_Left01b {
