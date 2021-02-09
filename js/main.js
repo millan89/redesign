@@ -217,12 +217,6 @@ $(document).ready(function(){
         $(".score-form").removeClass('score-form--bingo');
     })
 
-
-    // Enable tooltips
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    });
-
     // Add/remove active state in modal
     $('.ticket-modal span').click(function(){
         $(this).toggleClass('active');
@@ -240,215 +234,199 @@ $(document).ready(function(){
     })
 
 
-    $('#fin').DataTable({
+    if ($('#fin').length) {
+        $('#fin').DataTable({
+            "scrollX": true,
+            "dom": '<fr>tip',
+            "searching": true,
+            "lengthChange": false,
+            "pageLength": 10,
+            "language": {
+                "paginate": {
+                    "next": "Sledeća",
+                    "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                "search": ""
+            }
+        });
+        $(".sorting-table--docs #fin_filter input").addClass('form-control form-control--search mb-5');
+        $(".sorting-table--docs #fin_filter input").attr("placeholder", "Pronađi dokument");
+    };
+
+    if ($('#sluzL').length) {
+        $('#sluzL').DataTable({
         "scrollX": true,
         "dom": '<fr>tip',
-        "searching": true,
-        "lengthChange": false,
-        "pageLength": 10,
-        "language": {
+            "searching": true,
+            "lengthChange": false,
+            "pageLength": 10,
+            "language": {
             "paginate": {
-                "next": "Sledeća",
-                "previous": "Prethodna"
+            "next": "Sledeća",
+            "previous": "Prethodna"
             },
             "info": "_END_ od ukupno _TOTAL_ rezultata",
             "lengthMenu": "Prikaži _MENU_ rezultata po strani",
             "search": ""
-        }
-    });
-    $(".sorting-table--docs #fin_filter input").addClass('form-control form-control--search mb-5');
-    $(".sorting-table--docs #fin_filter input").attr("placeholder", "Pronađi dokument");
+            }
+            });
+        $(".sorting-table--docs #sluzL_filter input").addClass('form-control form-control--search mb-5');
+        $(".sorting-table--docs #sluzL_filter input").attr("placeholder", "Pronađi dokument");
+    }
 
-    $('#sluzL').DataTable({
-    "scrollX": true,
-    "dom": '<fr>tip',
-        "searching": true,
-        "lengthChange": false,
-        "pageLength": 10,
-        "language": {
-        "paginate": {
-        "next": "Sledeća",
-        "previous": "Prethodna"
-        },
-        "info": "_END_ od ukupno _TOTAL_ rezultata",
-        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-        "search": ""
-        }
-        });
-    $(".sorting-table--docs #sluzL_filter input").addClass('form-control form-control--search mb-5');
-    $(".sorting-table--docs #sluzL_filter input").attr("placeholder", "Pronađi dokument");
-
-    $('#sluzB').DataTable({
-    "scrollX": true,
-    "dom": '<fr>tip',
-        "searching": true,
-        "lengthChange": false,
-        "pageLength": 10,
-        "language": {
-        "paginate": {
-        "next": "Sledeća",
-        "previous": "Prethodna"
-        },
-        "info": "_END_ od ukupno _TOTAL_ rezultata",
-        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-        "search": ""
-        }
-        });
-    $(".sorting-table--docs #sluzB_filter input").addClass('form-control form-control--search mb-5');
-    $(".sorting-table--docs #sluzB_filter input").attr("placeholder", "Pronađi dokument");
-
-
-    $('#jav').DataTable({
-    "scrollX": true,
-    "dom": '<fr>tip',
-        "searching": true,
-        "lengthChange": false,
-        "pageLength": 10,
-        "language": {
-        "paginate": {
-        "next": "Sledeća",
-        "previous": "Prethodna"
-        },
-        "info": "_END_ od ukupno _TOTAL_ rezultata",
-        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-        "search": ""
-        }
-        });
-    $(".sorting-table--docs #jav_filter input").addClass('form-control form-control--search mb-5');
-    $(".sorting-table--docs #jav_filter input").attr("placeholder", "Pronađi dokument");
-
-    $('#pravila').DataTable({
-    "scrollX": true,
-    "dom": '<fr>tip',
-        "searching": true,
-        "lengthChange": false,
-        "pageLength": 10,
-        "language": {
-        "paginate": {
-        "next": "Sledeća",
-        "previous": "Prethodna"
-        },
-        "info": "_END_ od ukupno _TOTAL_ rezultata",
-        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-        "search": ""
-        }
-    });
-    $(".sorting-table--docs #pravila_filter input").addClass('form-control form-control--search mb-5');
-    $(".sorting-table--docs #pravila_filter input").attr("placeholder", "Pronađi dokument");
-
-    $('#ostala').DataTable({
-    "scrollX": true,
-    "dom": '<fr>tip',
-        "searching": true,
-        "lengthChange": false,
-        "pageLength": 10,
-        "language": {
-        "paginate": {
-        "next": "Sledeća",
-        "previous": "Prethodna"
-        },
-        "info": "_END_ od ukupno _TOTAL_ rezultata",
-        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-        "search": ""
-        }
-    });
-    $(".sorting-table--docs #ostala_filter input").addClass('form-control form-control--search mb-5');
-    $(".sorting-table--docs #ostala_filter input").attr("placeholder", "Pronađi dokument");
-
-
-    $('#nab').DataTable({
-    "scrollX": true,
-    "dom": '<fr>tip',
-        "searching": true,
-        "lengthChange": false,
-        "pageLength": 10,
-        "language": {
-        "paginate": {
-        "next": "Sledeća",
-        "previous": "Prethodna"
-        },
-        "info": "_END_ od ukupno _TOTAL_ rezultata",
-        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-        "search": ""
-        }
-        });
-    $(".sorting-table--docs #nab_filter input").addClass('form-control form-control--search mb-5');
-    $(".sorting-table--docs #nab_filter input").attr("placeholder", "Pronađi dokument");
-
-    $('.uplata-isplata').DataTable( {
+    if ($('#sluzB').length) {
+        $('#sluzB').DataTable({
         "scrollX": true,
-        "dom": '<<"toolbar">lfr>tip',
-        "searching": true,
-        "lengthChange": true,
-        "pageLength": 5,
-        "language": {
+        "dom": '<fr>tip',
+            "searching": true,
+            "lengthChange": false,
+            "pageLength": 10,
+            "language": {
             "paginate": {
-                "next": "Sledeća",
-                "previous": "Prethodna"
+            "next": "Sledeća",
+            "previous": "Prethodna"
             },
             "info": "_END_ od ukupno _TOTAL_ rezultata",
             "lengthMenu": "Prikaži _MENU_ rezultata po strani",
             "search": ""
-        }
-    } );
-    $("#pregled-uplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših uplata</h4>');
-    $("#pregled-isplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših isplata</h4>');
+            }
+            });
+        $(".sorting-table--docs #sluzB_filter input").addClass('form-control form-control--search mb-5');
+        $(".sorting-table--docs #sluzB_filter input").attr("placeholder", "Pronađi dokument");
+    }
 
-
-    $('#blokada').DataTable({
+    if ($('#jav').length) {
+        $('#jav').DataTable({
         "scrollX": true,
-        "dom": '<"d-flex justify-content-between"lfr>tip',
-        "searching": true,
-        "lengthChange": true,
-        "pageLength": 5,
-        "autoWidth": true,
-        "language": {
+        "dom": '<fr>tip',
+            "searching": true,
+            "lengthChange": false,
+            "pageLength": 10,
+            "language": {
             "paginate": {
-                "next": "Sledeća",
-                "previous": "Prethodna"
+            "next": "Sledeća",
+            "previous": "Prethodna"
             },
             "info": "_END_ od ukupno _TOTAL_ rezultata",
             "lengthMenu": "Prikaži _MENU_ rezultata po strani",
             "search": ""
-        }
-    });
+            }
+            });
+        $(".sorting-table--docs #jav_filter input").addClass('form-control form-control--search mb-5');
+        $(".sorting-table--docs #jav_filter input").attr("placeholder", "Pronađi dokument");
+    }
 
-    $('#istorija-t').DataTable({
+    if ($('#pravila').length) {
+        $('#pravila').DataTable({
         "scrollX": true,
-        "dom": '<"d-flex justify-content-between"lfr>tip',
-        "searching": true,
-        "lengthChange": true,
-        "pageLength": 5,
-        "language": {
-        "paginate": {
-        "next": "Sledeća",
-        "previous": "Prethodna"
-        },
-        "info": "_END_ od ukupno _TOTAL_ rezultata",
-        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-        "search": ""
-        }
-    });
+        "dom": '<fr>tip',
+            "searching": true,
+            "lengthChange": false,
+            "pageLength": 10,
+            "language": {
+            "paginate": {
+            "next": "Sledeća",
+            "previous": "Prethodna"
+            },
+            "info": "_END_ od ukupno _TOTAL_ rezultata",
+            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+            "search": ""
+            }
+        });
+        $(".sorting-table--docs #pravila_filter input").addClass('form-control form-control--search mb-5');
+        $(".sorting-table--docs #pravila_filter input").attr("placeholder", "Pronađi dokument");
+    }
 
-    $('.favorite').DataTable({
-        "scrollX": false,
-        "dom": '<"d-flex justify-content-center mt-4 mb-4"lfr>t<"d-flex justify-content-center mt-4 mb-2"p>',
-        "searching": false,
-        "lengthChange": true,
-        "pageLength": 3,
-        "language": {
-        "paginate": {
-        "next": "Sledeća",
-        "previous": "Prethodna"
-        },
-        "lengthMenu": "Prikaži _MENU_ rezultata po strani",
-        "search": ""
-        }
-    });
+    if ($('#ostala').length) {
+        $('#ostala').DataTable({
+        "scrollX": true,
+        "dom": '<fr>tip',
+            "searching": true,
+            "lengthChange": false,
+            "pageLength": 10,
+            "language": {
+            "paginate": {
+            "next": "Sledeća",
+            "previous": "Prethodna"
+            },
+            "info": "_END_ od ukupno _TOTAL_ rezultata",
+            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+            "search": ""
+            }
+        });
+        $(".sorting-table--docs #ostala_filter input").addClass('form-control form-control--search mb-5');
+        $(".sorting-table--docs #ostala_filter input").attr("placeholder", "Pronađi dokument");
+    }
 
-    $('#primljene').DataTable({
-    "scrollX": true,
-    "dom": '<"d-flex justify-content-end-lg mb-4"lfr>t<"d-flex justify-content-between mt-4 mb-2"ip>',
+    if ($('#nab').length) {
+        $('#nab').DataTable({
+        "scrollX": true,
+        "dom": '<fr>tip',
+            "searching": true,
+            "lengthChange": false,
+            "pageLength": 10,
+            "language": {
+            "paginate": {
+            "next": "Sledeća",
+            "previous": "Prethodna"
+            },
+            "info": "_END_ od ukupno _TOTAL_ rezultata",
+            "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+            "search": ""
+            }
+            });
+        $(".sorting-table--docs #nab_filter input").addClass('form-control form-control--search mb-5');
+        $(".sorting-table--docs #nab_filter input").attr("placeholder", "Pronađi dokument");
+    }
+
+    if ($('.uplata-isplata').length) {
+        $('.uplata-isplata').DataTable( {
+            "scrollX": true,
+            "dom": '<<"toolbar">lfr>tip',
+            "searching": true,
+            "lengthChange": true,
+            "pageLength": 5,
+            "language": {
+                "paginate": {
+                    "next": "Sledeća",
+                    "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                "search": ""
+            }
+        } );
+        $("#pregled-uplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših uplata</h4>');
+        $("#pregled-isplata_wrapper .toolbar").html('<h4 class="font-weight-bold m-0">Pregled svih vaših isplata</h4>');
+    }
+
+
+    if ($('#blokada').length) {
+        $('#blokada').DataTable({
+            "scrollX": true,
+            "dom": '<"d-flex justify-content-between"lfr>tip',
+            "searching": true,
+            "lengthChange": true,
+            "pageLength": 5,
+            "autoWidth": true,
+            "language": {
+                "paginate": {
+                    "next": "Sledeća",
+                    "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                "search": ""
+            }
+        });
+    }
+
+    if ($('#istorija-t').length) {
+        $('#istorija-t').DataTable({
+            "scrollX": true,
+            "dom": '<"d-flex justify-content-between"lfr>tip',
             "searching": true,
             "lengthChange": true,
             "pageLength": 5,
@@ -460,26 +438,65 @@ $(document).ready(function(){
             "info": "_END_ od ukupno _TOTAL_ rezultata",
             "lengthMenu": "Prikaži _MENU_ rezultata po strani",
             "search": ""
-        }
-    });
+            }
+        });
+    }
 
-    $('#poslate').DataTable({
-    "scrollX": true,
-    "dom": '<"d-flex justify-content-end-lg mb-4"lfr>t<"d-flex justify-content-between mt-4 mb-2"ip>',
-            "searching": true,
+    if ($('.favorite').length) {
+        $('.favorite').DataTable({
+            "scrollX": false,
+            "dom": '<"d-flex justify-content-center mt-4 mb-4"lfr>t<"d-flex justify-content-center mt-4 mb-2"p>',
+            "searching": false,
             "lengthChange": true,
-            "pageLength": 5,
+            "pageLength": 3,
             "language": {
             "paginate": {
             "next": "Sledeća",
             "previous": "Prethodna"
             },
-            "info": "_END_ od ukupno _TOTAL_ rezultata",
             "lengthMenu": "Prikaži _MENU_ rezultata po strani",
             "search": ""
-        }
-    });
+            }
+        });
+    }
 
+    if ($('#primljene').length) {
+        $('#primljene').DataTable({
+        "scrollX": true,
+        "dom": '<"d-flex justify-content-end-lg mb-4"lfr>t<"d-flex justify-content-between mt-4 mb-2"ip>',
+                "searching": true,
+                "lengthChange": true,
+                "pageLength": 5,
+                "language": {
+                "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                "search": ""
+            }
+        });
+    }
+
+    if ($('#poslate').length) {
+        $('#poslate').DataTable({
+        "scrollX": true,
+        "dom": '<"d-flex justify-content-end-lg mb-4"lfr>t<"d-flex justify-content-between mt-4 mb-2"ip>',
+                "searching": true,
+                "lengthChange": true,
+                "pageLength": 5,
+                "language": {
+                "paginate": {
+                "next": "Sledeća",
+                "previous": "Prethodna"
+                },
+                "info": "_END_ od ukupno _TOTAL_ rezultata",
+                "lengthMenu": "Prikaži _MENU_ rezultata po strani",
+                "search": ""
+            }
+        });
+    }
 
     $(".sorting-table select").addClass('custom-select');
     $(".sorting-table input[type='search']").addClass('form-control form-control--light');
@@ -512,4 +529,9 @@ $('#login_name').keydown(function(){
     } else {
         $('.login_btn').removeClass('btn-success');
     }
+});
+
+// Enable tooltips
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
 });
