@@ -737,6 +737,7 @@ p {
 	position: absolute;
 	right: 30px;
 	top: 22px;
+	z-index: 1;
 }
 
 .Button_Small.outline_none {
