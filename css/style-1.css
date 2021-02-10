@@ -2370,6 +2370,24 @@ ul.red-star li {
 	transform: translateX(-50%);
 }
 
+.modal--srecke .modal-content p {
+	font-size: 12px;
+}
+
+.modal--srecke .modal-content table {
+	font-size: 10px;
+}
+
+.modal--srecke .modal-content .table td, 
+.modal--srecke .modal-content .table th {
+	padding: .35rem;
+	text-align: right;
+}
+
+.modal--srecke .modal-dialog {
+	max-width: 460px;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	.la-linea {
