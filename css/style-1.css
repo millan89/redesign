@@ -2388,6 +2388,10 @@ ul.red-star li {
 	max-width: 460px;
 }
 
+.srecke-page .modal-backdrop {
+	display: none;
+}
+
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
 	.la-linea {
