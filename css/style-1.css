@@ -371,6 +371,7 @@ p {
 	text-align: center;
 }
 
+.ticket-fields.ticket-fields--hover-plus.ticket-fields--hover-plus-active span:after,
 .ticket-fields.ticket-fields--hover-plus:hover span:after {
 	content: "\f067";
 }
