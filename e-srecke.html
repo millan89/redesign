@@ -118,17 +118,28 @@
     <section class="five-games">
         <div class="container">
             <div class="five-games__wrapper">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="five-games__logo">
-                            <img src="images/e-srecke/e-Srecke-logo-01.svg" alt="">
+
+                <div class="row align-items-center mb-5">
+                    <div class="col-lg-2">
+                        <div class="five-games__logo mb-4 mb-lg-0">
+                            <img src="images/e-srecke/e-Srecke-logo-01.svg" alt="" class="d-block m-auto m-lg-0">
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="sorting d-md-flex justify-content-lg-end justify-content-md-between">
+                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-name' class="btn btn-outline-dark sorterBtn">A/Z<i class="fas fa-sort-amount-down"></i></button>
+                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-date' class="btn btn-outline-dark sorterBtn">Najnovije<i class="fas fa-sort-amount-down"></i></button>
+                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-popular' class="btn btn-outline-dark sorterBtn">Popularne<i class="fas fa-sort-amount-up"></i></button>
+                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-price' class="btn btn-outline-dark sorterBtn">Cena<i class="fas fa-sort-amount-down"></i></button>
+                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-max' class="btn btn-outline-dark sorterBtn">Premija<i class="fas fa-sort-amount-up"></i></button>
                         </div>
                     </div>
                 </div>
+       
                 <div class="row">
 
-                    <div class="col">
-                        <div class="five-games__wrapper__item mb-lg-0 mb-4">
+                    <div class="col" data-name='buba mara' data-date='5' data-popular='300' data-price='40' data-max='200'>
+                        <div class="five-games__wrapper__item mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/bubamara-game.png" alt="">
                             </div>
@@ -145,103 +156,8 @@
                         </div>
                     </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade bubaMara-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <p>Ovu e-srećku možete kupiti po ceni od 20, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Vrsta</th>
-                                            <th scope="col">20 RSD</th>
-                                            <th scope="col">40 RSD</th>
-                                            <th scope="col">60 RSD</th>
-                                            <th scope="col">80 RSD</th>
-                                            <th scope="col">100 RSD</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th scope="row">1</th>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">2</th>
-                                            <td>14</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">3</th>
-                                            <td>2,500</td>
-                                            <td>2,700</td>
-                                            <td>2,800</td>
-                                            <td>2,900</td>
-                                            <td>2,900</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">4</th>
-                                            <td>13,300</td>
-                                            <td>13,301</td>
-                                            <td>13,302</td>
-                                            <td>13,303</td>
-                                            <td>13,304</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">5</th>
-                                            <td>171,500</td>
-                                            <td>171,503</td>
-                                            <td>171,505</td>
-                                            <td>171,506</td>
-                                            <td>171,507</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">6</th>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">7</th>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">8</th>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="five-games__wrapper__item mb-lg-0 mb-4">
+                    <div class="col" data-name='slatki kes' data-date='4' data-popular='400' data-price='100' data-max='500'>
+                        <div class="five-games__wrapper__item mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/slatkikes-game.png" alt="">
                             </div>
@@ -258,103 +174,8 @@
                         </div>
                     </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade slatkiKes-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <p>Ovu e-srećku možete kupiti po ceni od 30, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Vrsta</th>
-                                            <th scope="col">20 RSD</th>
-                                            <th scope="col">40 RSD</th>
-                                            <th scope="col">60 RSD</th>
-                                            <th scope="col">80 RSD</th>
-                                            <th scope="col">100 RSD</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <th scope="row">1</th>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">2</th>
-                                            <td>14</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">3</th>
-                                            <td>2,500</td>
-                                            <td>2,700</td>
-                                            <td>2,800</td>
-                                            <td>2,900</td>
-                                            <td>2,900</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">4</th>
-                                            <td>13,300</td>
-                                            <td>13,301</td>
-                                            <td>13,302</td>
-                                            <td>13,303</td>
-                                            <td>13,304</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">5</th>
-                                            <td>171,500</td>
-                                            <td>171,503</td>
-                                            <td>171,505</td>
-                                            <td>171,506</td>
-                                            <td>171,507</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">6</th>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">7</th>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                          </tr>
-                                          <tr>
-                                            <th scope="row">8</th>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="five-games__wrapper__item mb-lg-0 mb-4">
+                    <div class="col" data-name='kockice' data-date='1' data-popular='100' data-price='20' data-max='400'>
+                        <div class="five-games__wrapper__item mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/kockice-game.png" alt="">
                             </div>
@@ -371,103 +192,8 @@
                         </div>
                     </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade kockice-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <p>Ovu e-srećku možete kupiti po ceni od 30, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Vrsta</th>
-                                            <th scope="col">20 RSD</th>
-                                            <th scope="col">40 RSD</th>
-                                            <th scope="col">60 RSD</th>
-                                            <th scope="col">80 RSD</th>
-                                            <th scope="col">100 RSD</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <th scope="row">1</th>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">2</th>
-                                            <td>14</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">3</th>
-                                            <td>2,500</td>
-                                            <td>2,700</td>
-                                            <td>2,800</td>
-                                            <td>2,900</td>
-                                            <td>2,900</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">4</th>
-                                            <td>13,300</td>
-                                            <td>13,301</td>
-                                            <td>13,302</td>
-                                            <td>13,303</td>
-                                            <td>13,304</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">5</th>
-                                            <td>171,500</td>
-                                            <td>171,503</td>
-                                            <td>171,505</td>
-                                            <td>171,506</td>
-                                            <td>171,507</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">6</th>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">7</th>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">8</th>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            </tr>
-                                        </tbody>
-                                        </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="five-games__wrapper__item mb-lg-0 mb-4">
+                    <div class="col" data-name='zuca' data-date='2' data-popular='500' data-price='80' data-max='100'>
+                        <div class="five-games__wrapper__item mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/zuca-game.png" alt="">
                             </div>
@@ -484,103 +210,8 @@
                         </div>
                     </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade zuca-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <p>Ovu e-srećku možete kupiti po ceni od 30, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Vrsta</th>
-                                            <th scope="col">20 RSD</th>
-                                            <th scope="col">40 RSD</th>
-                                            <th scope="col">60 RSD</th>
-                                            <th scope="col">80 RSD</th>
-                                            <th scope="col">100 RSD</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <th scope="row">1</th>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">2</th>
-                                            <td>14</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">3</th>
-                                            <td>2,500</td>
-                                            <td>2,700</td>
-                                            <td>2,800</td>
-                                            <td>2,900</td>
-                                            <td>2,900</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">4</th>
-                                            <td>13,300</td>
-                                            <td>13,301</td>
-                                            <td>13,302</td>
-                                            <td>13,303</td>
-                                            <td>13,304</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">5</th>
-                                            <td>171,500</td>
-                                            <td>171,503</td>
-                                            <td>171,505</td>
-                                            <td>171,506</td>
-                                            <td>171,507</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">6</th>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">7</th>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">8</th>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            </tr>
-                                        </tbody>
-                                        </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="five-games__wrapper__item">
+                    <div class="col" data-name='xox' data-date='3' data-popular='200' data-price='60' data-max='300'>
+                        <div class="five-games__wrapper__item mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/xox-game.png" alt="">
                             </div>
@@ -597,105 +228,486 @@
                         </div>
                     </div>
 
-                    <!-- Modal -->
-                    <div class="modal fade xox-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <p>Ovu e-srećku možete kupiti po ceni od 30, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
-                                    <table class="table table-bordered">
-                                        <thead>
-                                            <tr>
-                                            <th scope="col">Vrsta</th>
-                                            <th scope="col">20 RSD</th>
-                                            <th scope="col">40 RSD</th>
-                                            <th scope="col">60 RSD</th>
-                                            <th scope="col">80 RSD</th>
-                                            <th scope="col">100 RSD</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                            <th scope="row">1</th>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            <td>5</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">2</th>
-                                            <td>14</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            <td>15</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">3</th>
-                                            <td>2,500</td>
-                                            <td>2,700</td>
-                                            <td>2,800</td>
-                                            <td>2,900</td>
-                                            <td>2,900</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">4</th>
-                                            <td>13,300</td>
-                                            <td>13,301</td>
-                                            <td>13,302</td>
-                                            <td>13,303</td>
-                                            <td>13,304</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">5</th>
-                                            <td>171,500</td>
-                                            <td>171,503</td>
-                                            <td>171,505</td>
-                                            <td>171,506</td>
-                                            <td>171,507</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">6</th>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            <td>385,800</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">7</th>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            <td>690,900</td>
-                                            </tr>
-                                            <tr>
-                                            <th scope="row">8</th>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            <td>1,790,900</td>
-                                            </tr>
-                                        </tbody>
-                                        </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+            
             </div>
         </div>
     </section>
+
+    <!-- Modal Buba Mara -->
+    <div class="modal fade bubaMara-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p>Ovu e-srećku možete kupiti po ceni od 20, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
+                </div>
+                <div class="modal-body">
+                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                            <th scope="col">Vrsta</th>
+                            <th scope="col">20 RSD</th>
+                            <th scope="col">40 RSD</th>
+                            <th scope="col">60 RSD</th>
+                            <th scope="col">80 RSD</th>
+                            <th scope="col">100 RSD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>2,500</td>
+                            <td>2,700</td>
+                            <td>2,800</td>
+                            <td>2,900</td>
+                            <td>2,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">4</th>
+                            <td>13,300</td>
+                            <td>13,301</td>
+                            <td>13,302</td>
+                            <td>13,303</td>
+                            <td>13,304</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">5</th>
+                            <td>171,500</td>
+                            <td>171,503</td>
+                            <td>171,505</td>
+                            <td>171,506</td>
+                            <td>171,507</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">6</th>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">7</th>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">8</th>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Slatki kes -->
+    <div class="modal fade slatkiKes-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p>Ovu e-srećku možete kupiti po ceni od 30, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
+                </div>
+                <div class="modal-body">
+                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                            <th scope="col">Vrsta</th>
+                            <th scope="col">20 RSD</th>
+                            <th scope="col">40 RSD</th>
+                            <th scope="col">60 RSD</th>
+                            <th scope="col">80 RSD</th>
+                            <th scope="col">100 RSD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>2,500</td>
+                            <td>2,700</td>
+                            <td>2,800</td>
+                            <td>2,900</td>
+                            <td>2,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">4</th>
+                            <td>13,300</td>
+                            <td>13,301</td>
+                            <td>13,302</td>
+                            <td>13,303</td>
+                            <td>13,304</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">5</th>
+                            <td>171,500</td>
+                            <td>171,503</td>
+                            <td>171,505</td>
+                            <td>171,506</td>
+                            <td>171,507</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">6</th>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">7</th>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">8</th>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Kockica -->
+    <div class="modal fade kockice-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p>Ovu e-srećku možete kupiti po ceni od 30, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
+                </div>
+                <div class="modal-body">
+                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                            <th scope="col">Vrsta</th>
+                            <th scope="col">20 RSD</th>
+                            <th scope="col">40 RSD</th>
+                            <th scope="col">60 RSD</th>
+                            <th scope="col">80 RSD</th>
+                            <th scope="col">100 RSD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>2,500</td>
+                            <td>2,700</td>
+                            <td>2,800</td>
+                            <td>2,900</td>
+                            <td>2,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">4</th>
+                            <td>13,300</td>
+                            <td>13,301</td>
+                            <td>13,302</td>
+                            <td>13,303</td>
+                            <td>13,304</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">5</th>
+                            <td>171,500</td>
+                            <td>171,503</td>
+                            <td>171,505</td>
+                            <td>171,506</td>
+                            <td>171,507</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">6</th>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">7</th>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">8</th>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Zuca -->
+    <div class="modal fade zuca-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p>Ovu e-srećku možete kupiti po ceni od 30, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
+                </div>
+                <div class="modal-body">
+                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                            <th scope="col">Vrsta</th>
+                            <th scope="col">20 RSD</th>
+                            <th scope="col">40 RSD</th>
+                            <th scope="col">60 RSD</th>
+                            <th scope="col">80 RSD</th>
+                            <th scope="col">100 RSD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>2,500</td>
+                            <td>2,700</td>
+                            <td>2,800</td>
+                            <td>2,900</td>
+                            <td>2,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">4</th>
+                            <td>13,300</td>
+                            <td>13,301</td>
+                            <td>13,302</td>
+                            <td>13,303</td>
+                            <td>13,304</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">5</th>
+                            <td>171,500</td>
+                            <td>171,503</td>
+                            <td>171,505</td>
+                            <td>171,506</td>
+                            <td>171,507</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">6</th>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">7</th>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">8</th>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal XOX -->
+    <div class="modal fade xox-modal modal--srecke" id="" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <p>Ovu e-srećku možete kupiti po ceni od 30, 40, 60, 80 ili 100 dinara.<br> Za svaku cenu postoji unapred definisan fond dobitaka koji možete pogledati klikom na ovaj link u pravilima igre.U skladu sa tim, kupovinom skuplje e-srećke možete ostvariti i veće dobitke. Broj preostalih dobitaka možete pogledati u tabeli ispod.</p>
+                </div>
+                <div class="modal-body">
+                    <p>Preostali dobici zakljucno sa 07.11.2020 u 00:00h</p>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                            <th scope="col">Vrsta</th>
+                            <th scope="col">20 RSD</th>
+                            <th scope="col">40 RSD</th>
+                            <th scope="col">60 RSD</th>
+                            <th scope="col">80 RSD</th>
+                            <th scope="col">100 RSD</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            <td>5</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">2</th>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            <td>15</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">3</th>
+                            <td>2,500</td>
+                            <td>2,700</td>
+                            <td>2,800</td>
+                            <td>2,900</td>
+                            <td>2,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">4</th>
+                            <td>13,300</td>
+                            <td>13,301</td>
+                            <td>13,302</td>
+                            <td>13,303</td>
+                            <td>13,304</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">5</th>
+                            <td>171,500</td>
+                            <td>171,503</td>
+                            <td>171,505</td>
+                            <td>171,506</td>
+                            <td>171,507</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">6</th>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            <td>385,800</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">7</th>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            <td>690,900</td>
+                            </tr>
+                            <tr>
+                            <th scope="row">8</th>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            <td>1,790,900</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- LOTO BANNER -->
     <section class="loto-banner">
@@ -914,5 +926,49 @@
     <script src="js/main.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/b071412929.js" crossorigin="anonymous"></script>
+    <script>
+        function sort(button) {
+            var sortAttribute = button.getAttribute('sortAttribute');
+            var wrapper = $(".five-games__wrapper");
+            var rows = $(".five-games__wrapper .row");
+            var sorterBtns = $(".sorterBtn");
+            var order = button.getAttribute('dataToggle');
+            for (var i = 0; i < sorterBtns.length; i++) {
+                   sorterBtns[i].setAttribute('dataToggle', 'asc'); 
+            }
+            var header = rows[0];
+            var items = [];
+            if(order == 'asc') {
+                button.setAttribute('dataToggle', 'desc'); 
+            }
+            else { 
+                button.setAttribute('dataToggle', 'asc'); 
+            }
+            for(var i = 1; i < rows.length; i++) {
+                for (var j = 0; j < rows[i].childNodes.length; j++) {
+                    if(rows[i].childNodes[j].className == 'col') {
+                        items.push(rows[i].childNodes[j]);
+                    }
+                }
+            }
+            items.sort(function(a,b) {
+                if(order == 'asc') {
+                    return a.getAttribute(sortAttribute) > b.getAttribute(sortAttribute);
+                }
+                else {
+                    return a.getAttribute(sortAttribute) < b.getAttribute(sortAttribute); 
+                }
+            });
+            var finalHTML = '<div class="row mb-5 align-items-center">' + header.innerHTML + '</div>';
+                finalHTML+='<div class="row">'
+            for(var i = 1; i <= items.length; i++) {
+                finalHTML += items[i-1].outerHTML;
+                // if(i % 5 == 0) {
+                //     finalHTML+='</div><div class="row">';
+                // }
+            }
+            wrapper[0].innerHTML = finalHTML + '</div>';
+        }
+    </script>
 </body>
 </html>

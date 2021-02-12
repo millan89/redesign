@@ -1327,14 +1327,23 @@ button.regulations {
 }
 
 .five-games__logo img {
-	width: 200px;
-	margin: 0 auto 30px;
-	display: block;
+	width: 140px;
+}
+
+.btn.btn-outline-dark.sorterBtn {
+	padding: 0.3rem 1.2rem;
+	border-width: 1px;
+	font-weight: 500;
+}
+
+.btn.btn-outline-dark.sorterBtn i {
+	margin-left: 5px;
 }
 
 .five-games__wrapper__item {
 	box-shadow: 0 0 10px rgba(0,0,0,.2);
 	min-width: 158px;
+	max-width: 200px;
 }
 
 .five-games__wrapper__item__img img {
@@ -2824,6 +2833,16 @@ ul.red-star li {
 	.donacija__img::after {
 		display: none;
 	}
+
+	.btn.btn-outline-dark.sorterBtn {
+		display: block;
+		width: 150px;
+		margin: auto;
+	}
+
+	.btn.btn-outline-dark.sorterBtn:not(:last-child) {
+		margin-bottom: 20px;
+	}
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -3060,6 +3079,10 @@ ul.red-star li {
 
 	.mr-from-md-0 {
 		margin-right: 0;
+	}
+
+	.btn.btn-outline-dark.sorterBtn:not(:last-child) {
+		margin-right: 15px;
 	}
 
 }
