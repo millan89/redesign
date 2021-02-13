@@ -1036,16 +1036,7 @@ button.regulations {
 	background-color: var(--brand-light-blue-4);
 }
 
-/* .esgg-hero__bg {
-	background-image: url(../images/e-srecke/e-srecke-devojka_bg.png);
-	background-repeat: no-repeat;
-	background-position-x: 140px;
-	background-position-y: -160px;
-	background-size: inherit;
-	padding: 140px 0 170px;
-} */
-
-.esgg-hero__bg .container {
+.esgg-hero--es .esgg-hero__bg .container {
 	background-image: url(../images/e-srecke/e-srecke-devojka_bg.png);
 	background-position: right top;
 	background-repeat: no-repeat;
