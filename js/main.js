@@ -535,3 +535,7 @@ $('#login_name').keydown(function(){
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
 });
+
+$(".sorting-table").click(function(){
+    $(this).removeClass("anim");
+})

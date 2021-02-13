@@ -3128,14 +3128,14 @@ header .btn {
         font-family: var(--font-fa);
         font-weight: 600;
         position: absolute;
-        opacity: .7;
+        opacity: .6;
         right: 30px;
         bottom: 140px;
         z-index: 9;
         font-size: 40px;
         text-shadow: 2px 2px 9px rgba(0, 0, 0, .4);
         color: #505050;
-        animation: cursorMove 1s ease-in-out 0s infinite alternate;
+        animation: cursorMove 1.2s ease-in-out 0s infinite alternate;
     }
 
     .sorting-table--docs .dataTables_scrollBody {
