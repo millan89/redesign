@@ -1250,7 +1250,7 @@
 
                         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 640 640"
-                            style="enable-background:new 0 0 640 640;" xml:space="preserve" class="ticket-heart">
+                            style="enable-background:new 0 0 640 640;" xml:space="preserve" class="ticket-heart ml-2">
                             <defs>
                                 <path
                                     d="M60.45 345.45L15 200.91 83.18 73.64l143.64-11.82 96.36 106.36L365 97.27l102.73-49.09 130.91 66.37 17.27 183.63L320 582.73 60.45 345.45z"
@@ -3286,7 +3286,11 @@
     <script>
         $('.ticket-modal--1').click(function(){
             var num = $(".ticket-modal--1 span.active").length;
-            $('.active-number-standard').text(num);
+            if(num >= 8) {
+                return false;
+            } else {
+                $('.active-number-standard').text(num);
+            }
         });
 
 
