@@ -2238,6 +2238,10 @@ header .btn {
     cursor: pointer;
 }
 
+.modal-footer .cancel.cancel--rel {
+    position: relative;
+}
+
 .modal-footer .fav-numbers {
     position: absolute;
     left: 0;
