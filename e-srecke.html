@@ -127,18 +127,18 @@
                     </div>
                     <div class="col-lg-10">
                         <div class="sorting d-md-flex justify-content-lg-end justify-content-md-between">
-                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-name' class="btn btn-outline-dark sorterBtn">A/Z<i class="fas fa-sort-amount-down"></i></button>
-                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-date' class="btn btn-outline-dark sorterBtn">Najnovije<i class="fas fa-sort-amount-down"></i></button>
-                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-popular' class="btn btn-outline-dark sorterBtn">Popularne<i class="fas fa-sort-amount-up"></i></button>
-                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-price' class="btn btn-outline-dark sorterBtn">Cena<i class="fas fa-sort-amount-down"></i></button>
-                            <button onclick="sort(this)" dataToggle='asc' sortAttribute='data-max' class="btn btn-outline-dark sorterBtn">Premija<i class="fas fa-sort-amount-up"></i></button>
+                            <button onclick="sort(this)" dataToggle="asc" sortAttribute="data-name" class="btn btn-outline-dark sorterBtn">A/Z<i class="fas fa-sort-amount-down"></i></button>
+                            <button onclick="sort(this)" dataToggle="asc" sortAttribute="data-date" class="btn btn-outline-dark sorterBtn">Najnovije<i class="fas fa-sort-amount-down"></i></button>
+                            <button onclick="sort(this)" dataToggle="asc" sortAttribute="data-popular" class="btn btn-outline-dark sorterBtn">Popularne<i class="fas fa-sort-amount-up"></i></button>
+                            <button onclick="sort(this)" dataToggle="asc" sortAttribute="data-price" class="btn btn-outline-dark sorterBtn">Cena<i class="fas fa-sort-amount-down"></i></button>
+                            <button onclick="sort(this)" dataToggle="asc" sortAttribute="data-max" class="btn btn-outline-dark sorterBtn">Premija<i class="fas fa-sort-amount-up"></i></button>
                         </div>
                     </div>
                 </div>
        
                 <div class="row">
 
-                    <div class="col" data-name='buba mara' data-date='5' data-popular='300' data-price='40' data-max='200'>
+                    <div class="col" data-name="buba mara" data-date="5" data-popular="300" data-price="40" data-max="200">
                         <div class="five-games__wrapper__item mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/bubamara-game.png" alt="">
@@ -156,7 +156,7 @@
                         </div>
                     </div>
 
-                    <div class="col" data-name='slatki kes' data-date='4' data-popular='400' data-price='100' data-max='500'>
+                    <div class="col" data-name="slatki kes" data-date="4" data-popular="400" data-price="100" data-max="500">
                         <div class="five-games__wrapper__item mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/slatkikes-game.png" alt="">
@@ -174,8 +174,8 @@
                         </div>
                     </div>
 
-                    <div class="col" data-name='kockice' data-date='1' data-popular='100' data-price='20' data-max='400'>
-                        <div class="five-games__wrapper__item mb-4">
+                    <div class="col" data-name="kockice" data-date="1" data-popular="100" data-price="20" data-max="400">
+                        <div class="five-games__wrapper__item five-games--new mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/kockice-game.png" alt="">
                             </div>
@@ -192,7 +192,7 @@
                         </div>
                     </div>
 
-                    <div class="col" data-name='zuca' data-date='2' data-popular='500' data-price='80' data-max='100'>
+                    <div class="col" data-name="zuca" data-date="2" data-popular="500" data-price="80" data-max="100">
                         <div class="five-games__wrapper__item mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/zuca-game.png" alt="">
@@ -210,7 +210,7 @@
                         </div>
                     </div>
 
-                    <div class="col" data-name='xox' data-date='3' data-popular='200' data-price='60' data-max='300'>
+                    <div class="col" data-name="xox" data-date="3" data-popular="200" data-price="60" data-max="300">
                         <div class="five-games__wrapper__item mb-4">
                             <div class="five-games__wrapper__item__img">
                                 <img src="images/e-srecke/xox-game.png" alt="">
@@ -928,46 +928,43 @@
     <script src="https://kit.fontawesome.com/b071412929.js" crossorigin="anonymous"></script>
     <script>
         function sort(button) {
-            var sortAttribute = button.getAttribute('sortAttribute');
+            var sortAttribute = button.getAttribute("sortAttribute");
             var wrapper = $(".five-games__wrapper");
             var rows = $(".five-games__wrapper .row");
             var sorterBtns = $(".sorterBtn");
-            var order = button.getAttribute('dataToggle');
+            var order = button.getAttribute("dataToggle");
             for (var i = 0; i < sorterBtns.length; i++) {
-                   sorterBtns[i].setAttribute('dataToggle', 'asc'); 
+                   sorterBtns[i].setAttribute("dataToggle", "asc"); 
             }
             var header = rows[0];
             var items = [];
-            if(order == 'asc') {
-                button.setAttribute('dataToggle', 'desc'); 
+            if(order == "asc") {
+                button.setAttribute("dataToggle", "desc"); 
             }
             else { 
-                button.setAttribute('dataToggle', 'asc'); 
+                button.setAttribute("dataToggle", "asc"); 
             }
             for(var i = 1; i < rows.length; i++) {
                 for (var j = 0; j < rows[i].childNodes.length; j++) {
-                    if(rows[i].childNodes[j].className == 'col') {
+                    if(rows[i].childNodes[j].className == "col") {
                         items.push(rows[i].childNodes[j]);
                     }
                 }
             }
             items.sort(function(a,b) {
-                if(order == 'asc') {
+                if(order == "asc") {
                     return a.getAttribute(sortAttribute) > b.getAttribute(sortAttribute);
                 }
                 else {
                     return a.getAttribute(sortAttribute) < b.getAttribute(sortAttribute); 
                 }
             });
-            var finalHTML = '<div class="row mb-5 align-items-center">' + header.innerHTML + '</div>';
-                finalHTML+='<div class="row">'
+            var finalHTML = "<div class='row mb-5 align-items-center'>" + header.innerHTML + "</div>";
+                finalHTML+="<div class='row'>"
             for(var i = 1; i <= items.length; i++) {
                 finalHTML += items[i-1].outerHTML;
-                // if(i % 5 == 0) {
-                //     finalHTML+='</div><div class="row">';
-                // }
             }
-            wrapper[0].innerHTML = finalHTML + '</div>';
+            wrapper[0].innerHTML = finalHTML + "</div>";
         }
     </script>
 </body>

@@ -1038,11 +1038,11 @@ button.regulations {
 
 .esgg-hero--es .esgg-hero__bg .container {
 	background-image: url(../images/e-srecke/e-srecke-devojka_bg.png);
-	background-position: right top;
+	background-position: right -80px top -10px;
 	background-repeat: no-repeat;
-	background-size: 530px;
-	padding-top: 90px;
-	padding-bottom: 90px;
+	background-size: 690px;
+	padding-top: 110px;
+	padding-bottom: 120px;
 }
 
 .esgg-hero--faq .esgg-hero__bg .container {
@@ -1316,6 +1316,27 @@ button.regulations {
 	border-radius: 12px;
 	margin-top: -50px;
 	background: var(--brand-white);
+}
+
+.five-games--new {
+	position: relative;
+}
+
+.five-games--new:after {
+	content: "NOVO";
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background-color: var(--brand-green);
+	position: absolute;
+	top: 90px;
+	right: 6px;
+	font-family: var(--font-barlow);
+	color: white;
+	font-weight: 800;
+	padding: 9px 4px;
+	border: 2px solid white;
+	font-size: 20px;
 }
 
 .five-games__logo img {
