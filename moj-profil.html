@@ -221,7 +221,7 @@
                                 <div class="tab-content row" id="ticket-tabContent">
                                     <div class="col-sm-12 tab-pane fade show active" id="pregled_uplata1" role="tabpanel"
                                         aria-labelledby="pregled_uplata">
-                                        <div class="mt-5 sorting-table">
+                                        <div class="mt-5 sorting-table anim">
 
                                             <table id="pregled-uplata"
                                                 class="display nowrap datatable uplata-isplata table-pager
@@ -337,7 +337,7 @@
 
                                     <div class="col-sm-12 tab-pane fade" id="pregled_isplata1"
                                         role="tabpanel" aria-labelledby="pregled_isplata">
-                                        <div class="mt-5 sorting-table">
+                                        <div class="mt-5 sorting-table anim">
 
                                             <table id="pregled-isplata"
                                                 class="display nowrap datatable uplata-isplata table-pager
@@ -565,7 +565,7 @@
 
                                     </form>
 
-                                    <div class="sorting-table mt-5" style="width:100%">
+                                    <div class="sorting-table anim mt-5" style="width:100%">
                                         <table id="blokada"
                                             class="display datatable nowrap table-pager table-pager--loc table-pager--font-sm"
                                             style="width:100%">
@@ -618,7 +618,7 @@
                                 <p class="text-sm"><span class="span-color span-color--orange"></span> Žutom bojom su označena tekuća kola</p>
                                 <p class="text-sm"><span class="span-color span-color--blue"></span> Plavom bojom su označena buduća kola (pretplata)</p>
 
-                                <div class="sorting-table mt-5" style="width:100%">
+                                <div class="sorting-table anim mt-5" style="width:100%">
                                     <table id="istorija-t"
                                     class="display nowrap table-pager datatable table-pager--loc table-pager--font-sm"
                                         style="width:100%">
@@ -688,7 +688,7 @@
                                                 <h4 class="text-center font-weight-bold mt-5"><i
                                                         class="fas fa-heart color-red fa-lg"></i> Omiljene kombinacije</h4>
 
-                                                <div class="sorting-table" style="width:100%">
+                                                <div class="sorting-table anim" style="width:100%">
                                                     <table id="omiljeni"
                                                         class="display favorite nowrap table-pager table-pager--loc table-pager--font-sm"
                                                         style="width:100%">
@@ -964,7 +964,7 @@
                                                         class="fas fa-heart color-red fa-lg"></i> Omiljene kombinacije
                                                 </h4>
 
-                                                <div class="sorting-table" style="width:100%">
+                                                <div class="sorting-table anim" style="width:100%">
                                                     <table id="omiljeni"
                                                         class="display favorite nowrap table-pager table-pager--loc table-pager--font-sm"
                                                         style="width:100%">
@@ -1131,7 +1131,7 @@
                                     <div class="col-sm-12 tab-pane fade show active" id="primljene-poruke1"
                                         role="tabpanel" aria-labelledby="primljene-poruke">
 
-                                        <div class="sorting-table" style="width:100%">
+                                        <div class="sorting-table anim" style="width:100%">
                                             <table id="primljene"
                                                 class="display datatable primljene nowrap table-pager table-pager--loc
                                                 table-pager--font-sm"
@@ -1192,7 +1192,7 @@
                                     </div>
                                     <div class="col-sm-12 tab-pane fade" id="prosledjene-poruke1" role="tabpanel"
                                         aria-labelledby="prosledjene-poruke">
-                                        <div class="sorting-table" style="width:100%">
+                                        <div class="sorting-table anim" style="width:100%">
                                             <table id="poslate"
                                                 class="display datatable poslate nowrap table-pager table-pager--loc
                                                 table-pager--font-sm" style="width:100%">
@@ -1864,6 +1864,10 @@
 
                 $(this).text('SAČUVAJ');
             }
+        });
+
+        $(".sorting-table").mouseover(function(){
+            $(this).removeClass("anim");
         })
     </script>
     

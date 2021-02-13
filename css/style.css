@@ -2766,6 +2766,16 @@ header .btn {
 
 
 
+@keyframes cursorMove {
+    from {
+        transform: translateX(-10px) rotate(-20deg);
+    }
+
+    to {
+        transform: translateX(10px) rotate(20deg);
+    }
+}
+
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
@@ -3107,6 +3117,24 @@ header .btn {
 
     .list-group--nd {
         align-items: center;
+    }
+
+    .sorting-table.anim {
+        position: relative;
+    }
+
+    .sorting-table.anim:after {
+        content: "\f0a6";
+        font-family: var(--font-fa);
+        font-weight: 600;
+        position: absolute;
+        right: 30px;
+        bottom: 140px;
+        z-index: 9;
+        font-size: 40px;
+        text-shadow: 2px 2px 9px rgba(0, 0, 0, .4);
+        color: #505050;
+        animation: cursorMove 1s ease-in-out 0s infinite alternate;
     }
 
     .sorting-table--docs .dataTables_scrollBody {
