@@ -1652,6 +1652,11 @@ header .btn {
 
 
 /* GAMES CAROUSEL */
+.games .slick-track {
+    display: flex;
+    justify-content: center;
+}
+
 .games-item {
     padding: 38px 34px;
     border-radius: 10px;
