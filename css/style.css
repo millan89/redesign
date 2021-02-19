@@ -525,17 +525,22 @@ select {
     background-color: var(--brand-white);
 }
 
+.row-sistem:hover .form-control,
 .row-ticket-active .form-control {
     background-color: var(--brand-red);
     border-color: var(--brand-red);
     color: var(--brand-white);
+    cursor: pointer;
+    box-shadow: none;
 }
 
+.row-sistem:hover .form-control.fc-active-red-light,
 .row-ticket-active .form-control.fc-active-red-light {
     background-color: #fdedee;
     border-color: #fdedee;
     color: var(--brand-red);
     font-weight: 400;
+    box-shadow: none;
 }
 
 .form-control.fc-gray {
@@ -3145,6 +3150,11 @@ header .btn {
         text-shadow: 2px 2px 9px rgba(0, 0, 0, .4);
         color: #505050;
         animation: cursorMove 1.2s ease-in-out 0s infinite alternate;
+    }
+
+    .sorting-table.anim.anim--top:after {
+        bottom: auto;
+        top: 18%;
     }
 
     .sorting-table--docs .dataTables_scrollBody {

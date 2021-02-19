@@ -3438,7 +3438,12 @@
         $(".sistem-modal").click(function(){
             $(".row-sistem").removeClass('row-ticket-active');
             $(this).parent().parent().addClass('row-ticket-active');
-        })
+        });
+
+        $(".row-sistem").click(function(){
+            $(".row-sistem").removeClass('row-ticket-active');
+            $(this).addClass('row-ticket-active');
+        });
     </script>
 </body>
 </html>
